@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rubbishcleaner_expandable_group"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rubbish_adapter_group_height"
+    android:paddingStart="@dimen/rubbish_main_clean_item_paddingleft" >
+
+    <cyee.widget.CyeeTextView
+        android:id="@+id/rubbish_group_name"
+        android:layout_width="@dimen/rubbish_main_adapter_group_name_width"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/adapter_item_name_color"
+        android:textSize="@dimen/rubbish_adapter_groupname_textsize" />
+
+    <FrameLayout
+        android:id="@+id/progressbar_and_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/rubbish_adapter_progress_marginleft"
+        android:layout_marginEnd="@dimen/rubbish_adapter_progress_marginright" >
+
+        <cyee.widget.CyeeCheckBox
+            android:id="@+id/group_checkbox"
+            android:layout_width="@dimen/rubbish_adapter_progress_checkbox_width"
+            android:layout_height="@dimen/rubbish_adapter_progress_checkbox_height"
+            android:focusable="false" />
+
+        <cyee.widget.CyeeProgressBar
+            android:id="@+id/group_progressbar"
+            android:layout_width="@dimen/rubbish_adapter_progress_checkbox_width"
+            android:layout_height="@dimen/rubbish_adapter_progress_checkbox_height"
+            android:indeterminate="false"
+            android:indeterminateDuration="1000" />
+        <!-- 使用系统控件中的图片 -->
+        <!--android:indeterminateDrawable="@drawable/custom_loading_progress"-->
+    </FrameLayout>
+
+    <cyee.widget.CyeeTextView
+        android:id="@+id/group_rubbish_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/progressbar_and_checkbox"
+        android:textColor="@color/adapter_item_summary_color"
+        android:textSize="@dimen/rubbish_adapter_group_size_textsize" />
+
+</RelativeLayout>

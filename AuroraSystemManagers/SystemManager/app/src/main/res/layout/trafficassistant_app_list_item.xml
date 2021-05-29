@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/listview_height"
+    android:descendantFocusability="blocksDescendants" >
+    <!-- Gionee yubo 2015-09-07 modify for CR01548634 begin -->
+    <!-- add:android:layout_toStartOf="@id/container" -->
+    <LinearLayout
+        android:id="@+id/container_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/container" 
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/image_margin_left"
+        android:gravity="center" >
+ <!-- Gionee yubo 2015-09-07 modify for CR01548634 begin -->
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/image_margin_left"
+            android:focusable="false" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:orientation="vertical" >
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:singleLine="true"
+            android:textColor="@color/textcolor_level_one"
+            android:textSize="@dimen/textsize_level_one" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/text_margin_right" >
+
+        <cyee.widget.CyeeSwitch
+            android:id="@+id/switch_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true" />
+    </FrameLayout>
+
+</RelativeLayout>

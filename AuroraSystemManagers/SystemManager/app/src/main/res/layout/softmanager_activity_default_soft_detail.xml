@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+	<cyee.widget.CyeeEditModeView
+		android:id="@+id/editmodeview"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+	/>
+	    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editmodeview"
+        android:background="?attr/listChoiceBackgroundIndicator"  >
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/select_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="@dimen/header_padding_top"
+            android:text="@string/select_default_text"
+            android:textColor="@color/list_header_text_color"
+            android:textSize="@dimen/text_size" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/separator_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/divider_color" />
+
+    <include
+        layout="@layout/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@+id/separator_line" />
+    
+</RelativeLayout>

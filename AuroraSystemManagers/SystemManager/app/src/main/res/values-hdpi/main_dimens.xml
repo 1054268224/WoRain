@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="main_centerX">120dp</dimen>
+    <dimen name="main_centerY">120dp</dimen>
+    <dimen name="main_innerRadius">88dp</dimen>
+    <dimen name="main_innerStrokeWidth">5dp</dimen>
+    <dimen name="main_outerRadius">100dp</dimen>
+    <dimen name="main_outerStrokeWidth">1dp</dimen>
+
+    <dimen name="main_rocket_img_margin_top">10dp</dimen>
+    <dimen name="main_rocket_img_margin_bottom">65dp</dimen>
+    <dimen name="main_scan_score_margin_top">98dp</dimen>
+    <dimen name="main_scan_score_unit_margin_top">125dp</dimen>
+    <dimen name="main_memory_releast_txt_margin_top">150dp</dimen>
+    <dimen name="main_scan_score_txt_size">48sp</dimen>
+    <dimen name="main_used_ram_txt_size">14sp</dimen>
+    <dimen name="main_total_ram_txt_size">14sp</dimen>
+    <dimen name="main_txt_scan_info_margin_bottom">17dp</dimen>
+    <dimen name="main_views_margin_top">66dp</dimen>
+    
+    <dimen name="main_menu_views_margin_top">10dp</dimen>
+
+    <!-- Add by HZH on 2019/6/27 for  start  -->
+    <integer name="indicator_offset">10</integer>
+    <!-- Add by HZH on 2019/6/27 for  end  -->
+</resources>

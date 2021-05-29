@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="cancel" >"取消"</string> 
+    <string name="gn_securitypassword_forget">忘記密碼</string>
+    <string name="lockpassword_confirm_your_pattern_header" msgid="7543433733032330821">"確認您的圖案"</string>
+    <string name="lockpassword_confirm_your_pattern_generic" msgid="7050256155547273836">"請繪製您的設備解鎖圖案，然後再繼續。"</string>
+    <string name="lockpattern_need_to_unlock_wrong" msgid="1745247595356012176">"圖案錯誤"</string>
+    <string name="gn_securitypassword_retry_note">請%1$s分鐘後再次嘗試</string>
+    <string name="gn_securitypassword_input_error_note">密碼錯誤，還可輸入%1$s次</string>
+    <string name="gn_lockpattern_recording_intro_header">"請繪製解鎖圖案"</string>
+    <string name="gn_fingerprint_confirm_your_password_header2">請繪製圖案或使用指紋識別</string>
+    <string name="gn_fingerprint_confirm_your_password_header">請輸入密碼或使用指紋識別</string>
+    <string name="lockpassword_confirm_your_password_header" msgid="6308478184889846633">"確認密碼"</string>
+    <string name="gn_confirm_your_password_header">請輸入密碼</string>
+    <string name="lockpattern_too_many_failed_confirmation_attempts" msgid="6909161623701848863">"嘗試解鎖失敗次數過多。請在 <xliff:g id="NUMBER">%d</xliff:g> 秒後重試。"</string>
+    <string name="lockpattern_tutorial_cancel_label" msgid="6431583477570493261">"取消"</string>
+    <string name="lockpattern_tutorial_continue_label" msgid="3559793618653400434">"下一步"</string>
+    <string name="lockpassword_confirm_your_pin_header" msgid="49038294648213197">"確認您的數字密碼"</string>
+    <string name="lockpassword_confirm_your_password_generic" msgid="1022239625083264596">"請輸入您的設備密碼，然後再繼續。"</string>
+    <string name="lockpassword_confirm_your_pin_generic" msgid="1072670959803859869">"您需輸入設備數字密碼才能繼續。"</string>
+    <string name="lockpassword_confirm_app_header">%s已被密碼保護</string>
+</resources>

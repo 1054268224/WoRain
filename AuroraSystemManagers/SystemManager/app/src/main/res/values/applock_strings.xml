@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lockpassword_confirm_your_pattern_header">Confirmez votre schéma</string>
+    <string name="gn_lockpattern_recording_intro_header">Dessinez un schéma de déverrouillage :</string>
+    <string name="gn_fingerprint_confirm_your_password_header2">Dessinez un schéma de déverrouillage ou reconnaissance d\'empreintes digitales</string>
+    <string name="gn_fingerprint_confirm_your_password_header">S\'il vous plaît entrez le mot de passe ou l\'empreinte connu</string>
+    <string name="lockpassword_confirm_your_password_header">Confirmez votre mot de passe</string>
+    <string name="gn_confirm_your_password_header">Mot de passe d\'entrée</string>
+    <string name="lockpassword_confirm_your_pin_header">Confirmer votre code PIN</string>
+    <string name="lockpattern_too_many_failed_confirmation_attempts">Trop de tentatives incorrectes. Réessayez dans &amp;lt;xliff:g id = "number"&amp;gt;%d &amp;lt;/xliff:g&amp;gt; secondes.</string>
+    <string name="lockpassword_confirm_your_password_generic">Saisissez le mot de passe de votre appareil pour continuer.</string>
+    <string name="lockpassword_confirm_your_pin_generic">Saisissez le code PIN de votre appareil pour continuer.</string>
+    <string name="cancel">Cancel</string>
+    <string name="gn_securitypassword_forget">Forget password</string>
+    <string name="lockpattern_need_to_unlock_wrong">Wrong pattern</string>
+    <!--Gionee luoguangming 2017.03.02 modify CR01778824 begin-->
+    <string name="gn_securitypassword_retry_note">Please try again after "%1$s" min(s)</string>
+    <string name="gn_securitypassword_retry_note2">Please try again after the "%1$s second(s)"</string>
+    <string name="gn_securitypassword_retry">Try again</string>
+    <string name="gn_securitypassword_input_error_note">The password is incorrect, "%1$s" attempts remain</string>
+    <!--Gionee luoguangming 2017.03.02 modify CR01778824  end -->
+    <string name="lockpattern_tutorial_cancel_label">Cancel</string>
+    <string name="lockpattern_tutorial_continue_label">Next</string>
+    <string name="lockpassword_confirm_app_header">%s has been protected</string>
+
+    <string name="applock_verify_success_prompt">Verify Successfully</string>
+    <string name="applock_verify_pwd_prompt">Password unlock</string>
+    <string name="applock_verify_use_prompt">"Use "</string>
+    <string name="applock_verify_fr_prompt">Face/</string>
+    <string name="applock_verify_fp_prompt">Finger/</string>
+    <string name="applock_verify_fp_fail_more">Too many fingerprint verify fail, try again after %1$ss, please</string>
+    <string name="applock_verify_fr_wait_prompt">Please keep</string>
+    <string name="applock_verify_fr_timeout_prompt">Face </string>
+
+    <!-- Chenyee xionghg 20180223 add for app lock begin -->
+    <string name="app_lock_in_list">%s 在应用锁名单中</string>
+    <string name="app_lock_choose_operation">但安全密码尚未设置，请选择操作:</string>
+    <string name="app_lock_password_not_set">但安全密码尚未设置，请先设置安全密码</string>
+
+    <string name="app_lock_clear">1. 将 %s 从应用锁名单中移除，直接启动</string>
+    <string name="app_lock_setup">2. 设置安全密码，恢复应用锁功能</string>
+    <!-- Chenyee xionghg 20180223 add for app lock end -->
+
+    <string name="lockpassword_confirm_your_pattern_generic">Usar el patrón del dispositivo para continuar</string>
+    <string name="gn_fingerprint_unlock_wrong">La contraseña es incorrecta</string>
+    <string name="applock_verify_fr_input_error_prompt">La verificación de prueba dactilar ha fallado，inténtelo de nuevo después de %1$ss, por favor</string>
+
+</resources>

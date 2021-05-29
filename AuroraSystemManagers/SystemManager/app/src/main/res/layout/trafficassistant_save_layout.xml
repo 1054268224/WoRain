@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cusattrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/traffica_save_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/softmanager_storage_info_height"
+        android:background="@drawable/common_blue_bg" >
+
+        <RelativeLayout
+            android:id="@+id/traffica_save_off_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/traffic_save_logo_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/traffic_save_logo_img_margin_top"
+                cusattrs:srcCompat="@drawable/traffic_save_logo" />
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/traffic_save_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/traffic_save_logo_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:text="@string/traffic_save_off"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/traffic_save_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/traffic_save_title"
+                android:layout_centerHorizontal="true"
+                android:text="@string/traffic_save_off_summary"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/traffica_save_on_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="30dp" >
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/traffic_save_total_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="71dp"
+                android:text="@string/traffic_save_total_title"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="90dp" >
+              <!--  Gionee: mengdw <2015-08-13> add for CR01536660  begin -->
+                <cyee.widget.CyeeTextView
+                    android:id="@+id/traffic_save_total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    android:textSize="65dp" />
+             <!--  Gionee: mengdw <2015-08-13> add for CR01536660  end -->
+                <cyee.widget.CyeeTextView
+                    android:id="@+id/total_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/money_total_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="71dp"
+                android:text="@string/money_save_total_title"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="90dp" >
+
+                <cyee.widget.CyeeTextView
+                    android:id="@+id/money_save_total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="65dp" />
+
+                <cyee.widget.CyeeTextView
+                    android:id="@+id/money_save_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_money"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/liuliangbao_logo" />
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/save_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/traffic_save_support_txt"
+                android:textColor="@color/half_trans_white"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="?attr/listChoiceBackgroundIndicator">
+
+        <include layout="@layout/traffic_save_switch_layout" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/listview" />
+
+</LinearLayout>

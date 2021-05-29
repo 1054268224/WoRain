@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Gionee <chenml> <2016-03-25> add for CR01660246 begin  -->
+    <declare-styleable name="PasswordInputView">
+        <attr name="passwordColor" format="color"/>
+        <attr name="passwordRadius" format="dimension"/>
+    </declare-styleable>
+    <!--  Gionee <chenml> <2016-03-25> add for CR01660246 end  -->
+
+    <attr name="PasswordInputViewStyle" format="reference"/>
+
+</resources>
+

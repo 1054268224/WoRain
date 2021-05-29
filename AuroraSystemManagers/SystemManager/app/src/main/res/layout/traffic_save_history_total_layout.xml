@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/traffic_save_layout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="?attr/listChoiceBackgroundIndicator"
+    android:layout_marginLeft="20dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <cyee.widget.CyeeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/traffic_save_history_total"
+        android:textSize="14sp"
+        android:textColor="@color/list_header_text_color"/>
+
+    <cyee.widget.CyeeTextView
+        android:id="@+id/traffic_save_history_totalsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/list_header_text_color"
+        android:paddingRight="20dip"
+        />
+
+</LinearLayout>

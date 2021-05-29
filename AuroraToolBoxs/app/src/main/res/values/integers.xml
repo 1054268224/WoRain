@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Add by zhiheng.huang on 2020/2/19 for flashlight start  -->
+    <integer name="disallow_open_light_limit">15</integer>
+    <!-- Add by zhiheng.huang on 2020/2/19 for flashlight end  -->
+</resources>

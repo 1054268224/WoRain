@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+    <!-- Gionee fengjianyi 2012-08-22 add for CR00673800 start -->
+    <string name="zzzzz_gn_def_flip_on_sound" translatable="false">/system/media/audio/ui/FlipOn.ogg</string>
+    <string name="zzzzz_gn_def_flip_off_sound" translatable="false">/system/media/audio/ui/FlipOff.ogg</string>
+    <!-- Gionee fengjianyi 2012-08-22 add for CR00673800 end -->
+    
+    <!-- Gionee:zhang_xin 2012-12-09 add for start -->
+    <bool name="def_gn_power_saver">false</bool>
+    <!-- Gionee:zhang_xin 2012-12-09 add for end -->
+    
+    <!-- Gionee <zhang_xin><2013-03-26> add for CR00788411 begin -->
+    <integer name="def_gn_font_size">0</integer>
+    <!-- Gionee <zhang_xin><2013-03-26> add for CR00788411 end -->
+    
+    <!-- gionee zengxuanhui 20121022 add for CR00716758 begin -->
+    <bool name="def_haptic_vibration">true</bool>
+    <!-- gionee zengxuanhui 20121022 add for CR00716758 end -->
+    
+    <!--Gionee Jingjc 20121101 add for CR00722601 start-->
+    <bool name="def_switch_vibration">true</bool>
+    <bool name="def_dialpad_vibration">true</bool>
+    <bool name="def_lockscreen_vibration">true</bool>
+    <bool name="def_selectapp_vibration">true</bool>
+    <!--Gionee Jingjc 20121101 add for CR00722601 end -->
+    
+    <!--Gionee <zengxuanhui> <2013-04-26> add for CR00797390 begin-->
+    <bool name="def_ring_vibration">true</bool>
+    <bool name="def_mms_vibration">true</bool>
+    <bool name="def_notification_vibration">true</bool>
+    <!--Gionee <zengxuanhui> <2013-04-26> add for CR00797390 end-->
+    
+    <!-- Gionee <wangyaohui><2013-05-30> add for R00820909 begin -->
+    <bool name="def_fanfan_widget">false</bool>
+    <!-- Gionee <wangyaohui><2013-05-30> add for R00820909 end -->
+
+    <!-- Gionee <wangyaohui><2013-06-05> add for CR00823496 begin -->
+    <bool name="def_respirationlamp_low_power">true</bool>
+    <bool name="def_respirationlamp_in_charge">true</bool>
+    <bool name="def_respirationlamp_notification">true</bool>
+    <bool name="def_respirationlamp_music">true</bool>
+    <bool name="def_respirationlamp_call">true</bool>
+    <!-- Gionee <wangyaohui><2013-06-05> add for CR00823496 end -->
+
+   <!-- Gionee <wangguojing> <2013-08-19> add for CR00823496 begin -->
+    <bool name="def_ssg_switch">false</bool>
+    <bool name="def_dg_switch">false</bool>
+    <bool name="def_ssg_auto_dial">false</bool>
+    <bool name="def_ssg_call_access">false</bool>
+    <bool name="def_ssg_delay_alarm">true</bool>
+    <bool name="def_ssg_switch_screen">false</bool>
+    <bool name="def_sdg_call_access">false</bool>
+    <bool name="def_sdg_browse_photos">false</bool>
+    <bool name="def_sdg_video_progress">false</bool>
+    <bool name="def_sdg_video_volume">false</bool>
+    <bool name="def_sdg_video_pause">false</bool>
+    <bool name="def_ssg_delay_alarm_show">true</bool>
+    <bool name="def_sdg_browse_photos_show">true</bool>
+
+    <bool name="def_sound_control_switch">false</bool>
+    <bool name="def_sound_control_calling">true</bool>
+    <bool name="def_sound_control_message">true</bool>
+    <bool name="def_sound_control_lockscreen">false</bool>
+    <bool name="def_sound_control_alarmclock">false</bool>
+
+    <bool name="def_guest_mode">false</bool>
+    <bool name="def_first_open_guest_mode">false</bool>
+    <bool name="def_guest_pass_enable">false</bool>
+    <string name="zzzzz_gn_def_guest_pass" translatable="false"></string>
+    <!-- Gionee <wangguojing> <2013-08-19> add for CR00823496 end -->
+
+    <integer name="def_flip_answer_call_default">1</integer>
+    <integer name="def_flip_hangup_call_default">1</integer>
+
+    <bool name="def_button_light_state_default">false</bool>
+
+    <bool name="def_wifi_auto_notify_default">false</bool>
+
+    <bool name="def_align_wake_default">true</bool>
+
+    <!-- gionee wangyaohui 20120614 modify for CR00616258 begin -->
+    <!--
+    <integer name="def_screen_off_timeout">60000</integer>
+    -->
+    <integer name="def_screen_off_timeout">30000</integer>
+    <!-- gionee wangyaohui 20120614 modify for CR00616258 end-->
+
+    <!-- alart miss msg -->
+    <bool name="gn_def_alert_miss_msg">false</bool>
+    <!-- alart miss msg every 5 minutes -->
+    <integer name="gn_def_alert_miss_msg_interval">5</integer>
+
+    <!-- Gionee Jingjc 2012-09-16 add for CR00693470 start -->
+    <bool name="def_auto_lcm_acl">true</bool>
+    <!-- Gionee Jingjc 2012-09-16 add for CR00693470 end -->
+
+    <string name="def_alarm_ring" translatable="false">content://media/internal/audio/media/5</string>
+
+    <string name="def_ringtone2" translatable="false"></string>
+    <string name="def_mms" translatable="false"></string>
+    <string name="def_mms2" translatable="false"></string>
+    
+    <string name="def_theme_package_name" translatable="false">theme</string>
+    <integer name="def_theme_check_package">0</integer>
+    <bool name="def_suspend_button">false</bool>
+    
+    <bool name="def_phone_keyboard">false</bool>
+    <bool name="def_input_method_keyboard">false</bool>
+    <bool name="def_pattern_unlockscreen">false</bool>
+    <bool name="def_small_screen_mode">false</bool>
+    <bool name="def_screen_size">false</bool>
+    
+    <!--Gionee <chenml> <2013-09-25> add for CR00906622 begin-->
+    <bool name="def_sound_control_open_remind">false</bool>
+    <bool name="def_sound_control_close_remind">false</bool>
+    <!--Gionee <chenml> <2013-09-25> add for CR00906622 begin-->
+
+    <!--Gionee <wangguojing> <2013-10-11> add for GPS Optimization begin-->
+    <bool name="def_gps_prompt_remind">true</bool>
+    <!--Gionee <wangguojing> <2013-10-11> add for GPS Optimization end-->
+
+    <!--Gionee <wangguojing> <2013-10-11> add for CR00922210 begin-->
+    <bool name="def_sdg_del_photos">false</bool>
+    <bool name="def_sdg_task_control">false</bool>
+    <bool name="def_ssg_doubleclick_wake">true</bool>
+    <bool name="def_ssg_doubleclick_wake_show">true</bool>
+      <!--Gionee <chenml> <2014-06-18> add for CR01272876 begin  -->
+    <bool name="def_ssg_doubleclick_wake_other">true</bool>
+      <!--Gionee <chenml> <2014-06-18> add for CR01272876 end  -->
+    <!--Gionee <wangguojing> <2013-10-11> add for CR00922210 end-->
+    <bool name="def_ssg_doubleclick_lock">false</bool>
+    <!-- Gionee <bug> <wangyaohui> <2013-10-24> modify for CR00933322 begin -->
+    <bool name="def_fast_operation">false</bool>
+    <string name="def_fast_operation_up_app" translatable="false">com.android.camera/com.android.camera.CameraLauncher</string>
+    <string name="def_fast_operation_right_app" translatable="false">com.tencent.mm/com.tencent.mm.ui.LauncherUI</string>
+    <!-- Gionee <bug> <wangyaohui> <2013-10-24> modify for CR00933322 begin -->
+
+    <!--Gionee <wangguojing> <2013-10-24> add for CR00933390 begin-->
+    <string name="def_virtual_display_devices" translatable="false">0</string>
+    <!--Gionee <wangguojing> <2013-10-24> add for CR00933390 end-->
+    
+    <!--Gionee <wangguojing> <2013-10-24> add for CR00933390 begin-->
+    <bool name="def_glove_patterns">false</bool>
+    <!--Gionee <wangguojing> <2013-10-24> add for CR00933390 end-->
+    
+    <!--Gionee <wangguojing> <2013-11-02> add for CR00943428 begin-->
+    <bool name="def_voice_wake_switch">false</bool>
+    <bool name="def_voice_wake_remind">false</bool>
+    <bool name="def_voice_wake_word">false</bool>
+    <!--Gionee <wangguojing> <2013-11-02> add for CR00943428 end-->
+    
+    <!--Gionee <wangguojing> <2013-11-04> add for CR00942651 begin-->
+    <bool name="def_lcd_effect_adjust">false</bool>
+    <!--Gionee <wangguojing> <2013-11-04> add for CR00942651 end-->
+    
+    <!--Gionee <wangguojing> <2013-11-04> add for CR00944538 begin-->
+    <bool name="def_show_powersave_dialog">false</bool>
+    <!--Gionee <wangguojing> <2013-11-04> add for CR00944538 end-->
+    
+    <!--Gionee <wangguojing> <2013-12-23> add for CR00989512 begin-->
+    <bool name="def_international_roaming_switch">false</bool>
+    <!--Gionee <wangguojing> <2013-12-23> add for CR00989512 end-->
+    <!--Gionee <wangguojing> <2013-12-26> add for CR00992408 begin-->
+    <integer name="def_lcd_color_value">0</integer>
+    <!--Gionee <wangguojing> <2013-12-26> add for CR00992408 end-->
+    <!--Chenyee  ningtao 20180625 modify for CSW1803A-620  begin  -->
+    <integer name="def_lcd_new_color_value">7</integer>
+    <!--Chenyee ningtao  20180625 modify for CSW1803A-620  end  -->
+    <!--Gionee <wangguojing> <2013-12-27> add for CR00993259 begin-->
+    <bool name="def_rotate_camera_open_app">true</bool>
+    <bool name="def_user_experience">true</bool>
+    <!--Gionee <wangguojing> <2013-12-27> add for CR00993259 end-->
+    <!--Gionee <wangguojing> <2013-12-30> add for CR00997383 begin-->
+    <integer name="def_dial_sound_type">0</integer>
+    <!--Gionee <wangguojing> <2013-12-30> add for CR00997383 end-->
+    <!-- Gionee <huangyuncai> <2014-03-04> add for CR01087530 begin-->
+    <integer name="def_notification_disable_reminder">0</integer>
+    <integer name="def_network_speed_display">0</integer>
+    <!-- Gionee <huangyuncai> <2014-03-04> add for CR01087530 end-->
+    <!-- Gionee <chenml> <2014-05-04> add for CR01215994 begin-->
+    <bool name="def_silent_mode">false</bool>
+    <integer name="def_last_volume">12</integer>
+    <integer name="def_volume_music">12</integer>
+    <!-- Gionee <chenml> <2014-05-04> add for CR01215994 end-->
+    <!-- Gionee <wangguojing> <2014-05-19> add for CR01257437 begin-->
+    <bool name="def_adjust_screen_tone">true</bool>
+    <!-- Gionee <wangguojing> <2014-05-19> add for CR01257437 begin-->
+    <!-- Gionee <wangguojing> <2014-05-29> add for CR01272670 begin-->
+    <bool name="def_user_experience_remind">false</bool>
+    <!-- Gionee <wangguojing> <2014-05-29> add for CR01272670 end-->
+    <!-- Gionee <wangguojing> <2014-09-18> add for CR01386770 begin-->
+    <bool name="def_aal_cabc_backup">true</bool>    
+    <!-- Gionee <wangguojing> <2014-09-18> add for CR01386770 end-->
+    
+    <!--Gionee <chenml> <2014-09-25> add for CR01387135 begin-->
+    <string name="def_key_ringtone_data" translatable="false">/system/media/audio/ringtones/CyeeTune.ogg</string>
+    <string name="def_key_ringtone2_data" translatable="false">/system/media/audio/ringtones/CyeeTune.ogg</string>
+    <string name="def_key_notification_data" translatable="false">/system/media/audio/notifications/Crystal.ogg</string>
+    <string name="def_key_mms_data" translatable="false">/system/media/audio/notifications/Crystal.ogg</string>
+    <string name="def_key_mms2_data" translatable="false">/system/media/audio/notifications/Crystal.ogg</string>
+    <string name="def_key_video_data" translatable="false">/system/media/audio/ringtones/CyeeTune.ogg</string>
+    <!--Gionee <chenml> <2014-09-25> add for CR01387135 end-->
+    <!--Gionee <chenml> <2014-09-29> modify for CR001392602 begin-->
+    <integer name="def_is_new_ssg">0</integer>
+    <integer name="def_is_psensor_browse_dg">0</integer>
+    <integer name="def_is_psensor_ctrl_video_dg">0</integer>
+    <integer name="def_sdg_browse_photos_psensor">1</integer>
+    <integer name="def_sdg_browse_photos_show_psensor">0</integer>
+    <integer name="def_sdg_video_pause_psensor">1</integer>
+    <integer name="def_sdg_video_pause_show_psensor">0</integer>
+    <!--Gionee <chenml> <2014-09-29> modify for CR001392602 end-->           
+    <!--Gionee <wangguojing> <2014-10-17> add for CR01397189 begin-->
+    <integer name="def_is_vibration_alert_on">0</integer>
+    <integer name="def_ssg_vibration_alert">0</integer>
+    <integer name="def_ssg_vibration_alert_show">0</integer>
+    <!--Gionee <wangguojing> <2014-10-17> add for CR01397189 end-->
+    <!--Gionee <wangguojing> <2014-10-28> add for CR01403182 begin-->
+    <integer name="def_virtual_key_value">1</integer>
+    <!--Gionee <wangguojing> <2014-10-28> add for CR01403182 end-->
+
+    <!--Gionee <wangguojing> <2014-11-04> add for CR01406835 begin-->
+    <!--gionee yewq 2016-12-19 mdoify for 40147 begin-->
+    <!--<string name="def_black_gesture_e" translatable="false">1:com.android.browser/com.android.browser.GNBrowserActivity</string>-->
+    <string name="def_black_gesture_e" translatable="false">1:com.android.email/com.android.email.activity.Welcome</string>
+    <!--Gionee <GN_Oversea_Bug> <fujiabing> <20170328> add for 77768 begin-->
+    <string name="def_black_gesture_e_ip" translatable="false">1:com.google.android.gm/com.google.android.gm.ConversationListActivityGmail</string>
+    <!--Gionee <GN_Oversea_Bug> <fujiabing> <20170328> add for 77768 end-->
+    <!--<Chenyee <CY_Oversea_Req> <zhaopeng> <20180423> add for CSW1705EI-64 begin -->
+    <string name="def_black_gesture_e_ei" translatable="false">1:com.google.android.gm/com.google.android.gm.ConversationListActivityGmail</string>
+    <!--<Chenyee <CY_Oversea_Req> <zhaopeng> <20180423> add for CSW1705EI-64 end -->
+    <!--Gionee <GN_Oversea_Req> <linzhicong> <20170517> add for #141269 begin-->
+    <string name="def_black_gesture_e_blu" translatable="false">1:com.google.android.gm/com.google.android.gm.ConversationListActivityGmail</string>
+    <!--Gionee <GN_Oversea_Bug> <linzhicong> <20170517> add for #141269 end-->
+    <!--Gionee <GN_Oversea_Req> <linzhicong> <20170523> add for #147092 begin-->
+    <string name="def_black_gesture_e_qm" translatable="false">1:com.google.android.gm/com.google.android.gm.ConversationListActivityGmail</string>
+    <!--Gionee <GN_Oversea_Bug> <linzhicong> <20170523> add for #147092 end-->
+    <!--Chenyee <CY_REQ> <chenyu> <20180510> add for AC/CSW1703A-2504 begin -->
+    <string name="def_black_gesture_e_ac" translatable="false">1:com.google.android.gm/com.google.android.gm.ConversationListActivityGmail</string>
+    <!--Chenyee <CY_REQ> <chenyu> <20180510> add for AC/CSW1703A-2504 end -->
+
+
+    <!-- Chenyee <CY_Bug> <chenyu> <20180127> add for CSW1702A-2711 begin -->
+    <string name="def_black_gesture_e_gorom" translatable="false"></string>
+    <!-- Chenyee <CY_Bug> <chenyu> <20180127> add for CSW1702A-2711 end -->
+
+    <!--gionee yewq 2016-12-19 mdoify for 40147 end-->
+    <string name="def_black_gesture_u_right" translatable="false">1:com.android.camera/com.android.camera.CameraLauncher</string>
+    <string name="def_black_gesture_m" translatable="false">1:com.android.music/com.android.music.MusicScanResultActivity</string>
+    <!--Gionee <GN_Oversea_Req> <linzhicong> <20170517> add for #141269 begin-->
+    <string name="def_black_gesture_m_blu" translatable="false">1:com.google.android.music/com.android.music.activitymanagement.TopLevelActivity</string>
+    <!--Gionee <GN_Oversea_Bug> <linzhicong> <20170517> add for #141269 end-->
+
+    <string name="def_black_gesture_triangular" translatable="false"></string>
+    <string name="def_black_gesture_up_slide" translatable="false"></string>
+    <string name="def_black_gesture_down_slide" translatable="false"></string>
+    <string name="def_black_gesture_default" translatable="false"></string>
+    <bool name="def_is_new_black_gesture_on">false</bool>
+
+    <!--gionee yewq 2016-12-21 modify for 52417 begin-->
+    <integer name="def_torch_support_gesture_config_value">263</integer>
+    <string name="def_black_gesture_o_torch" translatable="false">1:com.cydroid.flashlight/com.cydroid.flashlight.FlashLightActivity</string>
+    <!--gionee yewq 2016-12-21 modify for 52417 end-->
+
+    <bool name="def_ssg_smart_light_screen">false</bool>
+    <bool name="def_ssg_smart_light_screen_show">false</bool>
+    <bool name="def_is_smart_light_screen_on">false</bool>
+    <!--Gionee <wangguojing> <2014-11-04> add for CR01406835 end-->
+
+    <!--Gionee <wangguojing> <2014-11-17> add for CR01412715 begin-->
+    <bool name="def_sdg_light_screen">true</bool>
+    <bool name="def_sdg_light_screen_show">false</bool>
+    <bool name="def_is_sdg_light_screen_on">false</bool>
+
+    <bool name="def_sdg_unlock">true</bool>
+    <bool name="def_sdg_unlock_show">false</bool>
+    <bool name="def_is_sdg_unlock_on">false</bool>
+
+    <bool name="def_sdg_desktop_slide">true</bool>
+    <bool name="def_sdg_desktop_slide_show">false</bool>
+    <bool name="def_is_sdg_desktop_slide_on">false</bool>
+    <!--Gionee <wangguojing> <2014-11-17> add for CR01412715 end-->
+    <bool name="def_cyee_silent_switch">false</bool>
+    <bool name="def_cyee_vibration_switch">true</bool>
+
+    <bool name="def_lockscreen_access">false</bool>
+    <bool name="def_applications_access">true</bool>
+    <integer name="def_black_gesture_config_value">7</integer>
+    
+    <bool name="def_timing_zen_mode">false</bool>
+    <string name="def_zen_mode_days" translatable="false">days:1,2,3,4,5,6,7</string>
+    <integer name="def_zen_mode_condition_index">0</integer>
+
+    <bool name="def_control_center_switch">true</bool>
+    <bool name="def_skylight_switch">true</bool>
+
+    <bool name="def_sdg_switch_music">false</bool>
+    <bool name="def_is_sdg_switch_music_on">false</bool>
+    
+    <bool name="def_sdg_reader">false</bool>
+    <bool name="def_is_sdg_reader_on">false</bool>
+    
+    <bool name="def_blackgesture_support_doublefinger">true</bool>
+
+    <bool name="def_is_fast_camera_on">false</bool>
+    <integer name="def_low_battery_alert_value">15</integer>
+    <bool name="def_is_glove_patterns_on">true</bool>
+    <bool name="def_is_mtk_ipo_on">false</bool>
+    <!--Gionee <lizhipeng> <2015-07-11> add for CR01518122 begin-->
+    <bool name="def_custom_gesture_switch">false</bool>
+    <string name="def_custom_gesture_value" translatable="false"></string>
+    <!--Gionee <lizhipeng> <2015-09-11> add for CR01518122 end-->
+    <bool name="def_is_vibration_effect_on">false</bool>
+    <string name="def_vibration_effect_name" translatable="false">NOTIFICATION_GENERAL</string>
+    
+    <bool name="def_is_remove_wifi_display">false</bool>
+	<!--Gionee <lizhipeng> <2015-07-11> add for CR01527696 begin-->
+    <bool name="def_8605_gesture_switch">false</bool>
+    <!--Gionee <lizhipeng> <2015-09-11> add for CR01527696 end-->
+
+    <string name="def_wirte_diag_config" translatable="false">diag,serial_smd,rmnet_bam,adb</string>
+    
+<!--       Gionee <chenml> <2015-08-19> add for CR01540669 begin -->
+    <string name="def_tranferdata_progress" translatable="false">null</string>
+    <bool name="def_is_exsit_tranferdata" >false</bool>
+<!--    Gionee <chenml> <2015-08-19> add for CR01540669 end -->
+    <bool name="def_is_exist_private_space" >false</bool> 
+    
+     <bool name="def_is_exist_default_storage" >false</bool> 
+     <bool name="def_is_exist_home_key_settings" >false</bool> 
+     <integer name="def_home_key_value">2</integer>
+     
+     <bool name="def_fingerprint_is_front" >false</bool> 
+     <bool name="def_is_screen_saving_on" >true</bool> 
+     
+     <bool name="def_zenmode_allow_important_notice" >true</bool> 
+     <bool name="def_zenmode_public_holidays_enable" >false</bool> 
+     <string name="def_zenmode_public_holidays_info" translatable="false">22:0-7:0</string>
+    <!-- Gionee <lizhipneg> <2015-12-1> add for CR01602143 begin --> 
+     <bool name="def_force_touch_switch" >false</bool> 
+     <bool name="def_force_touch_function_switch" >false</bool> 
+     <bool name="def_force_touch_screen_switch" >false</bool> 
+     <bool name="def_force_touch_open_app_switch" >false</bool> 
+      <integer name="def_force_touch_min_intensity">400</integer>
+      <integer name="def_force_touch_max_intensity">800</integer>
+      <integer name="def_force_touch_thrshold_intensity">150</integer>
+      <integer name="def_multitask_display_style">0</integer>
+      <integer name="def_is__support_whole_beautiface">0</integer>
+      <integer name="def_is_support_ami_nail">0</integer>
+     <!-- Gionee <lizhipneg> <2015-12-1> add for CR01602143 end --> 
+     
+      <integer name="def_display_wechat_avatar">0</integer>
+      <integer name="def_is_exist_left_right_menu">1</integer>
+      <integer name="def_menu_location_state">0</integer>
+      <integer name="def_force_touch_side_position">1</integer>
+      <integer name="def_node_type_left_hand_mode">0</integer>
+      <!-- Chenyee <CY_Settings> <chenyu> <20171113> add for SW17W16BA-24 begin -->
+      <integer name="def_node_type_right_hand_mode">1</integer>
+      <!-- Chenyee <CY_Settings> <chenyu> <20171113> add for SW17W16BA-24 end -->
+
+      <integer name="def_force_touch_mIntensity_level">0</integer>
+      <integer name="def_is_video_dg_on">1</integer>
+      <integer name="def_safeos_protect_switch">0</integer>
+      <integer name="def_home_key_display_switch">0</integer>
+      <integer name="def_support_split_screen">0</integer>
+      <integer name="def_split_screen_switch">1</integer>
+      <integer name="def_app_lock_setting">0</integer>
+      <integer name="def_simulation_location_switch">0</integer>
+      <string name="def_simulation_location_address">116.391 39.9168</string>
+
+    <!--Gionee <liuyb> <2016-05-16> add for CR01700399 begin-->
+    <bool name="def_show_battery_size">false</bool>
+    <string name="def_devices_battery_size" translatable="false">6020mAh</string>
+    <!--Gionee <liuyb> <2016-05-16> add for CR01700399 end-->
+    
+    <!--Gionee <wangguojing> <2016-06-06> add for CR01714531 begin-->
+    <bool name="def_is_exist_voice_call_auot_mode">true</bool>
+    <!--Gionee <wangguojing> <2016-06-06> add for CR01714531 end-->
+    
+    <bool name="def_is_exist_otg_reverse_charging">false</bool>
+    <integer name="def_otg_reverse_charging_state">0</integer>
+
+    <!--Chenyee chenyu  20180927 modify for CSW1703BN-216 begin  -->
+    <integer name="def_pco_change_for_hide_datasever">0</integer>
+    <integer name="def_pco_change_for_switch_datasever">0</integer>
+    <!--Chenyee chenyu  20180927 modify for CSW1703BN-216 end  -->
+
+    <string name="def_cyee_mms_keywords"></string>
+
+    <!--Gionee <GN_Oveasea_Req> <linzhicong> <20170421> add for #117613 beign-->
+    <integer name="def_haptic_feedback_enabled">1</integer>
+    <!--Gionee <GN_Oveasea_Req> <linzhicong> <20170421> add for #117613 end-->
+
+    <bool name="def_support_fingerprint_vibration">false</bool>
+    <integer name="def_fingerprint_vibration">0</integer>
+    <!--Gionee <GN_Oveasea_3rd> <lipeiming> <20170413> add for 102958 beign-->
+    <integer name="def_fingerprint_vibration_symphony">1</integer>
+    <!--Gionee <GN_Oveasea_3rd> <lipeiming> <20170413> add for 102958 end-->
+
+    <bool name="def_support_fast_charge">false</bool>
+    <integer name="def_fast_charge">0</integer>
+
+    <!--Gionee <liuyb> <2016-09-01> add CR01756162 for begin -->
+    <bool name="def_smart_protect_eye_support">false</bool>
+    <integer name="def_smart_protect_eye_now_switch">0</integer>
+    <integer name="def_smart_protect_eye_time_limit_switch">0</integer>
+    <string name="def_smart_protect_eye_begin_time">23:00</string>
+    <string name="def_smart_protect_eye_end_time">07:00</string>
+    <integer name="def_smart_protect_eye_level">9</integer>
+    <!--Gionee <liuyb> <2016-09-01> add CR01756162 for begin -->
+    <bool name="def_show_hide_button">false</bool>
+    <!--Gionee hushengsong 2016-12-01 modify for new GnRespirationLampSettings begin-->
+    <!--Chenyee  ningtao 20180223 modify for CSW1703A-98  begin  -->
+    <bool name="def_cy_screen_display_switch">false</bool>
+    <bool name="def_cy_virtual_gesture_exist">false</bool>
+    <bool name="def_cy_anti_malfunction">false</bool>
+    <!--Chenyee ningtao  20180223 modify for CSW1703A-98  end  -->
+    <!--Chenyee  ningtao 20180301 modify for CSW1703A-555  begin  -->
+    <bool name="def_cy_face_lock_unlock">true</bool>
+    <bool name="def_cy_face_lock_stay">false</bool>
+    <!--Chenyee ningtao  20180301 modify for CSW1703A-555  end  -->
+    <!--Chenyee  ningtao 20180320 modify for CSW1703A-98  begin  -->
+    <bool name="def_cy_square_screen_enabled_always">true</bool>
+    <!--Chenyee ningtao  20180320 modify for CSW1703A-98  end  -->
+    <!--Gionee <GN_Oversea_Req> <luo_jie> <20161223> for 52150 beign-->
+    <bool name="def_respirationlamp_notification_new">true</bool>
+    <bool name="def_respirationlamp_call_new">true</bool>
+    <!--Gionee <GN_Oversea_Req> <luo_jie> <20161223> for 52150 end-->
+    <!--Gionee hushengsong 2016-12-01 modify for new GnRespirationLampSettings end-->
+
+    <!--Gionee <GN_Oversea_Req> <fujiabing> <20170803> for 180104 beign-->
+    <bool name="def_led_lamp_remind_normal">true</bool>
+    <bool name="def_led_lamp_remind_vibrate">true</bool>
+    <bool name="def_led_lamp_remind_silent">true</bool>
+    <bool name="def_led_lamp_remind_low_battery">false</bool>
+    <bool name="def_led_lamp_remind_blink_frequency">false</bool>
+    <!--Gionee <GN_Oversea_Req> <fujiabing> <20170803> for 180104 end -->
+
+    <!-- Gionee <liuyuankun> <2016-10-27> add for emergency begin-->
+    <integer name="cyee_driving_mode">0</integer>
+    <integer name="cyee_driving_switch">1</integer>
+    <integer name="cyee_emergency_switch_on">1</integer>
+    <integer name="cyee_emergency_switch_off">0</integer>
+    <string name="def_emergency_sms_content">I am in emergency need your help.</string>
+    <!-- Gionee <liuyuankun> <2016-10-27> add for emergency end-->
+    <!-- Gionee hushengsong 2016-03-10 modify for CR01650054 begin -->
+    <integer name="def_floating_touch_setting_size">1</integer>
+    <integer name="def_floating_touch_setting_transparency">1</integer>
+    <!-- Gionee hushengsong 2016-03-10 modify for CR01650054 end -->
+    <!--Chenyee <CY_Oversea_Req> <puyan> <20180421> add for CSW1703CX-28 begin-->
+    <!-- freeme.Greg, 20180410. Default Assistan App's Component Name-->
+    <string name="def_assistant_component_name" translatable="false">com.freeme.xyrobot/com.freeme.os.home.activity.FragmentHolder</string>
+    <!--Chenyee <CY_Oversea_Req> <puyan> <20180421> add for CSW1703CX-28 end-->
+
+    <!--Chenyee <CY_Bug> <puyan> <20180425> add for CSW1703CX-10 begin-->
+    <!--freeme,jibowei,20180425,default ime sogou-->
+    <string name="config_default_input_method" translatable="false">com.sohu.inputmethod.sogou/.SogouIME</string>
+    <!--Chenyee <CY_Bug> <puyan> <20180425> add for CSW1703CX-10 end-->
+    <!--Chenyee  ningtao 20180806 modify for CSW1703AC-128  begin  -->
+    <bool name="def_cy_req_super_vivid_switch">false</bool>
+    <!--Chenyee ningtao  20180806 modify for CSW1703AC-128  end  -->
+    <!--Chenyee chenyu  20181011 add for CSW1703CX-1299 begin  -->
+    <integer name="def_boot_sounds">1</integer>
+    <!--Chenyee chenyu  20181011 add for CSW1703CX-1299 end  -->
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Power Laucher</string>
+    <string name="exit_string">Esci dalla modalità estrema</string>
+    <string name="exit_string_title">Esci dalla modalità estrema</string>
+    <string name="ok_string">OK</string>
+    <string name="cancel_string">Annulla</string>
+    <string name="exit_msg">Uscire dalla modalità estrema?</string>
+    <string name="exit_msg1">Il telefono è in carica, uscire dalla modalità estrema?</string>
+    <string name="can_use_time">Tempo in stand-by</string>
+    <string name="need_charging_time">%s in più richiesti per la carica</string>
+    <string name="power_cannotget">Impossibile stimare</string>
+    <string name="power_hours">Ora</string>
+    <string name="power_minutes">Minuto</string>
+    <string name="is_charging_now">In carica</string>
+    <string name="charged_completely">Carico</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="power_low">inferiore a</string>
+    <string name="control_panel_brightness">Luminosità</string>
+    <string name="activity_title_add_apps">Aggiungi app</string>
+    <string name="add_app">Aggiungi</string>
+    <string name="system_process">Processo del sistema</string>
+    <string name="social_app">Applicazione social</string>
+    <string name="remaining_time">Stand-by:</string>
+    <string name="remaining_time_2">Tempo d\'uso:</string>
+    <plurals name="remaining_time_hour">
+        <item quantity="one">1 h </item>
+        <item quantity="other">%d h </item>
+    </plurals>
+    <plurals name="remaining_time_minute">
+        <item quantity="one">1 min</item>
+        <item quantity="other">"%d min"</item>
+    </plurals>
+    <string name="settings">Impostazioni</string>
+    <string name="settings_activity_title">Impostazioni</string>
+    <string name="pref_title_mobile_data">Dati mobili</string>
+    <string name="pref_title_wifi">WLAN</string>
+    <string name="on">Attivata</string>
+    <string name="off">Disattivato</string>
+    <string name="no_sim">Nessuna scheda SIM</string>
+    <string name="guide_text_1">1. Connetti ai dati mobili o alla rete WLAN qui</string>
+    <string name="guide_text_2">2. \"Esci\" è qui</string>
+    <string name="guide_text_6">Nella modalità estrema, alcune funzionalità potrebbero non essere eseguite normalmente</string>
+    <string name="guide_text_got_it">Lo so</string>
+</resources>

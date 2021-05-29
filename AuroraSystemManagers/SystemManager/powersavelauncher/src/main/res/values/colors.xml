@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_text_color">#cccccc</color>
+    <color name="white_color">#ffffff</color>
+
+    <!--<color name="common_green_bg">#314d79</color>-->
+    <!--guoxt modify for CSW1702A-3337 begin-->
+    <color name="common_green_bg">#00a3e4</color>
+    <!--guoxt modify for CSW1702A-3337 end-->
+
+    <drawable name="common_blue_bg">@color/common_green_bg</drawable>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/rubbish_clean_settings"
+                class="com.cydroid.systemmanager.rubbishcleaner.RubbishCleanSettingsFragmentWheatek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/power_settings"
+                class="com.cydroid.softmanager.powersaver.fragment.PowerManagerSettingsFragmentWheatek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/memory_settings"
+                class="com.cydroid.softmanager.trafficassistant.TrafficSettingsPrefsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/systemmanager_settings"
+                class="com.cydroid.softmanager.SettingPrefsFragmentWheatek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

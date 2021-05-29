@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Power Laucher</string>
+    <string name="exit_string">Izađi iz načina ekstremne uštede energije</string>
+    <string name="ok_string">Potvrdi</string>
+    <string name="cancel_string">Otkaži</string>
+    <string name="exit_msg">Da li ste sigurni da izađete iz ekstremnog načina?</string>
+    <string name="exit_msg1">Telefon se puni,da li ste sigurni da izađete iz ekstremnog režima?</string>
+    <string name="can_use_time">Vrijeme mirovanja</string>
+    <string name="need_charging_time">%sviše se mora naplaćivati</string>
+    <string name="power_cannotget">Ne mogu se procijeniti</string>
+    <string name="power_hours">Sat</string>
+    <string name="power_minutes">Minut</string>
+    <string name="is_charging_now">Punjenje</string>
+    <string name="charged_completely">Napunjen</string>
+    <string name="am">Prijepodne</string>
+    <string name="pm">Popodne</string>
+    <string name="power_low">niža od</string>
+    <string name="control_panel_brightness">Osvjetljenje</string>
+    <string name="activity_title_add_apps">Dodajte aplikacije</string>
+    <string name="add_app">Dodaj</string>
+    <string name="system_process">Sistemski proces</string>
+    <string name="social_app">Socijalna aplikacija</string>
+    <string name="remaining_time">Pričekaj:</string>
+    <string name="remaining_time_2">Koristite vrijeme:</string>
+    <plurals name="remaining_time_hour">
+        <item quantity="one">1 h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="remaining_time_minute">
+        <item quantity="one">1 min</item>
+        <item quantity="other">"%d min"</item>
+    </plurals>
+    <string name="settings">Postavke</string>
+    <string name="settings_activity_title">Postavke</string>
+    <string name="pref_title_mobile_data">Mobilni podaci</string>
+    <string name="pref_title_wifi">Wi-Fi</string>
+    <string name="on">Uključeno</string>
+    <string name="off">Isključeno</string>
+    <string name="no_sim">Nije ubačena SIM kartica</string>
+    <string name="guide_text_1">1. Povežite mobilne podatke ili Wi-Fi ovde</string>
+    <string name="guide_text_2">2. \ "Exit \" je ovde</string>
+    <string name="guide_text_6">Neke funkcije neke aplikacije možda neće normalno raditi u ekstremnom načinu rada</string>
+    <string name="guide_text_got_it">Znam</string>
+</resources>

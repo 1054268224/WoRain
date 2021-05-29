@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gn_datasaver_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/listview_height"
+    android:background="?attr/listChoiceBackgroundIndicator"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/img_traffic_save_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/image_margin_left"
+        app:srcCompat="@drawable/traffic_save_switch" />
+
+    <cyee.widget.CyeeTextView
+        style="@style/GnSubTitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/data_saver"
+        android:textSize="@dimen/textsize_level_one"
+        android:textColor="@color/textcolor_level_one"
+        android:paddingStart="@dimen/image_margin_left"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/traffic_menu_arrow_margin_right"
+        app:srcCompat="@drawable/right_arrow" />
+
+</LinearLayout>

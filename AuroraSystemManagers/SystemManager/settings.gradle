@@ -1,0 +1,7 @@
+include ':powersavelauncher'
+include ':mylibrary'
+include ':core'
+include ':ui'
+include ':app'
+rootProject.name = "SystemManager"
+

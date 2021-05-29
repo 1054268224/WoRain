@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cyee_AlertDialogListItemHeight"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/cyee_alert_dialog_title_margin_left" >
+
+    <cyee.widget.CyeeCheckedTextView
+        android:id="@id/cyee_text1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/cyee_list_item_tailicon_margin_right"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="?attr/cyee_dialog_content_text_color"
+        android:textSize="@dimen/cyee_textSizeAlertDialogListItem" />
+
+</LinearLayout>

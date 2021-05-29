@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="cyee_action_bar_title" />
+    <item type="id" name="cyee_action_bar_subtitle" />
+    <item type="id" name="cyee_action_bar_back" />
+    <item type="id" name="cyee_action_bar_icon" />
+    <item type="id" name="cyee_alert_dialog_title" />
+    <item type="id" name="cyee_dialog_cancel_icon" />
+    <item type="id" name="cyee_alert_dialog_icon"  />
+    <item type="id" name="cyee_message"  />
+    <item type="id" name="cyee_pickers"  />
+    <item type="id" name="month_day_layout"  />
+    <item type="id" name="cyee_calendar_view"  />
+    <item type="id" name="cyee_day"  />
+    <item type="id" name="cyee_numberpicker_input"  />
+    <item type="id" name="cyee_month"  />
+    <item type="id" name="cyee_year"  />
+    <item type="id" name="cyee_datePicker"  />
+    <item type="id" name="cyee_timePicker"  />
+    <item type="id" name="cyee_increment"  />
+    <item type="id" name="cyee_decrement"  />
+    <item type="id" name="cyee_progress"  />
+    <item type="id" name="cyee_progress_number"  />
+    <item type="id" name="cyee_progress_percent"  />
+    <item type="id" name="cyee_hour"  />
+    <item type="id" name="cyee_minute"  />
+    <item type="id" name="cyee_amPm"  />
+    <item type="id" name="cyee_toolbar_group"  />
+    <item type="id" name="cyee_toolbar_position_arrow"  />
+    <item type="id" name="cyee_title"  />
+    <item type="id" name="cyee_icon"  />
+    <item type="id" name="cyee_checkbox"  />
+    <item type="id" name="cyee_edittext_container"  />
+    <item type="id" name="cyee_list_footer"  />
+    <item type="id" name="cyee_prefs_frame"  />
+    <item type="id" name="cyee_headers"  />
+    <item type="id" name="cyee_prefs"  />
+    <item type="id" name="cyee_button_bar"  />
+    <item type="id" name="cyee_back_button"  />
+    <item type="id" name="cyee_skip_button"  />
+    <item type="id" name="cyee_next_button"  />
+    <item type="id" name="cyee_seekbar"  />
+    <item type="id" name="cyee_switchWidget"  />
+    <item type="id" name="cyee_contentPanel"  />
+    <item type="id" name="cyee_topPanel"  />
+    <item type="id" name="cyee_buttonPanel"  />
+    <item type="id" name="cyee_customPanel"  />
+    <item type="id" name="cyee_custom"  />
+    <item type="id" name="cyee_titleDivider"  />
+    <item type="id" name="cyee_titleDividerTop"  />
+    <item type="id" name="cyee_cancel"  />
+    <item type="id" name="cyee_title_template"  />
+    <item type="id" name="cyee_alertTitle"  />
+    <item type="id" name="cyee_scrollView"  />
+    <item type="id" name="cyee_button1"  />
+    <item type="id" name="cyee_button2"  />
+    <item type="id" name="cyee_button3"  />
+    <item type="id" name="cyee_text1"  />
+    <item type="id" name="cyee_magic_bar_bg"  />
+    <item type="id" name="cyee_overlap"  />
+    <item type="id" name="cyee_magic_bar"  />
+    <item type="id" name="cyee_magicbar_shadow"  />
+    <item type="id" name="cyee_magicbar_tab"  />
+    <item type="id" name="cyee_icon0"  />
+    <item type="id" name="cyee_icon1"  />
+    <item type="id" name="cyee_icon2"  />
+    <item type="id" name="cyee_icon3"  />
+    <item type="id" name="cyee_icon4"  />
+    <item type="id" name="cyee_divider"  />
+    <item type="id" name="cyee_listview"  />
+    <item type="id" name="cyee_magic_listitem_textview"  />
+    <item type="id" name="cyee_magic_listitem_checkbox"  />
+    <item type="id" name="cyee_action_bar_container"  />
+    <item type="id" name="cyee_action_bar"  />
+    <item type="id" name="cyee_up"  />
+    <item type="id" name="cyee_action_bar_intellgent_container"  />
+    <item type="id" name="cyee_content"  />
+    <item type="id" name="cyee_shortcut"  />
+    <item type="id" name="cyee_action_bar_overlay_layout"  />
+    <item type="id" name="cyee_action_context_bar"  />
+    <item type="id" name="cyee_split_action_bar"  />
+    <item type="id" name="cyee_action_mode_close_button"  />
+    <item type="id" name="cyee_home"  />
+    <item type="id" name="cyee_empty_view"  />
+    <item type="id" name="cyee_action_menu_presenter"  />
+    <item type="id" name="cyee_search_button"  />
+    <item type="id" name="cyee_search_src_text"  />
+    <item type="id" name="cyee_search_edit_frame"  />
+    <item type="id" name="cyee_search_plate"  />
+    <item type="id" name="cyee_search_background"  />
+    <item type="id" name="cyee_search_go_btn"  />
+    <item type="id" name="cyee_search_close_btn"  />
+    <item type="id" name="cyee_search_voice_btn"  />
+    <item type="id" name="cyee_edit_query"  />
+    <item type="id" name="cyee_resolver_grid"  />
+    <item type="id" name="cyee_button_always"  />
+    <item type="id" name="cyee_button_once"  />
+    <item type="id" name="cyee_actionbar_container_stub"  />
+    <item type="id" name="cyee_substance_bar"  />
+    <item type="id" name="cyee_time_picker"  />
+    <item type="id" name="cyee_search_bar"  />
+    <item type="id" name="cyee_magicbar_backgroud"  />
+    <item type="id" name="cyee_expandable_list_group_divider"  />
+    <item type="id" name="cyee_preference_title_layout"  />
+    <item type="id" name="cyee_right_button"  />
+    <item type="id" name="cyee_multichoice_selectedCount"  />
+    <item type="id" name="cyee_multichoice_selectall"  />
+    <item type="id" name="tabHost"  />
+    <item type="id" name="title_tv"  />
+    <item type="id" name="cyee_month_day_layout" />
+    <item type="id" name="cyee_magic_listpublic_textview" />
+    <item type="id" name="cyee_magic_listpublic_checkbox" />
+    <item type="id" name="cyee_customView" />
+    <item type="id" name="cyee_menuIcon" />
+    <item type="id" name="cyee_menuTitle" />
+    <item type="id" name="cyee_forcetouch_custom_view" />
+    <item type="id" name="cyee_forcetouch_indicator" />
+    <item type="id" name="cyee_submenuIcon" />
+    <item type="id" name="cyee_menuIconContainer" />
+    <item type="id" name="cyee_submenuIcon_layout"/>
+
+    <item type="id" name="cyee_lunar_mode_rl"/>
+    <item type="id" name="cyee_lunar_mode_cb"/>
+    <item type="id" name="cyee_auto_matic"/>
+    <item type="id" name="cyee_parentPanel"/>
+    <item type="id" name="cyee_button_item"/>
+    <item name="cyee_category_divider" type="id"/>
+    <item name="cyee_preference_divider" type="id"/>
+    <item name="cyee_preference_bottom_line" type="id"/>
+    <item name="cyee_preference_result" type="id"/>
+    <item name="cyee_preference_arrow_id" type="id"/>
+    <item name="cyee_btn3_divider" type="id"/>
+    <item name="cyee_magicbar_tab_divider" type="id"/>
+    <item name="cyee_btn2_divider" type="id"/>
+    <item name="cyee_dialog_multichoice_divider" type="id"/>
+    <item name="cyee_dialog_button1" type="id"/>
+    <item name="cyee_dialog_button2" type="id"/>
+    <item name="cyee_dialog_button3" type="id"/>
+    <item name="cyee_expandable_divider" type="id"/>
+    <item name="cyee_dialog_singlechoice_divider" type="id"/>
+    <item name="cyee_category_btn" type="id"/>
+    <item name="cyee_category_btn_container" type="id"/>
+    <item name="cyee_tail_icon" type="id"/>
+    <item name="cyee_internalEmpty" type="id"/>
+    <item name="cyee_checkbox_key_tag" type="id"/>
+    <item name="cyee_dialog_list_view" type="id"/>
+
+    <item name="cyee_timeday_frame" type="id"/>
+    <item name="cyee_day_spinner" type="id"/>
+    <item name="cyee_time_spinner" type="id"/>
+    <item name="cyee_lunar_switch" type="id"/>
+    <item name="cyee_time_day_spinner" type="id"/>
+    <item name="cyee_menu_list" type="id"/>
+    <item name="cyee_menu_scrollview" type="id"/>
+    <item name="cyee_qr_code_btn" type="id"/>
+    <item name="cyee_category_top_line" type="id"/>
+    <item name="cyee_category_title_layout" type="id"/>
+    <item name="cyee_category_bottom_line" type="id"/>
+    <item name="cyee_listview_last_bottom_divider_id" type="id"/>
+    <item name="cyee_ll_footview" type="id"/>
+    <item name="cyee_profile_button" type="id"/>
+</resources>

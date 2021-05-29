@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScoreCountView">
+        <attr name="number_scroll_speed" format="integer"/>
+        <attr name="number_size" format="dimension"/>
+        <attr name="number_color" format="color"/>
+        <attr name="number_style">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr>
+
+        <attr name="unit" format="string"/>
+        <attr name="unit_size" format="dimension"/>
+        <attr name="unit_color" format="color"/>
+        <attr name="unit_style">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr>
+
+        <attr name="hint_size" format="dimension"/>
+        <attr name="hint_color" format="color"/>
+        <attr name="hint_style">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr>
+
+        <attr name="number_hint_margin" format="dimension"/>
+
+        <attr name="size" format="dimension"/>
+        <attr name="show_external_circle" format="boolean"/>
+        <attr name="show_inner_circle" format="boolean"/>
+        <attr name="show_animball" format="boolean"/>
+        <attr name="rotate_animator" format="boolean"/>
+
+        <attr name="score_view_unit_size" format="dimension"/>
+    </declare-styleable>
+    <string-array name="score_exam_hint" translatable="false">
+        <item></item>
+        <item>.</item>
+        <item>..</item>
+        <item>...</item>
+    </string-array>
+
+    <declare-styleable name="AnimBallView">
+        <attr name="radius_size" format="float"/>
+        <attr name="ball_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleBarTwoSider">
+        <attr name="circle_stroke_width" format="dimension"/>
+        <attr name="press_extra_stroke_width" format="dimension"/>
+        <attr name="text_size" format="dimension"/>
+    </declare-styleable>
+</resources>

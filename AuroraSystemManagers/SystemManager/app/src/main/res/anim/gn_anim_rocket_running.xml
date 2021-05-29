@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 
+    <translate
+        android:startOffset="0"
+        android:duration="250"
+        android:fromXDelta="-3"
+        android:toXDelta="0"
+        android:fromYDelta="24"
+        android:toYDelta="-18"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator" />
+
+    <scale
+        android:startOffset="0"
+        android:duration="250"
+        android:fillAfter="false"
+        android:fromXScale="1.051"
+        android:fromYScale="0.925"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator" />
+ -->
+    <!-- /////////////////////////////////////////// -->
+    <translate
+        android:duration="500"
+        android:fromXDelta="0"
+        android:toXDelta="-3"
+        android:fromYDelta="-18"
+        android:toYDelta="80"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator" />
+
+    <scale
+        android:duration="500"
+        android:fillAfter="false"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.051"
+        android:toYScale="0.925"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator" />
+
+    <!-- ////////////////////////////////////////// -->
+
+    <translate
+        android:startOffset="500"
+        android:duration="300"
+        android:fromXDelta="-3"
+        android:toXDelta="5"
+        android:fromYDelta="0"
+        android:toYDelta="-600"
+        android:interpolator="@android:anim/accelerate_interpolator" />
+
+    <scale
+        android:startOffset="500"
+        android:duration="300"
+        android:fillAfter="false"
+        android:fromXScale="1.051"
+        android:fromYScale="0.925"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="0.869"
+        android:toYScale="1.682"
+        android:interpolator="@android:anim/accelerate_interpolator" />
+
+</set>

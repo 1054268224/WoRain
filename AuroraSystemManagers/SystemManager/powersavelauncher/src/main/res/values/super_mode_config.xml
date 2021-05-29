@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="super_mode_systemapplist">
+        <item>com.android.contacts</item>
+        <item>com.android.mms</item>
+
+        <item>com.android.deskclock</item>
+        <item>com.cydroid.gallery</item>
+        <item>com.android.calculator2</item>
+        <item>com.cydroid.note</item>
+        <item>com.android.calendar</item>
+        <!-- Chenyee xionghg 20171228 add for SW17W16BA-138 begin -->
+        <item>com.google.android.calendar</item>
+        <!-- Chenyee xionghg 20171228 add for SW17W16BA-138 end -->
+        <!-- 未冻结, 但不显示在列表中 -->
+        <!-- <item>com.android.email</item> -->
+        <!-- Gmail -->
+        <!-- <item>com.google.android.gm</item> -->
+        <!-- <item>com.android.chrome</item> -->
+    </string-array>
+
+    <string-array name="super_mode_socialapplist">
+        <!-- Whatsapp -->
+        <item>com.whatsapp</item>
+        <!-- Facebook -->
+        <item>com.facebook.katana</item>
+        <!-- Facebook Lite -->
+        <item>com.facebook.lite</item>        
+        <!-- Messenger -->
+        <item>com.facebook.arco</item>
+        <item>com.facebook.orca</item>
+        <!-- Messenger Lite -->
+        <item>com.facebook.mlite</item>
+        <!-- Hike, 印度版的微信 -->
+        <item>com.bsb.hike</item>
+        <!-- Imo -->
+        <item>com.imo.android.imoim</item>
+
+    </string-array>
+
+    <!-- Chenyee guoxt modify for CSW1703CX-249 begin -->
+    <string-array name="super_mode_socialapplist_xiaolajiao">
+        <!-- Whatsapp -->
+        <item>com.whatsapp</item>
+        <!-- Facebook -->
+        <item>com.facebook.katana</item>
+        <!-- Facebook Lite -->
+        <item>com.facebook.lite</item>        
+        <!-- Messenger -->
+        <item>com.facebook.arco</item>
+        <item>com.facebook.orca</item>
+        <!-- Messenger Lite -->
+        <item>com.facebook.mlite</item>
+
+        <!-- 供测试, 正式版删除 -->
+         <item>com.tencent.mm</item> 
+         <item>com.tencent.mobileqq</item> 
+         <item>com.tencent.mobileqqi</item>
+         <item>com.immomo.momo</item>
+         <item>com.sina.weibo</item>
+       <item>com.ptns.da.zy</item>
+    </string-array>
+    <!-- Chenyee guoxt modify for CSW1703CX-249 end -->
+
+</resources>

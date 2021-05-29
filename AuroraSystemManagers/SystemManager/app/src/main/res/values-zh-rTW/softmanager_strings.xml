@@ -1,0 +1,228 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- SoftManager begin -->
+    <string name="title_activity_soft_manager">應用管理</string>
+    <string name="title_activity_permission_mrg">應用許可權</string>
+    <string name="text_load">加載中&#8230;</string>
+    <string name="text_system_space">系統空間</string>
+    <string name="text_internal_storage">內部存儲</string>
+    <string name="text_total_internal">內部記憶體</string>
+    <string name="text_total_sd">SD卡</string>
+    <string name="text_available_space">可用</string>
+    <string name="text_used_space">已用 </string>
+    <string name="gn_sdcard_unmounted">SD卡不可用</string>
+    <string name="gn_internal_unmounted">內部記憶體不可用</string>
+    <!-- Remove Package -->
+    <string name="title_activity_remove_package">應用卸載</string>
+    <string name="uninstall">卸載</string>
+    <string name="text_no_third_app">沒有可卸載的應用</string>
+    <string name="summary_no_third_app">手機未安裝第三方應用，請先去市場下載</string>
+    <!-- Move Package -->
+    <string name="title_activity_move_pacakge">應用搬家</string>
+    <string name="text_moving">正在移動...</string>
+    <string name="text_btn_move_to_sdcard">移至SD卡</string>
+    <string name="text_btn_move_to_internal">移至內部存儲</string>
+    <string name="text_btn_move_to_phone_internal">移至系統空間</string>
+    <string name="text_move_failed_doesnt_exist">"移動[<xliff:g>%1$s</xliff:g>]失敗，應用不存在(可能該應用存儲在SD卡上，但SD卡已移除)"</string>
+    <string name="text_move_failed_doesnt_exist_not_surport">"移動失敗，應用不存在或當前為存儲模式"</string>
+    <string name="text_no_sd_card">SD卡不存在</string>
+    <string name="text_no_sd_card_not_surport">存儲模式下無法移動應用</string>
+    <string name="text_move_failed_insufficient_storage">"移動[<xliff:g>%1$s</xliff:g>]失敗，空間不足"</string>
+    <string name="text_move_failed_internal_error">移動[<xliff:g>%1$s</xliff:g>]失敗,SD卡不存在或空間不足</string>
+    <string name="text_move_failed_operation_pending">移動失敗，操作頻繁</string>
+    <string name="text_move_failed_unkown_reason">移動[<xliff:g>%1$s</xliff:g>]失敗</string>
+    
+    <string name="text_no_app_has_permission">沒有涉及該許可權的應用</string>
+    <string name="text_no_app_has_nopermission">沒有禁止該許可權的應用</string>
+    <string name="text_no_permission">沒有與該許可權相關的應用</string>
+    <string name="text_allow_permission">已允許</string>
+    <string name="text_forbidden_permission">已禁止</string>
+    <string name="text_allow">允許</string>
+    <string name="text_forbidden">禁止</string>
+    <string name="text_ask">詢問</string>
+    <!-- Default Soft -->
+    <string name="title_activity_default_mrg">默認應用</string>
+    <string name="text_software_def_not_set">沒有設置默認應用</string>
+    <string name="title_software_def_not_set">無默認</string>
+    <string name="text_no_installed">沒有安裝此類應用</string>
+    
+    <string name="item_summary_app_uninstall">"共<xliff:g>%1$s</xliff:g>款用戶應用可卸載"</string>
+    <string name="item_summary_app_freeze">"共<xliff:g>%1$s</xliff:g>款系統預裝應用可停用並隱藏"</string>
+    
+    <string name="storage_unmounted">存儲模式下無法獲得記憶體資訊</string>
+    
+    <string name="no_app_system_space">系統空間無應用</string>
+    <string name="no_app_internal">內部存儲無應用</string>
+    <string name="no_app_sd">SD卡無應用</string>
+    
+    <string name="permission_pre">"已禁止<xliff:g>%1$s</xliff:g>"</string>
+    <string name="permission_pre1">"已允許<xliff:g>%1$s</xliff:g>"</string>
+    <string name="permission_end">"<xliff:g>%1$s</xliff:g>的許可權"</string>
+   
+    <string name="read_sms_mms">讀取彩信</string>
+    <string name="send_sms_mms">發送彩信</string>
+    <string name="write_sms_mms">寫入/刪除彩信</string>
+    
+    <string name="nfc_switch_open">NFC已打開</string>
+    <string name="nfc_switch_close">NFC已關閉</string>
+    
+    <string name="text_permission_mrg">按許可權分類</string>
+    <string name="text_permission_mrg_app">按應用分類</string>
+    
+    <string name="itrust">"我信任該應用"</string>
+    <string name="itrust_second">"開啟後系統將不會攔截該應用的所有權限操作"</string>
+    <string name="perm_default">默認</string>
+    <string name="permlab_readMms">"讀取您的彩信"</string>
+    <string name="permlab_writeMms">"寫入/刪除您的彩信"</string>
+    <string name="perm_send_mms">"發送彩信"</string>
+    
+    <string name="has_no_trust_permission">"沒有涉及隱私和安全的相關許可權"</string>
+    <string name="app_permission_count">"涉及<xliff:g>%1$s</xliff:g>項隱私和安全的許可權"</string>
+    
+    <string name="text_no_privacy_has_permission">"沒有涉及隱私與安全的相關應用"</string>
+    
+    <string name="permission_remind">"提示"</string>
+    <string name="permission_important">"重要"</string>
+    
+    <string name="permission_grade">"許可權信任等級"</string>
+    <string name="recommend_use">"(推薦使用)"</string>
+    <string name="app_freeze">"應用凍結"</string>
+    <string name="text_freeze">"可凍結"</string>
+    <string name="text_freezed">"已凍結"</string>
+    
+    <string name="text_freeze_btn">"凍結"</string>
+    <string name="text_freezeing_btn">"正在凍結"</string>
+    <string name="text_freezed_btn">"還原"</string>
+    <string name="freeze_title">"凍結提醒"</string>
+    <string name="freeze_message">"凍結該應用可能導致部分功能異常，是否凍結？"</string>
+    <string name="freeze_note">"小貼士：凍結的應用可到“已凍結”列表中還原"</string>
+    <string name="freeze_cancel">"取消"</string>
+    <string name="freeze_continue">"確定"</string>
+    <string name="text_no_freezed_app">"沒有已凍結應用"</string>
+    <string name="text_no_freeze_app">"沒有能凍結應用"</string>
+    <!--  Gionee: mengdw <2015-10-13> modify for CR01566749  begin -->
+    <string name="app_monitor_title">"本周最不常用應用"</string>
+    <!--  Gionee: mengdw <2015-10-13> modify for CR01566749  end -->
+    <string name="app_frequency">"不常用應用"</string>
+    <string name="app_frequency_title">"一個月內應用使用的頻率:"</string>
+    <string name="app_frequency_nerver">"1個月以上未使用"</string>
+    <string name="app_frequency_often">"<xliff:g>%1$s</xliff:g>天未使用"</string>
+    <string name="app_frequency_always">"<xliff:g>%1$s</xliff:g>天未使用 "</string>
+    <string name="app_frequency_today">"今日使用"</string>
+    
+    <!--Gionee <jianghuan> <2014-03-28> modify for CR01097010 begin -->
+    <string name="root_repair_title">"ROOT監控提醒"</string>
+    <string name="root_ota_repair_content">"系統已被ROOT，系統檔已嚴重損壞，可能會造成手機無法正常使用，建議馬上修復。"</string>
+    <string name="root_repair_content">"系統已被ROOT，可能會造成帳號密碼、聯繫人資訊的洩漏。建議進行一鍵修復。"</string>
+    <string name="button_close">"關閉"</string>
+    <string name="button_repair">"一鍵修復"</string>
+    <string name="button_ota_repair">"去修復"</string>
+    <string name="toast_repair_success">"系統修復成功"</string>
+    <string name="toast_repair_fail">"系統未修復成功，建議進行OTA修復"</string>
+    <string name="ota_risk_relieve_title">"系統修復成功"</string> 
+    <string name="ota_risk_relieve_content">"ROOT風險已解除"</string> 
+    <!--Gionee <jianghuan> <2014-03-28> modify for CR01097010 end -->
+    
+    <string name="sd_card_title">"SD卡"</string>
+    <string name="uninstall_sort">"切換視圖"</string> 
+    <string name="uninstall_header_name">按應用名稱排序</string>
+    <string name="uninstall_header_time">"按安裝時間排序"</string>
+    <string name="uninstall_header_frequency">"按使用頻率排序"</string>
+    <string name="uninstall_header_size">"按應用大小排序"</string>
+    
+    <string name="uninstall_app_size">"<xliff:g>%1$s</xliff:g>個應用"</string>
+    
+    <string name="permission_notify">"許可權調用提醒"</string> 
+
+    <!-- SoftManager end -->
+    
+    <!-- Application Manager start -->
+    <string name="phone_inner_storage">"手機存儲"</string>
+    <string name="single_phone_inner_storage">"手機存儲"</string>
+    <string name="phone_outer_sd_storage">SD卡</string>
+    <!-- Application Manager end -->
+    
+    <string name="single_progress_title">已用</string>
+    <string name="single_progress_sign">%</string>
+    
+    <string name="move_to_internal">搬到內部存儲</string>
+    <string name="move_to_sdcard">搬到SD卡</string>
+    <string name="move_to_systemspace">搬到系統空間</string>
+    <string name="moving_app">正在移動</string>
+    <string name="moving_wait">搬家中,請稍等,可點擊HOME鍵返回桌面</string>
+    
+    <string name="green_background">綠色後臺</string>
+    <string name="green_background_off">綠色後臺未開啟</string>
+    <string name="green_background_on">綠色後臺已開啟</string>
+    
+    <!--  <string name="green_summary_string1">"綠色後臺已關閉"</string>-->
+    <string name="green_summary_string">"為了防止應用程式後臺自行運行偷跑流量、推送垃圾資訊,建議開啟綠色後臺"</string>
+    <string name="green_summary_string1">"為了防止應用程式後臺自行運行偷跑流量、推送垃圾資訊"</string>
+    <string name="green_summary_string2">"建議開啟綠色後臺"</string>
+    
+     <string name="green_summary_on_string1">"開啟綠色後臺後"</string> 
+    <string name="green_summary_on_string2">"在手機滅屏2分鐘、記憶體低於20%及在遊戲檔夾裏"</string>
+    <string name="green_summary_on_string3">"啟動遊戲時,系統會自動清理應用並禁止自啟"</string>
+    <string name="green_summary_on_string4">"保障手機流暢"</string> 
+    <string name="green_summary_on_string">"開啟綠色後臺後,在手機滅屏2分鐘、記憶體低於20%及在遊戲檔夾裏,啟動遊戲時,系統會自動清理應用並禁止自啟,保障手機流暢"</string> 
+    <string name="green_summary_on">"已開啟"</string>
+    <string name="green_summary_off">"已關閉"</string>
+    <string name="allow_background_app">"已允許後臺運行的應用"</string>
+    <string name="green_whitelist_manage">"管理"</string>
+    <string name="text_no_green_whitelist">"沒有允許後臺運行的應用"</string>
+    <string name="text_no_whitelist">"沒有發現第三方應用"</string>
+    
+    <string name="app_not_exit">"該應用已不存在，請確認是否已被卸載"</string>
+    <string name="app_auto_start">"應用自啟"</string>
+    <string name="select_all">"全選"</string>
+    <string name="unselect_all">"取消全選"</string>
+    <string name="system_move_app_size">"<xliff:g>%1$s</xliff:g>個安裝在系統空間"</string>
+    <string name="internal_move_app_size">"<xliff:g>%1$s</xliff:g>個安裝在內部存儲"</string>
+    <string name="sdcard_move_app_size">"<xliff:g>%1$s</xliff:g>個安裝在外部SD卡"</string>
+    <string name="select_default_text">"選擇<xliff:g>%1$s</xliff:g></string>
+    
+    <!-- 
+    <string name="green_bg_dialog_title">"開啟綠色後臺"</string> 
+    <string name="green_bg_dialog_msg">"綠色後臺會清理白名單外的後臺應用,建議\n將常用的應用加入白名單,避免影響使用\n是否開啟綠色後臺?"</string> 
+ 	<string name="green_bg_dialog_ok">"開啟"</string> 
+    <string name="green_bg_dialog_cancel">"取消"</string>
+     -->
+    <string name="green_bg_notifi_title">"綠色後臺開啟提醒"</string>
+    <string name="green_bg_notifi_content">"綠色後臺開啟後會清理白名單外的後臺應用,建議將常用的應用加入白名單,以免影響使用."</string> 
+    
+    <string name="auto_start_head_text">已允許%1$d個</string>
+    <string name="removed">已移除</string>
+    <string name="title_about">關於</string>
+    <string name="app_freeze_prompt_info">應用被凍結後，效果和卸載類似；您可以選擇將不常用的應用凍結，在需要使用時將它還原。還原後它會出現在桌面最後的位置，且其小插件要重新設置。</string> 
+    <string name="app_freeze_prompt_btn">我知道了</string>
+    <string name="text_no_freezed_app_first">應用被凍結，效果和卸載相似，它將在桌面隱藏，也不會在後臺運行，更不會偷跑流量， 可以讓手機更加省電。</string>
+    <string name="text_no_freezed_app_second">您可以選擇將不常用的應用凍結，在需要使用時將它還原。還原後，它會出現在桌面最後的位置，且其小插件要重新設置。</string>
+    <string name="txt_add_freeze_app">添加要凍結的應用</string>
+    <string name="txt_freeze_app">凍結</string>
+    <string name="freezed_app_head_text">已有%1$d個應用被凍結</string>
+    <string name="freeze_app_title">添加要凍結的應用</string>
+    <string name="unfreeze_app_toast_format_str">%s已還原到桌面最後的位置</string>
+
+    <string name="app_lock_manager_activity_title">應用密碼</string>
+    <string name="text_app_lock_prompt">加密的應用使用前需輸入密碼，但開啟後不支持分屏</string>
+    <string name="text_no_app_lock_app">沒有可以加密的應用</string>
+    <string name="app_lock_setting_dialog_title">鎖定設置</string>
+    <string name="app_lock_setting_item_1">關閉螢幕後立即鎖定</string>
+    <string name="app_lock_setting_item_2">關閉螢幕或退出應用後立即鎖定</string>
+
+    <!-- 默認軟體設置 -->
+    <string name="ui_def_soft_inputmethod">默認輸入法</string>
+    <string name="ui_def_soft_browser">默認上網應用</string>
+    <string name="ui_def_soft_contact">默認通訊錄</string>
+    <string name="ui_def_soft_launcher">默認桌面</string>
+    <string name="ui_def_soft_camera">默認拍照應用</string>
+    <string name="ui_def_soft_photos">默認查看圖片應用</string>
+    <string name="ui_def_soft_music">默認聽歌應用</string>
+    <string name="ui_def_soft_video">默認看視頻應用</string>
+    <string name="ui_def_soft_reading">默認閱讀應用</string>
+    <!--Chenyee <CY_Oversea_req> <zhaopeng> <20171111> add for 226184 begin-->
+    <string name="autoboot_forbidden_notify_title">限制啟動提醒</string>
+    <string name="autoboot_forbidden_notify_turn_off">關閉提醒</string>
+    <string name="autoboot_forbidden_notify_content">%1$s 在嘗試自動啟動時受到限制。自動啟動可能會導致系統功耗，系統管理員已經控制它。如果某些應用程序無法正常啟動，您可以在“系統管理器 - 應用程序管理器 - 應用程序自動啟動“中允許它。</string>
+    <!--Chenyee <CY_Oversea_req> <zhaopeng> <20171111> add for 226184 end-->
+</resources>

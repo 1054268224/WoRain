@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Power Laucher</string>
+    <string name="exit_string">Exit extrémní mode</string>
+    <string name="exit_string_title">Exit extrémní mode</string>
+    <string name="ok_string">OK</string>
+    <string name="cancel_string">zrušení</string>
+    <string name="exit_msg">Opravdu chcete ukončit extrémní režim?</string>
+    <string name="exit_msg1">Telefon je nabitý, jsou si jisti, že pro ukončení extrémní režim?</string>
+    <string name="can_use_time">Pohotovostní doba</string>
+    <string name="need_charging_time">%s více potřeba být účtovány</string>
+    <string name="power_cannotget">Nelze odhadnout</string>
+    <string name="power_hours">Hodina</string>
+    <string name="power_minutes">Minuta</string>
+    <string name="is_charging_now">nabíjení</string>
+    <string name="charged_completely">nabitá</string>
+    <string name="am">"AM"</string>
+    <string name="pm">"PM"</string>
+    <string name="power_low">nižší než</string>
+    <string name="control_panel_brightness">Jas</string>
+    <string name="activity_title_add_apps">přidání aplikací</string>
+    <string name="add_app">Přidat</string>
+    <string name="system_process">Systémový proces</string>
+    <string name="social_app">sociální aplikace</string>
+    <string name="remaining_time">Pohotovostní:</string>
+    <string name="remaining_time_2">Využít čas:</string>
+    <plurals name="remaining_time_hour">
+        <item quantity="one">1 h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="remaining_time_minute">
+        <item quantity="one">1 min</item>
+        <item quantity="other">"%d min"</item>
+    </plurals>
+    <string name="settings">Nastavení</string>
+    <string name="settings_activity_title">Nastavení</string>
+    <string name="pref_title_mobile_data">Mobilní data</string>
+    <string name="pref_title_wifi">Wi-Fi</string>
+    <string name="on">Na</string>
+    <string name="off">Vypnuto</string>
+    <string name="no_sim">Není vložena SIM karta</string>
+    <string name="guide_text_1">1. Připojte mobilní datové připojení nebo WLAN zde</string>
+    <string name="guide_text_2">2. \"Exit \" je tady</string>
+    <string name="guide_text_6">Některé funkce některých aplikací nemusí pracovat normálně v extrémním režimu</string>
+    <string name="guide_text_got_it">vím</string>
+</resources>

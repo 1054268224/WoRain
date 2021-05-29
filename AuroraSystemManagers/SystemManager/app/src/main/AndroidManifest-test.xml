@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cydroid.softmanager"
+    android:sharedUserId="android.uid.system">
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.MOVE_PACKAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.MANAGE_USB" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.settings.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <!--Gionee: mengdw <2015-10-20> add for CR01571760 begin-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Gionee: mengdw <2015-10-20> add for CR01571760 end -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- applock begin -->
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.MANAGE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.ACCESS_KEYGUARD_SECURE_STORAGE" />
+    <uses-permission android:name="gn.com.android.permission.SERVICE.FACERECOG" />
+    <!-- applock end -->
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS_MMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS_CALLS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MANAGE_NETWORK_POLICY" />
+
+    <protected-broadcast android:name="gionee.intent.action.GREEN_BACKGROUND_CLEAN" />
+    <protected-broadcast android:name="gionee.intent.action.LOW_MEM_CLEAN" />
+    <!-- //Chenyee guoxt modify for CSW1803A-1011 begin-->
+    <protected-broadcast android:name="com.chenyee.intent.action.APPBOOT_FORBIDDEN_MSG" />
+    <!-- //Chenyee guoxt modify for CSW1705A-2570 begin-->
+    <protected-broadcast android:name="chenyee.intent.action.turnoff.data.noti" />
+    <!-- //Chenyee guoxt modify for CSW1705A-2570 end-->
+
+    <protected-broadcast android:name="com.cydroid.softmanager.monitor.action.BOOT_AUTO_CLEAN_ALARM" />
+    <protected-broadcast android:name="com.cydroid.softmanager.intent.WHITELIST_CHANGE" />
+    <protected-broadcast android:name="com.cydroid.softmanager.powersaver.utils.EXIT_SUPERMODE_FINISH" />
+    <protected-broadcast android:name="com.cydroid.softmanager.powersaver.utils.START_SUPERMODE_FINISH" />
+    <protected-broadcast android:name="com.cydroid.softmanager.powersaver.utils.SUPERMODE_ABORT" />
+    <protected-broadcast android:name="com.chenyee.action.DELETE_PACKAGE" />
+    <protected-broadcast android:name="com.cydroid.softmanager.action.4_PERIOD_DATAPROCESS" />
+    <protected-broadcast android:name="com.cydroid.softmanager.analysis.skipframes" />
+    <protected-broadcast android:name="com.cydroid.softmanager.action.ACTION_UPDATE_USER_WHITE_LIST" />
+    <protected-broadcast android:name="com.cydroid.softmanager.update.SAFELIST_UPDATED" />
+    <protected-broadcast android:name="com.cydroid.softmanager.analysis.skipframes" />
+    <protected-broadcast android:name="com.cydroid.softmanager.powersaver.utils.MODE_CHANGED" />
+    <protected-broadcast android:name="com.cydroid.softmanager.intent.WHITELIST_CHANGE" />
+    <protected-broadcast android:name="com.cydroid.softmanager.analysis.skipframes" />
+    <protected-broadcast android:name="com.cydroid.softmanager.trafficassistant.controler.action.calibrate.result" />
+    <protected-broadcast android:name="com.cydroid.softmanager.powersaver.mode.item.DARK_THEME_NOT_USE" />
+    <protected-broadcast android:name="com.cydroid.softmanager.action.4_PERIOD_DATAPROCESS" />
+    <protected-broadcast android:name="com.cydroid.softmanager.action.ACTION_UPDATE_USER_WHITE_LIST" />
+    <protected-broadcast android:name="com.cydroid.systemmanager.UPDATE_LIBRARY" />
+    <protected-broadcast android:name="com.cydroid.softmanager.powersaver.utils.EXIT_SUPERMODE_FINISH" />
+    <protected-broadcast android:name="com.cydroid.softmanager.powersaver.utils.START_SUPERMODE_FINISH" />
+    <protected-broadcast android:name="com.cydroid.softmanager.powersaver.utils.SUPERMODE_ABORT" />
+    <protected-broadcast android:name="com.cydroid.softmanager.monitor.action.BOOT_AUTO_CLEAN_ALARM" />
+    <protected-broadcast android:name="com.cydroid.softmanager.powersaver.service.ACTION_AUTO_ENTER_POWERSAVER" />
+    <protected-broadcast android:name="com.cydroid.softmanager.powersaver.service.ACTION_CHECK_SUPER_MODE_BOOT_STATE" />
+    <protected-broadcast android:name="com.cydroid.softmanager.powersaver.analysis.ACTION_PERIOD_CHANGED" />
+    <protected-broadcast android:name="com.cydroid.softmanager.powersaver.analysis.ACTION_SERVICE_START" />
+    <protected-broadcast android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_WEEK" />
+    <protected-broadcast android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_DAY" />
+    <protected-broadcast android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_ROOT" />
+    <protected-broadcast android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_NET" />
+    <protected-broadcast android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_APPS" />
+    <protected-broadcast android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_POWER" />
+    <protected-broadcast android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_NETPACKAGE" />
+
+    <application
+        android:name=".CyeeSystemManagerApp"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:maxAspectRatio="2.1"
+        android:resizeableActivity="false"
+        android:theme="@style/SystemManagerTheme">
+        <!-- android:theme="@android:style/Theme.Holo.Light.NoActionBar" -->
+        <service android:name=".TestService" />
+
+        <!-- newui=============start-->
+        <activity
+            android:name="com.wheatek.proxy.ui.HostMainActicity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostThemeMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wheatek.proxy.ui.HostBootSpeedMainActicity"
+            android:label="@string/text_speedup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostTheme">
+
+        </activity>
+        <activity
+            android:name="com.wheatek.proxy.ui.HostRubbishCleanerMainActivity"
+            android:label="@string/rubbishclean_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostTheme">
+
+        </activity>
+        <activity
+            android:name="com.wheatek.proxy.ui.HostSettingMainActivity"
+            android:label="@string/menu_setting"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostThemeMain">
+
+        </activity>
+        <activity
+            android:name="com.wheatek.proxy.ui.HostOptimiseActivity"
+            android:label="@string/host_newui_optimise_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostTheme">
+
+        </activity>
+        <activity
+            android:name="com.wheatek.proxy.ui.HostSoftManagerMainActivity"
+            android:label="@string/title_activity_remove_package"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostThemeMain">
+
+        </activity>
+        <activity
+            android:name="com.wheatek.proxy.ui.HostTrafficMonitorMainActivity"
+            android:label="@string/trafficassistant_app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostTheme">
+
+        </activity>
+        <activity
+            android:name="com.wheatek.proxy.ui.HostPowerSaveManagerMainActivity"
+            android:label="@string/power_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostTheme">
+
+        </activity>
+        <!-- newui=============end-->
+
+        <activity
+            android:name="com.cydroid.softmanager.view.BoostSpeedActivity"
+            android:label="@string/text_speedup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Cyee.Light.SplashLight">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cydroid.softmanager.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SystemSettingsActivity"
+            android:label="@string/menu_setting"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PermissionCheckActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <!-- ########################### SoftManager begin ########################### -->
+        <activity
+            android:name=".softmanager.SoftManagerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_soft_manager"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".softmanager.DefaultSoftDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".softmanager.UninstallAppActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:label="@string/title_activity_remove_package"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cydroid.uninstallApp" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".softmanager.DefaultSoftMrgActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:label="@string/title_activity_default_mrg"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostThemeMain"></activity>
+        <activity
+            android:name=".softmanager.FreezedAppActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_freeze"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostThemeMain"></activity>
+        <activity
+            android:name=".softmanager.FreezeAppActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/freeze_app_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostThemeMain"></activity>
+        <activity
+            android:name=".softmanager.AutoStartMrgActivity"
+            android:label="@string/app_auto_start"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostThemeMain"></activity>
+        <activity
+            android:name=".softmanager.MovePackageTabActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_move_pacakge"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".greenbackground.GreenBackGroundActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/green_background"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".applock.AppLockManagerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_lock_manager_activity_title"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cydroid.softmanager.applock.AppLockManagerActivity"
+            android:theme="@style/MHostThemeMain">
+            <intent-filter>
+                <action android:name="com.cydroid.softmanager.action.APPLOCK_MANAGER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.cydroid.softmanager.softmanager.receiver.PackgeChangedReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.cydroid.softmanager.greenbackground.GreenBackgroundService"
+            android:process=":remote"></service>
+
+        <receiver
+            android:name="com.cydroid.softmanager.greenbackground.ScreenOffReceiver"
+            android:process=":remote">
+            <intent-filter android:priority="1000">
+                <action android:name="cydroid.intent.action.GREEN_BACKGROUND_CLEAN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.cydroid.softmanager.softmanager.receiver.DeletePackageReceiver"
+            android:process=":remote">
+            <intent-filter android:priority="1000">
+                <action android:name="com.chenyee.action.DELETE_PACKAGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.cydroid.softmanager.softmanager.autoboot.AutoBootAppProvider"
+            android:authorities="com.cydroid.softmanager.autobootapp"
+            android:exported="true" />
+
+        <receiver android:name="com.cydroid.softmanager.softmanager.autoboot.AutoBootForbiddenMsgReceiver">
+            <intent-filter>
+                <action android:name="com.chenyee.intent.action.APPBOOT_FORBIDDEN_MSG" />
+                <action android:name="com.chenyee.intent.action.APPBOOT_TURN_OFF_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+        <!-- ###################### SoftManager end ####################### -->
+        <!-- ###################### Runbish begin ####################### -->
+        <receiver android:name="com.cydroid.systemmanager.MonitorApkDeleteReceiver">
+            <intent-filter>
+                <action android:name="com.cydroid.antivirus.package_delete" />
+            </intent-filter>
+        </receiver>
+        <!-- ###################### Runbish end ####################### -->
+        <!-- ###################### OneClean begin ######################## -->
+
+        <!-- ###################### RubbishCleaner begin ######################## -->
+        <activity
+            android:name="com.cydroid.systemmanager.rubbishcleaner.RubbishCleanerMainActivity"
+            android:label="@string/rubbishclean_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cydroid.rubbishcleaner" />
+
+                <category android:name="com.cydroid.rubbishcleaner.category" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.cydroid.systemmanager.rubbishcleaner.DeeplyCleanerMainActivity"
+            android:label="@string/deeply_clean"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.cydroid.systemmanager.rubbishcleaner.RubbishCleanSettingsActivity"
+            android:label="@string/rubbish_clean_settings"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.cydroid.systemmanager.rubbishcleaner.ResidualRubbishAlertActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/rubbish_clean_settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Cyee.Light.Dialog"></activity>
+
+        <!-- Gionee: <houjie> <2015-10-27> add for CR01575153 begin -->
+        <activity
+            android:name="com.cydroid.systemmanager.rubbishcleaner.RubbishCleanerDetailActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"></activity>
+        <!-- Gionee: <houjie> <2015-10-27> add for CR01575153 end -->
+        <!-- Chenyee: <guoxt> <2018-5-05> add for CSW1703VF-53 begin -->
+        <receiver android:name="com.cydroid.systemmanager.rubbishcleaner.receiver.RubbishMonitorReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.cydroid.systemmanager.enable.autoclean4" />
+                <action android:name="com.cydroid.systemmanager.disable.autoclean4" />
+            </intent-filter>
+        </receiver>
+        <!-- Chenyee: <guoxt> <2018-5-05> add for CSW1703VF-53 begin -->
+        <service android:name="com.cydroid.systemmanager.rubbishcleaner.service.RubbishScanService">
+
+        </service>
+
+        <service android:name="com.cydroid.systemmanager.rubbishcleaner.service.ResidualRemoveService"></service>
+
+        <service android:name="com.cleanmaster.CleanService">
+            <intent-filter>
+                <action android:name="com.cleanmaster.CleanService" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.cydroid.systemmanager.rubbishcleaner.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/gn_auth_rubbish" />
+        </provider>
+        <activity
+            android:name=".oneclean.WhiteListAddActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_process_protected"
+            android:screenOrientation="portrait"></activity>
+        <!-- Gionee <jianghuan> <2014-05-06> add for CR01238335 begin -->
+        <!-- Gionee <yangxinruo> <2016-5-3> modify for CR01689438 begin -->
+        <activity
+            android:name=".oneclean.WhiteListMrgActivity"
+            android:label="@string/process_white_list_title"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cydroid.softmanager.oneclean.WhiteListMrgActivity"
+            android:theme="@style/Theme.Cyee.Light.SplashLight">
+            <intent-filter>
+                <action android:name="com.cydroid.softmanager.action.WHITE_LIST_MANAGER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Gionee <yangxinruo> <2016-5-3> modify for CR01689438 end -->
+        <!-- Gionee <jianghuan> <2014-05-06> add for CR01238335 end -->
+
+        <service
+            android:name=".memoryclean.MemoryCleanService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.cydroid.softmanager.memoryclean.action.bindcleanservice" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".memoryclean.MemoryCleanServiceV2"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.cydroid.softmanager.memoryclean.action.bindcleanservicev2" />
+            </intent-filter>
+        </service>
+        <!-- ################################# PowerSaver begin ########################### -->
+        <!-- Gionee <yangxinruo> <2016-4-28> modify for CR01678498 begin -->
+        <activity
+            android:name=".powersaver.activities.PowerManagerMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:label="@string/power_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cydroid.softmanager.powersaver.activities.PowerManagerMainActivity"
+            android:theme="@style/Theme.Cyee.Light.SplashLight">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="cydroid.intent.action.PowerSaving" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <!-- Gionee <yangxinruo> <2016-4-28> modify for CR01678498 end -->
+
+        <activity
+            android:name=".powersaver.activities.PowerSaveManualActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:label="@string/user_manual"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cydroid.settings.powerprofile.manual" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".powersaver.activities.BatteryUseRankActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:label="@string/power_consumption_tab_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Cyee.Light.SplashLight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="cydroid.intent.action.BatteryUseRank" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--        <activity-->
+        <!--            android:name=".powersaver.activities.PowerUsageDetailActivity"-->
+        <!--            android:screenOrientation="portrait" >-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="com.cydroid.settings.powerprofile.usagedetail" />-->
+
+        <!--                <category android:name="android.intent.category.DEFAULT" />-->
+        <!--            </intent-filter>-->
+        <!--        </activity>-->
+        <!-- Gionee <yangxinruo> <2016-3-3> add for CR01645219 begin -->
+        <activity
+            android:name=".powersaver.activities.NewPowerUsageDetailActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cydroid.softmanager.powersaver.notification.USAGE_DETAIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Gionee <yangxinruo> <2016-3-3> add for CR01645219 end -->
+        <activity
+            android:name=".powersaver.activities.PowerManagerSettingsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:label="@string/power_saving_mode_title"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cydroid.softmanager.powersaver.activities.SmartCleanDisplayActivity"
+            android:label="@string/auto_clean_title"
+            android:theme="@android:style/Theme.Black">
+            <intent-filter>
+                <action android:name="softmanager.intent.action.SHOW_AUTOCLEAN_INFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".powersaver.activities.NormalModeDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="cydroid.intent.action.LOOKUP_NORMALMODE_DETAILS" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".powersaver.activities.SuperModeDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:label="@string/super_power_save_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Cyee.Light.SplashLight">
+            <intent-filter>
+                <action android:name="cydroid.intent.action.LOOKUP_SUPERMODE_DETAILS" />
+            </intent-filter>
+        </activity>
+        <!--        <activity-->
+        <!--            android:name=".powersaver.activities.DailyPowerOtherSettings"-->
+        <!--            android:label="@string/powersaver_mode_category_title" >-->
+        <!--        </activity>-->
+        <!-- Gionee <yangxinruo> <2015-8-26> <modify> for CR01541942 begin -->
+        <!-- modify android:noHistory=false -->
+        <activity
+            android:name=".powersaver.activities.WaitingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:excludeFromRecents="true"
+            android:noHistory="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Cyee.Light.SplashLight"></activity>
+        <!-- Gionee <yangxinruo> <2015-8-26> <modify> for CR01541942 end -->
+        <!-- Gionee <yangxinruo> <2016-3-22> <modify> for CR01651396 begin -->
+        <activity
+            android:name=".powersaver.utils.PowerSuperModeDialog"
+            android:configChanges="mcc|mnc"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+            <intent-filter>
+                <action android:name="cydroid.intent.action.SUPERMODE_OPEN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".powersaver.utils.PowerNormalModeDialog"
+            android:configChanges="mcc|mnc"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+            <intent-filter>
+                <action android:name="cydroid.intent.action.NORMALMODE_OPEN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Gionee <yangxinruo> <2016-3-22> <modify> for CR01651396 end -->
+        <!-- <receiver -->
+        <!-- android:name="com.cydroid.softmanager.powersaver.receiver.PowerManagerReceiver" -->
+        <!-- android:process=":remote" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+        <!-- <action android:name="gionee.intent.action.POWER_SYSTEMUI_CHANGE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!--
+        <receiver
+            android:name="com.cydroid.softmanager.powersaver.receiver.PMYouJuAgentReceiver"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="gionee.intent.action.YouJuAgent" />
+            </intent-filter>
+        </receiver>
+        -->
+        <!-- Gionee <liuyb> <2014-3-27> <modify> for CR01147178 begin -->
+        <service
+            android:name="com.cydroid.softmanager.powersaver.service.PowerManagerService"
+            android:enabled="true"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":remote"
+            >
+            <intent-filter>
+                <action android:name="com.cydroid.softmanager.powersaver.service.PowerManagerService" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.action.exit.super.power.save.mode" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cydroid.action.powermanager.changemode" />
+            </intent-filter>
+        </service>
+        <!-- Gionee <liuyb> <2014-3-27> <modify> for CR01147178 end -->
+        <!-- ################################# PowerSaver end ############################# -->
+
+
+        <!-- ################################# TrafficAssistant begin ##################### -->
+        <activity
+            android:name=".trafficassistant.TrafficAssistantMainActivity"
+            android:exported="true"
+            android:label="@string/trafficassistant_app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Cyee.Light"></activity>
+        <activity
+            android:name=".trafficassistant.TrafficRankActivity"
+            android:label="@string/detail_flow"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".trafficassistant.TrafficLimitActivity"
+            android:label="@string/limit_flow"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".trafficassistant.AppDetailActivity"
+            android:label="@string/usage_detail"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- Gionee <changph> <2016-10-17> modify for wifihotspot begin -->
+        <activity
+            android:name=".trafficassistant.hotspotremind.TrafficHotSpotWarningDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/FloatActivity"></activity>
+        <activity
+            android:name=".trafficassistant.hotspotremind.TrafficAutoCloseHotSpotRemindDialog"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/FloatActivity"></activity>
+
+        <!-- Gionee <changph> <2016-10-17> modify for wifihotspot end -->
+
+
+        <!-- Gionee <changph> <2016-12-05> modify for history order end -->
+
+
+        <!-- Gionee: mengdw <2016-04-20> modify for CR01679405 begin -->
+        <activity
+            android:name=".trafficassistant.TrafficNetworkControlActivity"
+            android:exported="true"
+            android:label="@string/network_control"
+            android:screenOrientation="portrait"></activity>
+        <!-- Gionee: mengdw <2016-04-20> modify for CR01679405 end -->
+        <activity
+            android:name=".trafficassistant.TrafficSettingsActivity"
+            android:label="@string/more_settings"
+            android:screenOrientation="portrait"></activity>
+        <!--Gionee: mengdw <2015-11-11> add for CR01589343 end-->
+        <activity
+            android:name=".trafficassistant.TrafficPopWindows"
+            android:excludeFromRecents="true"
+            android:label="@string/usage_detail"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"></activity>
+        <activity
+            android:name=".monitor.RootWarningWindow"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"></activity>
+
+        <!-- Gionee <liuyb> <2014-5-12> modify for CR01245505 begin -->
+        <!--Chenyee guoxt modify for CSW1705A-2570 begin-->
+        <receiver
+            android:name=".trafficassistant.TrafficMonitorBroadcastReceiver"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED"></action>
+                <action android:name="com.cydroid.softmanager.trafficassistant.ACTION_SERVICE_DAEMON"></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <action android:name="chenyee.intent.action.turnoff.data.noti"></action>
+            </intent-filter>
+        </receiver>
+        <!--Chenyee guoxt modify for CSW1705A-2570 end-->
+
+        <!-- Gionee: mengdw <2016-05-04> modify for CR01571760 begin -->
+        <service
+            android:name=".trafficassistant.hotspotremind.service.TrafficHotSportService"
+            android:enabled="true"></service>
+        <service
+            android:name=".trafficassistant.TrafficProcessorService"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <!-- Gionee: mengdw <2016-11-02> add for CR01639347 begin -->
+        <provider
+            android:name=".trafficassistant.provider.NetworkDisenabledListProvider"
+            android:authorities="com.cydroid.softmanager.networkcontrol"
+            android:exported="true" />
+
+        <!-- Gionee: mengdw <2016-11-02> add for CR01639347 end -->
+        <!-- ################################# TrafficAssistant end####################### -->
+
+        <!-- ################################# Monitor begin####################### -->
+        <receiver android:name=".monitor.receiver.MonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- Gionee <houjie> <2015-09-15> modify for CR01553826 begin -->
+                <!--
+                <action android:name="com.cydroid.softmanager.monitor.action.CALIBRATE_ALARM" />
+                -->
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <!-- Gionee <houjie> <2015-09-15> modify for CR01553826 end -->
+
+                <action android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_WEEK" />
+                <action android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_DAY" />
+                <action android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_ROOT" />
+                <action android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_NET" />
+                <action android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_APPS" />
+                <action android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_POWER" />
+                <!-- Gionee <jianghuan> <2014-05-14> add for CR01255397 begin -->
+                <action android:name="com.cydroid.softmanager.monitor.action.MONITOR_ALARM_NETPACKAGE" />
+                <!-- Gionee <jianghuan> <2014-05-14> add for CR01255397 end -->
+                <action android:name="com.cydroid.softmanager.monitor.action.BOOT_AUTO_CLEAN_ALARM" />
+                <!-- Chenyee <guoxt> <2018-02-27> add for CSW1705A-1402 begin -->
+                <action android:name="com.cy.password.clear" />
+                <action android:name="com.cyee.action.CLEARALL" />
+
+                <!-- Chenyee <guoxt> <2018-02-27> add for CSW1705A-1402 end -->
+            </intent-filter>
+            <intent-filter android:priority="1">
+                <action android:name="com.cyee.intent.action.theme.change" />
+
+                <category android:name="com.cyee.intent.category.theme.V2" />
+                <category android:name="com.cyee.intent.category.theme.V3" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.cydroid.softmanager.monitor.service.MonitorService"
+            android:process=":remote"></service>
+        <!-- Gionee: mengdw <2015-12-28> add for CR01589343 begin -->
+        <service android:name="com.cydroid.softmanager.trafficassistant.service.TrafficMonitorControlService"></service>
+        <!-- Gionee: mengdw <2015-12-28> add for CR01589343 end -->
+        <!-- Gionee: mengdw <2016-09-18> add for CR01760277 begin -->
+        <service android:name="com.cydroid.softmanager.trafficassistant.service.TrafficResidentService"></service>
+        <!-- Gionee: mengdw <2016-09-18> add for CR01760277 end -->
+
+
+        <service
+            android:name="com.cydroid.softmanager.monitor.service.CpuRamMonitorService"
+            android:process=":remote"></service>
+        <!-- ################################# Monitor end####################### -->
+        <provider
+            android:name=".common.SharedPreferencesProvider"
+            android:authorities="com.cydroid.systemmanager.sp"
+            android:exported="true"
+            android:process=":remote" />
+        <provider
+            android:name=".common.OneCleanWhiteListProvider"
+            android:authorities="com.cydroid.systemmanager.oneclean"
+            android:exported="true"
+            android:process=":remote" />
+
+
+        <!-- for services running at remote process accessing  settings in main process -->
+        <provider
+            android:name=".common.MainProcessSettingsProvider"
+            android:authorities="com.cydroid.softmanager.main_process_settings"
+            android:exported="true" />
+
+        <!-- ################################# Analysis begin####################### -->
+        <service
+            android:name=".powersaver.analysis.AnalysisPowerDataService"
+            android:process=":remote"></service>
+        <service
+            android:name="com.cydroid.softmanager.skipframes.SkipFramesService"
+            android:exported="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.cydroid.softmanager.ACTION_EVENT_SKIPFRAMES" />
+            </intent-filter>
+        </service>
+
+        <!-- Gionee <yangxinruo> <2015-09-17> add for CR01555251 begin -->
+        <service
+            android:name="com.cydroid.softmanager.powersaver.notification.PowerConsumeService"
+            android:exported="false"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.cydroid.softmanager.powersaver.notification.ACTION_KILL_PROCESS" />
+                <action android:name="com.cydroid.softmanager.powersaver.notification.ACTION_IGNORE_PROCESS" />
+            </intent-filter>
+        </service>
+        <!-- Gionee <yangxinruo> <2015-12-01> modify for CR01602099 begin -->
+        <activity
+            android:name="com.cydroid.softmanager.powersaver.notification.BackgroundAppListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:label="@string/power_consume_background_list_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Cyee.Light.SplashLight"></activity>
+        <!-- Gionee <yangxinruo> <2015-12-01> modify for CR01602099 end -->
+        <!-- Gionee <yangxinruo> <2015-09-17> add for CR01555251 end -->
+        <!-- Gionee <yangxinruo> <2016-1-5> add for CR01618272 begin -->
+        <service
+            android:name="com.cydroid.softmanager.monitor.service.ScreenOffCleanService"
+            android:exported="false"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.cydroid.softmanager.monitor.service.ScreenOffCleanService.UPDATE_USAGE_DATA" />
+            </intent-filter>
+        </service>
+        <!-- Gionee <yangxinruo> <2016-1-5> add for CR01618272 end -->
+        <!-- Gionee <yangxinruo> <2015-12-11> add for CR01608017 begin -->
+        <activity
+            android:name="com.cydroid.softmanager.oneclean.RunningAppListActivity"
+            android:label="@string/running_apps_title"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <!-- Gionee <yangxinruo> <2015-12-11> add for CR01608017 end -->
+
+
+        <!-- ############################## meta-data begin####################### -->
+
+        <!-- applock begin -->
+        <activity
+            android:name="com.cydroid.softmanager.applock.AppLockActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.cydroid.softmanager.applock.AppLockActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <!--<action android:name="gionee.intent.action.MY_CONFIRM_PASSWORD" />-->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.cydroid.softmanager.applock.AppLockSettingsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:label="@string/app_lock_setting"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- applock end -->
+        <!-- Gionee: mengdw <2016-12-06> add for CR01657626 begin -->
+        <activity
+            android:name=".trafficassistant.lockscreenused.LockScreenTrafficDetailActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/lockscreen_traffic_remid_title"
+            android:theme="@style/FloatActivity"></activity>
+        <!-- Gionee: mengdw <2016-12-06> add for CR01657626 end -->
+
+        <!-- xionghg 2017-08-17 add for 183103 begin -->
+        <service
+            android:name=".oneclean.whitelist.WhiteListIntentService"
+            android:exported="false"></service>
+
+        <!-- xionghg 2017-08-17 add for 183103 end -->
+
+        <activity
+            android:name=".systemcheck.SystemCheckActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostThemeMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="com.wheatek.temprd.RosterProvider"
+            android:authorities="com.cyee.settings.RosterProvider"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

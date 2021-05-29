@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="traffic_centerX">208dp</dimen>
+    <dimen name="traffic_centerY">120dp</dimen>
+    <dimen name="traffic_innerRadius">80dp</dimen>
+    <dimen name="traffic_innerStrokeWidth">6dp</dimen>
+    <dimen name="traffic_outerRadius">90dp</dimen>
+    <dimen name="traffic_outerStrokeWidth">2dp</dimen>
+    <dimen name="traffic_img_prompt_marginTops">85dp</dimen>
+    <!-- Gionee: mengdw <2015-11-11> modify for CR01589343 begin -->
+    <dimen name="traffic_flow_state_marginTops">65dp</dimen>
+    <!-- Gionee: mengdw <2015-11-11> modify for CR01589343 end -->
+    <dimen name="traffic_state_value_marginTops">95dp</dimen>
+    <dimen name="traffic_unit_value_marginTops">137dp</dimen>
+    <dimen name="traffic_state_value_other_marginTops">100dp</dimen>
+    <dimen name="traffic_unit_value_other_marginTops">132dp</dimen>
+    
+    <dimen name="traffic_time_zone_marginTops">60dp</dimen>
+    
+    <dimen name="traffic_gn_flow_state_size">14sp</dimen>
+    <dimen name="traffic_gn_state_value_size">54dp</dimen>
+    <dimen name="traffic_gn_state_value_other_size">46dp</dimen>
+
+    <dimen name="gn_used_flow_margin_bottom">95dp</dimen>
+
+    <!-- Gionee: mengdw <2015-11-11> modify for CR01589343 begin -->
+    <dimen name="traffic_arrow_marginTops">50dp</dimen>
+    <dimen name="buy_numble_edit_width">230dp</dimen>
+    <dimen name="btn_contacts_start_margin_left">260dp</dimen>
+    <!-- Gionee: mengdw <2015-11-11> modify for CR01589343 end -->
+</resources>

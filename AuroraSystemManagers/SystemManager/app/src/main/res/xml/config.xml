@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+
+    <!-- 全局参数设置 -->
+    <Global>
+
+        <!-- 云查杀服务器地址 -->
+        <Item
+            key="201"
+            value="http://corp.msch.f.360.cn/MobiVirusCheck" />
+
+        <!-- 客户端代码 -->
+        <Item
+            key="2"
+            value="999" />
+
+        <!-- 渠道号 -->
+        <Item
+            key="3"
+            value="107116" />
+
+           <Item
+            key="11"
+            value="partner.jinli" />
+        
+        
+        <!-- 客户端版本号 -->
+        <Item
+            key="4"
+            value="5.0.0.1001" />
+        
+        <Item
+            key="13"
+            value="jinli"  />
+        
+    </Global>
+
+    <EngineConfigs>
+
+        <!-- 本地扫描引擎配置 -->
+        <EngineConfig id="1" >
+
+            <!-- 是否启用，1表示启用，0表示禁用 -->
+            <Enabled value="1" />
+        </EngineConfig>
+
+        <!-- 云查杀引擎配置 -->
+        <EngineConfig id="2" >
+
+            <!-- 是否启用，1表示启用，0表示禁用 -->
+            <Enabled value="1" />
+
+            <!-- 为了提高联网性能，最好不要每个样本都单独执行云查杀，否则一次扫描100个样本就意味着要发起100次联网，在手机上会很慢。这里设置将20个样本的请求合并到一起发送，100个样本也就一共5次联网就可以。 -->
+            <Policy
+                key="task"
+                value="20" />
+        </EngineConfig>
+		
+		 <!-- 样本上传 -->
+        <EngineConfig id="7" >
+
+            <!-- 是否启用 -->
+            <Enabled value="1" />
+
+            <!-- 是否上传 system 分区的样本，1 - 上传；0 - 不上传 -->
+            <Item
+                key="702"
+                value="0" />
+
+            <!-- token 服务器地址 -->
+            <Item
+                key="801"
+                value="http://pre.mvd.f.360.cn/MobiPreVirusDetection.php" />
+
+            <!-- 连接超时时间 -->
+            <Item
+                key="802"
+                value="5000" />
+
+            <!-- 评测版样本上传大小限制：2MB -->
+            <Item
+                key="808"
+                value="2097152" />
+        </EngineConfig>
+    </EngineConfigs>
+
+    <!-- 病毒库升级配置 -->
+    <UpdateCheck>
+        <Item
+            key="server"
+            value="http://mvconf.f.360.cn/safe_update" />
+        <Items
+            key="localinipath"
+            value="/sdcard/myini" />
+        <Item
+            key="uselocalini"
+            value="0" />
+        <Item
+            key="product"
+            value="partner_vdb" />
+    </UpdateCheck>
+
+</Config>

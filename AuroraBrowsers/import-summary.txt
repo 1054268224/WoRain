@@ -1,0 +1,95 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Risky Project Location:
+-----------------------
+The tools *should* handle project locations in any directory. However,
+due to bugs, placing projects in directories containing spaces in the
+path, or characters like ", ' and &, have had issues. We're working to
+eliminate these bugs, but to save yourself headaches you may want to
+move your project to a location where this is not a problem.
+E:\AndroidStudio projects\Browser
+                -                
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* Android.mk
+* CleanSpec.mk
+* MODULE_LICENSE_APACHE2
+* NOTICE
+* README
+* ext\
+* ext\Android.mk
+* ext\NOTICE
+* ext\README
+* ext\src\
+* ext\src\com\
+* ext\src\com\mediatek\
+* ext\src\com\mediatek\browser\
+* ext\src\com\mediatek\browser\ext\
+* ext\src\com\mediatek\browser\ext\DefaultBrowserBookmarkExt.java
+* ext\src\com\mediatek\browser\ext\DefaultBrowserDownloadExt.java
+* ext\src\com\mediatek\browser\ext\DefaultBrowserHistoryExt.java
+* ext\src\com\mediatek\browser\ext\DefaultBrowserMiscExt.java
+* ext\src\com\mediatek\browser\ext\DefaultBrowserRegionalPhoneExt.java
+* ext\src\com\mediatek\browser\ext\DefaultBrowserSettingExt.java
+* ext\src\com\mediatek\browser\ext\DefaultBrowserSiteNavigationExt.java
+* ext\src\com\mediatek\browser\ext\DefaultBrowserUrlExt.java
+* ext\src\com\mediatek\browser\ext\DefaultNetworkStateHandlerExt.java
+* ext\src\com\mediatek\browser\ext\IBrowserBookmarkExt.java
+* ext\src\com\mediatek\browser\ext\IBrowserDownloadExt.java
+* ext\src\com\mediatek\browser\ext\IBrowserFeatureIndexExt.java
+* ext\src\com\mediatek\browser\ext\IBrowserHistoryExt.java
+* ext\src\com\mediatek\browser\ext\IBrowserMiscExt.java
+* ext\src\com\mediatek\browser\ext\IBrowserRegionalPhoneExt.java
+* ext\src\com\mediatek\browser\ext\IBrowserSettingExt.java
+* ext\src\com\mediatek\browser\ext\IBrowserSiteNavigationExt.java
+* ext\src\com\mediatek\browser\ext\IBrowserUrlExt.java
+* ext\src\com\mediatek\browser\ext\INetworkStateHandlerExt.java
+* ext\src\com\mediatek\browser\ext\OpBrowserCustomizationFactoryBase.java
+* proguard.flags
+* provider\
+* provider\Android.mk
+* provider\NOTICE
+* provider\README
+* provider\src\
+* provider\src\com\
+* provider\src\com\android\
+* provider\src\com\android\browser\
+* provider\src\com\android\browser\provider\
+* provider\src\com\android\browser\provider\Browser.java
+* provider\src\com\android\browser\provider\BrowserContract.java
+* tools\
+* tools\all_search_engines.template.xml
+* tools\get_search_engines.py
+* tools\search_engines.template.xml
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\com\android\browser\EventLogTags.logtags => app\src\main\resources\com\android\browser\EventLogTags.logtags
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="app_lock_whitelist">
+        <item>com.android.settings</item>
+        <item>com.cydroid.softmanager</item>
+        <item>com.cydroid.systemmanager</item>
+        <item>com.cydroid.amisystem</item>
+        <item>com.android.deskclock</item>
+        <!-- guoxt modify for CSW1702A-2482 begin-->
+        <!--<item>com.android.email</item>-->
+        <!-- guoxt modify for CSW1702A-2482 end-->
+        <item>com.android.stk</item>
+        <item>com.whatsapp.clone</item>
+        <item>com.whatsapp.clone2</item>
+        <!-- chenyee zhaocaili 20180502 add for CSW1703CX-169 begin -->
+        <item>com.zhuoyi.security.service</item>
+        <!-- chenyee zhaocaili 20180502 add for CSW1703CX-169 end -->
+    </string-array>
+
+    <string-array name="romapp_whiteboxapp_related_items">
+        <!-- guoxt modify for CR01771801 begin-->
+        <!--<item>com.cydroid.video/com.youku.phone.jinli</item>-->
+        <!--<item>com.android.fmradio/com.ximalaya.ting.android.gionee,com.qingting.fm</item>-->
+        <!--<item>com.mediatek.fmradio/com.ximalaya.ting.android.gionee,com.qingting.fm</item>-->
+        <!-- guoxt modify for CR01771801 end-->
+    </string-array>
+
+    <string-array name="network_control_exclude_apps">
+    </string-array>
+
+    <string-array name="user_whiteapps_whitelist">
+        <item>com.immomo.momo.clone</item>
+        <item>com.immomo.momo.clone2</item>
+        <item>com.tencent.mobileqq.clone</item>
+        <item>com.tencent.mobileqq.clone2</item>
+        <item>com.taobao.taobao.clone</item>
+        <item>com.taobao.taobao.clone2</item>
+        <item>com.tencent.mm.clone</item>
+        <item>com.tencent.mm.clone2</item>
+    </string-array>
+
+    <string-array name="default_soft_rom_app">
+        <!-- guoxt modify for CR01777236 begin-->
+        <!--<item>com.android.browser</item>-->
+        <item>com.android.chrome</item>
+        <!-- guoxt modify for CR01777236 begin-->
+        <item>com.android.contacts</item>
+        <item>com.cydroid.amisystem</item>
+        <item>com.android.camera</item>
+        <item>com.cydroid.gallery</item>
+        <item>com.android.music</item>
+        <item>com.cydroid.video</item>
+        <item>com.google.android.googlequicksearchbox</item>
+    </string-array>
+</resources>

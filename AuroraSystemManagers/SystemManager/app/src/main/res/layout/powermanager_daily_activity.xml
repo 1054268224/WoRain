@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cyee.widget.CyeeEditModeView
+        android:id="@+id/dailypower_editmodeview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dailypower_editmodeview_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <!-- Gionee <yangxinruo> <2015-11-12> add for CR01589812 begin -->
+        <cyee.widget.CyeeTextView
+            android:id="@+id/dailypower_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dailypower_header_text_height"
+            android:paddingStart="@dimen/text_margin_left"
+            android:paddingTop="@dimen/header_padding_top"
+            android:singleLine="true"
+            android:textColor="@color/textcolor_title"
+            android:textSize="@dimen/text_size" />
+        <!-- Gionee <yangxinruo> <2015-11-12> add for CR01589812 end -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <cyee.widget.CyeeListView
+            android:id="@+id/dailypower_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </cyee.widget.CyeeListView>
+    </LinearLayout>
+    <!-- Gionee <yangxinruo> <2016-3-18> <modify> for CR01654969 end -->
+    <!-- Gionee <yangxinruo> <2016-3-18> <add> for CR01654969 begin -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/button_padding"
+        android:paddingLeft="@dimen/button_padding"
+        android:paddingRight="@dimen/button_padding" >
+
+        <cyee.widget.CyeeButton
+            android:id="@+id/btn_reset"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:text="@string/mode_setting_reset"
+            android:textColor="@color/limited_btn_textcolor"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!-- Gionee <yangxinruo> <2016-3-18> <add> for CR01654969 end -->
+</LinearLayout>

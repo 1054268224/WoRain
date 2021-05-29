@@ -1,0 +1,15 @@
+<!-- weidong begin -->
+<cyee.widget.CyeeTextView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerItemStyle"
+    android:singleLine="true"
+    android:gravity="center_vertical"
+    android:paddingStart="@dimen/cyee_alert_dialog_title_margin_left"
+    android:paddingEnd="@dimen/cyee_alert_dialog_title_margin_left"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cyee_AlertDialogListItemHeight"
+    android:textSize="@dimen/cyee_textSizeAlertDialogListItem"
+    android:textColor="?attr/cyee_spinner_item_text_color"
+    android:ellipsize="marquee"
+    android:textAlignment="inherit"/>
+<!-- weidong end -->

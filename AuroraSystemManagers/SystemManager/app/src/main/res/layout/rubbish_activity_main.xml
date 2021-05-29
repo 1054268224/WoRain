@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Gionee <yangxinruo> <2016-5-10> modify for CR01658695 begin -->
+    <LinearLayout
+        android:id="@+id/top_part_window"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_half_height"
+        android:background="@color/common_green_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+    <!-- Gionee <yangxinruo> <2016-5-10> modify for CR01658695 end -->
+
+        <RelativeLayout
+            android:id="@+id/total_rubbish_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18" >
+
+            <ImageView
+                android:id="@+id/end_flag_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/delete_end_image"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/clean_end_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/end_flag_image"
+                android:paddingTop="@dimen/text_padding_top"
+                android:paddingBottom="@dimen/text_padding_bottom"
+                android:layout_centerHorizontal="true"
+                android:text="@string/deeply_clean_end"
+                android:textColor="@color/textview_color_white"
+                android:textSize="@dimen/clean_end_textSize"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/clean_end_size_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/end_flag_image"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/textview_color_white"
+                android:textSize="@dimen/clean_end_textSize"
+                android:visibility="invisible" />
+
+            <!-- Replace by HZH on 2019/5/11 for ui start ^_^ -->
+            <RelativeLayout
+                android:id="@+id/rubbish_text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <cyee.widget.CyeeTextView
+                    android:id="@+id/total_rubbish_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/textview_color_white"
+                    android:textSize="@dimen/total_rubbish_textsize" />
+
+                <cyee.widget.CyeeTextView
+                    android:id="@+id/total_rubbish_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_rubbish_desc"
+                    android:layout_alignBaseline="@id/total_rubbish_size"
+                    android:layout_toStartOf="@id/total_rubbish_size"
+                    android:textColor="@color/textview_color_white"
+                    android:textSize="@dimen/total_rubbish_unit_textsize" />
+
+                <cyee.widget.CyeeTextView
+                    android:id="@+id/total_rubbish_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/total_rubbish_size"
+                    android:layout_toEndOf="@id/total_rubbish_size"
+                    android:textColor="@color/textview_color_white"
+                    android:textSize="@dimen/total_rubbish_unit_textsize" />
+
+                <cyee.widget.CyeeTextView
+                    android:id="@+id/cleanned_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/total_rubbish_size"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/textview_color_white"
+                    android:textSize="@dimen/advise_textsize"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            <!-- Replace by HZH on 2019/5/11 for ui end ^_^ -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:id="@+id/rubbishinfo_description_container"
+            android:gravity="center_vertical" >
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/rubbishinfo_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textview_color_white"
+                android:textSize="@dimen/advise_textsize" />
+        </RelativeLayout>
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/total_select_size"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:textColor="@color/textview_color_white"
+            android:textSize="@dimen/rubbish_handle_state_textsize" />
+
+        <RelativeLayout
+            android:id="@+id/cm_supply_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical" >
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/cm_supply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:text="@string/liebao_supply_info"
+                android:textColor="@color/textview_color_white"
+                android:textSize="@dimen/supporter_desc_textsize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sticky_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/adjust_for_listview"
+        android:layout_below="@id/top_part_window"
+        android:orientation="vertical" >
+
+        <ExpandableListView
+            android:id="@+id/expandablelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@null"
+            android:childIndicatorLeft="0dp"
+            android:groupIndicator="@null"
+            android:scrollbarAlwaysDrawHorizontalTrack="false" >
+        </ExpandableListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/clean_end_advice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_part_window"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/clean_end_advice_title"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/header_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e7e7e7"
+        android:layout_below="@id/clean_end_advice_title"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <cyee.widget.CyeeListView
+        android:id="@+id/rubbish_clean_advice_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clean_end_advice_title"
+        android:layout_marginTop="10dp"
+        android:choiceMode="singleChoice"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"></LinearLayout>
+
+</RelativeLayout>

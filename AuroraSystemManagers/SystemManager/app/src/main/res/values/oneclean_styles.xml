@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <style name="WidgetTheme" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/mydialog</item>
+    </style>
+
+    <style name="mydialog">
+        <item name="@android:windowEnterAnimation">@anim/enter_activity</item>
+    </style>
+
+
+    <!-- Gionee <xuhz> <2013-12-11> add for CR00967999 begin -->
+    <style name="OneCleanLightSecond" parent="SystemManagerTheme">
+        <item name="cyeeactionBarStyle">@style/SecondActionBarStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/cyee_ic_ab_back_light</item>
+    </style>
+
+    <style name="SecondActionBarStyle" parent="@style/Widget.Cyee.Light.ActionBar.Solid.Inverse">
+        <item name="cyeebackground">@drawable/common_blue_bg</item>
+        <item name="cyeebackgroundStacked">@drawable/common_blue_bg</item>
+        <item name="cyeetitleTextStyle">@style/LightActionBarStyleTextStyle</item>
+    </style>
+    <!-- Gionee <xuhz> <2013-12-11> add for CR00967999 end -->
+</resources>

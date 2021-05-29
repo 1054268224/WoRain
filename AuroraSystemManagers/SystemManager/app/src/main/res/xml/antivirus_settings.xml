@@ -1,0 +1,46 @@
+<cyee.preference.CyeePreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.cyee="http://schemas.android.com/apk/res-auto"
+    >
+
+    <cyee.preference.CyeePreferenceCategory
+        com.cyee:cyeekey="safe_settings"
+        com.cyee:cyeetitle="@string/safe_txt" >
+
+        <!--
+         <cyee.preference.CyeeSwitchPreference
+            com.cyee:cyeekey="cloud_key"
+            com.cyee:cyeesummary="@string/cloud_antivirus_summary"
+            com.cyee:cyeetitle="@string/cloud_antivirus"
+            com.cyee:cyeedefaultValue="true"/>
+        -->
+
+      <!-- guoxt modify begin 
+        <cyee.preference.CyeeSwitchPreference
+            com.cyee:cyeedefaultValue="true"
+            com.cyee:cyeekey="app_install_monitor_key"
+            com.cyee:cyeetitle="@string/app_install_monitor" />
+
+      guoxt modify end   -->
+         <cyee.preference.CyeeSwitchPreference
+            com.cyee:cyeedefaultValue="false"
+            com.cyee:cyeekey="real_time_monitor_key"
+            com.cyee:cyeesummary="@string/real_time_summary"
+            com.cyee:cyeetitle="@string/monitor_realtime" />
+
+            
+    </cyee.preference.CyeePreferenceCategory>
+    <cyee.preference.CyeePreferenceCategory com.cyee:cyeetitle="@string/virus_update" >
+        <cyee.preference.CyeeSwitchPreference
+            com.cyee:cyeedefaultValue="true"
+            com.cyee:cyeekey="auto_update_key"
+            com.cyee:cyeesummary="@string/auto_update_summary"
+            com.cyee:cyeetitle="@string/auto_update" />
+
+        <cyee.preference.CyeePreferenceScreen
+            android:layout_marginLeft="10dip"
+            com.cyee:cyeekey="manual_update_key"
+            com.cyee:cyeetitle="@string/update_manual" >
+        </cyee.preference.CyeePreferenceScreen>
+    </cyee.preference.CyeePreferenceCategory>
+
+</cyee.preference.CyeePreferenceScreen>

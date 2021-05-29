@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<merge xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--<fragment class="com.gionee.alltest.SettingFragment"-->
+<!--android:id="@+id/all_settings"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent" />-->
+<!--</merge>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mobile_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?android:attr/listChoiceBackgroundIndicator"        
+        android:paddingStart="24dp"
+        android:paddingEnd="16dp">
+
+        <LinearLayout
+            android:id="@+id/mobile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_settings_mobiledata"/>
+        </LinearLayout>
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/mobile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/mobile_image"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="@string/pref_title_mobile_data"
+            android:textColor="#cc000000"
+            android:textSize="18sp"/>
+
+        <cyee.widget.CyeeSwitch
+            android:id="@+id/mobile_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wifi_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?android:attr/listChoiceBackgroundIndicator"
+        android:paddingStart="24dp">
+
+        <LinearLayout
+            android:id="@+id/wifi_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_settings_wireless"/>
+        </LinearLayout>
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/wifi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/wifi_image"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="@string/pref_title_wifi"
+            android:textColor="#cc000000"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/exit_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?android:attr/listChoiceBackgroundIndicator"
+        android:paddingStart="24dp" >
+
+        <LinearLayout
+            android:id="@+id/exit_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/exit_bg"/>
+        </LinearLayout>
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/exit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/exit_image"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="@string/exit_string"
+            android:textColor="#cc000000"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

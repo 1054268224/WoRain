@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shared_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/listview_height"
+    android:layout_marginTop="8dip"
+    android:background="?attr/listChoiceBackgroundIndicator" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/image_margin_left"
+        android:layout_marginEnd="@dimen/image_margin_right"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/icon"
+        android:orientation="vertical" >
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_level_one"
+            android:textColor="@color/textcolor_level_one" />
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_level_two"
+            android:textColor="@color/textcolor_level_two"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/gn_refresh_imageview_bg"
+        android:visibility="gone" />
+
+</RelativeLayout>

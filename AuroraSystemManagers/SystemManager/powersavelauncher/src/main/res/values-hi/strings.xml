@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">पावर लॉन्चर</string>
+    <string name="exit_string">चरम मोड से बाहर निकलें</string>
+    <string name="ok_string">ओके</string>
+    <string name="cancel_string">रद्द करें</string>
+    <string name="exit_msg">क्या आप पक्का चरम मोड से बाहर निकलना चाहते हैं?</string>
+    <string name="exit_msg1">फोन चार्ज किया जा रहा है, क्या आप पक्का चरम मोड से बाहर निकलना चाहते है?</string>
+    <string name="can_use_time">स्टैंडबाय समय:%s</string>
+    <string name="need_charging_time">चार्ज की जरूरत है %s</string>
+    <string name="power_cannotget">अनुमान लगाने में असमर्थ</string>
+    <string name="power_hours">" घंटे"</string>
+    <string name="power_minutes">" मिनट"</string>
+    <string name="is_charging_now">चार्ज हो रहा है</string>
+    <string name="charged_completely">चार्ज हो गया है</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+</resources>

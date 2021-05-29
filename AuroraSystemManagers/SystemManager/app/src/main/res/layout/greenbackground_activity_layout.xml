@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cusattrs="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/green_logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/softmanager_green_background_height"
+        android:background="@drawable/green_background_bg_on" >
+
+        <RelativeLayout
+            android:id="@+id/img_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/green_logo_out1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_logo_bg_out"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/green_logo_out2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_logo_bg_out"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/green_logo_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_logo_bg" />
+        </RelativeLayout>
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/green_bg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_layout"
+            android:layout_centerHorizontal="true"
+            android:text="@string/green_background_off"
+            android:layout_marginTop="@dimen/green_background_title_layout_marginTop"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/green_background_switch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/listChoiceBackgroundIndicator"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/green_background_switch_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dip"
+            android:paddingTop="11dp"
+            android:textColor="@color/list_item_title_color"
+            android:textSize="14dp" />
+
+        <cyee.widget.CyeeSwitch
+            android:id="@+id/green_background_switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:focusable="false"
+            android:paddingEnd="20dip" />
+
+        <View
+            android:id="@+id/divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_color" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/listview" />
+
+    <RelativeLayout
+        android:id="@+id/green_summary_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal" >
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/green_summary_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="@dimen/green_background_summary_marginTop"
+            android:textColor="#888888"
+            android:textSize="@dimen/green_bg_descripe_font_size" />
+  <!--guoxt modifyed-->
+  <!--
+        <cyee.widget.CyeeTextView
+            android:id="@+id/green_summary_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/green_summary_text1"
+            android:layout_marginLeft="20dp"
+            android:textColor="#888888"
+            android:textSize="@dimen/green_bg_descripe_font_size" />
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/green_summary_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/green_summary_text2"
+            android:layout_centerHorizontal="true"
+            android:textColor="#888888"
+            android:textSize="@dimen/green_bg_descripe_font_size" />
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/green_summary_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/green_summary_text3"
+            android:layout_centerHorizontal="true"
+            android:textColor="#888888"
+            android:textSize="@dimen/green_bg_descripe_font_size" />
+            -->
+    </RelativeLayout>
+
+</LinearLayout>

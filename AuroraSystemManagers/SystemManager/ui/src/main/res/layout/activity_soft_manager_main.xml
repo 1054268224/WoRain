@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".softmanager.SoftManagerMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/softmanager_item_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/soft_one_clean_btn"
+            android:layout_marginBottom="50dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/soft_one_clean_btn"
+            android:layout_width="262dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/one_clean_enable"
+            android:textColor="@color/white"
+            android:text="@string/uninstall_apps"
+            android:textSize="14sp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

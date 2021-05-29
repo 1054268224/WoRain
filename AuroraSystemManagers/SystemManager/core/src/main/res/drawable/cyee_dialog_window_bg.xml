@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/cyee_dialog_shadow_bg"
+    android:insetBottom="@dimen/cyee_magicbar_bottom_padding"
+    android:insetLeft="@dimen/cyee_magicbar_start_end_padding"
+    android:insetRight="@dimen/cyee_magicbar_start_end_padding" >
+
+</inset>

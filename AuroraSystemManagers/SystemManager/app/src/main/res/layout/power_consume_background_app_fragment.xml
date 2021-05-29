@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/header_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="@dimen/text_margin_left"
+            android:paddingTop="@dimen/header_padding_top"
+            android:singleLine="true"
+            android:text="@string/power_consume_header"
+            android:textColor="#00a6ce"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <cyee.widget.CyeeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/empty_view_icon_and_text_margin_top"
+            android:drawablePadding="@dimen/empty_icon_text_space"
+            android:drawableTop="@drawable/empty_image"
+            android:text="@string/text_power_consume_empty"
+            android:textColor="@color/empty_text_color_primary"
+            android:textSize="@dimen/empty_text_size" />
+    </LinearLayout>
+
+    <cyee.widget.CyeeListView
+        android:id="@+id/background_app_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <cyee.widget.CyeeProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/txt_noti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/text_load" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/button_padding"
+        android:paddingLeft="@dimen/button_padding"
+        android:paddingRight="@dimen/button_padding" >
+
+        <cyee.widget.CyeeButton
+            android:id="@+id/btn_clean"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:text="@string/power_consume_clean"
+            android:textColor="@color/limited_btn_textcolor"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

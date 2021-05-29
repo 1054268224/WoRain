@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cyee.preference.CyeePreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <cyee.preference.CyeePreferenceCategory app:cyeetitle="@string/items_switch" app:cyeekey="category_sys" >
+        <cyee.preference.CyeeSwitchPreference
+            app:cyeedefaultValue="false"
+            app:cyeekey="net_key"
+            app:cyeesummary="@string/net_monitor_summary"
+            app:cyeetitle="@string/net_monitor_title" />
+        <cyee.preference.CyeeSwitchPreference
+            app:cyeedefaultValue="false"
+            app:cyeekey="power_key"
+            app:cyeesummary="@string/energy_monitor_summary"
+            app:cyeetitle="@string/energy_monitor_title" />
+        <cyee.preference.CyeeSwitchPreference
+            app:cyeedefaultValue="false"
+            app:cyeekey="apps_key"
+            app:cyeesummary="@string/apps_monitor_summary"
+            app:cyeetitle="@string/apps_monitor_title" />
+        <!-- Gionee <yangxinruo> <2015-9-17> <add> for CR01555251 begin -->
+        <cyee.preference.CyeeSwitchPreference
+            app:cyeedefaultValue="true"
+            app:cyeekey="power_consume_key"
+            app:cyeesummary="@string/power_consume_setting_summary"
+            app:cyeetitle="@string/power_consume_setting_title" />
+        <!-- Gionee <yangxinruo> <2015-12-11> <add> for CR01608017 begin -->
+        <cyee.preference.CyeeSwitchPreference
+            app:cyeedefaultValue="true"
+            app:cyeekey="cpu_overload_monitor_key"
+            app:cyeesummary="@string/cpu_monitor_setting_summary"
+            app:cyeetitle="@string/cpu_monitor_setting_title" />
+        <!-- Gionee <yangxinruo> <2015-12-11> <add> for CR01608017 end -->
+        <!-- Gionee <yangxinruo> <2015-9-17> <add> for CR01555251 end -->
+        <!--
+             <cyee.preference.CyeeSwitchPreference
+            app:cyeekey="desktop_key"
+            app:cyeesummary="@string/desktop_monitor_summary"
+            app:cyeetitle="@string/desktop_monitor_title" />
+        -->
+    </cyee.preference.CyeePreferenceCategory>
+    <cyee.preference.CyeePreferenceCategory
+        app:cyeekey="category_key"
+        app:cyeetitle="@string/msg_background_process" >
+        <cyee.preference.CyeePreference
+            app:cyeedefaultValue="true"
+            app:cyeekey="process_white_list"
+            app:cyeesummary="@string/process_white_list_summary"
+            app:cyeetitle="@string/process_white_list_title" />
+
+        <cyee.preference.CyeeListPreference
+            app:cyeeentries="@array/app_process_limit_entries"
+            app:cyeeentryValues="@array/app_process_limit_values"
+            app:cyeekey="app_process_limit"
+            app:cyeepersistent="false"
+            app:cyeetitle="@string/app_process_limit_title" />
+    </cyee.preference.CyeePreferenceCategory>
+    <!-- Gionee <yangxinruo> <2016-1-5> <add> for CR01618272 begin -->
+    <cyee.preference.CyeePreferenceCategory app:cyeetitle="@string/clean_memory_title" >
+        <cyee.preference.CyeeSwitchPreference
+            app:cyeedefaultValue="false"
+            app:cyeekey="screenoff_clean_key"
+            app:cyeesummary="@string/screenoff_clean_setting_summary"
+            app:cyeetitle="@string/screenoff_clean_setting_title" />
+        <cyee.preference.CyeeSwitchPreference
+            app:cyeedefaultValue="false"
+            app:cyeekey="screenoff_clean_toast_key"
+            app:cyeesummary="@string/screenoff_clean_toast_setting_summary"
+            app:cyeetitle="@string/screenoff_clean_toast_setting_title"
+            app:cyeedependency="screenoff_clean_key" />
+    </cyee.preference.CyeePreferenceCategory>
+    <!-- Gionee <yangxinruo> <2016-1-5> <add> for CR01618272 end -->
+
+</cyee.preference.CyeePreferenceScreen>

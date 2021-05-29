@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/button_padding"
+    android:paddingLeft="@dimen/button_padding"
+    android:paddingRight="@dimen/button_padding" >
+
+    <cyee.widget.CyeeButton
+        android:id="@+id/btn_clean"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:onClick="oneClean"
+        android:text="@string/one_clean"
+        android:textSize="16sp"
+        android:textColor="@color/limited_btn_textcolor" />
+
+    <cyee.widget.CyeeButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dip"
+        android:layout_height="46dp"
+        android:layout_weight="1"
+        android:onClick="oneClean"
+        android:text="@string/cancel_btn"
+        android:textSize="16sp"
+        android:textColor="@color/limited_btn_textcolor"
+        android:visibility="gone"/>
+
+    <cyee.widget.CyeeButton
+        android:id="@+id/btn_ok"
+        android:layout_width="0dip"
+        android:layout_height="46dp"
+        android:layout_marginLeft="8dip"
+        android:layout_weight="1"
+        android:onClick="oneClean"
+        android:text="@string/ok_btn"
+        android:textSize="16sp"
+        android:textColor="@color/limited_btn_textcolor"
+        android:visibility="gone" />
+
+</LinearLayout>

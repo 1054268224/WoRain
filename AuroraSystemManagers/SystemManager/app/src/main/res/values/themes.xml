@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MHostTheme_Common" parent="Theme.Cyee.Light">
+        <!--<item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowTranslucentStatus">false</item>-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--        <item name="android:homeAsUpIndicator">@drawable/power_manager</item>-->
+        <!--        <item name="colorControlNormal">@android:color/white</item>-->
+    </style>
+
+    <style name="MHostTheme" parent="MHostTheme_Common">
+        <item name="actionBarStyle">@style/BlackTitle</item>
+        <item name="android:windowBackground">@color/host_bar_bg_blue</item>
+    </style>
+
+    <style name="BlackTitle" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/BlackTitleStyle</item>
+    </style>
+
+    <style name="BlackTitleStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/host_bar_bg_white</item>
+    </style>
+
+    <style name="MHostThemeMain" parent="MHostTheme_Common">
+        <item name="actionBarStyle">@style/BlackTitleMain</item>
+        <item name="android:windowBackground">@color/host_bar_bg_white</item>
+        <item name ="android:homeAsUpIndicator">@drawable/svg_icon_back_left</item>
+    </style>
+
+    <style name="BlackTitleMain" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/BlackTitleStyleMain</item>
+    </style>
+
+    <style name="BlackTitleStyleMain" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/black_host_title_black</item>
+    </style>
+
+</resources>

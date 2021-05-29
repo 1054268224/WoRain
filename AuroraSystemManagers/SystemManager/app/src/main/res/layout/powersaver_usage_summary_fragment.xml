@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- Gionee <yangxinruo> <2015-11-23> add for CR01596184 begin -->
+    <cyee.widget.CyeeTextView
+        android:id="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="@dimen/text_margin_left"
+        android:paddingTop="@dimen/header_padding_top"
+        android:singleLine="true"
+        android:textColor="#00a6ce"
+        android:textSize="@dimen/text_size" />
+    <!-- Gionee <yangxinruo> <2015-11-23> add for CR01596184 end -->
+    <ListView
+        android:id="@+id/usage_summary_app_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

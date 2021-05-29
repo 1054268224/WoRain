@@ -1,0 +1,18 @@
+<cyee.preference.CyeePreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.cyee="http://schemas.android.com/apk/res-auto" >
+
+    <cyee.preference.CyeePreferenceCategory com.cyee:cyeetitle="@string/virus_update" >
+        <cyee.preference.CyeeSwitchPreference
+            com.cyee:cyeedefaultValue="true"
+            com.cyee:cyeekey="auto_update_key"
+            com.cyee:cyeesummary="@string/auto_update_summary"
+            com.cyee:cyeetitle="@string/auto_update" />
+
+        <cyee.preference.CyeePreferenceScreen
+            android:layout_marginLeft="10dip"
+            com.cyee:cyeekey="manual_update_key"
+            com.cyee:cyeetitle="@string/update_manual" >
+        </cyee.preference.CyeePreferenceScreen>
+    </cyee.preference.CyeePreferenceCategory>
+
+</cyee.preference.CyeePreferenceScreen>

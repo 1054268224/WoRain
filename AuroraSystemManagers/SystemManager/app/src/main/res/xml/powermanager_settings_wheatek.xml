@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory
+        android:title="@string/power_saving_mode_title"
+        android:key="key_power_saver_wain"
+        android:layout="@layout/wheatek_preference_category">
+
+        <SwitchPreferenceCompat
+            android:key="key_night_mode"
+            android:title="@string/night_saving_title"
+            android:summary="@string/night_saving_summary"
+            android:layout="@layout/wheatek_preference_switch_dash" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="key_brightness_wain"
+            android:title="@string/brightness_title"
+            android:summary="@string/brightness_summary"
+            android:layout="@layout/wheatek_preference_switch_dash" />
+
+        <PreferenceScreen
+            android:defaultValue="false"
+            android:key="key_sleep_wain"
+            android:title="@string/sleep_title"
+            android:summary="@string/sleep_summary"
+            android:layout="@layout/wheatek_preference_dash" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="key_wlan_wain"
+            android:title="@string/wlan_title"
+            android:layout="@layout/wheatek_preference_switch_dash" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="key_bluetooth_wain"
+            android:title="@string/bluetooth_title"
+            android:layout="@layout/wheatek_preference_switch_dash" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="key_battery_wain"
+            android:title="@string/battery_title"
+            android:layout="@layout/wheatek_preference_switch" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

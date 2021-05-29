@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/height_measure_result"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@drawable/table_v_divider"
+        android:showDividers="middle|beginning|end"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="30.0dp"
+        android:paddingRight="30.0dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/table_h_divider"
+            android:showDividers="middle|beginning|end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/your_height"
+                android:textSize="20.0dp" />
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textSize="20.0dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/table_h_divider"
+            android:showDividers="middle|beginning|end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/high_point_angle"
+                android:textSize="20.0dp" />
+
+            <TextView
+                android:id="@+id/angle_of_elevation"
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textSize="20.0dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/table_h_divider"
+            android:showDividers="middle|beginning|end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/low_point_angel"
+                android:textSize="20.0dp" />
+
+            <TextView
+                android:id="@+id/angle_of_depression"
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textSize="20.0dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/table_h_divider"
+            android:showDividers="middle|beginning|end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/target_distance"
+                android:textSize="20.0dp" />
+
+            <TextView
+                android:id="@+id/target_distance"
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textSize="20.0dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/table_h_divider"
+            android:showDividers="middle|beginning|end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/target_height"
+                android:textSize="20.0dp" />
+
+            <TextView
+                android:id="@+id/target_height"
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textSize="20.0dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

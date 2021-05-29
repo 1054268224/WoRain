@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="system_check_over_item_height">38dp</dimen>
+    <dimen name="system_check_over_optimize_item_height">48dp</dimen>
+    <dimen name="system_check_over_header_item_height">42dp</dimen>
+    <dimen name="system_check_over_optimize_item_text_size">16dp</dimen>
+    <dimen name="system_check_over_item_text_size">14dp</dimen>
+    <dimen name="system_checking_item_height">84dp</dimen>
+    <dimen name="system_check_over_btn_height">56dp</dimen>
+    <dimen name="exam_score_ripple_radius">81dp</dimen>
+
+    <dimen name="score_view_size">150dp</dimen>
+    <dimen name="score_view_number_size">56dp</dimen>
+    <dimen name="score_view_unit_size">12dp</dimen>
+    <dimen name="score_view_hint_size">16dp</dimen>
+    <dimen name="score_view_number_hint_margin">4dp</dimen>
+    <dimen name="passwordRadius">9dp</dimen>
+</resources>

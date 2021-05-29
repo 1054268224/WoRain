@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee: mengdw <2015-11-11> add for CR01589343 begin -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cusattrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <cyee.widget.CyeeListView
+        android:id="@+id/sell_record_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|top"
+        android:divider="@color/sell_record_list_bk"
+        android:dividerHeight="@dimen/sell_calibrate_1px" />
+    <LinearLayout
+		android:id="@+id/buy_record_loader"
+		android:layout_marginTop="@dimen/buy_loader_margin_top"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:visibility="gone" >
+		<cyee.widget.CyeeProgressBar
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center" />
+		<cyee.widget.CyeeTextView
+		    android:id="@+id/txt_noti"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:text="@string/text_load" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/sell_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/container_margin_top"
+        android:orientation="vertical" >
+        <cyee.widget.CyeeTextView
+            android:id="@+id/sell_no_content"
+            android:visibility="gone" 
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <cyee.widget.CyeeButton
+            android:id="@+id/sell_try_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sell_no_content"
+            android:visibility="gone" 
+            android:text="@string/btn_try_again_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/sell_calibrate_8dp" />
+        <ImageView
+			android:id="@+id/key_no_record_img"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:visibility="gone" 
+			cusattrs:srcCompat="@drawable/empty_image" />
+        <cyee.widget.CyeeTextView 
+            android:layout_below="@+id/key_no_record_img"
+            android:id="@+id/no_record_empty_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/empty_text_color_primary"
+            android:textSize="@dimen/sell_calibrate_16sp"
+            android:layout_marginTop="@dimen/setup_activity_padding_top"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" 
+            android:text="@string/no_record_txt"/>  
+    </RelativeLayout>
+</LinearLayout> 
+<!-- Gionee: mengdw <2015-11-11> add for CR01589343 end -->

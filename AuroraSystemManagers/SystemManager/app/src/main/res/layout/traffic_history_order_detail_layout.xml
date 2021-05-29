@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cusattrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/historyorder_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <cyee.widget.CyeeTextView
+            android:id="@+id/statuscode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/historyorder_margin_left"
+            android:layout_marginRight="@dimen/historyorder_margin_right"
+            android:layout_marginTop="@dimen/historyorder_margin_top"
+            android:text="@string/historyorder_status"
+            android:textColor="@color/textcolor_title"
+            android:textSize="@dimen/textsize_title" />
+        <cyee.widget.CyeeTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/historyorder_margin_left"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/traffic_packge_title"
+            android:textColor="@color/textcolor_level_one"
+            android:textSize="@dimen/textsize_title" />
+            <cyee.widget.CyeeTextView
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/traffic_pay_mobile"
+            android:layout_marginLeft="@dimen/historyorder_margin_left"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/textcolor_level_two"
+            android:textSize="@dimen/textsize_title" />
+        <cyee.widget.CyeeTextView
+            android:id="@+id/paytime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/historyorder_margin_left"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/sell_calibrate_1dp"
+            android:text="@string/traffic_pay_time"
+            android:textColor="@color/textcolor_level_two"
+            android:textSize="@dimen/textsize_title" />
+        <cyee.widget.CyeeTextView
+            android:id="@+id/paytype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/historyorder_margin_left"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/sell_calibrate_1dp"
+            android:text="@string/traffic_pay_type"
+            android:textColor="@color/textcolor_level_two"
+            android:textSize="@dimen/textsize_title" />
+         <cyee.widget.CyeeTextView
+            android:id="@+id/transactionprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/historyorder_margin_left"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/sell_calibrate_1dp"
+            android:text="@string/traffic_pay_price"
+            android:textColor="@color/textcolor_level_two"
+            android:textSize="@dimen/textsize_title" />
+           <cyee.widget.CyeeTextView
+            android:id="@+id/orderid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/historyorder_margin_left"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/sell_calibrate_1dp"
+            android:text="@string/traffic_pay_orider_id"
+            android:textColor="@color/textcolor_level_two"
+            android:textSize="@dimen/textsize_title" />
+           <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/sell_calibrate_margin_left"
+            android:layout_marginRight="@dimen/sell_calibrate_margin_right"
+            android:layout_marginTop="@dimen/sell_calibrate_margin_top"
+            android:background="@color/textcolor_level_two" >
+          </View>
+          <cyee.widget.CyeeTextView
+                android:id="@+id/supporttel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/historyorder_margin_left"
+                android:layout_marginTop="@dimen/historyorder_margin_top"
+                android:text="@string/historyorder_supporttel"
+                android:textColor="@color/textcolor_title"
+                android:textSize="@dimen/textsize_title" />
+
+        <RelativeLayout
+            android:id="@+id/supporttel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/historyorder_margin_left"
+            android:orientation="horizontal" >
+            <cyee.widget.CyeeTextView
+                android:id="@+id/telnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/textcolor_level_one"
+                android:textSize="@dimen/textsize_title" />
+            <cyee.widget.CyeeButton
+                android:id="@+id/dial"
+                android:layout_width="@dimen/limited_btn_width"
+                android:layout_height="@dimen/limited_btn_height"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/historyorder_margin_right"
+                android:text="@string/historyorder_dial" 
+                android:textSize="14dp" />                
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

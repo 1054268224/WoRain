@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rubbishclean_name">垃圾清理</string>
+    <string name="rubbish_is_scanning">正在扫描...</string>
+    <string name="clean_deeply">深度清理</string>
+    <string name="rubbish_file_size">220MB</string>
+    <string name="quickly_clean_rubbish">一键清理</string>
+    <string name="normal_clean_advice">建议清理</string>
+    <string name="deeplyclean_item_advice">不建议清理</string>
+    <string name="rubbish_cleaner">垃圾清理</string>
+    <string name="rubbish_was_cleaned">垃圾已被清理</string>
+    <string name="clean_end">完成</string>
+    <string name="rubbish_clean_settings">垃圾清理设置</string>
+    <string name="rubbish_clean_size_setting">清理提醒</string>
+    <string name="rubbish_size_alert">垃圾大小提醒</string>
+    <string name="apk_delete_setting">删除安装包提醒</string>
+    <string name="apk_delete_setting_summary">安装包安装后提示删除安装包</string>
+    <string name="residual_delete_setting">删除残留文件提醒</string>
+    <string name="residual_delete_setting_summary">应用删除后提示删除残留文件</string>
+    <string name="deeply_clean_end">清理完毕</string>
+    <string name="deeply_clean_description">已清理文件</string>
+    <string name="apk_not_installed">未安装</string>
+    <string name="apk_was_installed">已安装</string>
+    <string name="liebao_supply">猎豹清理大师提供技术支持</string>
+    <string name="deepclean_total_desc">总计</string>
+    <string name="deepclean_selected_desc">已选择</string>
+    <string name="go_cancel">取消</string>
+    <string name="go_install_apk">安装</string>
+    <string name="go_clean">清理</string>
+    <string name="show_rubbish_size">大小:</string>
+</resources>

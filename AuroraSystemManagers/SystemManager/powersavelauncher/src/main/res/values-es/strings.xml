@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lanzador de poder</string>
+    <string name="exit_string">Salir del Modo Extremo</string>
+    <string name="exit_string_title">Salir del Modo Extremo</string>
+    <string name="ok_string">OK</string>
+    <string name="cancel_string">Cancelar</string>
+    <string name="exit_msg">¿Quieres salir del Modo Extremo?</string>
+    <string name="exit_msg1">Teléfono se está cargando, ¿está seguro para salir del modo extrema?</string>
+    <string name="can_use_time">Tiempo de espera </string>
+    <string name="need_charging_time">Carga de la necesidad %s</string>
+    <string name="power_cannotget">No es posible estimar </string>
+    <!-- Gionee <yangxinruo> <2015-9-9> <modify> for CR01549850 begin -->
+    <string name="power_hours"> Hora </string>
+    <string name="power_minutes"> Minuto </string>
+    <!-- Gionee <yangxinruo> <2015-9-9> <modify> for CR01549850 end -->
+    <string name="is_charging_now">Carga</string>
+    <string name="charged_completely">Cargado</string>
+    <!--Gionee <yangxinruo> <2015-07-31> add for CR01529084 begin-->
+    <string name="am">A.M</string>
+    <string name="pm">P.M</string>
+    <!--Gionee <yangxinruo> <2015-07-31> add for CR01529084 end-->
+    <string name="power_low">mas bajo que</string>
+    <string name="activity_title_add_apps">Añadir apps</string>
+    <string name="add_app">Añadir</string>
+    <string name="system_process">Proceso del sistema</string>
+    <string name="remaining_time_2">Tiempo disponible: </string>
+    <string name="settings">Ajustes</string>
+    <string name="settings_activity_title">Ajustes</string>
+    <string name="pref_title_mobile_data">Datos móviles</string>
+    <string name="pref_title_wifi">Wi-Fi</string>
+    <string name="guide_text_1">"1. Activa datos móviles o Wi-Fi aquí"</string>
+    <!-- chenyee liu_shuang 20181012 add for CSW1803DP-52 begin -->
+    <string name="guide_text_1_WF">"1. Activa datos móviles o WF aquí"</string>
+    <!-- chenyee liu_shuang 20181012 add for CSW1803DP-52 end -->
+    <string name="guide_text_2">"2. Para \"salir\",aquí"</string>
+    <string name="guide_text_6">"Alguna característica de las apps pueden no funcionar correctamente durante el Modo Extremo"</string>
+    <string name="guide_text_got_it">"Ok"</string>
+    <string name="control_panel_brightness">Brillo</string>
+    <string name="on">Activado</string>
+    <string name="off">Desactivado</string>
+    <string name="social_app">Aplicación social</string>
+    <string name="remaining_time">En espera:</string>
+    <plurals name="remaining_time_hour">
+        <item quantity="one">1 h </item>
+        <item quantity="other">%d h </item>
+    </plurals>
+    <plurals name="remaining_time_minute">
+        <item quantity="one">"1 minuto"</item>
+        <item quantity="other">"%d min"</item>
+    </plurals>
+    <string name="no_sim">"Falta la tarjeta SIM."</string>
+</resources>

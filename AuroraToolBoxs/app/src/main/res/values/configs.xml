@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Add by zhiheng.huang on 2020/2/19 for flashlight start  -->
+    <bool name="is_SOS_support">true</bool>
+    <!-- Add by zhiheng.huang on 2020/2/19 for flashlight end  -->
+</resources>

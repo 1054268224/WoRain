@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee: mengdw <2015-11-11> add for CR01589343 begin -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sell_calibrate_margin_left"
+        android:layout_marginTop="@dimen/sell_calibrate_margin_top"
+        android:orientation="horizontal" >
+        <cyee.widget.CyeeTextView
+            android:id="@+id/key_record_Basic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:textColor="@color/textcolor_level_one"
+            android:textSize="@dimen/textsize_level_one" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/sell_calibrate_margin_left"
+		android:layout_marginTop="@dimen/sell_product_record_top"
+		android:orientation="horizontal" >
+        <cyee.widget.CyeeTextView
+            android:id="@+id/key_date_paytype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:textColor="@color/textcolor_level_two"
+            android:textSize="@dimen/textsize_level_two" />
+        <cyee.widget.CyeeTextView
+            android:id="@+id/order_record_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/sell_calibrate_margin_right"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/textcolor_title"
+            android:singleLine="true"
+            android:textSize="@dimen/textsize_level_two" />
+    </RelativeLayout>
+</RelativeLayout>
+<!-- Gionee: mengdw <2015-11-11> add for CR01589343 end -->

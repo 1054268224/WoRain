@@ -1,0 +1,82 @@
+<resources>
+
+
+    <!-- Gionee xionghg 2017-08-01 add for 173837 begin -->
+    <style name="AppLockTheme" parent="@style/Theme.Cyee.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- Gionee xionghg 2017-08-01 add for 173837 end-->
+    <!-- Chenyee xionghg 20180113attr/regularColor add for CSW1702A-2474 begin -->
+    <style name="AppLockManagerTheme" parent="@style/SystemManagerTheme">
+        <!-- 自定义CyeeAlertDialog单选项布局 -->
+        <item name="cyeesingleChoiceItemLayout">@layout/applock_select_dialog_singlechoice</item>
+    </style>
+    <!-- Chenyee xionghg 20180113 add for CSW1702A-2474 end -->
+
+    <style name="TextAppearance.ConfirmDeviceCredentialsErrorText"
+           parent="android:TextAppearance.Material.Body1">
+        <item name="android:textColor">#ff5621</item>
+    </style>
+
+    <style name="GnSettingsLightTheme" parent="@style/Theme.Cyee.Light">
+        <!-- LockPatternView colors -->
+       <!-- <item name="@*android:regularColor">@color/unlock_pattern_view_regular_color</item>
+        <item name="@*android:successColor">@color/unlock_pattern_view_success_color</item>
+        <item name="@*android:errorColor">@color/unlock_pattern_view_error_color</item>-->
+    </style>
+
+    <style name="DefaultPasswordInputViewTheme" parent="@style/Theme.Cyee.Light">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">4</item>
+        <item name="PasswordInputViewStyle">@style/DefaultPasswordInputViewStyle</item>
+    </style>
+
+    <style name="DefaultPasswordInputViewStyle" parent="@style/Theme.Cyee.Light">
+        <item name="passwordColor">#cccccc</item>
+        <item name="passwordRadius">9dp</item>
+    </style>
+
+    <style name="TextAppearance" parent="android:TextAppearance.Material">
+    </style>
+
+    <style name="TextAppearance.PasswordEntry" parent="android:TextAppearance.Material">
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="SecurityPreferenceButtonContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">2</item>
+        <item name="android:dividerPadding">8dip</item>
+        <!--Gionee <wangyaohui><2013-06-22> add for CR00829050 begin-->
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <!--Gionee <wangyaohui><2013-06-22> add for CR00829050 end-->
+    </style>
+
+    <style name="SecurityPreferenceButton">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <!--Gionee <wangyaohui><2013-06-22> add for CR00829050 begin-->
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <!--Gionee <wangyaohui><2013-06-22> add for CR00829050 end-->
+    </style>
+
+    <style name="Theme.ConfirmDeviceCredentialsDark" parent="@android:style/Theme.Material">
+        <!-- LockPatternView colors -->
+        <!--<item name="@*android:regularColor">@color/lock_pattern_view_regular_color_dark</item>
+        <item name="@*android:successColor">@color/lock_pattern_view_regular_color_dark</item>
+        <item name="@*android:errorColor">@color/lock_pattern_view_error_color</item>-->
+    </style>
+</resources>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">System Manager</string>
+
+    <string name="rubcleaner">Cleaner</string>
+    <string name="bootspeed">Boost speed</string>
+    <string name="powermanager">Battery</string>
+    <string name="trfficmonitor">Data monitor</string>
+    <string name="softmanager">Manage apps</string>s
+    <string name="setting">Settings</string>
+
+    <string name="one_clean">Clean up</string>
+    <string name="uninstall_apps">Uninstall</string>
+    <string name="one_accelerate">Boost speed</string>
+    <string name="scanning">Scanning</string>
+    <string name="score_unit_text">%</string>
+    <string name="one_optimise">Fix</string>
+    <string name="optimising">optimising...</string>
+
+    <string name="none_apps_uninstall_able">No uninstallable apps for the time being</string>
+    <!--############################################################## traffic monitor  ############################################################-->
+    <string name="surplus_flow_month">Monthly flow surplus</string>
+    <string name="used_flow_today">Used today</string>
+    <string name="traffic_package">Data plan</string>
+    <string name="traffic_ranking_list">Top up</string>
+    <string name="null_package">Not set</string>
+    <!--############################################################## traffic monitor  ############################################################-->
+
+    <!--############################################################## rubcleaner  ############################################################-->
+    <string name="cache_type">Cache files</string>
+    <string name="ad_type">Advertising files</string>
+    <string name="unload_type">Residuals</string>
+    <string name="package_type">Packages</string>
+    <!--############################################################## rubcleaner  ############################################################-->
+
+
+    <!--############################################################## bootspeed ############################################################-->
+    <string name="app_running">Running applications （</string>
+    <string name="app_running_end">）</string>
+    <!--############################################################## bootspeed ############################################################-->
+
+    <!--############################################################## powermanager ############################################################-->
+    <string name="battery_state">当前状态： </string>
+    <string name="normal_mode_title">普通模式</string>
+    <string name="normal_mode_desc">普通状态</string>
+    <string name="normal_mode_detail">系统不做任何省电处理</string>
+    <string name="daily_save_mode_title">日常省电模式</string>
+    <string name="daily_save_mode_desc">降低手机性能</string>
+    <string name="daily_save_mode_detail">默认配置可用：约</string>
+    <string name="ultimate_save_mode_title">极致省电模式</string>
+    <string name="ultimate_save_mode_desc">仅可使用电话、联系人、信息和时钟</string>
+    <string name="ultimate_save_mode_detail">可待机：约</string>
+    <string name="power_detail">耗电详情</string>
+    <string name="power_detail_desc">软件和硬件的耗电排行详情</string>
+    <!--############################################################## powermanager ############################################################-->
+
+</resources>

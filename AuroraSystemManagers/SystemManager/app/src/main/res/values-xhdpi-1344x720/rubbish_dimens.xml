@@ -1,0 +1,5 @@
+<resources>
+
+    <!-- 垃圾清理主界面尺寸 -->
+    <dimen name="all_screen_height">648dp</dimen>
+</resources>

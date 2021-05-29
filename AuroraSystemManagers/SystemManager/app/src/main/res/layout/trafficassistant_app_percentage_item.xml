@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/listview_height"
+    android:minHeight="?attr/listPreferredItemHeight"
+    android:paddingTop="0dip"
+    android:paddingBottom="0dip"
+    android:layout_gravity="center_vertical"
+    android:columnCount="3">
+   <!--  Gionee: mengdw <2015-07-29> modify for CR01526420  begin -->
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_rowSpan="3"
+        android:layout_marginEnd="8dip"
+        android:scaleType="centerInside"
+        android:contentDescription="@null"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/image_margin_left"
+        android:layout_marginRight="@dimen/image_margin_right" />
+<!--         <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_rowSpan="3"
+        android:layout_marginEnd="8dip"
+        android:scaleType="centerInside"
+        android:contentDescription="@null"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/image_margin_left"
+        android:layout_marginRight="@dimen/image_margin_right" /> -->
+    <!--  Gionee: mengdw <2015-07-29> modify for CR01526420  end -->
+
+    <cyee.widget.CyeeTextView
+        android:id="@android:id/title"
+        android:layout_width="0dip"
+        android:layout_gravity="fill_horizontal"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:layout_marginTop="6dip"
+        android:textSize="@dimen/textsize_level_one"
+        android:textColor="@color/textcolor_level_one"
+        android:textDirection="locale" />
+
+    <cyee.widget.CyeeTextView
+        android:id="@android:id/text1"
+        android:layout_marginStart="8dip"
+        android:layout_marginEnd="@dimen/image_margin_right"
+        android:layout_marginTop="6dip"
+        android:textSize="@dimen/textsize_level_two"
+        android:textColor="@color/textcolor_level_two"/>
+
+    <cyee.widget.CyeeProgressBar
+        android:id="@android:id/progress"
+        android:layout_height="12dip"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:max="100"
+        android:layout_marginRight="@dimen/image_margin_right"
+        style="?android:attr/progressBarStyleHorizontal" />
+
+    <cyee.widget.CyeeTextView
+        android:id="@android:id/summary"
+        android:layout_width="0dip"
+        android:layout_gravity="fill_horizontal"
+        android:layout_columnSpan="2"
+        android:layout_marginTop="2dip"
+        android:visibility="gone"
+        android:maxLines="2"
+        android:layout_marginRight="8dip"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</GridLayout>

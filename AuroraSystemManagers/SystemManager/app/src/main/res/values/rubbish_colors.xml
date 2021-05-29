@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Gionee <yangxinruo> <2016-5-10> modify for CR01658695 begin -->
+    <drawable name="rubbish_blue_bg">@color/common_green_bg</drawable>
+    <!-- Gionee <yangxinruo> <2016-5-10> modify for CR01658695 end -->
+    
+    <color name="textview_color_white">#ffffff</color>
+    
+    <color name="adapter_item_name_color">#cc000000</color>
+    <color name="adapter_item_summary_color">#66000000</color>
+
+	<!-- Gionee: <houjie> <2015-10-27> add for CR01575153 begin -->
+    <color name="app_use_today">#00a6ce</color>
+    <!-- Gionee: <houjie> <2015-10-27> add for CR01575153 end -->
+</resources>

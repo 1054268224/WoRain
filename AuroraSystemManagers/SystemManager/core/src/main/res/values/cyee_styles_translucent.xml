@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Cyee.Light.Button.Small.Translucent" parent="@style/Widget.Cyee.Light.Button.Small">
+        <item name="android:background">@color/cyee_translucent_background</item>
+    </style>
+    
+    <style name="Widget.Cyee.Light.Button.Borderless.Translucent" parent="@style/Widget.Cyee.Light.Button.Borderless">
+        <item name="android:background">@color/cyee_translucent_background</item>
+    </style>
+    
+    <style name="Widget.Cyee.EditText.Translucent">
+        <item name="android:textColor">@color/cyee_text_color_light</item>
+    </style>
+    
+    <style name="Widget.Cyee.Light.Spinner.DropDown.Translucent">
+        <item name="android:popupBackground">@color/cyee_translucent_background</item>
+    </style>
+    
+    <style name="Widget.Cyee.Light.ListPopupWindow.Translucent" parent="@style/Widget.Cyee.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/cyee_translucent_background</item>
+    </style>
+    
+    <style name="Theme.Cyee.Light.Float.Translucent" parent="@style/Theme.Cyee.Light.Translucent">
+        <item name="android:windowBackground">@color/cyee_translucent_background</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

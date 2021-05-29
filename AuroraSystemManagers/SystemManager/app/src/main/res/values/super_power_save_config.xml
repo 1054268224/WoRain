@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 进入极致省电冻结应用白名单 -->
+    <string-array name="super_power_save_whitelist">
+        <!-- 1. android and framework begin -->
+        <item>android</item>
+        <item>android.process.acore</item>
+        <item>android.process.media</item>
+        <item>com.android.settings</item>
+        <item>com.android.ActivityNetwork</item>
+        <item>com.android.carrierdefaultapp</item>
+        <item>com.android.defcontainer</item>
+        <item>com.android.emergency</item>
+        <item>com.android.keychain</item>
+        <item>com.android.systemui</item>
+        <item>com.android.carrierconfig</item>
+        <item>com.android.contacts</item>
+        <item>com.android.hotspot2</item>
+        <item>com.android.mms</item>
+        <item>com.android.se</item>
+        <item>com.android.server.telecom</item>
+        <item>com.android.phone</item>
+        <item>com.android.incallui</item>
+        <item>com.android.deskclock</item>
+        <item>com.android.externalstorage</item>
+        <item>com.android.shell</item>
+        <item>com.android.proxyhandler</item>
+        <item>com.android.inputdevices</item>
+        <item>com.android.inputmethod.latin</item>
+        <item>com.android.dreams.basic</item>
+        <item>com.android.noisefield</item>
+        <item>com.android.vpndialogs</item>
+        <item>com.android.phasebeam</item>
+        <item>com.android.provision</item>
+        <item>com.android.certinstaller</item>
+        <item>com.android.webview</item>
+        <item>com.android.location.fused</item>
+        <item>com.android.sharedstoragebackup</item>
+        <item>com.android.wallpapercropper</item>
+        <item>com.android.wallpaper</item>
+        <item>com.android.captiveportallogin</item>
+        <item>com.android.pacprocessor</item>
+        <item>com.android.wallpaper.holospiral</item>
+        <item>com.android.simmelock</item>
+        <item>com.android.mms.service</item>
+        <item>com.android.managedprovisioning</item>
+        <item>com.android.email</item>
+        <item>com.android.stk</item>
+        <item>com.android.dialer</item>
+        <item>com.android.vending</item>
+        <!-- android 日历 -->
+        <item>com.android.calendar</item>
+        <item>com.android.exchange</item>   <!-- exchange帐号丢失-->
+        <item>com.android.launcher2</item>
+        <item>com.android.bluetooth</item>
+        <item>com.android.facelock</item>
+        <item>com.android.packageinstaller</item>
+        <item>com.android.poweroffhandlerapp</item>
+        <item>com.android.statementservice</item> <!-- for android N android.intent.action.INTENT_FILTER_NEEDS_VERIFICATION -->
+        <item>com.android.intervene</item>
+        <!--<item>com.android.chrome</item>-->
+        <!-- xionghg 2017-08-28 add for 192029 begin -->
+        <item>com.android.documentsui</item>
+        <!-- xionghg 2017-08-28 add for 192029 end -->
+        <item>com.android.providers.contacts</item>
+        <item>com.android.providers.userdictionary</item>
+        <item>com.android.providers.calendar</item>
+        <item>com.android.providers.telephony</item>
+        <item>com.android.providers.downloads</item>
+        <item>com.android.providers.settings</item>
+        <item>com.android.providers.applications</item>
+        <item>com.android.providers.media</item>
+        <item>com.android.providers.privatemedia</item>
+        <item>com.android.providers.blockednumber</item>
+        <!-- xionghg 2017-08-17 add for 188180 begin -->
+        <item>com.android.providers.subscribedfeeds</item>
+        <!-- xionghg 2017-08-17 add for 188180 end -->
+        <!-- 1. android and framework end -->
+
+        <!-- 2. google begin -->
+        <item>com.google.android.music</item>
+        <item>com.google.android.apps.hangouts</item>
+        <item>com.google.android.gms</item>
+        <item>com.google.android.gm</item>
+        <item>com.google.android.ims</item>
+        <item>com.google.android.gm.exchange</item>
+        <item>com.google.android.youtube</item>
+        <item>com.google.android.talk</item>
+        <item>com.google.android.packageinstaller</item>
+        <item>com.google.android.webview</item>
+        <item>com.google.android.apps.messaging</item>
+        <item>com.google.android.networkstack</item>
+        <item>com.google.android.networkstack.permissionconfig</item>
+        <!-- add bug:TEJWQ-270 chenyu 20200401 start -->
+        <item>com.google.android.documentsui</item>
+        <!-- add bug:TEJWQ-270 chenyu 20200401 end -->
+        <!-- 2. google end -->
+
+        <!-- 3. mediatek begin -->
+        <item>com.mediatek.atmwifimeta</item>
+        <item>com.mediatek.gba</item>
+        <item>com.mediatek.mdlogger</item>
+        <item>com.mediatek.mtklogger</item>
+        <item>com.mediatek.atci.service</item>
+        <item>com.mediatek.providers.drm</item>
+        <item>com.mediatek.fwk.plugin</item>
+        <item>com.mediatek</item>
+        <item>com.mediatek.lbs.em2.ui</item>
+        <item>com.mediatek.omacp</item>
+        <item>com.mediatek.schpwronoff</item>
+        <item>com.mediatek.calendarimporter</item>
+        <item>com.mediatek.batterywarning</item>
+        <item>com.mediatek.gnss.nonframeworklbs</item>
+        <item>com.mediatek.floatmenu</item>
+        <item>com.mediatek.systemupdate</item>
+        <item>com.mediatek.ftprecheck</item>
+        <item>com.mediatek.connectivity</item>
+        <item>com.mediatek.telephony</item>
+        <item>com.mediatek.ygps</item>
+        <item>com.mediatek.hotknot.service</item>          <!-- hotknot-->
+        <item>com.mediatek.bluetoothle</item>
+        <item>com.mediatek.bluetooth</item>
+        <item>com.mediatek.ims</item>
+        <!-- Gionee <yangxinruo> <2016-8-5> add for CR01742268 begin -->
+        <item>com.mediatek.security</item>
+        <!-- Gionee <yangxinruo> <2016-8-5> add for CR01742268 end -->
+        <item>com.mtk.telephony</item>
+       <!-- chenyee guoxt modify for CSW1705A-767 begin -->
+       <item>com.mediatek.callrecorder</item>
+       <!-- chenyee guoxt modify for CSW1705A-767 end -->
+        <!-- chenyee guoxt modify for CSW1703A-2272 begin -->
+       <item>com.mediatek.location.mtknlp</item>
+        <!-- chenyee guoxt modify for CSW1703A-2272 end -->
+        <!-- 3. mediatek end -->
+
+
+        <!-- 5. chenyee begin -->
+        <item>com.cyee.server</item>
+       <!-- chenyee guoxt modify for CSW1702A-3063 begin -->
+        <item>com.cyee</item>
+        <item>com.chenyee</item>
+       <!-- chenyee guoxt modify for CSW1702A-3063 end -->
+        <item>com.cyee.chameleon</item>
+        <item>com.cyee.settings.providers</item>
+        <item>com.cyee.colorful.wallpaper</item>
+        <!-- Gionee <yangxinruo> <2016-2-26> add for CR01638288 begin -->
+        <item>com.cyee.search</item>
+        <!-- Gionee <yangxinruo> <2016-2-26> add for CR01638288 end -->
+        <item>com.cydroid.bluetooth</item>
+        <item>com.cydroid.softmanager</item>
+        <item>com.cydroid.systemmanager</item>
+        <item>com.cydroid.softmanagerplugin</item>
+        <item>com.cydroid.finger.unlock</item>
+        <item>com.cydroid.powersaver.launcher</item>
+        <item>com.cydroid.floatingtouch</item>
+        <!-- Gionee <yangxinruo> <2015-08-10> add for CR01525037 begin -->
+        <item>com.cydroid.longscreenshot</item>
+        <!-- Gionee <yangxinruo> <2015-08-10> add for CR01525037 end -->
+        <item>com.cydroid.note</item> <!--CR01569433-->
+        <item>com.cydroid.change</item>
+        <item>com.cydroid.ringtone</item>
+        <!-- Gionee <yangxinruo> <2015-10-22> add for CR01573167 begin -->
+        <!-- 锁屏新包名 -->
+        <item>com.cydroid.keyguard</item>
+        <!-- Gionee <yangxinruo> <2015-10-22> add for CR01573167 end -->
+        <item>com.appsipper.demo</item>
+
+        <item>com.cydroid.setting.adapter.wifi</item>
+        <item>com.mediatek.ppl</item>             <!-- 防盗追踪-->
+        <!-- Gionee <yangxinruo> <2016-9-2> add for CR01756596 begin -->
+        <item>com.cydroid.longscreenshot</item>
+        <item>com.cydroid.wakeup</item>
+        <!-- Gionee <yangxinruo> <2016-1-25> add for CR01629122 end -->
+        <!-- Gionee <yangxinruo> <2015-08-12> add for CR01542665 begin -->
+        <!-- 高通平台定时开关机apk -->
+        <item>com.mediatek.schpwronoff</item>
+        <!-- Gionee <yangxinruo> <2015-08-12> add for CR01542665 end -->
+        <!-- Gionee <yangxinruo> <2016-1-25> add for CR01630754 begin -->
+        <item>gn.com.android.update</item>
+        <!-- Gionee <yangxinruo> <2016-1-25> add for CR01630754 end -->
+        <item>com.cy.security</item>                       <!-- 安全密码-->
+        <!-- 5. chenyee end -->
+
+        <!-- 6. others begin -->
+        <item>com.iflytek.speechcloud</item>
+        <item>com.oupeng.max.sdk</item>
+        <item>com.baidu.map.location</item>
+        <item>com.fw.upgrade.sysoper</item>
+        <item>com.svox.pico</item>
+        <item>com.yulore.framework</item>
+        <item>com.martianmode.discoverylauncher3</item>    <!-- 客户launcher-->
+        <item>com.twitter.android</item>                   <!-- twitter帐号丢失-->
+        <item>com.example.listenwhowidget</item>           <!-- QM widget-->
+        <item>com.example.buttonwidget</item>
+        <item>com.example.logowidget</item>
+        <item>com.bitdefender.security</item> <!-- VFantivirus杀毒软件-->
+        <item>com.facebook.katana</item>
+        <item>com.facebook.arco</item>
+        <item>com.facebook.orca</item>
+        <item>tv.peel.app</item> <!--CR01569433-->
+        <!-- Gionee <yangxinruo> <2016-3-3> add for CR01645879 begin -->
+        <item>com.tencent.mm.clone</item>
+        <!-- Gionee <yangxinruo> <2016-3-3> add for CR01645879 end -->
+        <item>com.touchtype.swiftkey</item>
+        <!-- Gionee <yangxinruo> <2016-6-13> delete for CR01716995 end -->
+        <item>com.antiy.securityprovider</item>
+        <item>com.pelephone_mobile</item>
+        <item>com.ted.number</item>
+        <!-- xionghg 2017-08-14 add for 187532 begin -->
+        <item>com.appguide.app</item>
+        <!-- xionghg 2017-08-14 add for 187532 end -->
+        <item>com.mobiistar.clock</item>
+        <!-- 6. others end -->
+        <!-- guoxt 2018-10-24 add for CSW1805A-887 begin -->
+       <item>com.mediatek.simprocessor</item>
+        <!-- guoxt 2018-10-24 add for CSW1805A-887 end -->
+      <item>com.google.android.apps.photos</item>
+        <item>com.google.android.marvin.talkback</item>
+        <item>com.google.android.googlequicksearchbox</item>
+		 <item>com.google.android.apps.searchlite</item>
+        <item>com.android.permissioncontroller</item>
+		<item>com.google.android.permissioncontroller</item>
+        <item>com.google.android.contacts</item>
+        <!-- add by zhaopeng for TELWL-586 20201229 start -->
+        <item>com.google.android.dialer</item>
+        <item>com.google.android.deskclock</item>
+        <!-- add by zhaopeng for TELWL-586 20201229 end -->
+        <item>com.android.wallpaperpicker</item>
+        <item>com.android.wallpaperbackup</item>
+        <!-- add for TEWBW-1056 by liyuchong 20200310 begin -->
+        <item>com.elephanttek.faceunlock</item>
+        <!-- add for TEWBW-1056 by liyuchong 20200310 end -->
+        <!-- add for TEJBB-1445 by zhaopeng 20200709 begin -->
+        <item>com.android.chrome</item>
+        <!-- add for TEJBB-1445 by zhaopeng 20200709 end -->
+    </string-array>
+
+    <!-- 极致省电优化新增冻结应用白名单 -->
+    <!-- Gionee xionghg add for power saving optimization begin -->
+    <string-array name="super_power_save_whitelist_more">
+        <!-- 工具类应用, 上表包含的则注释 -->
+        <item>com.cydroid.gallery</item>
+        <item>com.android.calculator2</item>
+        <!-- <item>com.cydroid.note</item> -->
+        <!-- <item>com.android.calendar</item> -->
+        <!-- Chenyee xionghg 20171228 add for SW17W16BA-138 begin -->
+        <item>com.google.android.calendar</item>
+        <!-- Chenyee xionghg 20171228 add for SW17W16BA-138 end -->
+        <!-- <item>com.android.email</item> -->
+        <!-- add printspooler for email -->
+        <item>com.android.printspooler</item>
+        <!-- Gmail -->
+        <!-- <item>com.google.android.gm</item> -->
+        <!-- xionghg 20171214 add for SW17W16A-1190 gmail crash begin -->
+        <item>com.google.android.gsf</item>
+        <!-- xionghg 20171214 add for SW17W16A-1190 gmail crash end -->
+        <!-- 用于wifi验证 -->
+        <item>com.android.chrome</item>
+
+        <!-- 通信社交类应用, 上表包含的则注释 -->
+        <!-- Whatsapp -->
+        <item>com.whatsapp</item>
+        <!-- Facebook -->
+        <!-- <item>com.facebook.katana</item> -->
+        <item>com.facebook.appmanager</item>
+        <item>com.facebook.system</item>
+        <!-- Facebook Lite -->
+        <item>com.facebook.lite</item>
+        <!-- Messenger -->
+        <!-- <item>com.facebook.arco</item> -->
+        <!-- <item>com.facebook.orca</item> -->
+        <!-- Messenger Lite -->
+        <item>com.facebook.mlite</item>
+        <!-- Hike, 印度版的微信 -->
+        <item>com.bsb.hike</item>
+        <!-- Imo -->
+        <item>com.imo.android.imoim</item>
+       <!-- chenyee guoxt add for CSW1702A-885 begin -->
+       <item>com.google.android.apps.searchlite</item>
+       <!-- chenyee guoxt add for CSW1702A-885 end -->
+        <!--  modify for fast pass+ begin -->
+        <item>com.google.android.dialer</item>
+        <item>com.google.android.contacts</item>
+        <!--  modify for fast pass+ end -->
+
+        <!-- 供测试, 正式版删除 -->
+        <!-- <item>com.tencent.mm</item> -->
+        <!-- <item>com.tencent.mobileqq</item> -->
+        <!-- <item>com.tencent.mobileqqi</item> -->
+    </string-array>
+    <!-- Gionee xionghg add for power saving optimization end -->
+
+    <!-- 极致省电优化新增冻结应用白名单 -->
+    <!-- Chenyee guoxt modify for CSW1703CX-249 begin -->
+    <string-array name="super_power_save_whitelist_xiaolajiao_more">
+        <!-- 工具类应用, 上表包含的则注释 -->
+        <item>com.cydroid.gallery</item>
+        <item>com.android.calculator2</item>
+        <item>com.android.printspooler</item>
+        <item>com.android.chrome</item>
+        <!-- 通信社交类应用, 上表包含的则注释 -->
+        <!-- Whatsapp -->
+        <item>com.whatsapp</item>
+        <item>com.facebook.appmanager</item>
+        <item>com.facebook.system</item>
+        <item>com.facebook.lite</item>
+        <item>com.facebook.mlite</item>
+
+         <item>com.tencent.mm</item> 
+         <item>com.tencent.mobileqq</item> 
+         <item>com.tencent.mobileqqi</item>
+         <item>com.immomo.momo</item>
+         <item>com.sina.weibo</item>
+        <item>com.ptns.da.zy</item>
+        <item>com.zhuoyi.security.lite</item>
+        <item>com.zhuoyi.security.service</item>
+        <item>com.zhuoyi.security.service.auto_generated_rro__</item>
+
+    </string-array>
+    <!-- Chenyee guoxt modify for CSW1703CX-249 end -->
+
+    <!-- Gionee <yangxinruo> <2016-5-18> add for CR01702167 begin -->
+    <!-- 进入极致省电不冻结但要清理 -->
+    <string-array name="super_power_kill_blacklist">
+        <item>com.android.settings</item>
+        <item>gn.com.android.update</item>
+        <item>com.cyee.search</item>
+        <item>com.google.android.marvin.talkback</item>
+        <item>com.google.android.googlequicksearchbox</item>
+		 <item>com.google.android.apps.searchlite</item>
+    </string-array>
+
+    <!-- 进入极致省电不冻结但要清理,退出时使用 -->
+    <string-array name="super_power_kill_exit_blacklist">
+        <item>com.android.settings</item>
+        <item>com.cydroid.powersaver.launcher</item>
+    </string-array>
+    <!-- Gionee <yangxinruo> <2016-5-18> add for CR01702167 end -->
+    <!--
+       <item>com.android.onetimeinitializer</item>
+        <item>com.android.dreams.phototable</item>
+        <item>com.mediatek.bluetoothle</item>
+        <item>com.android.bluetooth</item>
+        <item>com.cydroid.bluetooth</item>
+        <item>com.mediatek.bluetooth</item>
+    -->
+
+    <!-- Gionee <yangxinruo> <2015-12-7> add for CR01604665 begin -->
+    <!-- 进入极致省电强制禁用app组件,防止中途自启 -->
+    <string-array name="super_power_need_disable">
+        <item>com.sina.weibo/android.intent.action.BOOT_COMPLETED</item>
+        <item>com.sina.weibo/com.sina.push.msg.broadcast.1004</item>
+        <!-- Gionee <yangxinruo> <2016-1-19> add for CR01626199 begin -->
+        <item>com.pokercity.yzddz.aorayyh/android.net.wifi.WIFI_STATE_CHANGED</item>
+        <!--
+        <item>cn.com.fetion/android.net.conn.CONNECTIVITY_CHANGE</item>
+        <item>com.baidu.video/android.net.conn.CONNECTIVITY_CHANGE</item>
+        <item>com.sina.weibo/android.net.conn.CONNECTIVITY_CHANGE</item>
+        <item>com.pokercity.yzddz.aorayyh/android.net.conn.CONNECTIVITY_CHANGE</item>
+        <item>com.storm.smart/android.net.conn.CONNECTIVITY_CHANGE</item>
+        <item>com.xiaomi.hm.health/android.net.conn.CONNECTIVITY_CHANGE</item>
+        -->
+        <!-- Gionee <yangxinruo> <2016-1-19> add for CR01626199 end -->
+    </string-array>
+    <!-- Gionee <yangxinruo> <2015-12-7> add for CR01604665 end -->
+
+    <!-- Gionee <yangxinruo> <2016-2-29> add for CR01630774 begin -->
+    <string-array name="super_power_save_task">
+        <item>com.android.deskclock</item>
+        <item>com.gameloft.android.ANMP.GloftDMCN</item>
+        <item>com.android.systemui</item>
+        <item>com.android.incallui</item>
+        <item>com.ptns.da.zy</item>
+        <item>com.zhuoyi.security.service</item>
+        <item>com.zhuoyi.security.service.auto_generated_rro__</item>
+        <item>com.google.android.marvin.talkback</item>
+        <item>com.google.android.googlequicksearchbox</item>
+		 <item>com.google.android.apps.searchlite</item>
+    </string-array>
+    <!-- Gionee <yangxinruo> <2016-2-29> add for CR01630774 end -->
+    <string-array name="super_power_save_component">
+        <item>com.cydroid.softmanager/com.cydroid.softmanager.powersaver.activities.WaitingActivity</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="sys_setting_screen">
+    <PreferenceCategory
+        android:key="category_sys"
+        android:title="@string/items_switch"
+        android:layout="@layout/wheatek_preference_category">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="net_key"
+            android:title="@string/net_monitor_title"
+            android:layout="@layout/wheatek_preference_switch_dash" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="power_key"
+            android:title="@string/energy_monitor_title"
+            android:layout="@layout/wheatek_preference_switch_dash" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="apps_key"
+            android:title="@string/apps_monitor_title"
+            android:layout="@layout/wheatek_preference_switch_dash" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="power_consume_key"
+            android:title="@string/power_consume_setting_title"
+            android:layout="@layout/wheatek_preference_switch_dash" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="cpu_overload_monitor_key"
+            android:title="@string/cpu_monitor_setting_title"
+            android:layout="@layout/wheatek_preference_switch" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_key"
+        android:title="@string/msg_background_process"
+        android:layout="@layout/wheatek_preference_category" >
+
+        <Preference
+            android:defaultValue="true"
+            android:key="process_white_list"
+            android:title="@string/process_white_list_title"
+            android:summary="@string/process_white_list_summary"
+            android:layout="@layout/wheatek_preference_dash"/>
+
+        <ListPreference
+            android:entries="@array/app_process_limit_entries"
+            android:entryValues="@array/app_process_limit_values"
+            android:key="app_process_limit"
+            android:title="@string/app_process_limit_title"
+            android:layout="@layout/wheatek_preference" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_autoclean"
+        android:title="@string/clean_memory_title"
+        android:layout="@layout/wheatek_preference_category">
+
+        <SwitchPreferenceCompat
+            android:key="screenoff_clean_key"
+            android:title="@string/screenoff_clean_setting_title"
+            android:summary="@string/screenoff_clean_setting_summary"
+            android:layout="@layout/wheatek_preference_switch_dash"/>
+
+        <SwitchPreferenceCompat
+            android:key="screenoff_clean_toast_key"
+            android:title="@string/screenoff_clean_toast_setting_title"
+            android:summary="@string/screenoff_clean_toast_setting_summary"
+            android:dependency="screenoff_clean_key"
+            android:layout="@layout/wheatek_preference_switch_dash"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

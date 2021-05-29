@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Štedljivi pokretač</string>
+    <string name="exit_string">Izađi iz režima ekstremne uštede energije</string>
+    <string name="exit_string_title">Izađi iz režima ekstremne uštede energije</string>
+    <string name="ok_string">Potvrdi</string>
+    <string name="cancel_string">Otkaži</string>
+    <string name="exit_msg">Jeste li sigurni da želite da izađete iz ekstremnog režima?</string>
+    <string name="exit_msg1">Telefon se puni, jeste li sigurni da želite da izađete iz ekstremnog režima?</string>
+    <string name="can_use_time">Vreme pripravnosti: %s</string>
+    <string name="need_charging_time">%s je još potrebno da se napuni</string>
+    <string name="power_cannotget">Nije moguće proceniti</string>
+    <string name="power_hours">Sat</string>
+    <string name="power_minutes">Minut</string>
+    <string name="is_charging_now">Puni se</string>
+    <string name="charged_completely">Napunjen</string>
+    <string name="am">Prepodne</string>
+    <string name="pm">Popodne</string>
+    <string name="power_low">niže od</string>
+    <string name="control_panel_brightness">Osvetljenje</string>
+    <string name="activity_title_add_apps">Dodajte aplikacije</string>
+    <string name="add_app">Dodaj</string>
+    <string name="system_process">Proces sistema</string>
+    <string name="social_app">Aplikacije društvenih mreža</string>
+    <string name="remaining_time">Režim pripravnosti:</string>
+    <string name="remaining_time_2">Koristi vreme:</string>
+    <plurals name="remaining_time_hour">
+        <item quantity="one">1 č</item>
+        <item quantity="other">%d č</item>
+    </plurals>
+    <plurals name="remaining_time_minute">
+        <item quantity="one">1 min</item>
+        <item quantity="other">"%d min"</item>
+    </plurals>
+    <string name="settings">Podešavanja</string>
+    <string name="settings_activity_title">Podešavanja</string>
+    <string name="pref_title_mobile_data">Mobilni podaci</string>
+    <string name="pref_title_wifi">Wi-Fi</string>
+    <string name="on">Uključeno</string>
+    <string name="off">Isključeno</string>
+    <string name="no_sim">Nema SIM kartice</string>
+    <string name="guide_text_1">1. Ovde uspostavite vezu sa prenosom podataka ili sa Wi-Fi-om</string>
+    <string name="guide_text_2">2. Ovde je \"Izlaz \</string>
+    <string name="guide_text_6">Neke funkcije nekih aplikacija možda neće normalno raditi u ekstremnom režimu</string>
+    <string name="guide_text_got_it">Znam</string>
+</resources>

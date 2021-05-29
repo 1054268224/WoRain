@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"> 
+  <string name="app_name">पावर लॉन्चर</string>
+  <string name="exit_string">एक्सट्रीम मोड से बाहर निकलें</string>
+  <string name="exit_string_title">एक्सट्रीम मोड से बाहर निकलें</string>
+  <string name="ok_string">ओके</string>
+  <string name="cancel_string">रद्द करें</string>
+  <string name="exit_msg">क्या आप एक्सट्रीम मोड से बाहर निकलना चाहते हैं?</string>
+  <string name="exit_msg1">फोन चार्ज हो रहा है, क्या आप एक्सट्रीम मोड से बाहर निकलना चाहते है?</string>
+  <string name="can_use_time">स्टैंडबाई टाइम</string>
+  <string name="need_charging_time">%s चार्ज की आवश्यकता है</string>
+  <string name="power_cannotget">अनुमान लगाने में असमर्थ </string>
+  <!-- Gionee <yangxinruo> <2015-9-9> <modify> for CR01549850 begin -->
+  <string name="power_hours">&#160;घंटा&#160;</string>
+  <string name="power_minutes">&#160;मिनट&#160;</string>
+  <!-- Gionee <yangxinruo> <2015-9-9> <modify> for CR01549850 end -->
+  <string name="is_charging_now">चार्ज हो रहा है</string>
+  <string name="charged_completely">चार्ज है</string>
+  <!--Gionee <yangxinruo> <2015-07-31> add for CR01529084 begin-->
+  <string name="am">AM</string>
+  <string name="pm">PM</string>
+  <!--Gionee <yangxinruo> <2015-07-31> add for CR01529084 end-->
+</resources>

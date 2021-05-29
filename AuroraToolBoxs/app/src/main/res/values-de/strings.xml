@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--add by wangjian for TEWBW-735 20200106 start-->
+    <string name="app_name">Werkzeugtasche</string>
+    <string name="title_handingpaint">Pic hängen</string>
+    <string name="height_measure">Höhenmessung</string>
+    <string name="magnifier_app_name">Lupe</string>
+    <string name="protractor_app_name">Winkelmesser</string>
+    <!--add by wangjian for TEWBW-735 20200106 end-->
+	
+	<!--add by donghao for TEJBB-743 20200507 start-->
+    <string name="compass_app_name">Kompass</string>
+    <string name="MSensor_North">Norden</string>
+    <string name="MSensor_East">Osten</string>
+    <string name="MSensor_South">Süden</string>
+    <string name="MSensor_West">Westen</string>
+    <string name="MSensor_north_east">Nordosten</string>
+    <string name="MSensor_south_east">Südosten</string>
+    <string name="MSensor_south_west">Südwesten</string>
+    <string name="MSensor_north_west">Nordwesten</string>
+    <string name="str_start_data">"Schalten Sie die Netzwerkverbindung ein, um Informationen über den Standort zu erhalten
+. Schalten Sie das GPS ein, um genaue Koordinaten zu erhalten"</string>
+    <string name="soundmeter_app_name">Schallmessgerät</string>
+    <string name="volume_size_name1">Leise Umgebung (000 - 045db)</string>
+    <string name="volume_size_name2">Normale indoor Umgebung (045 - 060db)</string>
+    <string name="volume_size_name3">Lauter Arbeitspaltz (060 - 080db)</string>
+    <string name="volume_size_name4">Geährliche Lautstärke (080 - 115db)</string>
+    <string name="volume_size_name5">Extrem gefährliche Lautstärke (115 - 140db)</string>
+    <string name="paint_horizontal_label">"Horizontal:"</string>
+    <string name="paint_vertical_label">"Vertikal:"</string>
+    <string name="gradienter_app_name">Wasserwaage</string>
+    <string name="horizontal">HOR</string>
+    <string name="vertical">VER</string>
+    <string name="first_step_tips">Erster Schritt: Geben Sie Ihre Größe ein (cm)</string>
+    <string name="second_step_tips">Zweiter Schritt: Stellen Sie sich aufrecht auf das gleiche Level mit dem Objekt, bilden Sie eine gerade Linie mit den Augen, dem Smartphone und der Unterkante des zu messenden Objekts. Tippen Sie nach dem Ausrichten auf eine beliebige Stelle auf dem Bildschirm.</string>
+    <string name="last_step_tips">Dritter Schritt: Bleiben Sie in der gleichen Position und bilden Sie nun eine Linie mit den Augen, dem Telefon und der Oberkante des Objekts. Sobald die Ausrichtung erfolgt ist, tippen Sie erneut auf eine beliebige Stelle des Bildschirms.</string>
+    <string name="start_measure">MESSUNG STARTEN</string>
+    <string name="input_height_tips">Bitte geben Sie Ihre Größe ein (cm)</string>
+    <string name="next">WEITER</string>
+    <string name="your_height">Ihre Größe</string>
+    <string name="high_point_angle">Wink</string>
+    <string name="low_point_angel">Winkel zum niedrigen Punkt</string>
+    <string name="target_distance">Winkel zum hohen Punkt</string>
+    <string name="target_height">Objekthöhe</string>
+    <string name="remeasure">ERNEUT MESSEN</string>
+    <string name="measure_tips">Stellen Sie sicher, dass die Ausrichtung des Telefons die gleiche ist wie im Bild gezeigt.</string>
+    <string name="heartrate_app_name">Herzfrequenz</string>
+    <string name="heartrate_start">START</string>
+    <string name="heartrate_stop">STOP</string>
+    <string name="heartrate_title_name">Herzfrequenz</string>
+    <string name="heartrate_help_dialog_first_text">1. Legen Sie Ihre Fingerspitze auf die Kamera auf der Rückseite des Telefons, um mit dem Test zu beginnen.</string>
+    <string name="heartrate_help_dialog_second_text">2. Stellen Sie sicher, dass Ihr Finger die Kamera vollständig bedeckt.</string>
+    <string name="heartrate_help_dialog_third_text">3. Halten Sie diese Position, bis die Messung beendet ist.</string>
+    <string name="heartrate_help_ok">OK</string>
+    <string name="heartrate_test_result">000/min</string>
+    <string name="heartrate_recent">Letzte</string>
+    <string name="heartrate_detail">Detail</string>
+    <string name="heartrate_bpm">BPM</string>
+    <string name="heartrate_date">Datum</string>
+    <string name="heartrate_time">Zeit</string>
+    <string name="heartrate_test_result_unit">/min</string>
+    <string name="heartrate_remove_title">Löschung bestätigen</string>
+    <string name="heartrate_remove_title_ok">OK</string>
+    <string name="heartrate_remove_title_fail">ABBRECHEN</string>
+    <string name="heartrate_toast_text">Bitte bedecken Sie die Kamera mit Ihrem Finger</string>
+    <string name="title_heavyvertical">Lot Bob</string>
+    <string name="calibrate_the_compass_text">Schütteln Sie Ihr Smartphone, um den Kompass zu kalibrieren</string>
+    <string name="compass_calibrate_successful_text">Kompass erfolgreich kalibriert</string>
+    <string name="compass_calibrate_successed">Kompass ist kalibriert</string>
+    <string name="getting_location">Standort abrufen…</string>
+    <string name="cannot_get_location">Standort kann nicht ermittlet werden</string>
+    <string name="location_north">%s N</string>
+    <string name="location_south">%s S</string>
+    <string name="location_east">%s E</string>
+    <string name="location_west">%s W</string>
+    <string name="altitude">Altitude: <xliff:g id="value">%d</xliff:g> m</string>
+    <string name="pressure">Pressure: <xliff:g id="value">%.1f</xliff:g> kPa</string>
+
+    <string name="toolbox_storage_permission_deny">Zugriff verweigert, Sie können die Toolbox-Berechtigungen unter Einstellungen - > Apps ändern.</string>
+	<string name="SOS">Warnung</string>
+	<string name="Flash">Licht</string>
+	<string name="Screen">Display</string>
+	<string name="Warning">Warnung</string>
+
+    <string name="low_battery">"Ladestand unter 15%, kein Blitz verfügbar"</string>
+    <string name="flashlight">Taschenlampe</string>
+	<string name="note_name">Notizen</string>
+	<!--add by donghao for TEJBB-743 20200507 end-->
+    <!--add bug:TEWBB-934 chenyu 202009107 start-->
+	<string name="open_app_failed_warning">Öffnen fehlgeschlagen, da andere Anwendungen Aufzeichnungsressourcen belegen!</string>
+	<!--add bug:TEWBB-934 chenyu 202009107 end-->
+</resources>

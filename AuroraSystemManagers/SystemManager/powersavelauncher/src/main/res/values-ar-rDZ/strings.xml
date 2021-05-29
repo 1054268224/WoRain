@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="guide_text_1">1. تشغيل بيانات الهاتف أو شبكة WLAN من هنا</string>
+    <string name="pref_title_wifi">WLAN</string>
+    <string name="app_name">مُشغل الطاقة</string>
+    <string name="exit_string">الخروج من الوضع الأقصى</string>
+    <string name="exit_string_title">الخروج من الوضع الأقصى</string>
+    <string name="ok_string">موافق</string>
+    <string name="cancel_string">إلغاء</string>
+    <string name="exit_msg">هل أنت متأكد من الخروج من الوضع الأقصى؟</string>
+    <string name="exit_msg1">يجري شحن الهاتف،هل أنت متأكد من الخروج من الوضع الأقصى؟</string>
+    <string name="can_use_time">وقت الاستعداد</string>
+    <string name="need_charging_time">%s بحاجة أكثر لأن يتم شحنه</string>
+    <string name="power_cannotget">غير قادر على التقدير</string>
+    <string name="power_hours">ساعة</string>
+    <string name="power_minutes">دقيقة</string>
+    <string name="is_charging_now">جارٍ الشحن</string>
+    <string name="charged_completely">تم الشحن</string>
+    <string name="am">صباحًا</string>
+    <string name="pm">مساءً</string>
+    <string name="power_low">أقل من</string>
+    <string name="control_panel_brightness">سطوع</string>
+    <string name="activity_title_add_apps">إضافة تطبيقات</string>
+    <string name="add_app">إضافة</string>
+    <string name="system_process">معالجة النظام</string>
+    <string name="social_app">تطبيق اجتماعي</string>
+    <string name="remaining_time">وضع الاستعداد:</string>
+    <string name="remaining_time_2">وقت الاستخدام:</string>
+    <plurals name="remaining_time_hour">
+        <item quantity="one">ساعة واحدة</item>
+        <item quantity="other">%d ساعة (ساعات)</item>
+    </plurals>
+    <plurals name="remaining_time_minute">
+        <item quantity="one">دقيقة واحدة</item>
+        <item quantity="other">%d دقيقة (دقائق)</item>
+    </plurals>
+    <string name="settings">إعدادات</string>
+    <string name="settings_activity_title">إعدادات</string>
+    <string name="pref_title_mobile_data">بيانات الهاتف الجوال</string>
+    <string name="on">تشغيل</string>
+    <string name="off">إيقاف التشغيل</string>
+    <string name="no_sim">لا توجد بطاقة Sim</string>
+    <string name="guide_text_2">2. \"الخروج\" من هنا</string>
+    <string name="guide_text_6">بعض ميزات بعض التطبيقات قد لا تعمل بشكل طبيعي في الوضع الأقصى</string>
+    <string name="guide_text_got_it">أعرف</string>
+</resources>

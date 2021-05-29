@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        layout="@layout/listview"/>
+    
+         
+    <cyee.widget.CyeeButton
+        android:id="@+id/manage_button"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="17sp"
+        android:text="@string/green_whitelist_manage"/>
+
+    <RelativeLayout
+        android:id="@+id/green_empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+        
+        <ImageView 
+            android:id="@+id/green_empty_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/green_whitelist_empty_image"/>
+        
+        <cyee.widget.CyeeTextView 
+            android:id="@+id/empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/empty_text_color_primary"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/green_empty_img"
+            android:layout_centerHorizontal="true"
+            android:text="@string/text_no_traffic_whitelist"/>                   
+    </RelativeLayout>
+       
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" 
+        layout="@layout/loadview" />
+    
+</RelativeLayout>

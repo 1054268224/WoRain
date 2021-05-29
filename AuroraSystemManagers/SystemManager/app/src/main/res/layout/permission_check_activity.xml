@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+         android:id="@+id/required_permissions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/required_permissions_promo"
+        android:paddingTop="96dp"
+        style="@style/PromoScreenTextStyle.CenterAligned" />
+    <TextView
+        android:id="@+id/enable_permission_procedure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="@string/enable_permission_procedure"
+        android:contentDescription="@string/enable_permission_procedure_description"
+        style="@style/PromoScreenTextStyle.CenterAligned"
+        android:visibility="invisible"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="40dp"
+        app:srcCompat="@drawable/permissions"
+        android:scaleType="centerInside"
+        android:importantForAccessibility="no" />
+    <!-- fengpeipei modify for 47402 android:background="@android:color/darker_gray" -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/exit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/dialog_exit_btn"
+            style="@style/PromoScreenButtonStyle" />
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/next_with_arrow"
+            android:contentDescription="@string/next"
+            style="@style/PromoScreenButtonStyle" />
+        <TextView
+            android:id="@+id/settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/settings_with_arrow"
+            android:contentDescription="@string/settings"
+            style="@style/PromoScreenButtonStyle"
+            android:visibility="gone"/>
+        </LinearLayout>
+</LinearLayout>

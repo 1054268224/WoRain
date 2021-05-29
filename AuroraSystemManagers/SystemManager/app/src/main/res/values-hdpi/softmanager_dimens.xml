@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="softmanager_storage_info_height">275dp</dimen>
+    <dimen name="softmanager_centerX">213dp</dimen>
+    <dimen name="softmanager_centerY">106dp</dimen>
+    <dimen name="softmanager_innerRadius">76.5dp</dimen>
+    <dimen name="softmanager_innerStrokeWidth">6dp</dimen>
+    <dimen name="softmanager_outerRadius">99.25dp</dimen>
+    <dimen name="softmanager_outerStrokeWidth">8dp</dimen>
+    <dimen name="softmanager_phone_img_marginTop">2dp</dimen>
+    <dimen name="softmanager_sd_img_marginTop">25dp</dimen>
+    <dimen name="softmanager_single_progress_title_marginTop">140dp</dimen>
+    <dimen name="softmanager_single_progress_marginTop">70dp</dimen>
+    <dimen name="softmanager_single_progress_sign_marginTop">114dp</dimen>
+    <dimen name="softmanager_storage_usage_info_marginBottom">13dp</dimen>
+    <dimen name="softmanager_have_sdcard_marginTop">14dp</dimen>
+    <dimen name="softmanager_storage_indicator_marginTop">1dp</dimen>
+    <dimen name="softmanager_storage_title_paddingLeft">5dp</dimen>
+    <dimen name="softmanager_usage_info_marginTop">5dp</dimen>
+    <dimen name="softmanager_have_sdcard_marginLeft">39dp</dimen>
+    <dimen name="green_background_listview_height">510dp</dimen>
+    <dimen name="softmanager_green_background_height">275dp</dimen>
+    <dimen name="green_background_summary_marginTop">35dp</dimen>
+
+    <dimen name="traffic_save_logo_img_margin_top">5dp</dimen>
+
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SoftManager begin -->
+    <color name="list_header_text_color">#00a6ce</color>
+    <!-- <color name="divider_color">#d1d1d1</color> -->
+    <color name="divider_color">#50808080</color>
+    <color name="app_use_red">#BF3131</color>
+    <color name="app_use_often">#EC8928</color>
+    <color name="app_use_always">#7FA136</color>
+
+    <color name="single_progress_color">#ffffff</color>
+
+    <color name="green_bg_off_textcolor">#33222222</color>
+
+    <color name="list_item_title_color">#cc000000</color>
+
+    <!-- SoftManager end -->
+
+</resources>

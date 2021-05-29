@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="softmanager_storage_info_height">310dp</dimen>
+    <dimen name="softmanager_centerX">180dp</dimen>
+    <dimen name="softmanager_centerY">116dp</dimen>
+    <dimen name="softmanager_innerRadius">84.25dp</dimen>
+    <dimen name="softmanager_innerStrokeWidth">6dp</dimen>
+    <dimen name="softmanager_outerRadius">99.25dp</dimen>
+    <dimen name="softmanager_outerStrokeWidth">8dp</dimen>
+    <dimen name="softmanager_phone_img_marginTop">12dp</dimen>
+    <dimen name="softmanager_sd_img_marginTop">28.75dp</dimen>
+    <dimen name="softmanager_single_progress_title_marginTop">70dp</dimen>
+    <dimen name="softmanager_single_progress_marginTop">83dp</dimen>
+    <dimen name="softmanager_single_progress_sign_marginTop">127dp</dimen>
+    <dimen name="softmanager_storage_usage_info_marginBottom">16dp</dimen>
+    <dimen name="softmanager_have_sdcard_marginTop">14dp</dimen>
+    <dimen name="softmanager_storage_indicator_marginTop">2dp</dimen>
+    <dimen name="softmanager_storage_title_paddingLeft">5dp</dimen>
+    <dimen name="softmanager_usage_info_marginTop">5dp</dimen>
+    <dimen name="softmanager_have_sdcard_marginLeft">39dp</dimen>
+    <dimen name="green_background_listview_height">610dp</dimen>
+    <dimen name="softmanager_green_background_height">310dp</dimen>
+    <dimen name="green_background_summary_marginTop">20dp</dimen>
+    <dimen name="traffic_save_logo_img_margin_top">20dp</dimen>
+    <dimen name="green_background_title_layout_marginTop">0dp</dimen>
+    <!-- Chenyee: guoxt <2018-08-06> add for CSW1705A-2751  begin -->
+    <dimen name="softmanager_listview_height">56dp</dimen>
+    <!-- Chenyee: guoxt <2018-08-06> add for CSW1705A-2751  end -->
+ 
+</resources>

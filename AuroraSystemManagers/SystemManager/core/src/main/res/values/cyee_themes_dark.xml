@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     Gionee <zhangxx> <2013-06-20> add for cyeeframework.
+ -->
+<resources>
+    <style name="Theme.Cyee.Dark" parent="@android:style/Theme.Holo">
+        <!-- Gionee <lihq> <2014-01-06> add for CR00873172 begin -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- Gionee <lihq> <2014-01-06> add for CR00873172 end -->
+        <!--shaozj <item name="android:windowAnimationStyle">@style/Animation.Cyee.Activity</item> --> 
+        <!--Gionee <lihq> <2014-03-24> modify for CR00873172 begin-->
+        <!-- <item name="android:windowBackground">@drawable/cyee_background_dark</item> -->
+        <item name="android:windowBackground">@drawable/cyee_screen_background_selector_dark</item>
+        <!--Gionee <lihq> <2014-03-24> modify for CR00873172 end-->
+        <item name="android:textColorPrimary">@color/cyee_primary_text_dark</item>
+        <item name="android:textColorSecondary">@color/cyee_secondary_text_dark</item>
+        <item name="android:textColorTertiary">@color/cyee_tertiary_text_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/cyee_primary_text_light</item>
+        <item name="android:textColorSecondaryInverse">@color/cyee_secondary_text_light</item>
+        <item name="android:textColorTertiaryInverse">@color/cyee_tertiary_text_light</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/cyee_primary_text_disable_only_dark</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">@color/cyee_primary_text_disable_only_light</item>
+        <item name="android:textColorPrimaryNoDisable">@color/cyee_primary_text_nodisable_dark</item>
+        <item name="android:textColorSecondaryNoDisable">@color/cyee_secondary_text_nodisable_dark</item>
+        <item name="android:textColorPrimaryInverseNoDisable">@color/cyee_primary_text_nodisable_light</item>
+        <item name="android:textColorSecondaryInverseNoDisable">@color/cyee_secondary_text_nodisable_light</item>
+        <item name="android:textColorHint">@color/cyee_hint_foreground_dark</item>
+        <item name="android:textColorHintInverse">@color/cyee_hint_foreground_light</item>
+        <item name="android:textColorHighlight">@color/cyee_highlighted_text_dark</item>
+        <item name="android:textColorLink">@color/cyee_bright_foreground_yellow</item>
+        <!-- @hide android 2.3 have not these attrs -->
+        <item name="android:textColorHighlightInverse">@color/cyee_highlighted_text_light</item>
+        <item name="android:textColorLinkInverse">@color/cyee_bright_foreground_yellow</item>
+        <item name="android:textColorAlertDialogListItem">@color/cyee_primary_text_dark</item>
+        
+        <item name="android:textAppearanceLarge">@style/TextAppearance.Cyee.Large</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.Cyee.Medium</item>
+        <item name="cyeetextAppearanceMediumSecond">@style/TextAppearance.Cyee.MediumSecond</item>
+        <item name="android:textAppearanceSmall">@style/TextAppearance.Cyee.Small</item>
+        <item name="android:textAppearanceLargeInverse">@style/TextAppearance.Cyee.Large.Inverse</item>
+        <item name="android:textAppearanceMediumInverse">@style/TextAppearance.Cyee.Medium.Inverse</item>
+        <item name="cyeetextAppearanceMediumSecondInverse">@style/TextAppearance.Cyee.MediumSecond.Inverse</item>
+        <item name="android:textAppearanceSmallInverse">@style/TextAppearance.Cyee.Small.Inverse</item>  
+        <!-- EditText styles -->
+        <!-- maxw modify begin
+            <item name="android:editTextBackground">@drawable/cyee_edit_text</item>
+        -->
+        <item name="android:editTextBackground">@color/cyee_edit_text_background_color_dark</item>
+        <!-- maxw modify end -->        
+        <item name="android:editTextColor">@color/cyee_edit_text</item>
+        <!-- Text selection handle attributes -->
+        <item name="android:textSelectHandleLeft">@drawable/cyee_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/cyee_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/cyee_text_select_handle_middle</item>
+        <item name="android:textCursorDrawable">@drawable/cyee_text_cursor_light</item>    
+        <!-- Button styles -->
+        <item name="android:buttonStyle">@style/Widget.Cyee.Dark.Button</item>
+        <item name="android:buttonStyleSmall">@style/Widget.Cyee.Dark.Button.Small</item>
+        <item name="android:selectableItemBackground">@drawable/cyee_item_background_dark</item>
+        <item name="android:borderlessButtonStyle">@style/Widget.Cyee.Dark.Button.Borderless</item>        
+        <!-- radio button style -->
+        <item name="android:listChoiceIndicatorSingle">@drawable/cyee_btn_radio_dark</item>
+        <!-- check box style -->
+        <item name="android:listChoiceIndicatorMultiple">@drawable/cyee_btn_check_dark</item>
+        <!-- progress bar style -->
+        <item name="android:progressBarStyle">@style/Widget.Cyee.ProgressBar</item>
+        <item name="android:progressBarStyleHorizontal">@style/Widget.Cyee.ProgressBar.Horizontal</item>
+        <item name="android:progressBarStyleSmall">@style/Widget.Cyee.Dark.ProgressBar.Small</item>
+        <item name="android:progressBarStyleSmallTitle">@style/Widget.Cyee.Dark.ProgressBar.Small.Title</item>
+        <item name="android:progressBarStyleLarge">@style/Widget.Cyee.Dark.ProgressBar.Large</item>
+        <item name="android:progressBarStyleInverse">@style/Widget.Cyee.ProgressBar.Inverse</item>
+        <item name="android:progressBarStyleSmallInverse">@style/Widget.Cyee.Dark.ProgressBar.Small.Inverse</item>
+        <item name="android:progressBarStyleLargeInverse">@style/Widget.Cyee.Dark.ProgressBar.Large.Inverse</item>
+        <!-- seek bar style -->
+        <item name="android:seekBarStyle">@style/Widget.Cyee.Dark.SeekBar</item>        
+
+        <item name="android:dropDownSpinnerStyle">@style/Widget.Cyee.Dark.Spinner.DropDown</item>
+        <item name="android:spinnerDropDownItemStyle">@style/Widget.Cyee.Dark.DropDownItem.Spinner</item>
+        <!-- tab widget style -->
+        <item name="android:tabWidgetStyle">@style/Widget.Cyee.Dark.TabWidget</item>
+        <!-- frame list background -->
+        <item name="cyeeframeListBackground">@drawable/cyee_frame_list_background_dark</item>
+        <item name="cyeeframeListTopBackground">@drawable/cyee_frame_list_top_background_dark</item>
+        <item name="cyeeframeListMiddleBackground">@drawable/cyee_frame_list_middle_background_dark</item>
+        <item name="cyeeframeListBottomBackground">@drawable/cyee_frame_list_bottom_background_dark</item>
+        <!-- Gionee <daizhimin> <2013-07-29> add for CR00833379 begin --> 
+        <item name="cyeeoptionMenuListBackground">@drawable/cyee_frame_list_bg_dark</item>
+        <!-- Gionee <lihq> <2013-12-11> modify for CR00873172 begin-->
+        <!-- GUI 3.5 -->
+        <item name="cyeeoptionMenuMoreBg">@drawable/cyee_magic_menu_more_dark_bg</item>
+        <!-- Gionee <lihq> <2013-12-11> modify for CR00873172 end-->
+        <item name="cyeeoptionMenuBg">@drawable/cyee_cab_background_bottom_dark</item>
+        <!-- Gionee <daizhimin> <2013-07-29> add for CR00833379 end --> 
+        <!-- Preference styles -->
+        <item name="android:preferenceScreenStyle">@style/CyeePreference.PreferenceScreen</item>
+        <!-- <item name="android:preferenceFragmentStyle">@style/CyeePreferenceFragment</item> -->
+        <item name="android:preferenceCategoryStyle">@style/CyeePreference.Category</item>
+        <item name="android:preferenceStyle">@style/CyeePreference</item>
+        <item name="android:preferenceInformationStyle">@style/CyeePreference.Information</item>        
+        <item name="android:checkBoxPreferenceStyle">@style/CyeePreference.CheckBoxPreference</item>
+        <item name="android:switchPreferenceStyle">@style/CyeePreference.SwitchPreference</item>
+        <item name="android:yesNoPreferenceStyle">@style/CyeePreference.DialogPreference.YesNoPreference</item>
+        <item name="android:dialogPreferenceStyle">@style/CyeePreference.DialogPreference</item>
+        <item name="android:editTextPreferenceStyle">@style/CyeePreference.DialogPreference.EditTextPreference</item>
+        <item name="android:ringtonePreferenceStyle">@style/CyeePreference.RingtonePreference</item>
+        <item name="android:preferenceLayoutChild">@layout/cyee_preference_child</item>
+        
+        <!-- Action bar style -->
+        <item name="cyeeactionBarStyle">@style/Widget.Cyee.Dark.ActionBar.Solid</item>
+        <item name="android:actionBarTabBarStyle">@style/Widget.Cyee.ActionBar.TabBar</item>
+        <item name="android:actionBarTabTextStyle">@style/Widget.Cyee.Light.ActionBar.TabText</item>
+        <item name="android:actionModeCloseDrawable">@drawable/cyee_ic_ab_back_light</item>
+        <item name="android:actionModeCloseButtonStyle">@style/Widget.Cyee.ActionButton.CloseMode</item>        
+        <item name="android:actionDropDownStyle">@style/Widget.Cyee.Dark.Spinner.DropDown.ActionBar</item>
+        <item name="android:actionModeBackground">@drawable/cyee_cab_background_top_dark</item>
+        <item name="android:actionModeSplitBackground">@drawable/cyee_cab_background_bottom_dark</item>
+        <item name="android:actionBarItemBackground">@drawable/cyee_actionbar_item_background_light</item>
+        <item name="android:actionMenuTextAppearance">@style/TextAppearance.Cyee.Widget.ActionBar.Menu</item>
+        
+        <item name="android:homeAsUpIndicator">@drawable/cyee_ic_ab_back_light</item>
+        <!-- preference category title -->
+        <item name="android:listSeparatorTextViewStyle">@style/Widget.Cyee.TextView.ListSeparator</item>         
+        <!-- menu list item style -->
+        <item name="android:textAppearanceListItemSmall">@style/TextAppearance.Cyee.Medium</item>
+        
+        <item name="android:listDivider">@drawable/cyee_list_divider_dark</item>
+        <!-- list popup style -->
+        <item name="android:listPopupWindowStyle">@style/Widget.Cyee.Dark.ListPopupWindow</item>
+        <item name="android:popupMenuStyle">@style/Widget.Cyee.Dark.ListPopupWindow</item>
+        
+        <item name="android:listChoiceBackgroundIndicator">@drawable/cyee_list_selector_dark</item>
+        
+        <!-- Expandable List View style -->
+        <item name="android:expandableListViewStyle">@style/Widget.Cyee.Dark.ExpandableListView</item>
+        <!-- Dialog attributes -->
+        <item name="cyeealertDialogStyle">@style/CyeeAlertDialog.Dark</item>
+        <item name="android:dialogTheme">@style/Theme.Cyee.Dark.Dialog</item>
+        <item name="android:alertDialogTheme">@style/Theme.Cyee.Dark.Dialog.Alert</item>
+        <!-- Panel attributes -->
+        <item name="android:panelBackground">@drawable/cyee_menu_hardkey_panel_dark</item>
+        <!-- fast scroll attributes -->
+        <item name="android:fastScrollThumbDrawable">@drawable/cyee_fastscroll_thumb</item>
+        <item name="android:fastScrollTrackDrawable">@drawable/cyee_fastscroll_track_light</item>
+        <item name="cyeeswitchStyle">@style/CyeeWidgetSwitch</item>
+        <!-- Cyee numberpicker style -->
+        <item name="cyeenumberPickerStyle">@style/CyeeWidgetNumberPicker</item>
+        <!-- Cyee datepicker style -->
+        <item name="cyeedatePickerStyle">@style/CyeeWidgetDatePicker</item>
+        <!-- Cyee timepicker style -->
+        <item name="cyeetimePickerStyle">@style/CyeeWidgetTimePicker</item>
+        <!-- Cyee contextMenu -->
+        <item name="cyeelistPreferredItemPaddingStart">@dimen/cyee_preference_child_padding_side</item>
+        <item name="cyeelistPreferredItemPaddingEnd">@dimen/cyee_preference_child_padding_side</item>
+        <item name="cyeepanelMenuListWidth">@dimen/cyee_panel_Menu_List_Width</item>
+        <!-- Gionee <fenglp> <2013-08-05> add for CR00812456 begin -->
+        <item name="cyeesearchViewEditQuery">@drawable/cyee_ic_commit_search_api_holo_dark</item>
+        <!-- Gionee <fenglp> <2013-08-05> add for CR00812456 end -->
+
+        <!-- Gionee <gaoj> <2013-12-06> add for CR00967353 begin -->
+        <item name="selectableMenuItemBackground">@drawable/cyee_menu_item_background_dark</item>
+        <!-- Gionee <gaoj> <2013-12-06> add for CR00967353 end -->
+        <item name="cyeeForceTouchPannelBackgroundColor">@android:color/black</item>
+        <item name="cyeeForceTouchMenuItemBackgroundColor">@android:color/black</item>
+    </style>
+    
+    <style name="Theme.Cyee.Dark.Dialog">
+        <item name="android:windowAnimationStyle">@style/Animation.Cyee.Dialog</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.Cyee.Dark</item>
+        <item name="android:windowBackground">@drawable/cyee_menu_dropdown_panel_dark</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+
+        <item name="android:colorBackgroundCacheHint">@null</item>
+
+        <item name="android:buttonBarStyle">@null</item>
+        <item name="android:borderlessButtonStyle">@style/Widget.Cyee.Dark.Button.Borderless</item>
+
+        <item name="android:listPreferredItemPaddingLeft">@dimen/cyee_preference_child_padding_side</item>
+        <item name="android:listPreferredItemPaddingRight">@dimen/cyee_preference_child_padding_side</item>
+        
+        <!-- <item name="android:alertDialogStyle">@style/CyeeAlertDialog.Light</item> -->
+    </style>
+    
+    <style name="Theme.Cyee.Dark.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.Cyee.Dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+    
+    <!-- Variant of the holographic (light) theme with no action bar. -->
+    <style name="Theme.Cyee.Dark.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <!-- Variant of the holographic (light) theme that has no title bar and fills
+         the entire screen -->
+    <style name="Theme.Cyee.Dark.NoActionBar.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>    
+</resources>

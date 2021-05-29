@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/normal_listview_height"
+    android:layout_gravity="center_vertical"
+    android:minHeight="?attr/listPreferredItemHeight"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="@dimen/usagedetails_image_width"
+        android:layout_height="@dimen/usagedetails_image_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/usagedetails_image_marginLeft"
+        android:layout_marginRight="@dimen/usagedetails_image_marginRight"
+        android:focusable="false"
+        android:scaleType="centerInside" />
+    <!-- Gionee <yangxinruo> <2016-2-1> <modify> for CR01634814 begin -->
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:columnCount="1"
+        android:paddingRight="@dimen/usagedetails_image_marginRight" >
+
+        <LinearLayout
+            android:layout_gravity="fill_horizontal"
+            android:orientation="horizontal" >
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/power_consume_background_title_margintop"
+                android:focusable="false"
+                android:maxWidth="@dimen/title_txt_max_width"
+                android:singleLine="true"
+                android:textColor="@color/textcolor_level_one"
+                android:textSize="@dimen/textsize_level_one" />
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/alert_txt_marginleft"
+                android:focusable="false"
+                android:singleLine="true"
+                android:text="@string/power_consume_whitelist_tip"
+                android:textColor="@color/textcolor_level_two"
+                android:textSize="@dimen/textsize_level_two" />
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/usagedetails_percentage_marginLeft"
+                android:gravity="right"
+                android:textColor="@color/textcolor_level_two"
+                android:textSize="@dimen/textsize_level_two" />
+        </LinearLayout>
+
+        <cyee.widget.CyeeProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_height="@dimen/usagedetails_progressbar_height"
+            android:layout_gravity="fill_horizontal"
+            android:max="100" />
+
+        <LinearLayout
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="@dimen/power_consume_background_monitor_margintop"
+            android:orientation="horizontal" >
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/monitor_alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/power_consume_background_monitor_marginbottom"
+                android:gravity="right"
+                android:text="@string/background_running_set_power_monitor_message"
+                android:textColor="@color/red_text_color"
+                android:textSize="@dimen/textsize_level_two" />
+        </LinearLayout>
+    </GridLayout>
+    <!-- Gionee <yangxinruo> <2016-2-1> <modify> for CR01634814 end -->
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:focusable="false" >
+
+        <cyee.widget.CyeeCheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/checkbox_marginleft"
+            android:layout_marginRight="@dimen/image_margin_right"
+            android:clickable="false"
+            android:focusable="false" />
+    </FrameLayout>
+
+</LinearLayout>

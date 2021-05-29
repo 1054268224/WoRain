@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok_string">OK</string>
+    <string name="cancel_string">Tühista</string>
+    <string name="power_hours">tund</string>
+    <string name="power_minutes">minut</string>
+    <string name="is_charging_now">Laadimine</string>
+    <string name="charged_completely">Laetud</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="control_panel_brightness">Heledus</string>
+    <string name="add_app">Lisamine</string>
+    <string name="system_process">Süsteemi protsess</string>
+    <string name="settings">Seaded</string>
+    <string name="settings_activity_title">Seaded</string>
+    <string name="pref_title_mobile_data">Mobiilne andmeside</string>
+    <string name="pref_title_wifi">Wi-Fi</string>
+    <string name="on">Sees</string>
+    <string name="off">Väljas</string>
+    <string name="guide_text_got_it">Ma tean</string>
+    <string name="activity_title_add_apps">Lisa rakendusi</string>
+    <plurals name="remaining_time_minute">
+        <item quantity="one">1 min</item>
+        <item quantity="other">"%d min"</item>
+    </plurals>
+    <string name="no_sim">SIM-kaart puudub</string>
+</resources>

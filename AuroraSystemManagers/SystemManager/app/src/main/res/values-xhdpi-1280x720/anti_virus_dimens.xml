@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="find_virus_logo_height">310dp</dimen>
+    <dimen name="scan_time_margin_top">300dp</dimen>
+    <dimen name="antivirus_sugest_margin_top">330dp</dimen>
+    <!-- Gionee <yangxinruo> <2015-10-14> <add> for CR01568183 begin -->
+    <dimen name="antivirus_percent_margin_top">350dp</dimen>
+    <!-- Gionee <yangxinruo> <2015-10-14> <add> for CR01568183 end -->
+    <dimen name="half_trans_button_height">46dp</dimen>
+    <dimen name="scan_detail_width">218dp</dimen>
+    <dimen name="find_virus_img_margin_top">17dp</dimen>
+    <dimen name="find_virus_num_margin_top">12dp</dimen>
+    <dimen name="antivirus_logo_margintop">56dp</dimen>
+    <dimen name="last_scan_time_textsize">18sp</dimen>
+    <dimen name="antivirus_sugest_textsize">11sp</dimen>
+    <dimen name="antivirus_support_marginbottom">60dp</dimen>
+    <dimen name="antivirus_support_textsize">10sp</dimen>
+    <dimen name="ll_padding_bottom">8dp</dimen>
+    <dimen name="ll_padding_left">8dp</dimen>
+    <dimen name="ll_padding_right">8dp</dimen>
+    <dimen name="quik_scan_textsize">16sp</dimen>
+    <dimen name="all_scan_textsize">16sp</dimen>
+    <dimen name="antivirus_scaning_bg_margintop">56dp</dimen>
+    <dimen name="antivirus_scaning_margintop">56dp</dimen>
+    <dimen name="scaning_textsize">18sp</dimen>
+    <dimen name="scan_virus_title_textsize">11sp</dimen>
+    <dimen name="scan_antivirus_support_marginbottom">60dp</dimen>
+    <dimen name="scan_antivirus_support_textsize">10sp</dimen>
+    <dimen name="scan_cancel_marginbottom">8dp</dimen>
+    <dimen name="scan_cancel_marginleft">8dp</dimen>
+    <dimen name="scan_cancel_marginright">8dp</dimen>
+    <dimen name="scan_cancel_textsize">16sp</dimen>
+    <dimen name="find_virus_num_textsize">16sp</dimen>
+    <dimen name="antivirus_support_bottom">8dp</dimen>
+    <dimen name="antivirus_support_size">10sp</dimen>
+    <dimen name="for_listview_marginbottom">50dp</dimen>
+    <dimen name="clean_virus_marginbottom">8dp</dimen>
+    <dimen name="clean_virus_marginleft">8dp</dimen>
+    <dimen name="clean_virus_marginright">8dp</dimen>
+    <dimen name="clean_virus_textsize">16sp</dimen>
+    <dimen name="virus_clean_done_logo_margintop">56dp</dimen>
+    <dimen name="safe_textsize">18sp</dimen>
+    <dimen name="clean_virus_done_textsize">11sp</dimen>
+    <dimen name="antivirus_support_txt_marginbottom">60dp</dimen>
+    <dimen name="antivirus_support_txt_textsize">10sp</dimen>
+    <dimen name="clean_done_marginbottom">8dp</dimen>
+    <dimen name="clean_done_marginleft">8dp</dimen>
+    <dimen name="clean_done_marginright">8dp</dimen>
+    <dimen name="clean_done_textsize">16dp</dimen>
+
+    <!-- virus_display_layout -->
+    <dimen name="result_virus_listview_height">58dp</dimen>
+    <dimen name="result_ll_width">74dp</dimen>
+    <dimen name="result_ll_height">42dp</dimen>
+
+    <!-- virusscan_exception_layout -->
+    <dimen name="content_linespace">3dp</dimen>
+    <dimen name="result_exception_content_size">14dp</dimen>
+
+</resources>

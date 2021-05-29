@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin_left">20dp</dimen>
+    <dimen name="text_size">14dp</dimen>
+    <dimen name="text_size_level_one">18sp</dimen>
+    <dimen name="text_size_level_two">12sp</dimen>
+    <dimen name="icon_list_divider_left_padding">72dp</dimen>
+    <dimen name="divider_line">1px</dimen>
+    <dimen name="green_background_title_layout_marginTop">0dp</dimen>
+    <dimen name="list_selected_item_offset">220dp</dimen>
+    <!-- Chenyee: guoxt <2018-08-06> add for CSW1705A-2751  begin -->
+    <dimen name="softmanager_listview_height">56dp</dimen>
+    <!-- Chenyee: guoxt <2018-08-06> add for CSW1705A-2751  end -->
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">ToolBag</string>
+    <string name="compass_app_name">Compass</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="MSensor_North">North</string>
+    <string name="MSensor_East">East</string>
+    <string name="MSensor_South">South</string>
+    <string name="MSensor_West">West</string>
+    <string name="MSensor_north_east">Northeast</string>
+    <string name="MSensor_south_east">Southeast</string>
+    <string name="MSensor_south_west">Southwest</string>
+    <string name="MSensor_north_west">Northwest</string>
+    <string name="str_start_data">"Turn on the network connection to get location info
+ Turn on GPS to get accurate coordinates"</string>
+    <string name="soundmeter_app_name">SoundMeter</string>
+    <string name="volume_size_name1">Quiet environment(000-045db)</string>
+    <string name="volume_size_name2">Common indoor environment(045-060db)</string>
+    <string name="volume_size_name3">Noisy workplace(060-080db)</string>
+    <string name="volume_size_name4">Harmful nosie(080-115db)</string>
+    <string name="volume_size_name5">Extremely harmful noise(115-140db)</string>
+    <string name="title_handingpaint">Pic Hanging</string>
+    <string name="paint_horizontal_label">"Horizontal: "</string>
+    <string name="paint_vertical_label">"Vertical: "</string>
+    <string name="gradienter_app_name">Gradienter</string>
+    <string name="height_measure">HeightMeasure</string>
+    <string name="horizontal">HOR</string>
+    <string name="vertical">VER</string>
+    <string name="first_step_tips">First step: input your height(cm)</string>
+    <string name="second_step_tips">Second step: stand straight on the same level of the target, adjust your phone, align your eyes, your phone, and the BOTTOM of the target, then click anywhere on the picture.</string>
+    <string name="last_step_tips">Third step: stand straight on the same level of the target, adjust your phone, align your eyes, your phone, and the TOP of the target, then click anywhere on the picture.</string>
+    <string name="start_measure">START MEASURE</string>
+    <string name="input_height_tips">Please input your height(cm)</string>
+    <string name="next">NEXT</string>
+    <string name="your_height">Your Height</string>
+    <string name="high_point_angle">High Point Angle</string>
+    <string name="low_point_angel">Low Point Angle</string>
+    <string name="target_distance">Target Distance</string>
+    <string name="target_height">Target Height</string>
+    <string name="remeasure">REMEASURE</string>
+    <string name="measure_tips">Please confirm that the direction of the mobile phone is consistent with the picture.</string>
+    <string name="heartrate_app_name">HeartRate</string>
+    <string name="heartrate_start">START</string>
+    <string name="heartrate_stop">STOP</string>
+    <string name="heartrate_title_name">HeartRate</string>
+    <string name="heartrate_help_dialog_first_text">1.Place your fingertips on the camera on the back of the phone to start testing.</string>
+    <string name="heartrate_help_dialog_second_text">2.Make sure your finger completely covers the camera.</string>
+    <string name="heartrate_help_dialog_third_text">3.Hold the gesture until the test is complete.</string>
+    <string name="heartrate_help_ok">OK</string>
+    <string name="heartrate_test_result">000/min</string>
+    <string name="heartrate_recent">Recent</string>
+    <string name="heartrate_detail">Detail</string>
+    <string name="heartrate_bpm">BPM</string>
+    <string name="heartrate_date">Date</string>
+    <string name="heartrate_time">Time</string>
+    <string name="heartrate_test_result_unit">/min</string>
+    <string name="heartrate_remove_title">Confirm whether to delete</string>
+    <string name="heartrate_remove_title_ok">OK</string>
+    <string name="heartrate_remove_title_fail">CANCEL</string>
+    <string name="heartrate_toast_text">Please cover the camera with your finger</string>
+    <string name="protractor_app_name">Protractor</string>
+    <string name="magnifier_app_name">Magnifier</string>
+    <string name="title_heavyvertical">Plumb Bob</string>
+    <string name="calibrate_the_compass_text">Shake the phone to calibrate the compass.</string>
+    <string name="compass_calibrate_successful_text">Compass calibrates successful!</string>
+    <string name="compass_calibrate_successed">Compass is calibrated</string>
+    <!--add by wuzhi.peng -->
+    <string name="getting_location">Getting location...</string>
+    <string name="cannot_get_location">Cannot get your location</string>
+    <string name="location_north">%s N</string>
+    <string name="location_south">%s S</string>
+    <string name="location_east">%s E</string>
+    <string name="location_west">%s W</string>
+    <string name="altitude">Altitude: <xliff:g id="value">%d</xliff:g> m</string>
+    <string name="pressure">Pressure: <xliff:g id="value">%.1f</xliff:g> kPa</string>
+
+    <string name="title_activity_compass_help">CompassHelpActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!--add by wuzhi.peng end-->
+
+    <string name="toolbox_storage_permission_deny">Permission denied, You can change toolbox permissions in Settings->Apps.</string>
+   <!-- Add by zhiheng.huang on 2019/4/8 for  start ^_^ -->
+   <string name="SOS">Warning</string>
+   <string name="Flash">Flash</string>
+   <string name="Screen">Screen</string>
+   <string name="Warning">Warning</string>
+   <!-- Add by zhiheng.huang on 2019/4/8 for  end ^_^ -->
+
+    <string name="low_battery">"Less than 15% charge, can't turn on the flash"</string>
+    <!-- Add by zhiheng.huang on 2020/2/19 for  start  -->
+    <string name="flashlight">Flashlight</string>
+    <!-- Add by zhiheng.huang on 2020/2/19 for  end  -->
+    <!--add bug:EWSWQ-311 wushanfei 20200303 start-->
+    <string name="unit">"°"</string>
+    <string name="compass_calibration_description">"Wave the phone \n in a figure 8 motion to calibrate"</string>
+    <!--add bug:EWSWQ-311 wushanfei 20200303 start-->
+	<!--add bug:TEJBB-340 donghao 20200410 start-->
+	<string name="note_name">Notes</string>
+	<!--add bug:TEJBB-340 donghao 20200410 end-->
+    <!--add bug:TEWBB-934 chenyu 202009107 start-->
+	<string name="open_app_failed_warning">Open failed, because other applications are occupying recording resources!</string>
+	<!--add bug:TEWBB-934 chenyu 202009107 end-->
+
+    <!-- Add by zhiheng.huang on 2020/8/13 for  start  -->
+    <string name="calibrate_successful">Calibrate successful.</string>
+    <string name="calibrate_title">Prompt</string>
+    <string name="calibrate_message">Please shake the phone several times to calibrate.</string>
+    <!-- Add by zhiheng.huang on 2020/8/13 for  end  -->
+
+    <!-- Add by zhiheng.huang on 2020/12/12 for  start  -->
+    <string name="no_need_to_calibrate">No need to calibrate.</string>
+    <!-- Add by zhiheng.huang on 2020/12/12 for  end  -->
+</resources>

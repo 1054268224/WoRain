@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/item1_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="17sp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/item_black"
+            android:text="@string/rub_set"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+        <include
+            layout="@layout/dash_view"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

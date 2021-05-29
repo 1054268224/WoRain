@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/normal_listview_height"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:id="@+id/container_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/image_margin_left"
+        android:layout_marginEnd="@dimen/image_margin_right"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/container"
+        android:layout_toEndOf="@+id/container_icon"
+        android:focusable="false"
+        android:orientation="vertical" >
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/title"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textColor="#cc000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+
+        <cyee.widget.CyeeSwitch
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dip" />
+    </FrameLayout>
+</RelativeLayout>

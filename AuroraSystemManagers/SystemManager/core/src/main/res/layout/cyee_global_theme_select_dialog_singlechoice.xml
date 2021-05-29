@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<cyee.widget.CyeeCheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/cyee_text1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cyee_AlertDialogListItemHeight"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textSize="@dimen/cyee_textSizeAlertDialogListItem"
+    android:textColor="?attr/cyee_dialog_content_text_color"
+    android:gravity="center_vertical"
+    android:paddingStart="@dimen/cyee_alert_dialog_title_margin_left"
+    android:paddingEnd="@dimen/cyee_list_item_tailicon_margin_right"
+    android:checkMark="@drawable/cyee_global_theme_radiobutton_bg_selector"
+    android:ellipsize="marquee"
+/>

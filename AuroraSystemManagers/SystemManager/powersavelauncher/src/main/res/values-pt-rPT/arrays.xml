@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weekday">
+    <item>Seg</item>
+    <item>Ter</item>
+    <item>Qua</item>
+    <item>Qui</item>
+    <item>Sex</item>
+    <item>Sáb</item>
+    <item>Dom</item>
+    </string-array>
+    <string-array name="month">
+    <item>Jan %1$s</item>
+    <item>Fev %1$s</item>
+    <item>Mar %1$s</item>
+    <item>Abr %1$s</item>
+    <item>Mai %1$s</item>
+    <item>Jun %1$s</item>
+    <item>Jul %1$s</item>
+    <item>Ago %1$s</item>
+    <item>Set %1$s</item>
+    <item>Out %1$s</item>
+    <item>Nov %1$s</item>
+    <item>Dez %1$s</item>
+    </string-array>
+</resources>

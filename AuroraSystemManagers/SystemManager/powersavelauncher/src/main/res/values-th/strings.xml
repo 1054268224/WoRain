@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok_string">ตกลง</string>
+    <string name="cancel_string">ยกเลิก</string>
+    <string name="power_hours">ชั่วโมง</string>
+    <string name="power_minutes">นาที</string>
+    <string name="is_charging_now">กำลังชาร์จ</string>
+    <string name="charged_completely">ชาร์จแล้ว</string>
+    <string name="am">AM</string>
+    <string name="power_cannotget">ไม่สามารถประเมินได้ </string>
+    <string name="can_use_time">เวลาสแตนด์บาย </string>
+    <string name="app_name">ตัวเปิดใช้งานพลังงาน</string>
+    <string name="pm">PM</string>
+    <string name="exit_msg1">โทรศัพท์กำลังชาร์จอยู่ คุณแน่ใจว่าต้องการออกจากโหมดเอ็กซ์ตรีมหรือไม่</string>
+    <string name="power_low">ต่ำกว่า </string>
+    <string name="exit_string">ออกจากโหมดเอ็กซ์ตรีม</string>
+    <string name="exit_string_title">ออกจากโหมดเอ็กซ์ตรีม</string>
+    <string name="exit_msg">คุณแน่ใจที่จะออกจากโหมดเอ็กซ์ตรีมใช่ไหม</string>
+    <string name="need_charging_time">อีก %s ที่ต้องชาร์จ</string>
+</resources>

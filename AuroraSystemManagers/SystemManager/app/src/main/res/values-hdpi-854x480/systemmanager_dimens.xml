@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="systemmanager_actionbar_clickfield">48dp</dimen>
+    
+    <dimen name="network_control_header_padding_top">12dp</dimen>
+</resources>

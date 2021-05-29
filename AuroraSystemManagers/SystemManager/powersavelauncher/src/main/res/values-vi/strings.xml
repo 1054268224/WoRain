@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Tr. khởi chạy siêu T.kiệm</string>
+    <string name="exit_string">Thoát khỏi chế độ siêu tiết kiệm</string>
+    <string name="exit_string_title">Thoát khỏi chế độ siêu tiết kiệm</string>
+    <string name="ok_string">"OK"</string>
+    <string name="cancel_string">Hủy</string>
+    <string name="exit_msg">Bạn có chắc chắn để thoát khỏi chế độ siêu tiết kiệm?</string>
+    <string name="exit_msg1">Điện thoại đang được tính phí, bạn có chắc chắn để thoát khỏi chế siêu tiết kiệm?</string>
+    <string name="can_use_time">Thời gian chờ</string>
+    <string name="need_charging_time">cần sạc thêm% %s</string>
+    <string name="power_cannotget">Không thể ước tính</string>
+    <string name="power_hours">&#160;Giờ&#160;</string>
+    <string name="power_minutes">&#160;phút&#160;</string>
+    <string name="is_charging_now">Sạc</string>
+    <string name="charged_completely">Sạc xong</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="power_about"></string>
+    <string name="power_low">Thấp hơn</string>
+    <string name="control_panel_brightness">Độ sáng</string>
+    <string name="activity_title_add_apps">Thêm ứng dụng</string>
+    <string name="add_app">Thêm</string>
+    <string name="system_process">Tiến trình hệ thống</string>
+    <string name="social_app">Ứng dụng xã hội</string>
+    <string name="remaining_time">"Thời gian chờ: "</string>
+    <string name="remaining_time_2">"Thời gian sử dụng: "</string>   
+    <plurals name="remaining_time_hour">
+        <item quantity="one">"1 giờ "</item>
+        <item quantity="other">"%d giờ "</item>
+    </plurals>
+    <plurals name="remaining_time_minute">
+        <item quantity="one">"1 phút"</item>
+        <item quantity="other">"%d Phút"</item>
+    </plurals>
+    <string name="settings">Cài đặt</string>
+    <string name="settings_activity_title">Cài đặt</string>
+    <string name="pref_title_mobile_data">Dữ liệu di động</string>
+    <string name="pref_title_wifi">Wifi</string>
+    <string name="on">Mở</string>
+    <string name="off">Tắt</string>
+    <string name="no_sim">Không có Thẻ Sim</string>
+    <string name="guide_text_1">"1. Kết nối dữ liệu di động hoặc Wi-fi tại đây"</string>
+    <string name="guide_text_2">"2. \"Thoát\" ở đây"</string>
+    <string name="guide_text_6">"Một số tính năng của một số ứng dụng có thể không chạy bình thường ở chế độ cực đoan"</string>
+    <string name="guide_text_got_it">"Tôi biết"</string>
+</resources>

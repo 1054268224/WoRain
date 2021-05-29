@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mini_tab"        
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/miniTab_height"
+        android:paddingLeft="@dimen/miniTab_paddingLeft"
+        android:paddingRight="@dimen/miniTab_paddingRight"
+        android:paddingTop="@dimen/miniTab_paddingTop" 
+        android:paddingBottom="@dimen/miniTab_paddingBottom"
+        android:orientation="horizontal"
+        android:background="@drawable/mini_tab_bg">
+        
+        <Button
+          android:id="@+id/mini_tab_left"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="@dimen/miniTab_buton_height"
+          android:textColor="@color/topbar_text_color_checked"
+          android:textSize="@dimen/miniTab_button_textSize"
+          android:gravity="center"
+          android:background="@drawable/permission_left_press" />
+        
+         <Button 
+          android:id="@+id/mini_tab_right"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="@dimen/miniTab_buton_height"
+          android:textColor="@color/topbar_text_color_normal"
+          android:textSize="@dimen/miniTab_button_textSize"
+          android:gravity="center"
+          android:background="@drawable/permission_right_normal"/>         
+             
+    </LinearLayout>

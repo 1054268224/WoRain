@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"> 
+  <string-array name="weekday">
+    <item>సోమ</item>
+    <item>మంగళ</item>
+    <item>బుధ</item>
+    <item>గురు</item>
+    <item>శుక్ర</item>
+    <item>శని</item>
+    <item>ఆది</item>
+  </string-array>
+  <string-array name="month">
+    <item>జనవరి %1$s</item>
+    <item>ఫిబ్రవరి %1$s</item>
+    <item>మార్చి %1$s</item>
+    <item>ఏప్రిల్ %1$s</item>
+    <item>మే %1$s</item>
+    <item>జూన్ %1$s</item>
+    <item>జూలై %1$s</item>
+    <item>ఆగస్ట్ %1$s</item>
+    <item>సెప్టెంబర్ %1$s</item>
+    <item>అక్టోబర్ %1$s</item>
+    <item>నవంబర్ %1$s</item>
+    <item>డిసెంబర్ %1$s</item>
+  </string-array>
+</resources>

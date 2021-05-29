@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weekday">
+        <item>จ</item>
+        <item>อ</item>
+        <item>พ</item>
+        <item>พฤ</item>
+        <item>ศ</item>
+        <item>ส</item>
+        <item>อา</item>
+    </string-array>
+    <string-array name="month">
+        <item>ม.ค. %1$s</item>
+        <item>ก.พ. %1$s</item>
+        <item>มี.ค. %1$s</item>
+        <item>เม.ย. %1$s</item>
+        <item>พ.ค. %1$s</item>
+        <item>มิถุนายน %1$s</item>
+        <item>กรกฎาคม %1$s</item>
+        <item>ส.ค. %1$s</item>
+        <item>ก.ย. %1$s</item>
+        <item>ต.ค. %1$s</item>
+        <item>พ.ย. %1$s</item>
+        <item>ธ.ค. %1$s</item>
+    </string-array>
+</resources>

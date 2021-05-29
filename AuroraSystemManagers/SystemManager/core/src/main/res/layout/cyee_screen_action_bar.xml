@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <fenglp> <2013-06-20> add for CR00812456 -->
+<!-- Gionee <gaoj> <2013-9-6> modify for CR00889318 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical" >
+
+        <ViewStub
+            android:id="@+id/cyee_actionbar_container_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/cyee_actionbar_container" />
+
+        <FrameLayout
+            android:id="@+id/cyee_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Gionee <gaoj> <2013-12-12> add for CR00974643 begin -->
+
+    <LinearLayout
+        android:id="@+id/cyee_magic_bar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal" />
+    <!-- Gionee <gaoj> <2013-12-12> add for CR00974643 end -->
+
+    <LinearLayout
+        android:id="@+id/cyee_overlap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cyee_magicbar_icon_bg_height"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/cyee_magicbar_bottom_padding"
+        android:layout_marginEnd="@dimen/cyee_magicbar_start_end_padding"
+        android:layout_marginStart="@dimen/cyee_magicbar_start_end_padding"
+        android:background="@drawable/cyee_optionsmenu_transparaent"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <cyee.widget.CyeeMagicBar
+        android:id="@+id/cyee_magic_bar"
+        style="?attr/cyeeactionBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/cyee_magicbar_bottom_padding"
+        android:layout_marginEnd="@dimen/cyee_magicbar_start_end_padding"
+        android:layout_marginStart="@dimen/cyee_magicbar_start_end_padding"
+        android:visibility="gone" />
+
+</FrameLayout>

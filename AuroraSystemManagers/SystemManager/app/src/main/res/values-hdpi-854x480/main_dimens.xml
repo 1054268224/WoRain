@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="main_used_ram_txt_size">13dp</dimen>
+    <dimen name="main_total_ram_txt_size">13dp</dimen>
+</resources>

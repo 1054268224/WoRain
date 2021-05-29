@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/normal_listview_height"
+    android:columnCount="3"
+    android:layout_gravity="center_vertical"
+    android:minHeight="?attr/listPreferredItemHeight"
+    android:paddingEnd="@dimen/usagedetails_image_marginRight" >
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="@dimen/usagedetails_image_width"
+        android:layout_height="@dimen/usagedetails_image_height"
+        android:layout_marginStart="@dimen/usagedetails_image_marginLeft"
+        android:layout_marginEnd="@dimen/usagedetails_image_marginRight"
+        android:layout_gravity="center_vertical"
+        android:layout_rowSpan="2"
+        android:scaleType="centerInside" />
+
+    <cyee.widget.CyeeTextView
+        android:id="@+id/title"
+        android:layout_width="0dip"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginTop="@dimen/usagedetails_title_margintop"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textSize="@dimen/textsize_level_one"
+        android:textColor="@color/textcolor_level_one" />
+    
+    <cyee.widget.CyeeTextView
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/usagedetails_summary_margintop"
+        android:layout_marginStart="@dimen/usagedetails_percentage_marginLeft"
+        android:textSize="@dimen/textsize_level_two"
+        android:textColor="@color/textcolor_level_two"/>
+
+    <!-- Gionee <yangxinruo> <2015-9-15> <modify> for CR01552284 begin -->
+    <cyee.widget.CyeeProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_height="@dimen/usagedetails_progressbar_height"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:max="100" />
+    <!-- Gionee <yangxinruo> <2015-9-15> <modify> for CR01552284 begin -->
+  
+</GridLayout>

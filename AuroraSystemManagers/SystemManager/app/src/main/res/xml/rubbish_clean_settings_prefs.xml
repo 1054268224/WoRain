@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cyee.preference.CyeePreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.cyee="http://schemas.android.com/apk/res-auto" >
+
+    <cyee.preference.CyeePreferenceCategory com.cyee:cyeetitle="@string/rubbish_clean_settings" >
+        <cyee.preference.CyeeListPreference
+            com.cyee:cyeedialogTitle="@string/rubbish_clean_size_setting"
+            com.cyee:cyeeentries="@array/entries_list_size"
+            com.cyee:cyeeentryValues="@array/entries_list_size_values"
+            com.cyee:cyeekey="rubbish_size_alert_key"
+            com.cyee:cyeetitle="@string/rubbish_clean_size_setting" />
+
+        <cyee.preference.CyeeSwitchPreference
+            com.cyee:cyeedefaultValue="false"
+            com.cyee:cyeekey="apk_del_alert_key"
+            com.cyee:cyeesummary="@string/apk_delete_setting_summary"
+            com.cyee:cyeetitle="@string/apk_delete_setting" />
+        <cyee.preference.CyeeSwitchPreference
+            com.cyee:cyeedefaultValue="true"
+            com.cyee:cyeekey="residual_del_alert_key"
+            com.cyee:cyeesummary="@string/residual_delete_setting_summary"
+            com.cyee:cyeetitle="@string/residual_delete_setting" />
+    </cyee.preference.CyeePreferenceCategory>
+    <!--guoxt remove for oversea -->
+    <!--
+    <cyee.preference.CyeePreferenceCategory com.cyee:cyeetitle="@string/rubbish_update" >
+        <cyee.preference.CyeeSwitchPreference
+            com.cyee:cyeedefaultValue="true"
+            com.cyee:cyeekey="rubbish_auto_update_key"
+            com.cyee:cyeesummary="@string/rubbish_update_summary"
+            com.cyee:cyeetitle="@string/rubbish_auto_update" />
+
+        <cyee.preference.CyeePreferenceScreen
+            android:layout_marginLeft="10dip"
+            com.cyee:cyeekey="rubbish_manual_update_key"
+            com.cyee:cyeetitle="@string/rubbish_update_manual" >
+        </cyee.preference.CyeePreferenceScreen>
+    </cyee.preference.CyeePreferenceCategory>
+    -->
+<!--guoxt remove for oversea -->
+</cyee.preference.CyeePreferenceScreen>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="power_app_name">省电管理</string>
+
+    <!-- 省电主界面 -->
+    <string name="need_charging_time">充电中 %s后充满</string>
+    <string name="is_charging_now">充电中</string>
+    <string name="charged_completely">充电完毕</string>
+    <string name="power_cannotget">无法预估</string>
+    <string name="power_hours">小时</string>
+    <string name="power_minutes">分钟</string>
+    <string name="none_power_mode">普通模式</string>
+    <string name="normal_power_mode">日常省电模式</string>
+    <string name="super_power_mode">极致省电模式</string>
+    <string name="none_power_mode_summary">系统不做任何省电优化处理</string>
+    <string name="normal_power_mode_summary">降低手机性能</string>
+    <string name="super_power_mode_summary">仅可使用电话、联系人、信息和时钟</string>
+    <string name="super_power_mode_summary_no_clock">仅可使用电话、联系人、信息</string>
+    <string name="time_use_in_supermode">可待机:%s</string>
+    <!-- Gionee <yangxinruo> <2016-3-18> <add> for CR01654969 begin -->
+    <string name="mode_item_config_changed">您已修改了默认省电配置</string>
+    <string name="time_use_in_configurable_mode_default">默认配置可用:%s</string>
+    <string name="time_use_in_configurable_mode">当前省电配置可让手机使用:%s</string>
+    <string name="time_use_in_original_mode">当前状态可用:%s</string>
+    <string name="power_about">约%s</string>
+    <string name="power_low">不足%s</string>
+    <!-- Gionee <yangxinruo> <2016-3-18> <add> for CR01654969 end -->
+
+
+    <!-- 日常省电模式界面 -->
+    <!-- Gionee <yangxinruo> <2016-3-18> <modify> for CR01654969 begin -->
+    <string name="powersaver_mode_category_title">其他省电项</string>
+    <string name="close_gesture">动作手势</string>
+    <string name="close_bluetooth">蓝牙</string>
+    <string name="close_gps">位置信息</string>
+    <string name="close_sync">同步</string>
+    <string name="close_push_notification">应用推送</string>
+    <string name="set_custom_screen_light">屏幕亮度</string>
+    <string name="set_cpu_state">CPU智能降频</string>
+    <string name="close_wifi">WLAN</string>
+    <string name="close_wifi_ap">关闭便携式WLAN热点</string>
+    <string name="close_nfc">NFC</string>
+    <!-- vibration for cmcc -->
+    <string name="close_vibration">振动</string>
+    <string name="close_data_connection">数据连接</string>
+    <string name="set_sleep_time">休眠时间</string>
+    <!-- Gionee <yangxinruo> <2016-3-18> <modify> for CR01654969 end -->
+    <!-- Gionee <yangxinruo> <2016-3-18> <add> for CR01654969 begin -->
+    <string name="mode_item_switch_on">开启</string>
+    <string name="mode_item_switch_off">关闭</string>
+    <string name="mode_item_switch_pass">保持状态不变</string>
+    <string name="mode_item_cancel">取消</string>
+    <string name="set_darktheme">暗色省电主题</string>
+    <string name="set_greenbackground">绿色后台</string>
+    <!-- Gionee <GN_Oversea_Bug> <xuyongji> <20161214> modify for CR01776095 beign -->
+    <string name="mode_item_timeout_s">%d 秒</string>
+    <string name="mode_item_timeout_m">%d 分钟</string>
+    <string name="mode_item_timeout_ms">%d 分钟</string>
+    <!-- Gionee <GN_Oversea_Bug> <xuyongji> <20161214> modify for CR01776095 end -->
+    <string name="mode_item_timeout_perfix">无操作%s</string>
+    <string name="mode_item_brightness_perfix">%s%%</string>
+    <string name="mode_setting_reset">恢复默认设置</string>
+    <!-- Gionee <yangxinruo> <2016-3-18> <add> for CR01654969 end -->
+
+
+    <!-- 省电设置界面 -->
+    <string name="power_saving_mode_title">省电管理设置</string>
+    <string name="smart_saving">系统后台省电</string>
+    <!-- Gionee <yangxinruo> <2016-3-1> <modify> for CR01643609 begin -->
+    <string name="night_saving_title">智能睡眠省电</string>
+    <string name="night_saving_summary">手机在灭屏后长时间不使用时会关闭网络、蓝牙、GPS、同步等耗电项，亮屏后会自动恢复</string>
+    <!--Gionee guoxt 2017.05.04 modify 124270  begin -->
+    <string name="night_saving_summary_kr">手机在灭屏后长时间不使用时会关闭网络、蓝牙等耗电项，亮屏后会自动恢复</string>
+    <!--Gionee guoxt 2017.05.04 modify 124270  end -->
+    <!-- Gionee <yangxinruo> <2016-3-1> <modify> for CR01643609 end -->
+    <string name="auto_clean_title">智能内存清理</string>
+    <string name="other_powersaver">其他</string>
+    <string name="user_manual">省电小贴士</string>
+    <string name="create_shortcut_title">极致省电桌面入口</string>
+    <string name="create_shortcut_summary">开启后可从桌面一键进入极致省电</string>
+    <string name="super_power_save">极致省电</string>
+
+    <!-- 省电小贴士内容 -->
+    <string name="battery">电池保养</string>
+    <string name="daily_use">省电有妙招</string>
+    <string name="battery_use_desc">请在0～35℃的温度下充电。每月1次完全充电，保持电池活性。电量在20%时，随用随充，有利于电池保养。</string>
+    <string name="daily_use_desc">尽可能调低屏幕亮度，关闭动画和特效，使用静态壁纸。只保留必要的桌面小插件，清理手机垃圾和后台进程，禁止应用开机启动。</string>
+
+    <!-- Gionee <yangxinruo> <2016-3-3> add for CR01645219 begin -->
+    <!-- 新版更多耗电详情界面 -->
+    <string name="battery_desc_voice">"语音通话所耗的电量"</string>
+    <string name="battery_desc_standby">"手机待机所耗的电量"</string>
+    <string name="battery_desc_radio">"移动网络所耗的电量"</string>
+    <string name="battery_desc_flashlight">"手电筒所耗的电量"</string>
+    <string name="battery_desc_display">"显示屏和背光所耗的电量"</string>
+    <string name="battery_desc_wifi">"WLAN网络所耗的电量"</string>
+    <string name="battery_desc_bluetooth">"蓝牙所耗的电量"</string>
+    <string name="battery_desc_apps">"应用所耗的电量"</string>
+    <string name="battery_desc_users">"用户所耗的电量"</string>
+    <string name="battery_desc_unaccounted">"其他耗电量"</string>
+    <string name="battery_desc_overcounted">"多算了的用电量"</string>
+    <string name="usage_type_cpu">"CPU总使用时间"</string>
+    <string name="usage_type_cpu_foreground">"CPU（前台）"</string>
+    <string name="usage_type_wake_lock">"保持唤醒状态"</string>
+    <string name="usage_type_gps">"GPS"</string>
+    <string name="usage_type_wifi_running">"WLAN运行时间"</string>
+    <string name="usage_type_data_send">"发送的移动数据包"</string>
+    <string name="usage_type_data_recv">"接收的移动数据包"</string>
+    <string name="usage_type_radio_active">"移动无线装置运行时间"</string>
+    <string name="usage_type_data_wifi_send">"发送的WLAN数据包"</string>
+    <string name="usage_type_data_wifi_recv">"接收的WLAN数据包"</string>
+    <string name="usage_type_audio">"音频"</string>
+    <string name="usage_type_video">"视频"</string>
+    <string name="usage_type_on_time">"运行时间"</string>
+    <string name="usage_type_no_coverage">"无信号时间"</string>
+    <string name="usage_type_total_battery_capacity">"电池总容量"</string>
+    <string name="usage_type_computed_power">"计算出的耗电量"</string>
+    <string name="usage_type_actual_power">"观察到的耗电量"</string>
+    <string name="details_subtitle">"详细使用情况"</string>
+    <string name="controls_subtitle">"省电提示"</string>
+    <string name="packages_subtitle">"包含的软件包"</string>
+    <string name="force_stop">关闭应用</string>
+    <string name="mah">"<xliff:g id="NUMBER">%d</xliff:g>毫安时"</string>
+    <string name="battery_action_app_details">"应用信息"</string>
+    <string name="battery_sugg_apps_info">"停止或卸载应用"</string>
+    <string name="location_settings_title">"位置信息"</string>
+    <string name="battery_sugg_apps_gps">"选择“耗电量低”模式"</string>
+    <string name="display_settings">"显示"</string>
+    <string name="battery_sugg_display">"降低屏幕亮度，缩短休眠延时"</string>
+    <string name="wifi_settings">"WLAN"</string>
+    <string name="battery_sugg_wifi">"未使用或无法使用WLAN网络时将WLAN关闭"</string>
+    <string name="bluetooth_settings">"蓝牙"</string>
+    <string name="battery_sugg_bluetooth_basic">"请在不使用蓝牙功能时将其关闭"</string>
+    <string name="radio_controls_title">"更多"</string>
+    <string name="battery_sugg_radio">"不在信号覆盖范围内时切换到飞行模式，以节约电量"</string>
+    <string name="battery_msg_unaccounted">"耗电量显示的是大致用电量，并不包括所有耗电来源所消耗的电量。其他耗电量显示的是系统计算出的大致耗电量与实际观察到的耗电量之间的差异量。"</string>
+    <string name="battery_history_days">"<xliff:g id="DAYS">%1$d</xliff:g>天<xliff:g id="HOURS">%2$d</xliff:g>小时<xliff:g id="MINUTES">%3$d</xliff:g>分<xliff:g id="SECONDS">%4$d</xliff:g>秒"</string>
+    <string name="battery_history_hours">"<xliff:g id="HOURS">%1$d</xliff:g>小时<xliff:g id="MINUTES">%2$d</xliff:g>分<xliff:g id="SECONDS">%3$d</xliff:g>秒"</string>
+    <string name="battery_history_minutes">"<xliff:g id="MINUTES">%1$d</xliff:g>分<xliff:g id="SECONDS">%2$d</xliff:g>秒"</string>
+    <string name="battery_history_seconds">"<xliff:g id="SECONDS">%1$d</xliff:g>秒"</string>
+    <string name="battery_history_days_no_seconds">"<xliff:g id="DAYS">%1$d</xliff:g>天<xliff:g id="HOURS">%2$d</xliff:g>小时<xliff:g id="MINUTES">%3$d</xliff:g>分钟"</string>
+    <string name="battery_history_hours_no_seconds">"<xliff:g id="HOURS">%1$d</xliff:g>小时<xliff:g id="MINUTES">%2$d</xliff:g>分钟"</string>
+    <string name="battery_history_minutes_no_seconds">"<xliff:g id="MINUTES">%1$d</xliff:g>分钟"</string>
+    <!-- Gionee <yangxinruo> <2016-4-19> add for CR01680614 begin -->
+    <string name="power_app_others">其他应用</string>
+    <!-- Gionee <yangxinruo> <2016-4-19> add for CR01680614 end -->
+    <!-- Gionee <yangxinruo> <2016-3-3> add for CR01645219 end -->
+
+
+    <!-- 更多耗电详情界面 -->
+    <string name="power_consumption_tab_title">更多耗电详情</string>
+    <string name="hardware">硬件耗电</string>
+    <string name="software">软件耗电</string>
+    <string name="process_kernel_label">Android操作系统</string>
+    <string name="process_mediaserver_label">媒体服务器</string>
+    <string name="percentage"><xliff:g id="NUMBER">%.1f</xliff:g>%%</string>
+    <string name="power_phone">语音通话</string>
+    <string name="power_screen">屏幕</string>
+    <string name="power_cell">手机射频</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="power_idle">手机待机</string>
+    <string name="power_bluetooth">蓝牙</string>
+    <string name="power_monitor_title">本周最耗电应用</string>
+    <string name="power_monitor_message"><xliff:g id="name">%s</xliff:g></string>
+    <string name="daily_power_open_noti">已开启日常省电模式</string>
+
+    <!-- Gionee <yangxinruo> <2016-3-18> <add> for CR01654969 begin -->
+    <string name="daily_power_Intelligent_scene_title">GPU动图优化</string>
+    <!-- Gionee <yangxinruo> <2016-3-18> <add> for CR01654969 end -->
+    <string name="dialog_negativebutton_txt">取消</string>
+    <string name="dialog_neutralbutton_txt">查看详情</string>
+    <string name="dialog_neutralbutton_config_txt">配置</string>
+    <string name="dialog_positivebutton_txt">开启</string>
+    <!-- Gionee <yangxinruo> <2016-3-18> <modify> for CR01654969 begin -->
+    <string name="dialog_dailypower_message">该模式会限制CPU/GPU的最高性能以节省电量\n\n默认配置会关闭蓝牙，动作手势，位置信息，同步等功能，您也可以自定义配置\n\n日常省电模式不会改变您的网络状态</string>
+    <string name="dialog_dailypower_message_kr">该模式会限制CPU/GPU的最高性能以节省电量\n\n默认配置会关闭蓝牙，动作手势，同步等功能，您也可以自定义配置\n\n日常省电模式不会改变您的网络状态</string>
+    <string name="dialog_dailypower_message_nogesture">该模式会限制CPU/GPU的最高性能以节省电量\n\n默认配置会关闭蓝牙，位置信息，同步等功能，您也可以自定义配置\n\n日常省电模式不会改变您的网络状态</string>
+    <!-- Gionee <yangxinruo> <2016-3-18> <modify> for CR01654969 end -->
+    <string name="dialog_superpower_message_normal">极致省电可让手机待机</string>
+    <string name="dialog_superpower_message_low">手机待机时间</string>
+    <string name="dialog_superpower_message"><xliff:g id="ID_0">%1$s</xliff:g><xliff:g id="ID_1">%2$s</xliff:g>\n\n开启极简桌面，降低屏幕耗电\n仅可使用电话、联系人、信息和时钟功能\n\n极致省电会导致部分桌面插件消失</string>
+    <string name="dialog_superpower_message_no_clock"><xliff:g id="ID_0">%1$s</xliff:g><xliff:g id="ID_1">%2$s</xliff:g>\n\n开启极简桌面，降低屏幕耗电\n仅可使用电话、联系人、信息功能\n\n极致省电会导致部分桌面插件消失</string>
+    <string name="super_power_save_label">极致省电模式</string>
+    <string name="super_power_mode_introduction_string1">极致省电仅可使用<b>电话、联系人、信息和时钟</b>功能</string>
+    <string name="super_power_mode_introduction_string1_no_clock">极致省电仅可使用<b>电话、联系人、信息</b>功能</string>
+    <string name="super_power_mode_introduction_string2">手机将进入极简桌面</string>
+    <string name="super_power_mode_introduction_string3"><xliff:g id="ID_0">%1$s</xliff:g>\n<xliff:g id="ID_1">%2$s</xliff:g></string>
+    <string name="super_power_mode_introduction_string4">极致省电会导致部分桌面插件消失</string>
+    <!-- Gionee xionghg add for power saving optimization 145357 begin -->
+    <string name="super_power_mode_summary_new">仅可使用基础应用和你选择的应用</string>    
+    <string name="dialog_superpower_message_normal_new">极致省电可让手机待机约%s</string>
+    <string name="dialog_superpower_message_new"><xliff:g id="ID_0">%s</xliff:g>\n\n只有基础应用和你选择的应用可以在极致省电里使用\n\n手机将进入极简桌面</string>
+    <string name="super_power_mode_introduction_new1">只有基础应用和你选择的应用可以在极致省电里使用</string>
+    <string name="super_power_mode_introduction_new2">手机将进入极简桌面</string>
+    <string name="super_power_mode_introduction_new3">极致省电可让手机待机\n约%s</string>
+    <string name="super_power_mode_introduction_new4">可以打开数据连接或者Wi-Fi</string>
+	<!--Chenyee bianrong <2018-2-6> add for SW17W16KR-102 begin -->
+    <string name="super_power_mode_introduction_new4_KR">可以打开数据连接</string>
+    <!--Chenyee bianrong <2018-2-6> add for SW17W16KR-102 end -->
+    <!-- Gionee xionghg add for power saving optimization 145357 end -->
+    <string name="waiting_load">开启或退出省电模式需要花费一些时间</string>
+    <!-- Gionee <yangxinruo> <2015-12-8> <modify> for CR01606348 begin -->
+    <string name="waiting_load1">请耐心等候,勿进行重启等其它操作</string>
+    <string name="waiting_load2">否则可能会导致界面出现异常</string>
+    <!-- Gionee <yangxinruo> <2015-12-8> <modify> for CR01606348 end -->
+    <string name="super_mode_toast">目前已处于极致省电模式</string>
+    <!-- Gionee <yangxinruo> <2015-5-29> <add> for CR01528508 begin -->
+    <string name="power_ranking_noname">Android后台</string>
+    <!-- Gionee <yangxinruo> <2015-5-29> <add> for CR01528508 end -->
+    <!-- Gionee <yangxinruo> <2015-11-18> <add> for CR01593050 begin -->
+    <string name="in_lock_task_toast">固定屏幕模式下，不能进入极致省电模式</string>
+    <!-- Gionee <yangxinruo> <2015-11-18> <add> for CR01593050 end -->
+
+
+    <!-- Gionee <yangxinruo> <2015-9-17> <add> for CR01555251 begin -->
+    <string name="power_consume_notification_title">高耗电提醒</string>
+    <string name="power_consume_notification_content">&lt;font color=\"red\"&gt;<xliff:g>%1$s</xliff:g>&lt;\//font&gt;&#160;正在后台耗电，点击查看详情</string>
+    <string name="power_consume_notification_kill">关闭应用</string>
+    <!-- Gionee: jiangsj <2017-3-24> modify for 91354 begin -->
+    <string name="power_consume_processed_kill">已关闭&#160;</string>
+    <!-- Gionee: jiangsj <2017-3-24> modify for 91354 end -->
+    <string name="power_consume_notification_ignore">不再提示该应用</string>
+    <string name="power_consume_background_list_title">后台耗电应用</string>
+    <!-- Gionee <yangxinruo> <2015-11-13> <modify> for CR01590432 begin -->
+    <string name="power_consume_header">后台运行的应用耗电情况</string>
+    <!-- Gionee <yangxinruo> <2015-11-13> <modify> for CR01590432 end -->
+    <string name="text_power_consume_empty">没有正在后台运行的耗电应用</string>
+    <string name="power_consume_setting_summary">检测到有高耗电应用时发通知</string>
+    <string name="power_consume_setting_title">高耗电监控提醒</string>
+    <string name="power_consume_clean">关闭应用</string>
+    <string name="power_consume_whitelist_tip">白名单</string>
+    <string name="power_consume_ignore_tip">不再提示</string>
+
+    <!-- Gionee <yangxinruo> <2016-2-1> <add> for CR01634814 begin -->
+    <string name="background_running_remove_ignore_title">提醒设置</string>
+    <string name="background_running_remove_ignore_message">允许该应用被提示</string>
+    <string name="background_running_set_ignore_message">不再提示该应用</string>
+    <string name="background_running_set_power_monitor_message">高耗电</string>
+    <string name="background_running_set_wakelock_monitor_message">阻止系统休眠</string>
+    <string name="power_consume_notification_wakelock_content">&lt;font color=\'red\'&gt;<xliff:g>%1$s</xliff:g>&lt;\//font&gt;&#160;长时间阻止系统休眠，点击查看详情</string>
+    <!-- Gionee <yangxinruo> <2016-2-1> <add> for CR01634814 end -->
+    <!-- Gionee <yangxinruo> <2015-9-17> <add> for CR01555251 end -->
+
+
+    <!-- Gionee <yangxinruo> <2016-2-1> <add> for CR01634814 begin -->
+    <string name="enter_background_running_processes">查看后台耗电应用</string>
+    <!-- Gionee <yangxinruo> <2016-2-1> <add> for CR01634814 end -->
+    <!-- chenyee zhaocaili 20180619 add for SystemManagerLite begin -->
+    <string name="power_consume_background_list_title_lite">检查</string>
+    <!-- chenyee zhaocaili 20180619 add for SystemManagerLite end -->
+
+    <!-- Add by zhiheng.huang on 2019/12/14 for EJQQ-2090 start  -->
+    <string name="normal_detail_changed_alert_title">省电配置设置</string>
+    <string name="normal_detail_changed_alert_message">配置已修改，保存后立即生效，是否需要保存？</string>
+    <string name="normal_detail_changed_alert_save">保存</string>
+    <string name="normal_detail_changed_alert_cancel">舍弃</string>
+    <!-- Add by zhiheng.huang on 2019/12/14 for EJQQ-2090 end  -->
+
+</resources>

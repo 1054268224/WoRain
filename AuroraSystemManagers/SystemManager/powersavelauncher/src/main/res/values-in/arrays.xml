@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/* //device/apps/common/assets/res/any/colors.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <string-array name="weekday"> 
+        <item>Sen</item>
+        <item>Sel</item>
+        <item>Rab</item>
+        <item>Kam</item>
+        <item>Jum</item>
+        <item>Sab</item>
+        <item>Min</item>
+    </string-array>
+    <string-array name="month"> 
+        <item>Jan %1$s</item>
+        <item>Feb %1$s</item>
+        <item>Mar %1$s</item>
+        <item>Apr %1$s</item>
+        <item>Mei %1$s</item>
+        <item>Jun %1$s</item>
+        <item>Jul %1$s</item>
+        <item>Agu %1$s</item>
+        <item>Sep %1$s</item>
+        <item>Okt %1$s</item>
+        <item>Nov %1$s</item>
+        <item>Des %1$s</item>
+    </string-array>
+</resources>

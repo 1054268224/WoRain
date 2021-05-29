@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     Layout used by SwitchPreference for the switch widget style. This is inflated
+     inside android.R.layout.cyee_preference.
+-->
+<cyee.widget.CyeeSwitch xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cyee_switchWidget"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@null"
+
+    android:clickable="false"
+    android:focusable="false" />
+
+
+

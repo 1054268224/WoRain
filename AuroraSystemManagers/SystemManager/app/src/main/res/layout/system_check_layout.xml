@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cusattrs="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/system_check_top"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/top_half_height"
+        android:background="@drawable/common_blue_bg" >
+
+        <com.cydroid.softmanager.view.ScoreCountView
+            android:layout_marginTop="3dp"
+            android:id="@+id/score_view_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/score_ripple"
+            app:number_color="@color/white_text_color"
+            app:hint_color="@color/white_text_color"
+            app:unit_color="@color/white_text_color"
+            app:size="@dimen/score_view_size"
+            app:number_size="@dimen/score_view_number_size"
+            app:unit="@string/score_unit_text"
+            app:unit_size="@dimen/score_view_unit_size"
+            app:hint_size="@dimen/score_view_hint_size"
+            app:number_hint_margin="@dimen/score_view_number_hint_margin"
+            />
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/system_score_num_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/single_progress_color"
+            android:textSize="58dp"
+            android:visibility="gone"/>
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/system_score_unit_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/system_score_num_back"
+            android:layout_centerVertical="true"
+            android:text="@string/system_score_unit"
+            android:textColor="@color/single_progress_color"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/system_check_tip_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/battery_percent_size" />
+
+        <ProgressBar
+            android:id="@+id/system_check_progress_bar_back"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:indeterminateOnly="false"
+            android:progress="0"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-5dp"
+            android:progressDrawable="@drawable/progressbar"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/my"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="305dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/bottom_cicleview"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bottom_circle_shape" />
+
+        <View
+            android:id="@+id/middle_cicleview"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/middle_circle_shape" />
+
+        <com.cydroid.softmanager.view.ScoreCountView
+            android:layout_marginTop="3dp"
+            android:id="@+id/score_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_circle_shape"
+            app:hint_color="@color/text_deeply_black_color"
+            app:hint_size="@dimen/score_view_hint_size"
+            app:number_color="@color/text_deeply_black_color"
+            app:number_hint_margin="@dimen/score_view_number_hint_margin"
+            app:number_size="@dimen/score_view_number_size"
+            app:size="@dimen/score_view_size"
+            app:unit="@string/score_unit_text"
+            app:unit_color="@color/text_deeply_black_color"
+            app:unit_size="12dp"
+            />
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/system_score_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_shallow_black_color"
+            android:textSize="58dp"
+            android:visibility="gone"/>
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/system_score_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/system_score_num"
+            android:layout_centerVertical="true"
+            android:text="@string/system_score_unit"
+            android:textColor="@color/text_shallow_black_color"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/system_check_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/text_shallow_black_color"
+            android:textSize="@dimen/battery_percent_size" />
+
+        <ProgressBar
+            android:id="@+id/system_check_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:indeterminateOnly="false"
+            android:progress="0"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-5dp"
+            android:progressDrawable="@drawable/progressbar"/>
+        <com.cydroid.softmanager.view.AnimBallView
+            android:id="@+id/anim_ball_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:ball_color="@color/anim_ball_color" />
+
+    </RelativeLayout>
+
+    <cyee.widget.CyeeListView
+        android:id="@+id/system_check_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/my"
+        android:choiceMode="singleChoice" />
+
+    <cyee.widget.CyeeButton
+        android:id="@+id/system_check_done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/sell_calibrate_8dp"
+        android:text="@string/action_done"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--chenyee liu_shuang 20180522 add for CSW1803A-45 begin-->
+    <dimen name="text_margin_left">10dp</dimen>
+    <!--chenyee liu_shuang 20180522 add for CSW1803A-45 end-->
+    <dimen name="softmanager_single_progress_title_marginTop">70dp</dimen>
+    <dimen name="softmanager_innerRadius">88.25dp</dimen>
+    <dimen name="softmanager_sd_img_marginTop">14dp</dimen>
+</resources>

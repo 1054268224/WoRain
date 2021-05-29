@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="ExtraTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <string name="host_newui_optimise_title" translatable="false">一键优化</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="security_wallet_title">支付保护</string>
+    <string name="security_wallet_empty">未检测到正版的金融支付类应用</string>
+    <string name="security_wallet_header">正在受保护的应用</string>
+    <string name="security_wallet_header_on">已开启</string>
+    <string name="security_wallet_header_off">已关闭</string>
+    <string name="security_wallet_mini_bar_tip">下面应用已经过官方正版检测，可放心使用</string>
+    <string name="security_wallet_support">安天AVL提供技术支持</string>
+    <string name="security_wallet_mini_bar_tip_off">支付保护已关闭</string>
+    <string name="security_wallet_mini_bar_tip_root">系统已被ROOT，支付会有风险</string>
+    <string name="security_wallet_off_info">开启支付保护，可在金融支付类应用启动时进行安全环境扫描，针对WIFI网络进行检测，拦截金融类恶意代码，保护支付环境安全</string>
+    <string name="security_wallet_jump_to_app_store">添加更多正版支付应用</string>
+    <string name="security_wallet_jump_to_app_store_not_found">无法启动软件商店</string>
+
+</resources>

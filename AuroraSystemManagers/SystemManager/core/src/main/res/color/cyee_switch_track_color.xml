@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:alpha="@dimen/cyee_switch_track_disable_alpha" android:state_checked="true" android:state_enabled="false" android:color="@color/cyee_alert_dialog_button_text_color"/>
+    <item android:alpha="@dimen/cyee_switch_track_disable_alpha" android:state_checked="false" android:state_enabled="false" android:color="@color/cyee_switch_track_unchecked_bg_color"/>
+    <item android:state_checked="true" android:state_enabled="true" android:color="@color/cyee_alert_dialog_button_text_color"/>
+    <item android:state_checked="false" android:state_enabled="true" android:color="@color/cyee_switch_track_unchecked_bg_color"/>
+    <item android:color="@color/cyee_alert_dialog_button_text_color"/>
+
+</selector>

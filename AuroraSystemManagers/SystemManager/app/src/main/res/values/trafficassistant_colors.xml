@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="half_trans_white">#b0ffffff</color>
+    <color name="traffic_help_title_color">#3698FF</color>
+    <!--Gionee: mengdw <2015-11-17> add for CR01589343 begin-->
+    <color name="sell_white">#FFF</color>
+    <color name="sell_theme_transparent">#50808080</color>
+    <color name="sell_transparent">#00000000</color>
+    <color name="sell_record_list_bk">#E5E5E5</color>
+    <!--Gionee: mengdw <2015-11-17> add for CR01589343 end-->
+    <!--Gionee: mengdw <2016-12-12> add for CR01775579 begin-->
+    <!--Gionee: mengdw <2016-12-12> add for CR01775579 end-->
+    <!-- Gionee: mengdw <2016-11-22> add for CR01772354 begin -->
+    <color name="sell_product_item_edge_color">#00a6ce</color>
+    <color name="sell_product_item_solid_color">#66fae9dc</color>
+    <!-- Gionee: mengdw <2016-11-22> add for CR01772354 end -->
+    <!-- Gionee: mengdw <2017-05-18> add for 141974 begin -->
+    <color name="app_detail_txt_color">#888888</color>
+    <color name="app_detail_network_txt_color">#222222</color>
+    <!-- Gionee: mengdw <2017-05-18> add for 141974 end -->
+</resources>

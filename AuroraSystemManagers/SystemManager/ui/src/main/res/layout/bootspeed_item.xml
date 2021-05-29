@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/boot_speed_item"
+    android:background="@drawable/ripple_gray_with_white_mask">
+
+    <ImageView
+        android:id="@+id/soft_image"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+
+    <TextView
+        android:id="@+id/soft_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/soft_image"
+        android:layout_toRightOf="@+id/soft_image"
+        android:layout_marginLeft="9dp"
+        android:layout_centerVertical="true"
+        android:textSize="15sp"
+        android:textColor="@color/item_black"/>
+
+    <include layout="@layout/checkbox" />
+
+</RelativeLayout>

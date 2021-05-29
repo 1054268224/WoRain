@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="20dp" >
+
+    <ScrollView
+        android:id="@+id/scroll_main_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="98dp" >
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:paddingRight="20dp"
+            android:text="@string/utilization_content"
+            android:textColor="#cc000000"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <cyee.widget.CyeeTextView
+        android:id="@+id/no_scroll_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:paddingRight="20dp"
+        android:textColor="#cc000000"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/dialog_checkbox_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp">
+        <!--chenyee guoxt  20171021 modify for begin -->
+        <!--android:visibility="gone"-->
+        <!--chenyee guoxt  20171021 modify for end -->
+
+        <cyee.widget.CyeeCheckBox
+            android:id="@+id/dialog_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/click_effect"
+            android:checked="true" />
+
+        <cyee.widget.CyeeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_checkbox_description"
+            android:textColor="#66000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

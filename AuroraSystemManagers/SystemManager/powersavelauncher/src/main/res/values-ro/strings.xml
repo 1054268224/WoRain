@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Lansator de energie"</string>
+    <string name="exit_string">"Ieșire mod extrem"</string>
+    <string name="ok_string">"OK"</string>
+    <string name="cancel_string">"Anulare"</string>
+    <string name="exit_msg">"Sigur doriţi să ieşiţi din modul extrem?"</string>
+    <string name="exit_msg1">"Telefonul se încarcă, sigur doriţi să ieşiţi din modul extrem?"</string>
+    <string name="can_use_time">"Timp aşteptare : %s"</string>
+    <string name="need_charging_time">"Se impune încărcarea%s"</string>
+    <string name="power_cannotget">"Incapabil de estimare"</string>
+    <string name="power_hours"> Oră</string>
+    <string name="power_minutes">"Minut"</string>
+    <string name="is_charging_now">"Se încarcă"</string>
+    <string name="charged_completely">"Încărcat"</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="exit_string_title">Ieșire mod extrem</string>
+    <string name="power_low">mai scăzută ca</string>
+    <!--Chenyee  <liumn> 20171130 for modify SW17W16VF-5 beign-->
+    <string name="guide_text_1">"1. Conectare aici la date mobile sau WiFi"</string>
+    <string name="guide_text_2">"2.„Ieșire” este aici"</string>
+    <string name="settings">Setări</string>
+    <string name="settings_activity_title">Setări</string>
+    <string name="guide_text_got_it">"Știu"</string>
+    <string name="pref_title_mobile_data">Date mobile</string>
+    <string name="add_app">Adăugare</string>
+    <string name="system_process">Proces de sistem</string>
+    <string name="activity_title_add_apps">Adăugare aplicații</string>
+    <string name="guide_text_6">"Unele funcții ale unor aplicații nu vor funcționa normal în modul extrem"</string>
+    <string name="social_app">Aplicație socială</string>
+    <!--Chenyee  <liumn> 20171130 for modify SW17W16VF-5 end-->
+    <string name="control_panel_brightness">Luminozitate</string>
+    <string name="remaining_time">Așteptare WiFi</string>
+    <string name="remaining_time_2">Utilizați timpul</string>
+    <plurals name="remaining_time_hour">
+        <item quantity="one">1 h </item>
+        <item quantity="other">%d h </item>
+    </plurals>
+    <plurals name="remaining_time_minute">
+        <item quantity="one">1 min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <string name="pref_title_wifi">Wi-Fi</string>
+    <string name="on">Pornit</string>
+    <string name="off">Oprit</string>
+    <string name="no_sim">Fără cartela SIM</string>
+</resources>

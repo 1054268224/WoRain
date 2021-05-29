@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">power Laucher</string>
+    <string name="exit_string">Exit extrémnej mode</string>
+    <string name="exit_string_title">Exit extrémnej mode</string>
+    <string name="ok_string">OK</string>
+    <string name="cancel_string">Zrušiť</string>
+    <string name="exit_msg">Naozaj chcete ukončiť extrémnej režim?</string>
+    <string name="exit_msg1">Telefón je nabitý, sú si istí, že pre ukončenie extrémne režim?</string>
+    <string name="can_use_time">Pohotovostná doba</string>
+    <string name="need_charging_time">%s viac potreba byť účtované</string>
+    <string name="power_cannotget">nemožno odhadnúť</string>
+    <string name="power_hours">hodina</string>
+    <string name="power_minutes">minúta</string>
+    <string name="is_charging_now">nabíjanie</string>
+    <string name="charged_completely">nabitá</string>
+    <string name="am">AM</string>
+    <string name="pm">POPOLUDNIE</string>
+    <string name="power_low">menej ako</string>
+    <string name="control_panel_brightness">jas</string>
+    <string name="activity_title_add_apps">pridanie aplikácií</string>
+    <string name="add_app">pridať</string>
+    <string name="system_process">systémový proces</string>
+    <string name="social_app">sociálne aplikácie</string>
+    <string name="remaining_time">V pohotovostnom režime:</string>
+    <string name="remaining_time_2">Využiť čas:</string>
+    <plurals name="remaining_time_hour">
+        <item quantity="one">1 h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="remaining_time_minute">
+        <item quantity="one">1 minúta</item>
+        <item quantity="other">"%d min"</item>
+    </plurals>
+    <string name="settings">nastavenie</string>
+    <string name="settings_activity_title">nastavenie</string>
+    <string name="pref_title_mobile_data">Mobilné dáta</string>
+    <string name="pref_title_wifi">WLAN</string>
+    <string name="on">na</string>
+    <string name="off">preč</string>
+    <string name="no_sim">Nie je vložená SIM karta</string>
+    <string name="guide_text_1">1. Pripojte mobilné dátové pripojenie alebo WLAN tu</string>
+    <string name="guide_text_2">2. \ "Exit \" je tu</string>
+    <string name="guide_text_6">Niektoré funkcie niektorých aplikácií nemusí pracovať normálne v extrémnom režime</string>
+    <string name="guide_text_got_it">viem</string>
+</resources>

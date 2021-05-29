@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  Copyright (C) 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <string name="app_name">رابط کاربری قدرت</string>
+    <string name="exit_string">خروج از حالت فوق العاده</string>
+    <string name="exit_string_title">خروج از حالت فوق العاده</string>
+    <string name="ok_string">تایید</string>
+    <string name="cancel_string">لغو</string>
+    <string name="exit_msg">ایا میخواهید از حالت فوق العاده خارج شوید</string>
+    <string name="exit_msg1">گوشی در حالت شارژ است ایا مطمئنید میخواهید از حالت فوق العاده خارج شوید</string>
+    <string name="can_use_time">زمان حالت آماده بکار</string>
+    <string name="need_charging_time">نیاز به شارژ %s</string>
+    <string name="power_cannotget">غیر قابل پیش بینی</string>
+    <string name="power_hours">ساعت</string>
+    <string name="power_minutes">دقیقه</string>
+    <string name="is_charging_now">در حال شارژ</string>
+    <string name="charged_completely">شارژ شده</string>
+    <string name="am">پیش از ظهر</string>
+    <string name="pm">بعد از ظهر</string>
+</resources>

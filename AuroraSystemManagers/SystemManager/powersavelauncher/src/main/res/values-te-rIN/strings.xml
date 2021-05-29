@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"> 
+  <string name="app_name">పవర్ లాంచర్</string>
+  <string name="exit_string">ఎక్స్ట్రీమ్ మోడ్ నుంచి నిష్క్రమించండి</string>
+  <string name="exit_string_title">ఎక్స్ట్రీమ్ మోడ్ నుంచి నిష్క్రమించండి</string>
+  <string name="ok_string">సరే</string>
+  <string name="cancel_string">రద్దు చేయండి</string>
+  <string name="exit_msg">మీరు ఎక్స్ట్రీమ్ మోడ్ నుంచి నిష్క్రమించాలనుకుంటున్నారా?</string>
+  <string name="exit_msg1">ఫోన్ ఛార్జ్ చేయబడుతుంది, మీరు ఎక్స్ట్రీమ్ మోడ్ నుండి ఖచ్చితంగా నిష్క్రమించాలనుకుంటున్నారా?</string>
+  <string name="can_use_time">స్టాండ్ బై టైమ్</string>
+  <string name="need_charging_time">ఛార్జీ %s అవసరం</string>
+  <string name="power_cannotget">అంచనా వేయడానికి సాధ్యం కాలేదు </string>
+  <!-- Gionee <yangxinruo> <2015-9-9> <modify> for CR01549850 begin -->
+  <string name="power_hours">&#160;గంట&#160;</string>
+  <string name="power_minutes">&#160;నిమిషం&#160;</string>
+  <!-- Gionee <yangxinruo> <2015-9-9> <modify> for CR01549850 end -->
+  <string name="is_charging_now">ఛార్జ్ అవుతుంది</string>
+  <string name="charged_completely">చార్జ్ చేయబడింది</string>
+  <!--Gionee <yangxinruo> <2015-07-31> add for CR01529084 begin-->
+  <string name="am">AM</string>
+  <string name="pm">PM</string>
+  <!--Gionee <yangxinruo> <2015-07-31> add for CR01529084 end-->
+</resources>

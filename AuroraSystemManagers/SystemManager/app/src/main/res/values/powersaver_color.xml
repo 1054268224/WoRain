@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <!-- <color name="btn_light">#8bbc21</color> -->
+    <color name="topbar_text_color_normal">#ffaaaaaa</color>
+    <color name="topbar_text_color_checked">#ff222222</color>
+    <color name="red_text_color">#ff5151</color>
+
+    <!-- 省电模式配置项布局 -->
+    <color name="super_power_mode_introduction_color">#66000000</color>
+    <color name="super_power_mode_sumary_color">#00a6ce</color>
+
+</resources>

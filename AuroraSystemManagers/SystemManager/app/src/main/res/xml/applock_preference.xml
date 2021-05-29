@@ -1,0 +1,31 @@
+<cyee.preference.CyeePreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cyeekey="screen">
+
+    <cyee.preference.CyeePreferenceScreen
+        app:cyeekey="clear_password_key"
+        app:cyeetitle="@string/clear_password" >
+    </cyee.preference.CyeePreferenceScreen>
+
+    <cyee.preference.CyeePreferenceScreen
+        app:cyeekey="change_password_key"
+        app:cyeetitle="@string/change_password" >
+        <!--<intent android:action="com.cydroid.settings.powerprofile.manual" />-->
+    </cyee.preference.CyeePreferenceScreen>
+
+    <cyee.preference.CyeePreferenceCategory
+        app:cyeekey="app_lock"
+        app:cyeetitle="@string/app_lockmode" >
+        <com.cydroid.softmanager.applock.RadioButtonPreference
+            app:cyeedefaultValue="true"
+            app:cyeekey="key_lock_screenoff_mode"
+            app:cyeetitle="@string/applock_mode1" />
+
+        <com.cydroid.softmanager.applock.RadioButtonPreference
+            app:cyeedefaultValue="false"
+            app:cyeekey="key_lock_rightnow_mode"
+            app:cyeetitle="@string/applock_mode2" />
+
+    </cyee.preference.CyeePreferenceCategory>
+
+</cyee.preference.CyeePreferenceScreen>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+	<RelativeLayout
+	    android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp">
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingTop="@dimen/header_padding_top"
+            android:textColor="@color/app_use_today"
+            android:textSize="14sp" />
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/header_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	       android:layout_alignParentEnd="true"
+            android:paddingEnd="20dp"
+            android:paddingTop="@dimen/header_padding_top"
+            android:textColor="@color/app_use_today"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loadview" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_bar"
+        layout="@layout/listview" />
+
+    <!-- Replace by HZH on 2019/5/11 for ui start ^_^ -->
+    <cyee.widget.CyeeTextView
+        android:id="@+id/empty_remove_pacakge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:text="@string/text_no_third_app"
+        android:textColor="@color/empty_text_color_primary"
+        android:textSize="16sp" />
+    <!-- Replace by HZH on 2019/5/11 for ui end ^_^ -->
+
+    <com.quinny898.library.persistentsearch.SearchBox
+        android:id="@+id/searchbox"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<cyee.preference.CyeePreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cyeekey="screen" >
+<!--
+     <cyee.preference.CyeePreferenceCategory
+        app:cyeekey="noti_power_saver"
+        app:cyeetitle="@string/save_power_notifi" >
+        <cyee.preference.CyeeSwitchPreference
+            app:cyeedefaultValue="true"
+            app:cyeekey="key_saver_noti"
+            app:cyeetitle="@string/save_power_notifi_title" />
+    </cyee.preference.CyeePreferenceCategory>
+    -->
+    <!-- Gionee <yangxinruo> <2016-3-1> <modify> for CR01643609 begin -->
+    <cyee.preference.CyeePreferenceCategory
+        app:cyeekey="smart_power_saver"
+        app:cyeetitle="@string/smart_saving" >
+        <cyee.preference.CyeeSwitchPreference
+            app:cyeedefaultValue="false"
+            app:cyeekey="key_night_mode"
+            app:cyeesummary="@string/night_saving_summary"
+            app:cyeetitle="@string/night_saving_title" />
+        <!-- Gionee <yangxinruo> <2016-3-1> <modify> for CR01643609 end -->
+        <!-- Gionee <yangxinruo> <2016-1-5> <delete> for CR01618272 begin -->
+        <!--
+        <cyee.preference.CyeeSwitchPreference
+            app:cyeedefaultValue="true"
+            app:cyeekey="key_auto_clean"
+            app:cyeesummary="@string/auto_clean_summary"
+            app:cyeetitle="@string/auto_clean_title" />
+        -->
+        <!-- Gionee <yangxinruo> <2016-1-5> <delete> for CR01618272 end -->
+    </cyee.preference.CyeePreferenceCategory>
+    
+    <cyee.preference.CyeePreferenceCategory
+        app:cyeekey="help"
+        app:cyeetitle="@string/other_powersaver" >
+		<cyee.preference.CyeeSwitchPreference
+            app:cyeedefaultValue="false"
+            app:cyeekey="key_create_shortcut"
+            app:cyeesummary="@string/create_shortcut_summary"
+            app:cyeetitle="@string/create_shortcut_title" />
+        <cyee.preference.CyeePreferenceScreen
+            app:cyeekey="user_manual"
+            app:cyeetitle="@string/user_manual" >
+            <intent android:action="com.cydroid.settings.powerprofile.manual" />
+        </cyee.preference.CyeePreferenceScreen>
+    </cyee.preference.CyeePreferenceCategory>
+
+
+</cyee.preference.CyeePreferenceScreen>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Gionee <yangxinruo> <2016-5-10> modify for CR01658695 begin -->
+    <!-- <color name="common_green_bg">#44c967</color> -->
+    <!--<color name="common_green_bg">#314d79</color> -->
+    <!-- Chenyee <guoxt> <2018-3-20> modify for CSW1702A-3337 begin -->
+    <color name="common_green_bg">#00a3e4</color>
+    <color name="common_green_bg_wait">#314d79</color>
+    <!-- Chenyee <guoxt> <2018-3-20> modify for CSW1702A-3337 end -->
+
+    <drawable name="common_blue_bg">#3698FF</drawable>
+    <drawable name="common_blue_bg_wait">@color/common_green_bg_wait</drawable>
+    <drawable name="green_background_bg_on">@color/common_green_bg</drawable>
+    <!-- Gionee <yangxinruo> <2016-5-10> modify for CR01658695 end -->
+
+    <!-- mini tab text color values -->
+    <color name="mini_tab_unclicked">#aaaaaa</color>
+    <color name="mini_tab_clicked">#444444</color>
+    <color name="textcolor_level_one">#cc000000</color>
+    <color name="textcolor_level_two">#66000000</color>
+    <!-- Chenyee xionghg 20171031 modify for cyee warning color begin -->
+    <!--<color name="textcolor_level_three">#99ff0000</color>-->
+    <color name="textcolor_level_three">#ee4858</color>
+    <!-- Chenyee xionghg 20171031 modify for cyee warning color end -->
+    <color name="textcolor_title">#00a6ce</color>
+
+    <!-- ActionBar background color -->
+    <!-- Gionee <yangxinruo> <2016-5-10> modify for CR01658695 begin -->
+    <!-- Gionee <yangxinruo> <2016-5-10> modify for CR01658695 end -->
+
+</resources>

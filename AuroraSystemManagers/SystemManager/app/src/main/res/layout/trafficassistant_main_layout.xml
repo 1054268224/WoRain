@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cusattrs="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/gn_dial_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/power_top_half_height"
+        android:background="@drawable/common_blue_bg" >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/image_slide_page"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="-8dp"
+        android:paddingBottom="16dp"
+        android:background="@drawable/common_blue_bg"
+        android:id="@+id/flowtoday_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/traffic_today_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/sim_card_flow_today_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/sim_card_flow_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/traffic_today"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/sell_calibrate_1px"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/single_progress_color" />
+
+        <LinearLayout
+            android:id="@+id/traffic_total_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/sim_card_flow_total_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <cyee.widget.CyeeTextView
+                android:id="@+id/sim_card_flow_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/traffic_total"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gn_dial_layout"
+        android:orientation="vertical">
+
+    <include layout="@layout/trafficassistant_limit_flow_item" />
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="?attr/dividerHorizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?attr/dividerHorizontal" />
+
+    <include layout="@layout/trafficassistant_network_control_item" android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?attr/dividerHorizontal" android:visibility="gone"/>
+
+    <include layout="@layout/trafficassistant_data_save_item" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?attr/dividerHorizontal" />
+
+    <include layout="@layout/trafficassistant_detail_flow_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?attr/dividerHorizontal" />
+</LinearLayout>
+
+</LinearLayout>

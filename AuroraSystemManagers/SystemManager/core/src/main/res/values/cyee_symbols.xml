@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- We don't want to publish private symbols incom.com.cyee.R as part of the
+       SDK.  Instead, put them here. -->    
+    <!--<java-symbol type="id" name="cyee_action_bar_title" />
+    <java-symbol type="id" name="cyee_action_bar_subtitle" />
+    <java-symbol type="id" name="cyee_action_bar_back" />
+    <java-symbol type="id" name="cyee_action_bar_icon" />
+    <java-symbol type="id" name="cyee_alert_dialog_title" />
+    <java-symbol type="id" name="cyee_dialog_cancel_icon" />
+    <java-symbol type="id" name="cyee_alert_dialog_icon" />
+    <java-symbol type="id" name="cyee_message" />
+    <java-symbol type="id" name="cyee_pickers" />
+    <java-symbol type="id" name="cyee_month_day_layout" />
+    <java-symbol type="id" name="cyee_calendar_view" />
+    <java-symbol type="id" name="cyee_day" />
+    <java-symbol type="id" name="cyee_numberpicker_input" />
+    <java-symbol type="id" name="cyee_month" />
+    <java-symbol type="id" name="cyee_year" />
+    <java-symbol type="id" name="cyee_datePicker" />
+    <java-symbol type="id" name="cyee_timePicker" />
+    <java-symbol type="id" name="cyee_increment" />
+    <java-symbol type="id" name="cyee_decrement" />
+    <java-symbol type="id" name="cyee_progress" />
+    <java-symbol type="id" name="cyee_progress_number" />
+    <java-symbol type="id" name="cyee_progress_percent" />
+    <java-symbol type="id" name="cyee_hour" />
+    <java-symbol type="id" name="cyee_minute" />
+    <java-symbol type="id" name="cyee_amPm" />
+    <java-symbol type="id" name="cyee_toolbar_group" />
+    <java-symbol type="id" name="cyee_toolbar_position_arrow" />
+    <java-symbol type="id" name="cyee_title" />
+    <java-symbol type="id" name="cyee_icon" />
+    <java-symbol type="id" name="cyee_checkbox" />
+    <java-symbol type="id" name="cyee_edittext_container" />
+    <java-symbol type="id" name="cyee_list_footer" />
+    <java-symbol type="id" name="cyee_prefs_frame" />
+    <java-symbol type="id" name="cyee_headers" />
+    <java-symbol type="id" name="cyee_prefs" />
+    <java-symbol type="id" name="cyee_button_bar" />
+    <java-symbol type="id" name="cyee_back_button" />
+    <java-symbol type="id" name="cyee_skip_button" />
+    <java-symbol type="id" name="cyee_next_button" />
+    <java-symbol type="id" name="cyee_seekbar" />
+    <java-symbol type="id" name="cyee_switchWidget" />
+    <java-symbol type="id" name="cyee_contentPanel" />
+    <java-symbol type="id" name="cyee_topPanel" />
+    <java-symbol type="id" name="cyee_buttonPanel" />
+    <java-symbol type="id" name="cyee_customPanel" />
+    <java-symbol type="id" name="cyee_custom" />
+    <java-symbol type="id" name="cyee_titleDivider" />
+    <java-symbol type="id" name="cyee_titleDividerTop" />
+    <java-symbol type="id" name="cyee_cancel" />
+    <java-symbol type="id" name="cyee_title_template" />
+    <java-symbol type="id" name="cyee_alertTitle" />
+    <java-symbol type="id" name="cyee_scrollView" />
+    <java-symbol type="id" name="cyee_button1" />
+    <java-symbol type="id" name="cyee_button2" />
+    <java-symbol type="id" name="cyee_button3" />
+    <java-symbol type="id" name="cyee_text1" />
+    &lt;!&ndash; Gionee <daizhimin> <2013-07-04> add for CR00833379 begin &ndash;&gt;
+    <java-symbol type="id" name="cyee_magic_bar_bg" />
+    <java-symbol type="id" name="cyee_overlap" />
+    <java-symbol type="id" name="cyee_magic_bar" />
+    
+    &lt;!&ndash;  Gionee <gaoj> <2013-12-04> modify for CR00967353 begin &ndash;&gt;
+    &lt;!&ndash; shaozj begin &ndash;&gt;
+    &lt;!&ndash;shaozj <java-symbol type="id" name="cyee_title_layout" />&ndash;&gt;
+    <java-symbol type="id" name="cyee_magicbar_shadow" />
+    <java-symbol type="id" name="cyee_magicbar_tab" />
+    <java-symbol type="id" name="cyee_icon0" />
+    <java-symbol type="id" name="cyee_icon1" />
+    <java-symbol type="id" name="cyee_icon2" />
+    <java-symbol type="id" name="cyee_icon3" />
+    <java-symbol type="id" name="cyee_icon4" />
+    <java-symbol type="id" name="cyee_divider" />
+    <java-symbol type="drawable" name="cyee_magic_menu_close_icon" />
+    <java-symbol type="drawable" name="cyee_magicbar_gradient" />
+    <java-symbol type="string" name="cyee_actionbar_magic_item_close" />
+    <java-symbol type="string" name="cyee_actionbar_magic_item_more" />
+    &lt;!&ndash; shaozj end &ndash;&gt;
+    &lt;!&ndash;  Gionee <gaoj> <2013-12-04> modify for CR00967353 end &ndash;&gt;
+    
+    <java-symbol type="id" name="cyee_listview" />
+    <java-symbol type="id" name="cyee_magic_listitem_textview" />
+    <java-symbol type="id" name="cyee_magic_listitem_checkbox" />
+   &lt;!&ndash; Gionee <daizhimin> <2013-07-04> add for CR00833379 end &ndash;&gt;
+   &lt;!&ndash; for ActionBar  &ndash;&gt;
+    <java-symbol type="id" name="cyee_action_bar_container" />
+    <java-symbol type="id" name="cyee_action_bar" />
+    <java-symbol type="id" name="cyee_up" />
+    <java-symbol type="id" name="cyee_action_bar_intellgent_container" />
+    <java-symbol type="id" name="cyee_content" />
+	&lt;!&ndash; Gionee <fenglp> <2013-07-10> add for CR00812456 begin &ndash;&gt;
+    &lt;!&ndash; for ContextMenu &ndash;&gt;
+    <java-symbol type="id" name="cyee_shortcut" />
+    &lt;!&ndash; for ListActivity &ndash;&gt;
+    &lt;!&ndash; <java-symbol type="id" name="cyee_empty" /> &ndash;&gt;
+    &lt;!&ndash; Gionee <fenglp> <2013-07-10> add for CR00812456 end &ndash;&gt;
+    &lt;!&ndash; Gionee <fenglp> <2013-07-15> add for CR00812456 begin &ndash;&gt;
+    <java-symbol type="id" name="cyee_action_bar_overlay_layout" />
+    <java-symbol type="id" name="cyee_action_context_bar" />
+    &lt;!&ndash; <java-symbol type="id" name="cyee_top_action_bar" /> &ndash;&gt;
+    <java-symbol type="id" name="cyee_split_action_bar" />
+    <java-symbol type="id" name="cyee_action_mode_close_button" />
+    <java-symbol type="id" name="cyee_home" />
+    <java-symbol type="id" name="cyee_empty_view" />
+    <java-symbol type="id" name="cyee_action_menu_presenter" />	
+    &lt;!&ndash; Gionee <fenglp> <2013-07-15> add for CR00812456 end &ndash;&gt;
+    &lt;!&ndash; Gionee <fenglp> <2013-07-31> add for CR00812456 begin &ndash;&gt;
+    <java-symbol type="id" name="cyee_search_button" />
+    <java-symbol type="id" name="cyee_search_src_text" />
+    <java-symbol type="id" name="cyee_search_edit_frame" />
+    <java-symbol type="id" name="cyee_search_plate" />
+    <java-symbol type="id" name="cyee_search_background" />
+    <java-symbol type="id" name="cyee_search_go_btn" />
+    <java-symbol type="id" name="cyee_search_close_btn" />
+    <java-symbol type="id" name="cyee_search_voice_btn" />
+    &lt;!&ndash; Gionee <fenglp> <2013-07-31> add for CR00812456 end &ndash;&gt;
+    &lt;!&ndash; Gionee <fenglp> <2013-08-05> add for CR00812456 begin &ndash;&gt;
+    <java-symbol type="id" name="cyee_edit_query" />
+    &lt;!&ndash; Gionee <fenglp> <2013-08-05> add for CR00812456 end &ndash;&gt;
+    
+    &lt;!&ndash; Gionee <hanbj> <2013-09-18> add for CR00907636 begin &ndash;&gt;
+    <java-symbol type="id" name="cyee_resolver_grid" />
+    <java-symbol type="id" name="cyee_button_always" />
+    <java-symbol type="id" name="cyee_button_once" />
+    <java-symbol type="integer" name="cyee_config_maxResolverActivityColumns" />
+    <java-symbol type="string" name="cyee_noApplications" />
+    <java-symbol type="layout" name="cyee_resolver_grid" />    
+    <java-symbol type="string" name="cyee_whichApplication" />
+    <java-symbol type="string" name="cyee_chooseActivity" />
+    &lt;!&ndash; Gionee <hanbj> <2013-09-18> add for CR00907636 end &ndash;&gt;
+    
+    &lt;!&ndash; Gionee <gaoj> <2013-9-6> modify for CR00889318 begin &ndash;&gt;
+    <java-symbol type="id" name="cyee_actionbar_container_stub" />
+    &lt;!&ndash; Gionee <gaoj> <2013-9-6> modify for CR00889318 end &ndash;&gt;
+    <java-symbol type="id" name="cyee_substance_bar" />
+    
+    &lt;!&ndash; Gionee <gaoj> <2013-9-27> add for CR00899138 begin &ndash;&gt;
+    <java-symbol type="id" name="cyee_time_picker" />
+    &lt;!&ndash; Gionee <gaoj> <2013-9-27> add for CR00899138 end &ndash;&gt;
+    &lt;!&ndash; Gionee <lihq> <2014-04-22> add for CR00873172 begin&ndash;&gt;
+    <java-symbol type="id" name="cyee_search_bar" />
+     <java-symbol type="id" name="cyee_magicbar_backgroud" />
+    &lt;!&ndash; Gionee <lihq> <2013-04-22> add for CR00873172 end&ndash;&gt;
+    
+    &lt;!&ndash; gionee maxw add begin &ndash;&gt;
+    <java-symbol type="id" name="cyee_expandable_list_group_divider" />
+    <java-symbol type="layout" name="cyee_expandable_list_group_wrapper" />
+    <java-symbol type="drawable" name="cyee_search_icon" />
+    <java-symbol type="drawable" name="cyee_voice_icon" />
+    <java-symbol type="layout" name="cyee_actionbar_menu_item" />
+    &lt;!&ndash; gionee maxw add end &ndash;&gt;
+    <java-symbol type="id" name="cyee_preference_title_layout" />
+    <java-symbol type="layout" name="cyee_divider" />
+    <java-symbol type="id" name="cyee_right_button" />
+
+    <java-symbol type="layout" name="cyee_multichoice_container" />
+    <java-symbol type="layout" name="cyee_expandable_multichoice_container" />
+    <java-symbol type="id" name="cyee_customView" />
+    <java-symbol type="layout" name="cyee_multichoice_select_action_mode_layout" />
+    <java-symbol type="id" name="cyee_multichoice_selectedCount" />
+    <java-symbol type="id" name="cyee_multichoice_selectall" />
+    <java-symbol type="string" name="cyee_multichoice_select_text" />
+    <java-symbol type="string" name="cyee_multichoice_cancel_select_all" />
+    <java-symbol type="string" name="cyee_multichoice_select_all" />
+    &lt;!&ndash; gionee zhaoyulong <2015-06-04> add for CR01490697 begin &ndash;&gt;
+    <java-symbol type="color" name="cyee_actionbar_tabtext_color_light" />
+    <java-symbol type="color" name="cyee_actionbar_tabtext_color_dark" />
+    <java-symbol type="dimen" name="cyee_actionbar_tabtext_text_size" />
+    &lt;!&ndash; gionee zhaoyulong <2015-06-04> add for CR01490697 end &ndash;&gt;
+    &lt;!&ndash; gionee maxw add begin &ndash;&gt;
+    <java-symbol type="id" name="tabHost" />
+    <java-symbol type="id" name="title_tv" />
+    &lt;!&ndash; gionee maxw add end&ndash;&gt;
+    &lt;!&ndash;  Gionee <dual_weixin> <liuran> <Dec 29, 2015> add for  begin &ndash;&gt;
+    &lt;!&ndash;
+    <java-symbol type="string" name="clone_suffix" />
+     &ndash;&gt;
+    &lt;!&ndash;  Gionee <dual_weixin> <liuran> <Dec 29, 2015> add for  end &ndash;&gt;
+    
+    <java-symbol type="id" name="cyee_lunar_mode_rl" />
+    <java-symbol type="id" name="cyee_lunar_mode_cb" />-->
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:paddingBottom="8dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <!--Chenyee <Cyee_Widget> hushengsong 2018-07-13 modify for CSW1707LT-40 begin-->
+    <cyee.widget.CyeeTextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp" 
+        android:textColor="@color/cyee_content_color_primary_on_backgroud_c1"
+        android:text="@string/cyee_time_picker_dialog_title"/>
+    <!--Chenyee <Cyee_Widget> hushengsong 2018-07-13 modify for CSW1707LT-40 end-->
+    <cyee.widget.CyeeTimePicker
+        android:id="@+id/cyee_timePicker"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

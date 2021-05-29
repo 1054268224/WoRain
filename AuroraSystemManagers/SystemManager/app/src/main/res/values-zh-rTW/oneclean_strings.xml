@@ -1,0 +1,279 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" 
+
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- 手機加速主介面 -->
+
+    <string name="phone_accelerate">記憶體清理</string>
+
+    <string name="text_one_accelerate">一鍵加速</string>
+
+    <string name="searching">正在獲取數據&#8230;</string>
+
+    <string name="summary_process_clean">個可清理進程</string>
+
+    <string name="summary_process_clean_no">沒有可清理的進程</string>
+
+    <string name="summary_cache_clean">可清理垃圾檔</string>
+
+    <string name="summary_cache_clean_no">沒有可釋放的空間</string>
+
+    <string name="summary_boot_optimization">個可禁用的自啟項</string>
+
+    <string name="summary_boot_optimization_no">沒有可禁用的自啟項</string>
+
+    <string name="text_clean_result">"已釋放<xliff:g>%1$s</xliff:g>記憶體空間"</string>
+
+    <string name="text_clean_result_no">手機已是最佳狀態，無需加速</string>
+
+    <string name="text_main_ui_notice">搖一搖清理手機, 保持手機最佳狀態</string>
+
+    <string name="text_clean_load">正在清理進程和垃圾，優化開機啟動項&#8230;</string>
+
+    <string name="text_shake">搖一搖,也可以加速喲</string>
+
+    <!-- 進程清理 -->
+
+    <string name="notice_process_running">"運行進程<xliff:g>%1$s</xliff:g>個，剩餘記憶體空間<xliff:g>%2$s</xliff:g>"</string>
+
+    <string name="notice_process_whitelist">被勾選的應用一鍵清理時不會結束</string>
+
+    <string name="text_result_clean_process">"已清理<xliff:g>%1$s</xliff:g>個進程"</string>
+
+    <string name="title_activiy_process_clean">進程清理</string>
+
+    <string name="no_select">沒有可清理的進程，請選擇正在運行的進程</string>
+
+    <string name="one_clean">一鍵清理</string>
+
+    <string name="text_loader_process">正在清理&#8230;</string>
+
+    <string name="summary_item_process">"記憶體：<xliff:g>%1$s</xliff:g>"</string>
+
+    <string name="text_empty_process">沒有可清理的進程</string>
+
+    <string name="title_activity_process_protected">添加應用到白名單</string>
+
+    <!-- 垃圾清理 -->
+
+    <string name="title_activiy_cache_clean">垃圾清理</string>
+
+    <string name="text_no_select">請選擇要清理的程式</string>
+
+    <string name="text_loader_cache">"正在清理垃圾&#8230;"</string>
+
+    <string name="text_header_cache_clean">"緩存垃圾<xliff:g>%1$s</xliff:g>個,佔用存儲空間<xliff:g>%2$s</xliff:g>"</string>
+
+    <string name="text1_cache_clean_no">沒有可清理的緩存</string>
+
+    <!-- 開機加速 -->
+
+    <string name="title_activiy_boot_opt">自啟管理</string>
+
+    <string name="text_loader_boot">正在優化開機啟動項&#8230;</string>
+
+    <string name="text_result_bootopt">已優化啟動項</string>
+
+    <string name="text_no_opt">沒有需要優化的啟動項</string>
+
+    <string name="one_key_opti">一鍵禁止</string>
+
+    <string name="one_key_allow">一鍵允許</string>
+
+    <string name="text_empty_auto_start">沒有應用允許自啟</string>
+
+    <string name="text_empty_auto_start_forbid">沒有應用禁止自啟</string>
+
+    <string name="limited">禁止</string>
+
+    <string name="allow">允許</string>
+
+    <string name="has_allow">已允許</string>
+
+    <string name="text_header_auto_start">"允許自啟（<xliff:g>%1$s</xliff:g>）"</string>
+
+    <string name="text_header_auto_start_forbid">"禁止自啟（<xliff:g>%1$s</xliff:g>）"</string>
+
+    <string name="title_activity_add_auto_start">添加自啟動應用</string>
+
+    <string name="one_key_opt">一鍵清理</string>
+
+
+
+    <!-- Gionee <xuhz> <2013-02-14> add for CR01045806 begin -->
+
+    <string name="protected_process">白名單保護</string>
+
+    <string name="important_process">謹慎清理</string>
+
+    <!-- Gionee <xuhz> <2013-02-14> add for CR01045806 end -->
+
+
+
+
+
+    <!-- Gionee <jianghuan> <2014-05-06> add for CR01238335 begin -->
+
+    <string name="title_memory_settings">記憶體清理設置</string>
+
+    <string name="title_activiy_green_bg">綠色後臺</string>
+
+    <string name="memory_settings_main_title">進程清理</string>
+
+    <string name="close_screen_clean_title">滅屏2分鐘清理</string>
+
+    <string name="close_screen_clean_summary">滅屏後自動清理後臺運行進程</string>
+
+    <string name="low_memory_clean_title">記憶體低於20%清理</string>
+
+    <string name="low_memory_clean_summary">記憶體不足時自動清理後臺運行進程</string>
+
+    <string name="run_game_memory_clean_title">啟動遊戲時清理記憶體</string>
+
+    <string name="run_game_memory_clean_summary">啟動遊戲應用時自動清理記憶體，保證流暢遊戲體驗</string>
+
+    <string name="result_display_title">提示記憶體清理結果</string>
+
+    <string name="result_display_summary">後臺自動清理結束後，提示清理的結果</string>
+
+    <string name="white_list_main_title">白名單</string>
+
+    <!-- Gionee <yangxinruo> <2015-12-11> modify for CR01608017 begin -->
+
+    <string name="process_white_list_title">清理白名單</string>
+
+    <!-- Gionee <yangxinruo> <2015-12-11> modify for CR01608017 end -->
+
+    <string name="process_white_list_summary">名單中的應用運行時受保護，不會被清理</string>
+
+    <string name="green_bg_summary">禁止應用後臺運行，減少流量電量損耗</string>
+
+    <string name="radiobutton_allow">允許自啟</string>
+
+    <string name="radiobutton_prohibit">禁止自啟</string>
+
+    <string name="text_empty_allow_start">無應用允許自啟</string>
+
+    <string name="text_empty_prohibit_start">無應用禁止自啟</string>
+
+    <string name="text_empty_white_app">無應用添加</string>
+
+    <string name="white_list_add">加入白名單</string>
+
+    <string name="white_list_cancel">取消白名單</string>
+
+    <string name="text_empty_white_list">未添加受保護的應用</string>
+
+    <string name="text_add_white_list">添加應用到白名單</string>
+
+    <string name="remove">移除</string>
+
+    <string name="add">添加</string>
+
+    <string name="ok_btn">確定</string>
+
+    <string name="cancel_btn">取消</string>
+
+    <string name="system_process">系統進程</string>
+
+    <string name="user_process">用戶進程</string>
+
+    <string name="whitelist_remind_text">以下應用受保護不會被清理</string>
+
+    <string name="add_whitelist_remind_text">勾選的應用不會被清理</string>
+
+    <string name="oneclean_action">運行記憶體</string>
+
+    <string name="oneclean_action_running">正在清理</string>
+
+    <string name="percent_symbol">%</string>
+
+    <string name="surplus_text">剩餘</string>
+
+    <string name="oneclean_process_running_txt"><xliff:g>%1$s</xliff:g>個正在運行的可清理程式</string>
+
+    <string name="oneclean_no_process_running_txt">已加速到最佳狀態\n 無需再次清理</string>
+
+    <!-- Gionee <jianghuan> <2014-05-06> add for CR01238335 end -->
+
+
+
+    <string name="auto_start_power">開機自啟動</string>
+
+    <string name="auto_start_back">後臺自啟動</string>
+
+    <string name="auto_start_both">開機、後臺自啟動</string>
+
+    <string name="auto_clean_result">"系統管家為你清理後臺，釋放記憶體<xliff:g>%1$s</xliff:g>M"</string>
+
+    <string name="auto_clean_finish">後臺自動清理已完成</string>
+
+    <string name="low_mem_clean_finish">低記憶體自動清理已完成</string>
+
+    <string name="clean_setings_summary">點擊可進入記憶體清理設置，瞭解更多詳情</string>
+
+    <string name="caches_clean_result_text">"釋放空間<xliff:g>%1$s</xliff:g>"</string>
+
+    <string name="caches_clean_complete">"垃圾清理成功"</string>
+
+    <string name="process_clean_result_note">有不想被清理的應用？馬上加入白名單吧</string>
+
+    <string name="process_clean_result">"成功釋放<xliff:g>%1$s</xliff:g>"</string>
+
+    <string name="process_clean_complete">"手機提速成功"</string>
+
+    <string name="action_complete">完成</string>
+
+    <string name="system_app_action">謹慎操作</string>
+
+    <string name="system_app_dialog_title">"禁止<xliff:g>%1$s</xliff:g>自啟動"</string>
+
+    <string name="system_app_dialog_message">"<xliff:g>%1$s</xliff:g>為系統應用，若禁止可能會造成系統無法正常使用，是否確定禁止？"</string>
+
+    <!-- Gionee <yangxinruo> <2016-1-5> add for CR01618272 begin --> 
+
+    <string name="clean_memory_title">自動清理記憶體</string>
+
+    <string name="screenoff_clean_setting_summary">智能清理後臺程式,降低功耗</string>
+
+    <string name="screenoff_clean_setting_title">鎖屏後自動清理</string>
+
+    <string name="screenoff_clean_toast_setting_summary">解鎖後提示</string>
+
+    <string name="screenoff_clean_toast_setting_title">提示清理結果</string>
+
+    <string name="screenoff_clean_toast_msg">鎖屏期間系統管家已釋放<xliff:g id="ID_1">%s</xliff:g>MB記憶體</string>
+
+    <!-- Gionee <yangxinruo> <2016-1-5> add for CR01618272 end --> 
+
+    <!-- Gionee <yangxinruo> <2015-12-11> add for CR01608017 begin -->
+
+    <string name="cpu_monitor_setting_title">記憶體/CPU監控提醒</string>
+
+    <string name="cpu_monitor_setting_summary">檢測到記憶體/CPU佔用過高時發通知</string>
+
+    <string name="cpu_monitor_headup_title">記憶體/CPU佔用過高</string>
+
+    <string name="cpu_monitor_headup_summary">可能會導致手機運行緩慢</string>
+
+    <string name="cpu_monitor_headup_to_clean">手機加速</string>
+
+    <string name="running_apps_title">正在運行的程式</string>
+
+    <string name="running_apps_header">有<xliff:g id="ID_1">%s</xliff:g>個正在運行的程式可清理</string>
+
+    <string name="running_apps_finish">已成功釋放<xliff:g id="ID_1">%s</xliff:g>記憶體</string>
+
+    <string name="running_apps_result_title">手機加速</string>
+
+    <string name="running_apps_result_tip">被清理的程式再次啟動時會重新加載，您可以將經常使用的程式加入白名單</string>
+
+    <!-- Gionee <yangxinruo> <2015-12-11> add for CR01608017 end -->
+    <!--Chenyee <GN_Oversea_req> <zhaopeng> <20170929> add for 226184 begin-->
+    <string name="screenoff_whitelist_noti_title">系統管理員清潔白名單</string>
+    <string name="screenoff_whitelist_noti_message">白名單中的應用程序在鎖定屏幕上受到保護，自動清理和一鍵清理多任務界面，觸摸設置列表。 如果您發現某些應用程序在屏幕鎖定後無法接收新消息或下載中斷，則可以嘗試將其添加到白名單</string>
+    <string name="encryptions_app_fake_name">其他</string>
+    <!--Chenyee <GN_Oversea_req> <zhaopeng> <20170929> add for 226184 end-->
+
+
+</resources>

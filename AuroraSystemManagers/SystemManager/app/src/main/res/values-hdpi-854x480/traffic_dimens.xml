@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="traffic_innerRadius">83dp</dimen>
+    <dimen name="traffic_flow_state_marginTops">80dp</dimen>
+    <!-- Gionee: mengdw <2015-11-17> modify for CR01589343 end -->
+    <!-- Gionee: mengdw <2015-10-20> add for CR01571760  begin -->
+    <dimen name="hotspot_remind_layout_height">40dp</dimen>
+    <dimen name="hotspot_remind_edit_margin_left">20dip</dimen>
+    <dimen name="hotspot_remind_edit_margin_right">20dip</dimen>
+    <dimen name="hotspot_remind_edit_padding_left">10dp</dimen>
+    <dimen name="hotspot_remind_textview_margin_right">10dp</dimen>
+    <!-- Gionee: mengdw <2015-10-20> add for CR01571760  end -->
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+
+    <dimen name="title_size">16sp</dimen>
+    <dimen name="separator_line">1px</dimen>
+	
+	<!-- 二级界面背景颜色高度 -->
+	<dimen name="background_height">275dp</dimen>
+
+    <dimen name="text_margin_left">20dp</dimen>
+	<dimen name="text_margin_right">20dp</dimen>
+	<dimen name="image_margin_left">16dp</dimen>
+	<dimen name="image_margin_right">16dp</dimen>
+	<dimen name="textsize_minitab">14sp</dimen>
+	<dimen name="textsize_title">16sp</dimen>
+	<dimen name="textsize_level_one">18sp</dimen>
+	<dimen name="textsize_level_two">12sp</dimen>
+	<dimen name="textsize_switch_title">18sp</dimen>
+</resources>

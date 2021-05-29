@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/cy_trafficrank_layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+   
+    <!--GIONEE :guanwenjie 2015-4-9 modify for CR01457110-->
+            <!-- Gionee xionghg 2017-05-05 modify for 120380 begin -->
+            <!--<cyee.widget.CyeeTextView-->
+            <!--android:id="@+id/content_display"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="46dp"-->
+            <!--android:paddingLeft="@dimen/text_margin_left"-->
+            <!--android:paddingTop="@dimen/header_padding_top"-->
+            <!--android:textColor="@color/textcolor_title"-->
+            <!--android:textSize="@dimen/text_size" />-->
+            <cyee.widget.CyeeTextView
+                android:id="@+id/content_display"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:paddingLeft="@dimen/text_margin_left"
+                android:gravity="center_vertical"
+                android:textColor="@color/textcolor_title"
+                android:textSize="@dimen/text_size" />
+            <!-- Gionee xionghg 2017-05-05 modify for 120380 end -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <cyee.widget.CyeeTextView
+        android:id="@+id/text_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:layout_marginTop="@dimen/empty_view_icon_and_text_margin_top"
+        android:drawablePadding="@dimen/empty_icon_text_space"
+        android:drawableTop="@drawable/empty_image"
+        android:textColor="@color/empty_text_color_primary"
+        android:textSize="@dimen/empty_text_size"
+        android:visibility="gone" />
+
+    <cyee.widget.CyeeListView
+        android:id="@+id/traffic_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

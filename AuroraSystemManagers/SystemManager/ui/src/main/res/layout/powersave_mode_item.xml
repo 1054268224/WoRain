@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:id="@+id/mode">
+
+        <TextView
+            android:id="@+id/power_mode_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textSize="17sp"
+            android:text="@string/normal_mode_title"
+            android:textColor="@color/item_black"/>
+
+        <TextView
+            android:id="@+id/power_mode_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_alignTop="@+id/power_mode_title"
+            android:layout_marginTop="25dp"
+            android:textSize="13sp"
+            android:textColor="@color/item_gray"
+            android:text="@string/normal_mode_desc"/>
+        <TextView
+            android:id="@+id/power_mode_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_alignTop="@+id/power_mode_desc"
+            android:layout_marginTop="20dp"
+            android:textSize="13sp"
+            android:textColor="@color/item_gray"
+            android:text="@string/daily_save_mode_detail"/>
+
+        <include layout="@layout/switch_act" />
+
+    </RelativeLayout>
+
+</LinearLayout>

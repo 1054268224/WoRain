@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="traffic_centerX">180dp</dimen>
+    <dimen name="traffic_centerY">125dp</dimen>
+    <dimen name="traffic_innerRadius">102dp</dimen>
+    <dimen name="traffic_innerStrokeWidth">6dp</dimen>
+    <dimen name="traffic_outerRadius">109dp</dimen>
+    <dimen name="traffic_outerStrokeWidth">2dp</dimen>
+    <dimen name="traffic_img_prompt_marginTops">95dp</dimen>
+    <dimen name="traffic_flow_state_marginTops">78dp</dimen>
+    <dimen name="traffic_state_value_marginTops">90dp</dimen>
+    <dimen name="traffic_unit_value_marginTops">138dp</dimen>
+    <dimen name="traffic_state_value_other_marginTops">95dp</dimen>
+    <dimen name="traffic_unit_value_other_marginTops">133dp</dimen>
+    
+    <dimen name="traffic_time_zone_marginTops">60dp</dimen>
+
+    <dimen name="traffic_gn_flow_state_size">14sp</dimen>
+    <dimen name="traffic_gn_state_value_size">57dp</dimen>
+    <dimen name="traffic_gn_state_value_other_size">56dp</dimen>
+
+    <dimen name="gn_used_flow_margin_bottom">120dp</dimen>
+    <!-- Gionee: mengdw <2015-11-17> modify for CR01589343 begin -->
+    <dimen name="sell_gridview_vertical_padding">5dp</dimen>
+    <dimen name="sell_gridview_padding">0dp</dimen>
+    <dimen name="sell_payment_logo">40dp</dimen>
+    <dimen name="sell_calibrate_margin_top">20dp</dimen>
+    <dimen name="sell_calibrate_margin_bottom">20dp</dimen>
+    <dimen name="sell_calibrate_margin_left">20dp</dimen>
+    <dimen name="sell_calibrate_margin_right">20dp</dimen>
+    <dimen name="buy_numble_edit_width">270dp</dimen>
+    <dimen name="buy_numble_edit_height">40dp</dimen>
+    <dimen name="btn_contacts_start_size">40dp</dimen>
+    <dimen name="btn_contacts_start_margin_left">300dp</dimen>
+    <dimen name="buy_loader_margin_top">200dp</dimen>
+    <dimen name="sell_product_record_top">50dp</dimen>
+    <dimen name="sell_calibrate_1dp">1dp</dimen>
+    <dimen name="sell_calibrate_1px">1px</dimen>
+    <dimen name="sell_calibrate_8dp">8dp</dimen>
+    <dimen name="sell_calibrate_16sp">16sp</dimen>
+    <dimen name="sell_buynumber_contacts">5dp</dimen>
+    <!-- Gionee: mengdw <2015-11-17> modify for CR01589343 end -->
+    <!-- Gionee: mengdw <2015-10-20> add for CR01571760  begin -->
+    <dimen name="hotspot_remind_layout_height">40dp</dimen>
+    <dimen name="hotspot_remind_edit_margin_left">20dip</dimen>
+    <dimen name="hotspot_remind_edit_margin_right">20dip</dimen>
+    <dimen name="hotspot_remind_edit_padding_left">10dp</dimen>
+    <dimen name="hotspot_remind_textview_margin_right">10dp</dimen>
+    <!-- Gionee: mengdw <2015-10-20> add for CR01571760  end -->
+    <!-- Gionee: mengdw <2016-03-30> add for CR01640989  begin -->
+    <dimen name="sell_success_img_width">30dp</dimen>
+    <dimen name="sell_success_img_height">30dp</dimen>
+    <dimen name="sell_txt_img_margin">5dp</dimen>
+    <!-- Gionee: mengdw <2015-03-30> add for CR01640989  end -->
+    <!-- Gionee: mengdw <2016-12-17> add for CR01776631  begin -->
+    <!-- Gionee: mengdw <2016-12-17> add for CR01776631  end -->
+    <!-- Gionee: mengdw <2016-12-06> add for CR01775579 begin begin -->
+    <dimen name="lock_screen_layout_img_width">40dp</dimen>
+    <dimen name="lock_screen_layout_img_height">30dp</dimen>
+    <dimen name="lock_screen_detail_txt_size">16sp</dimen>
+    <dimen name="lock_screen_btn_maigin_bottom">10dp</dimen>
+    <dimen name="lock_screen_btn_maigin_left">10dp</dimen>
+    <dimen name="lock_screen_btn_maigin_right">10dp</dimen>
+    <dimen name="lock_screen_maigin_top">20dp</dimen>
+    <dimen name="lock_screen_list_maigin_top">40dp</dimen>
+    <dimen name="lock_screen_listview_height">460dp</dimen>
+    <!-- Gionee: mengdw <2016-12-06> add for CR01775579 begin end -->
+</resources>

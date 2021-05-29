@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     Gionee <zhangxx> <2013-06-20> add for cyeeframework.
+ -->
+<resources>
+    
+    <dimen name="cyee_magicbar_title_size">16sp</dimen>
+    <dimen name="cyee_edit_text_size">16sp</dimen>
+    
+    <dimen name="cyee_large_text_size">22sp</dimen>
+    <!-- Gionee <zhangxx> <2103-11-12> modify for CR00951338 begin -->
+    <!-- <dimen name="cyee_medium_text_size">20sp</dimen> -->
+    <dimen name="cyee_medium_text_size">18sp</dimen>
+    <dimen name="cyee_medium_second_text_size">14sp</dimen>
+    <dimen name="cyee_small_text_size">12sp</dimen>
+    
+    <dimen name="cyee_large_inverse_text_size">22sp</dimen>
+    <!-- <dimen name="cyee_medium_inverse_text_size">20sp</dimen> -->
+    <dimen name="cyee_medium_inverse_text_size">18sp</dimen>
+    <dimen name="cyee_medium_second_inverse_text_size">14sp</dimen>
+    <dimen name="cyee_small_inverse_text_size">12sp</dimen>
+    
+    <dimen name="cyee_light_large_text_size">22sp</dimen>
+    <!-- <dimen name="cyee_light_medium_text_size">20sp</dimen> -->
+    <dimen name="cyee_light_medium_text_size">18sp</dimen>
+    <dimen name="cyee_light_medium_second_text_size">14sp</dimen>
+    <dimen name="cyee_light_small_text_size">12sp</dimen>
+    
+    <dimen name="cyee_light_large_inverse_text_size">22sp</dimen>
+    <!-- <dimen name="cyee_light_medium_inverse_text_size">20sp</dimen> -->
+    <dimen name="cyee_light_medium_inverse_text_size">18sp</dimen>
+    <dimen name="cyee_light_medium_second_inverse_text_size">14sp</dimen>
+    <dimen name="cyee_light_small_inverse_text_size">12sp</dimen>
+    
+    <!-- <dimen name="cyee_popupmenu_large_text_size">20sp</dimen>
+    <dimen name="cyee_dialogwindow_title_text_size">20sp</dimen> -->
+    <dimen name="cyee_popupmenu_large_text_size">18sp</dimen>
+    <dimen name="cyee_dialogwindow_title_text_size">18sp</dimen>
+    <!-- Gionee <zhangxx> <2103-11-12> modify for CR00951338 end -->    
+    <dimen name="cyee_button_small_text_size">14sp</dimen>
+    <dimen name="cyee_spinneritem_text_size">16sp</dimen>
+    <dimen name="cyee_textview_listseparator_text_size">14sp</dimen>
+    <dimen name="cyee_actionbar_tabtext_text_size">16sp</dimen>
+    <dimen name="cyee_textSizeAlertDialogBtn">16sp</dimen>
+</resources>

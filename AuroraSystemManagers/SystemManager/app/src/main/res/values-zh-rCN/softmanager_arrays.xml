@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SoftManager begin -->
+    <string-array name="header_list">
+        <item>已允许</item>
+        <item>已禁止</item>
+    </string-array>
+
+    <string-array name="listitem_soft_manager_activity">
+        <item>应用自启</item>
+        <item>应用卸载</item>
+        <item>应用冻结</item>
+        <item>应用锁</item>
+    </string-array>
+    
+    <!-- 软件权限设置title -->
+     <string-array name="listitem_permission_setting">
+        <item>全部信任</item>
+        <item>部分信任</item>
+        <item>完全不信任</item>
+     </string-array>
+     
+      <string-array name="listitem_permission_setting_summary">
+        <item>应用调用任何权限时无弹框提示</item>
+        <item>仅针对应用调用重要权限时弹框提示</item>
+        <item>应用调用任何权限时都会弹框提示</item>
+      </string-array>
+     
+     <!-- 软件冻结title -->
+     <string-array name="listitem_freeze_app_summary">
+        <item>个无风险应用</item>
+        <item>个有风险应用</item>
+     </string-array>
+     
+     
+    <string-array name="uninstall_sort">
+        <item>按应用名称排序</item>
+        <item>按安装时间排序 </item>
+        <item>按使用频率排序</item>
+        <item>按应用大小排序</item>
+     </string-array>
+     
+    <string-array name="green_list_item">
+        <!-- Gionee <yangxinruo> <2016-1-13> modify for CR01621967 begin -->
+        <item>清理白名单</item>
+        <!-- Gionee <yangxinruo> <2016-1-13> modify for CR01621967 end -->
+    </string-array> 
+    
+	<string-array name="freeze_tab_item">
+        <item>未冻结 </item>
+        <item>已冻结</item>
+    </string-array> 
+    
+	<string-array name="auto_start_tab_item">
+        <item>允许自启 </item>
+        <item>禁止自启</item>
+    </string-array> 
+    
+	<string-array name="move_tab_item">
+        <item>系统空间 </item>
+        <item>内部存储</item>
+    </string-array> 
+    
+	<string-array name="move_tab_item_sd">
+        <item>系统空间 </item>
+        <item>SD卡</item>
+    </string-array> 
+	
+	
+    
+    <!-- SoftManager end -->
+
+</resources>

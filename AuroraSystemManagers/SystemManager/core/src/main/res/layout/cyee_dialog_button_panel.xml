@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cyee_buttonPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="?android:attr/dividerHorizontal"
+    android:dividerPadding="0dip"
+    android:minHeight="@dimen/cyee_alert_dialog_button_bar_height"
+    android:orientation="vertical"
+    android:showDividers="beginning" >
+
+    <LinearLayout
+        style="@style/Cyee.Holo.ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cyee_AlertDialogButtonHeight"
+        android:layoutDirection="locale"
+        android:measureWithLargestChild="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/cyee_dialog_button2"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:minHeight="@dimen/cyee_alert_dialog_button_bar_height"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cyee_divider_height"
+                android:background="@color/cyee_list_divider_color" />
+	   <!--Chenyee hushengsong 2018-04-10 modify for CSW1702A-3398 begin-->
+	   <!--android:background="@drawable/cyee_dialog_btn_default_bg_ripple"-->
+            <cyee.widget.CyeeButton
+                android:id="@+id/cyee_button2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"    
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:minHeight="@dimen/cyee_alert_dialog_button_bar_height"
+                android:stateListAnimator="@anim/cyee_disabled_anim_material"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="?attr/cyeeDialogOtherBtnTxtColor"
+                android:textSize="@dimen/cyee_textSizeAlertDialogBtn" />
+        </LinearLayout>
+	  <!--Chenyee hushengsong 2018-04-10 modify for CSW1702A-3398 end-->
+        <View
+            android:id="@+id/cyee_btn2_divider"
+            android:layout_width="@dimen/cyee_divider_height"
+            android:layout_height="match_parent"
+            android:background="@color/cyee_list_divider_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/cyee_dialog_button3"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:minHeight="@dimen/cyee_alert_dialog_button_bar_height"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cyee_divider_height"
+                android:background="@color/cyee_list_divider_color" />
+	   <!--Chenyee hushengsong 2018-04-10 modify for CSW1702A-3398 begin-->
+	   <!--android:background="@drawable/cyee_dialog_btn_default_bg_ripple"-->
+            <cyee.widget.CyeeButton
+                android:id="@+id/cyee_button3"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:minHeight="@dimen/cyee_alert_dialog_button_bar_height"
+                android:stateListAnimator="@anim/cyee_disabled_anim_material"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="?attr/cyeeDialogOtherBtnTxtColor"
+                android:textSize="@dimen/cyee_textSizeAlertDialogBtn" />
+        </LinearLayout>
+	  <!--Chenyee hushengsong 2018-04-10 modify for CSW1702A-3398 end-->
+        <View
+            android:id="@+id/cyee_btn3_divider"
+            android:layout_width="@dimen/cyee_divider_height"
+            android:layout_height="match_parent"
+            android:background="@color/cyee_list_divider_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/cyee_dialog_button1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:minHeight="@dimen/cyee_alert_dialog_button_bar_height"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cyee_divider_height"
+                android:background="@color/cyee_list_divider_color" />
+           <!--Chenyee hushengsong 2018-04-10 modify for CSW1702A-3398 begin-->
+	   <!--android:background="@drawable/cyee_dialog_btn_default_bg_ripple"-->
+            <cyee.widget.CyeeButton
+                android:id="@+id/cyee_button1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:minHeight="@dimen/cyee_alert_dialog_button_bar_height"
+                android:stateListAnimator="@anim/cyee_disabled_anim_material"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/cyee_textSizeAlertDialogBtn" />
+        </LinearLayout>
+	  <!--Chenyee hushengsong 2018-04-10 modify for CSW1702A-3398 end-->
+    </LinearLayout>
+
+</LinearLayout>

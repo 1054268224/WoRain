@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notify_icon_text_color">#4a78c0</color>
+    <color name="passwordColor">#cccccc</color>
+    <color name="black_host_title_black">#ff333333</color>
+    <color name="host_bar_bg_white">#fff</color>
+    <color name="host_bar_bg_blue">#ff3698ff</color>
+</resources>

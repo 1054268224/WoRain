@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rubbishcleaner_expandable_group"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rubbish_adapter_group_height"
+    android:paddingStart="@dimen/rubbish_group_item_paddingleft" >
+
+	<!-- Gionee: <houjie> <2015-10-27> add for CR01575153 begin -->
+    <LinearLayout
+        android:id="@+id/group_icon_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/group_icon"
+            android:layout_width="@dimen/rubbish_adapter_child_icon_width"
+            android:layout_height="@dimen/rubbish_adapter_child_icon_height" />
+    </LinearLayout>
+    <!-- Gionee: <houjie> <2015-10-27> add for CR01575153 end -->
+
+    <RelativeLayout
+        android:id="@+id/rubbish_group_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/rubbish_adapter_groupname_marginLeft"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/group_icon_container"
+        android:layout_toStartOf="@+id/group_rubbish_size" >
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/rubbish_group_name"
+            android:layout_width="@dimen/rubbish_adapter_groupname_width"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/adapter_item_name_color"
+            android:textSize="@dimen/rubbish_adapter_groupname_textsize" />
+
+        <cyee.widget.CyeeTextView
+            android:id="@+id/rubbish_group_advise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/rubbish_group_name"
+            android:layout_below="@id/rubbish_group_name"
+            android:textColor="@color/adapter_item_summary_color"
+            android:textSize="@dimen/rubbish_adapter_group_size_textsize"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/progressbar_and_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/rubbish_adapter_progress_marginleft"
+        android:layout_marginEnd="@dimen/rubbish_adapter_progress_marginright" >
+
+        <cyee.widget.CyeeCheckBox
+            android:id="@+id/group_checkbox"
+            android:layout_width="@dimen/rubbish_adapter_progress_checkbox_width"
+            android:layout_height="@dimen/rubbish_adapter_progress_checkbox_height"
+            android:focusable="false" />
+
+        <cyee.widget.CyeeProgressBar
+            android:id="@+id/group_progressbar"
+            android:layout_width="@dimen/rubbish_adapter_progress_checkbox_width"
+            android:layout_height="@dimen/rubbish_adapter_progress_checkbox_height"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/custom_loading_progress"
+            android:indeterminateDuration="1000" />
+    </FrameLayout>
+
+    <cyee.widget.CyeeTextView
+        android:id="@+id/group_rubbish_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/progressbar_and_checkbox"
+        android:textColor="@color/adapter_item_summary_color"
+        android:textSize="@dimen/rubbish_adapter_group_size_textsize" />
+
+</RelativeLayout>

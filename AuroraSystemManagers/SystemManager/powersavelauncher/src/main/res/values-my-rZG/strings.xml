@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"ပါ၀ါစတင္"</string>
+    <string name="exit_string">"ထြက္"</string>
+    <string name="ok_string">"လုပ္မည္"</string>
+    <string name="cancel_string">"ပယ္သည္"</string>
+    <string name="exit_msg">"ထြက္မွာေသခ်ာလား"</string>
+    <string name="exit_msg1">"ဘက္ထရီသြင္းေနသည္၊ထြက္မွာေသခ်ာလားs"</string>
+    <string name="can_use_time">"တာရွည္ခံခ်ိန္"</string>
+    <string name="power_cannotget">"ခန္႔မွန္းရန္မရ"</string>
+    <string name="power_hours">"နာရီ"</string>
+    <string name="power_minutes">"မိနစ္"</string>
+    <string name="is_charging_now">"သြင္းေနသည္"</string>
+    <string name="charged_completely">"သြင္းျပီး"</string>
+    <string name="am">နံနက္</string>
+    <string name="pm">ညေန</string>
+    <string name="exit_string_title">ထြက္</string>
+</resources>

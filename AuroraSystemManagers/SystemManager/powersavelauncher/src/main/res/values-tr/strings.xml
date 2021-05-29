@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok_string">Tamam</string>
+    <string name="cancel_string">Vazgeç</string>
+    <string name="is_charging_now">Şarj ediliyor</string>
+    <string name="charged_completely">Şarj edildi</string>
+    <string name="am">ÖÖ</string>
+    <string name="pm">ÖS</string>
+    <string name="app_name">Güç başlatıcı</string>
+    <string name="exit_string">Çıkış</string>
+    <string name="exit_string_title">Çıkış</string>
+    <string name="exit_msg">Süper güç tasarruf modundan çıkmaya emin misiniz?</string>
+    <string name="exit_msg1">Telefon şarj ediliyor, Süper güç tasarruf modundan çıkmaya emin misiniz?</string>
+    <string name="can_use_time">Hazırda bekleme süresi</string>
+    <string name="need_charging_time">Şarj etme gerekmekte %s</string>
+    <string name="power_cannotget">Tahmini mümkün değil</string>
+    <string name="power_hours"> Saat</string>
+    <string name="power_minutes"> Dakika</string>
+    <string name="remaining_time_2">Kullanılan zaman: </string>
+    <string name="settings">Ayarlar</string>
+    <plurals name="remaining_time_hour">
+        <item quantity="one">1 saat </item>
+        <item quantity="other">%d saat </item>
+    </plurals>
+    <plurals name="remaining_time_minute">
+        <item quantity="one">"1 dk"</item>
+        <item quantity="other">"%d dk"</item>
+    </plurals>
+    <string name="pref_title_mobile_data">Hücresel Veri</string>
+    <string name="settings_activity_title">Ayarlar</string>
+    <string name="guide_text_6">Bazı uygulamalar ve özellikleri bu modda düzgün çalışmayabilir</string>
+    <string name="guide_text_got_it">"Anladım"</string>
+    <string name="guide_text_1">"1. Hücresel veri veya WLAN'a buradan bağlanabilirsiniz"</string>
+    <string name="guide_text_2">2. Buradan çıkabilirsiniz</string>
+    <string name="add_app">Ekle</string>
+    <string name="system_process">Sistem İşlemi</string>
+    <string name="power_low">daha az</string>
+    <string name="control_panel_brightness">parlaklık</string>
+    <string name="activity_title_add_apps">uygulama ekle</string>
+    <string name="social_app">Sosyal uygulama</string>
+    <string name="remaining_time">Bekleme Modu</string>
+    <string name="pref_title_wifi">WLAN</string>
+    <string name="on">Açık</string>
+    <string name="off">Kapalı</string>
+    <string name="no_sim">Sim Kart bulunmuyor</string>
+</resources>

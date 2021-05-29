@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee: mengdw <2015-10-20> add for CR01571760  begin -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <cyee.widget.CyeeEditText
+            android:id="@+id/user_define_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hotspot_remind_layout_height"
+            android:layout_marginStart="@dimen/hotspot_remind_edit_margin_left"
+            android:layout_marginEnd="@dimen/hotspot_remind_edit_margin_right"
+            android:hint="@string/input_hint"
+            android:inputType="number"
+            android:maxLength="6"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:paddingStart="@dimen/hotspot_remind_edit_padding_left"
+            android:textColor="@color/textcolor_level_two"
+            android:textSize="@dimen/textsize_title" />
+        <cyee.widget.CyeeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/user_define_input"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/hotspot_remind_textview_margin_right"
+            android:text="@string/flow_unit"
+            android:textColor="@color/textcolor_level_two"
+            android:textSize="@dimen/textsize_title" />
+    </RelativeLayout>
+</LinearLayout>
+<!-- Gionee: mengdw <2015-10-20> add for CR01571760  end -->
+
+

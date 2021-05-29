@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 手机加速界面 -->
+    <string-array name="ui_phone_accelerate">
+        <item>进程清理</item>
+        <item>自启管理</item>
+    </string-array>
+    
+    <string-array name="process_clean_group_title">
+        <item>正在运行</item>
+        <item>白名单</item>
+    </string-array>
+    
+    <string-array name="boot_opt_group_title">
+        <item>可优化的启动项</item>
+        <item>已禁用的启动项</item>
+    </string-array>
+    
+</resources>

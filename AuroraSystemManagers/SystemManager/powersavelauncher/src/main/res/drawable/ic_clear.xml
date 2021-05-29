@@ -1,0 +1,4 @@
+    <selector  xmlns:android="http://schemas.android.com/apk/res/android">  
+        <item android:drawable="@drawable/gn_del_pressed_btn" android:state_pressed="true"></item>
+        <item android:drawable="@drawable/gn_del_normal_btn"></item>        
+    </selector>  

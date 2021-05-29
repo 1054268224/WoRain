@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="app_icon_margin_left">43dp</dimen>
+    <dimen name="app_icon_margin_left1">74dp</dimen>
+    <!-- Gionee xionghg add for power saving optimization 145357 begin -->
+
+    <!-- guide view background picture is 16:9, set default to -48dp to prevent navigation bar,
+        set to positive or negative depends on the aspect ratio -->
+    <dimen name="guide_view_margin_bottom">-48dp</dimen>
+    <!--<dimen name="guide1_text1_margin_top">380dp</dimen>-->
+    <!--<dimen name="guide1_text2_margin_top">6dp</dimen>-->
+    <!--<dimen name="guide1_next_text_margin_top">36dp</dimen>-->
+
+    <!--<dimen name="guide2_text3_margin_top">250dp</dimen>-->
+    <!--<dimen name="guide2_text4_margin_top">2dp</dimen>-->
+    <!--<dimen name="guide2_next_text_margin_top">86dp</dimen>-->
+    <!-- Gionee xionghg add for power saving optimization 145357 end -->  
+</resources>

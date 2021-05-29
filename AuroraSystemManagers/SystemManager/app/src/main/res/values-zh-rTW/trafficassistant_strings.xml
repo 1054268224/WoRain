@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="trafficassistant_app_name">流量監控</string>  
+    <string name="tabbar_name1">卡槽1</string>
+    <string name="tabbar_name2">卡槽2</string> 
+    <string name="remained_flow_string">剩餘</string>
+    <string name="exceed_flow_string">超出</string>
+    <string name="used">已用</string>
+    <string name="used_flow_string">已用<xliff:g id="ID_1">%s</xliff:g>M</string>
+    <string name="total_flow_string">總量<xliff:g id="ID_1">%s</xliff:g>M</string>
+    <string name="prompt_no_settings_traffic">未設置套餐</string>
+    <string name="no_settings">未設置</string>
+     <string name="prompt_used_traffic">已用\n<xliff:g id="ID_1">%s</xliff:g>M</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="noti_today">今日流量 </string>
+    <string name="noti_surplus">"剩餘 "</string>
+    <string name="noti_exceed">超出 </string>
+    <string name="noti_total">總量 </string>
+    <string name="noti_no_settings">未設置流量套餐</string>
+    <string name="noti_no_card">未插入SIM卡</string>
+    <string name="start_date_string">每月</string>
+    <string name="limit_flow">設置流量套餐</string>
+    <string name="detail_flow">流量排行</string>
+    <string name="network_control">控制應用聯網</string>
+    <string name="more_settings">更多設置</string>
+    <string name="traffic_save">流量節省</string>
+    <string name="no_card_warning">無SIM卡</string>
+    <string name="action_known">知道了</string>
+     <string name="action_settings">去設置</string>
+    <string name="action_cancel">捨棄</string>
+    <string name="action_done">完成</string>
+    <string name="action_save">保存</string>
+    <string name="action_sure">確定</string>
+    <string name="action_allow">允許</string>
+    <string name="action_prohibit">禁止</string>
+    <string name="action_all_allow">全部允許</string>
+    <string name="action_all_prohibit">全部禁止</string>
+    <string name="application_info">應用資訊</string>
+    <string name="data_connect_allow">允許使用數據連接</string>
+    <string name="total_flow_settings">套餐流量</string>
+    <string name="input_hint">請輸入</string>
+    <string name="warning_settings">警告值</string>
+    <string name="date_start_settings">每月流量結算日</string>
+    <string name="used_flow_settings">已用流量 </string>
+    
+    <string name="mobile_data_stop_title">流量提醒</string>
+    <string name="mobile_data_stop_contetn">您的當月流量已用完，繼續使用數據連接將會產生流量費，是否繼續使用？</string>
+    <string name="action_restart">繼續使用</string>
+    <string name="action_stop">不使用</string>
+    <string name="info_save_error_no_flow_input">請輸入每月流量限制 </string>
+    <string name="info_prompt">您可以手動調整已使用流量數值。</string>
+    <string name="popup_notification_title">未設置流量套餐</string>
+    <string name="popup_notification_ticker_title">當前流量未設置套餐保護</string>
+    <string name="popup_notification_content">點擊去設置，可即時監控流量使用</string>  
+    <!-- Gionee: mengdw <2015-11-11> modify for CR01589343 bedin -->
+     <!-- Gionee: guoxt modify bedin -->
+    <string name="popup_setting_title_dialog">設置流量套餐</string>
+    <string name="popup_setting_content_dialog">請設置流量套餐，給手機話費帶上安全鎖。</string>  
+    <string name="notification_warn_exceed_warning_title">流量套餐紅色警告</string>
+    <string name="notification_warn_exceed_warning_content">流量已達到警告值，觸摸可查看使用情況</string>
+    <!-- Gionee: mengdw <2015-11-11> modify for CR01589343 end -->
+     <!-- Gionee: guoxt modify end -->
+    <string name="process_kernel_labels">Android OS</string>
+    <string name="data_usage_uninstalled_apps_users">已刪除的應用和用戶</string>
+    <string name="data_usage_uninstalled_apps">已刪除的應用</string>
+    <string name="tether_settings_title_all">網路共用與可攜式熱點</string>
+    <string name="tether_settings_title_wifi">可攜式熱點</string>
+    <string name="tether_settings_title_usb_bluetooth">網路共用</string>
+    <string name="tether_settings_title_usb">USB 共用網路</string>
+    <string name="tether_settings_title_bluetooth">藍牙共用網路</string>
+    <string name="running_process_item_user_label">用戶：%1$s</string>
+    <string name="data_usage_app_restricted">受限</string>
+    <string name="usage_detail">流量詳情</string>
+    <string name="version_name">版本：</string>
+    <string name="traffic_time_day">今日流量(<xliff:g id="ID_1">%s</xliff:g>)</string>
+    <string name="traffic_time_week">本周流量(<xliff:g id="ID_1">%s</xliff:g>)</string>
+    <string name="traffic_time_month">本月流量(<xliff:g id="ID_2">%s</xliff:g>)</string>
+    <string name="traffic_day">今日流量</string>
+    <string name="traffic_week">本周流量</string>
+    <string name="traffic_month">本月流量</string>
+    <string name="traffic_day_no">今日未使用流量</string>
+    <string name="traffic_week_no">本周未使用流量</string>
+    <string name="traffic_month_no">本月未使用流量</string>
+    <string name="network_selection">本月已用數據流量</string>
+    <string name="no_value">無</string>
+    <string name="text_loading">加載中&#8230;</string>
+    <string name="text_noti">處理中&#8230;</string>
+    
+    <string name="traffic_monitor_display"><xliff:g id="ID_1">%s</xliff:g>使用的2G/3G/4G流量如下：</string>
+    <string name="traffic_monitor_title">本周最耗流量應用</string>
+    <string name="traffic_monitor_message"><xliff:g id="ID_1">%s</xliff:g></string>
+
+    <string name="traffic_settings_main_title">通知中心顯示</string>
+    <string name="traffic_network_speed_title">顯示當前網速</string>
+    <string name="traffic_network_speed_summary">開啟後在狀態欄顯示當前網速</string>
+    <string name="traffic_notification_title">顯示當月流量資訊</string>
+    <string name="traffic_notification_summary">開啟後下拉通知欄顯示流量資訊</string>
+    
+    <string name="traffic_netcontrol_bar_allow_text">已允許聯網(<xliff:g id="ID_1">%1$s</xliff:g>)</string>
+    <string name="traffic_netcontrol_bar_prohibit_text">已禁止聯網(<xliff:g id="ID_1">%1$s</xliff:g>)</string>
+    <string name="net_link_allowed_txt">沒有應用允許聯網</string>
+    <string name="net_link_prohibited_txt">沒有應用禁止聯網</string>
+    
+    <string name="traffic_save_setting">流量節省設置</string>
+    <string name="switch_off">關閉</string> 
+    <string name="switch_on">開啟</string>   
+    <string name="traffic_save_off">流量節省未開啟</string>
+    <string name="traffic_save_off_summary">此功能只在數據網路下有效</string>
+    <string name="traffic_save_total_title">你已累積節省</string>
+    <string name="traffic_save_total_num_string">328</string>
+    <string name="total_volume_string">MB</string>
+    <string name="money_save_total_title">約合人民幣</string>
+    <string name="money_save_total_num_string">32.8</string>
+    <string name="total_money">元</string>
+    <string name="traffic_save_support_txt">歐朋流量寶提供技術支持</string>
+    <string name="traffic_save_history">查看省流歷史</string>
+    <string name="traffic_save_history_total">累計節省的流量</string>
+    <string name="traffic_question1">1、 如何實現流量節省？</string>
+    <string name="traffic_question2">2、 為什麼使用流量節省後，看不到節省？</string>
+    <string name="traffic_question3">3、 流量節省功能本身會使用流量嗎？</string>
+    <string name="traffic_question4">4、使用流量節省後，我的上網隱私是否安全？</string>
+    <string name="traffican_answer1">流量節省功能開啟後，會重新調整文字、圖片等所使用的流量，從而壓縮QQ、微信、淘寶等應用的流量消耗。持續使用效果更出色。</string>
+    <string name="traffican_answer2">流量節省只針對數據聯網生效，WLAN下不啟用。流量節省只針對文字和圖片生效，音視頻和文件下載不會節省流量。</string>
+    <string name="traffican_answer3">流量節省功能本身不消耗流量，開啟此功能後，所有的2/3/4G上網流量會通過流量寶來匯總和壓縮，個別安全軟體會認為流量寶使用了流量。我們不會消耗您寶貴的流量，請放心使用。</string>
+    <string name="traffican_answer4">此功能不會處理您的任何隱私資訊，請放心使用。</string>
+    <string name="traffican_question_answer">常見問題</string>
+    <string name="traffican_whitelist_title">不需要節省流量的應用名單</string>
+    <string name="text_no_traffic_whitelist">還未添加任何應用</string>
+
+    <string name="traffic_simcard_focus1">SIM卡1</string>
+    <string name="traffic_simcard_focus2">SIM卡2</string>
+
+    <string name="traffic_netcontrol_tab_bar_allow_text">WLAN聯網</string>
+    <string name="traffic_netcontrol_tab_bar_prohibit_text">數據網路聯網</string>
+    <string name="traffic_title_text"><xliff:g id="ID_1">%1$s</xliff:g>項應用</string>
+    <string name="time_format">yyyy年MM月</string>
+
+    <string name="traffic_back_toast_text">控制應用聯網動作正在進行，請等待</string>
+    <!-- Gionee: mengdw <2015-09-22> add for CR01551678 begin -->
+    <string name="traffic_save_wait_text">數據獲取中，請等待...</string>
+    <!-- Gionee: mengdw <2015-09-22> add for CR01551678 end -->
+    <!-- Gionee: mengdw <2015-11-11> modify for CR01589343 begin -->
+    <string name="traffic_btn_calibration_text">一鍵校準</string>
+    <string name="traffic_limit_settings_title">套餐設置</string>
+    <string name="traffic_origan">普通流量套餐</string>
+    <string name="traffic_idle_show_title">顯示夜間閑時流量</string>
+    <string name="traffic_idle_available">可用閑時流量</string>
+    <string name="traffic_idle_used">已用閑時流量</string>
+    <string name="traffic_buy_title">流量購買</string>
+    <string name="buy_step1_title">1 填寫號碼</string>
+    <string name="buy_step2_title">2 選擇面值</string>
+    <string name="buy_step3_title">3 支付購買</string>
+    <string name="buy_step_title">1 填寫號碼  >  2 選擇面值 >  3 支付購買</string>
+    <string name="temp_carrieroperator_title">北京聯通</string>
+    <string name="order_info_title">訂單資訊</string>
+    <string name="traffic_packge_text"><xliff:g id="ID_1">%1$s</xliff:g>流量包</string>
+    <string name="traffic_packge_default_money">2元</string>
+    <string name="traffic_packge_default_instruction">全國通用,立即支付</string>
+    <string name="mobile_info_numble">充值號碼:<xliff:g id="ID_1">%1$s</xliff:g></string>
+    <string name="pay_order_title">支付訂單</string>
+    <string name="pay_order_Immediately_title">立即支付</string>
+    <string name="show_problem_title">常見問題</string>
+    <string name="buy_record_title">充值記錄</string>
+
+    <string name="problem1_title">1. 充值的流量可以漫遊嗎？</string>
+    <string name="problem1_content">充值時請關注頁面提示，如顯示"全國可用"表示可以全國漫遊。</string>
+    <string name="problem2_title">2. 充值的流量有效期有多長？</string>
+    <string name="problem2_content">充值流量當月有效，月底失效，請以在運營上查詢的資訊為准。</string>
+    <string name="problem3_title">3. 充值後怎麼查看是否到賬？</string>
+    <string name="problem3_content">充值後，請以運營商資訊提示為准，您也可以通過撥打運營商電話確認到賬情況。</string>
+    <string name="problem4_title">4. 流量充錯號碼怎麼辦？</string>
+    <string name="problem4_content">很抱歉，充錯號碼後，運營商（移動、聯通、電信）是不會辦理退款的。您可以選擇如下幾種方式嘗試彌補損失：1.聯繫實際充值的號碼機主，與對方協商是否願意為此補償您的流量；2.聯繫運營商客服，諮詢是否能夠退款已經充值成功的流量。</string>
+    <string name="problem5_title">5. 充值失敗後，多久退款？</string>
+    <string name="problem5_content"> 通常情況下，充值失敗時我們會立即為您辦理退款。如24小時內退款未到賬，您可以加入官方QQ群（188473978）進行回饋。</string>
+    <string name="problem6_title">6. 如何查詢我的歷史訂單和交易記錄呢？</string>
+    <string name="problem6_content"> 可以通過流量充值頁面的充值記錄查看。</string>
+
+    <string name="warnning_notification_title">當警告值到提醒我</string>
+    <string name="mobile_invalid_text">無法識別電話號碼</string>
+    <string name="sell_alipay">支付寶支付</string>
+    <string name="sell_weixin_pay">微信支付</string>
+    <string name="payment_success_txt">支付成功!</string>
+    <string name="payment_failed_txt">支付失敗!</string>
+    <string name="payment_pre_txt">充值</string>
+    <string name="btn_try_again_txt">重試</string>
+    <string name="no_record_txt">無記錄</string>
+    <string name="query_record_falil_txt">查詢失敗!</string>
+    <string name="data_load_txt">加載中 ...</string>
+    <string name="net_error_text">網路異常,請檢查網路連接</string>
+    <string name="exit_Contacts_text">不在通訊錄</string>
+    <string name="traffic_origan_txt">普通流量</string>
+    <string name="traffic_idle_txt">閑時流量</string>
+    <string name="traffic_idle_set_title">閑時流量設置</string>
+    <string name="traffic_correctting_txt">校準中</string>
+    <string name="correctting_wait_txt">請稍後...</string>
+    <string name="correctting_fail_txt">校準失敗,請稍後再試</string>
+    <string name="correctting_success_txt">流量已校準,剩餘<xliff:g id="ID_1">%1$s</xliff:g>M</string>
+    <string name="query_traffic_txt">正在查詢你的流量使用情況...</string>
+    <string name="query_product_fail_txt">沒有可用訂購套餐</string>
+    <string name="query_product_record_fail_txt">查詢產品記錄失敗...</string>
+    <string name="no_install_weixin_txt">請確認是否已安裝微信</string>
+    <string name="no_correct_service_txt">初始化中,請稍後再試...</string>
+    <string name="buy_number_hint_txt">請輸入手機號碼</string>
+    <string name="no_query_code_txt">請先手動設置正確的運營商品牌和省份,否則會導致一鍵校準失敗.</string>
+    <string name="calibrate_setting_txt">一鍵校準設置</string>
+    <string name="calibrate_setting_province">省份</string>
+    <string name="calibrate_setting_brand">運營商品牌</string>
+    <string name="calibrate_setting_province_choice">選擇省份</string>
+    <string name="calibrate_setting_brand_choice">選擇運營商品牌</string>
+    <string name="calibrate_send_msg_fail">短信發送失敗,請檢查運營商品牌否正確.</string>
+    <string name="traffic_flaw_price_txt"><xliff:g id="ID_1">%1$s</xliff:g>元</string>
+    <string name="buy_record_baseinfo_txt"><xliff:g id="ID_1">%1$s</xliff:g> 充值<xliff:g id="ID_2">%2$s</xliff:g> / <xliff:g id="ID_3">%3$s</xliff:g>元</string>
+    <string name="buy_record_paytype_txt"><xliff:g id="ID_1">%1$s</xliff:g> <xliff:g id="ID_2">%2$s</xliff:g></string>
+    <!-- Gionee: mengdw <2015-11-11> modify for CR01589343 end -->
+    <!-- Gionee: mengdw <2015-10-20> add for CR01571760 begin -->
+    <string name="noti_softap_setting_title">熱點分享流量提醒</string>
+    <string name="noti_softap_setting_text">單次消耗<xliff:g id="ID_1">%s</xliff:g>數據流量</string>
+    <string name="noti_softap_group_title">可攜式WLAN熱點流量設置</string>
+    <string name="noti_softap_setting_cancel">取消</string>
+    <string name="noti_softap_setting_userDefine">自定義</string>
+    <string name="noti_softap_setting_commit">確定</string>
+    <string name="noti_softap_setting_units">M</string>
+    <string name="noti_softap_warning_title">流量提醒</string>
+    <string name="noti_softap_warning_message">通過熱點分享的數據流量已達到設定值<xliff:g id="ID_1">%s</xliff:g>,是否要關閉熱點? </string>
+    <string name="noti_softap_close_text">關閉WLAN熱點</string>
+    <string name="noti_softap_no_warning_text">不提醒</string>
+    <!-- Gionee: mengdw <2015-10-20> add for CR01571760 end -->
+    <!-- Gionee: mengdw <2016-01-28> add for CR01632119 bedin -->
+    <string name="error_phone_number_text">無效手機號碼</string>
+    <!-- Gionee: mengdw <2016-01-28> add for CR01632119 end -->
+    <!-- Gionee: mengdw <2016-02-26> add for CR01640989 begin -->
+    <string name="nogi_entry_buy_text">,點擊購買流量包</string>
+    <string name="info_save_error_no_used_input">請輸入已用流量</string>
+    <string name="payment_sended_txt">訂單已發送，正在等待運營商充值...</string>
+    <string name="payment_explain_txt"> 通常購買的流量會在 1 個小時內到帳，但也會因為網路等原因造成一定時間的延遲，您可以通過撥打運營商客服電話 或 給運營商發送短信的方式，查詢是否最終到帳。\n 欠費，套餐互斥，運營商月末結算 等原因可能會導致失敗退款，請最終以運營商的資訊為准。</string>
+    <string name="payment_fail_reason_txt">可能由於網路問題或運營商系統繁忙等未知原因造成失敗。</string>
+    <!-- Gionee: mengdw <2016-02-26> add for CR01640989 end -->
+    <!-- Gionee: mengdw <2016-04-07> add for CR01665427 begin -->
+    <string name="weixin_freezed_txt">微信已被凍結,不可使用</string>
+    <!-- Gionee: mengdw <2016-04-07> add for CR01665427 end -->
+    <!-- Gionee: mengdw <2016-07-06> add for CR01639347 begin -->
+	<string name="dialog_btn_cancel">取消</string>
+	<string name="dialog_btn_unlock">解除</string>
+	<string name="dialog_network_control_title">系統管家提示</string>
+	<string name="net_type_mobile">數據網路</string>
+	<string name="net_type_wifi">Wlan網路</string>
+	<string name="dialog_not_alert_again">下次不再提示</string>
+	<string name="dialog_network_control_content"><xliff:g id="ID_1">%1$s</xliff:g> 已被禁止使用 <xliff:g id="ID_2">%2$s</xliff:g> , 是否解除此禁止?</string>
+	<!-- Gionee: mengdw <2016-07-06> add for CR01639347 end -->
+	<!-- mengdw <2016-10-09> add for CR01766193 begin -->
+	<string name="noti_softap_use_agiain_txt">再用<xliff:g id="ID_1">%1$d</xliff:g>M</string>
+	<string name="dialog_know">知道了</string>
+	<string name="hotspot_restart">重新開啟</string>
+	<string name="hotspot_settingvalue_valid">當流量消耗達到 <xliff:g id="ID_1">%1$d</xliff:g>M 時會再提醒</string>
+	<string name="hotspot_settingvalue_invalid">本次流量消耗已達 <xliff:g id="ID_1">%1$1.2f</xliff:g>M,請重新設置</string>
+	<string name="hotspot_userdefine_settingvalue_invalid">無效數據， 請重新設置</string>
+	<string name="hotspot_auto_close_message">通過熱點分享的數據流量已達到 <xliff:g id="ID_1">%d</xliff:g>M,為防止流量消耗過多，已為你關閉熱點</string>
+	<!-- mengdw <2016-10-09> add for CR01766193 end -->
+</resources>

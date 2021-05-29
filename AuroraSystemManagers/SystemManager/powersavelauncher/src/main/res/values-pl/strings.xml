@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Launcher zasilania"</string>
+    <string name="exit_string">"Wyłącz tryb ekstremalny"</string>
+    <string name="ok_string">"OK"</string>
+    <string name="cancel_string">"Anuluj"</string>
+    <string name="exit_msg">"Czy na pewno chcesz wyłączyć tryb ekstremalny?"</string>
+    <string name="exit_msg1">"Telefon jest w trakcie ładowania, czy na pewno chcesz opuścić tryb ekstremalny ?"</string>
+    <string name="can_use_time">"Czas oczekiwania: %s"</string>
+    <string name="need_charging_time">"Wymagane jest ładowanie%s"</string>
+    <string name="power_cannotget">"Nie można oszacować"</string>
+    <string name="power_hours"> Godzina</string>
+    <string name="power_minutes"> Minuta</string>
+    <string name="is_charging_now">"Ładowanie"</string>
+    <string name="charged_completely">"Naładowany"</string>
+    <string name="exit_string_title">Wyłącz tryb ekstremalny</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="power_low">mniej jak</string>
+    <string name="control_panel_brightness">Jasność</string>
+    <string name="add_app">Dodaj</string>
+    <string name="system_process">Proces systemowy</string>
+    <string name="settings">Ustawienia</string>
+    <string name="settings_activity_title">Ustawienia</string>
+    <string name="pref_title_mobile_data">Komórkowa transmisja danych</string>
+    <string name="pref_title_wifi">Wi-Fi</string>
+    <string name="on">Wł.</string>
+    <string name="off">Wył.</string>
+    <string name="guide_text_got_it">Wiem</string>
+    <string name="activity_title_add_apps">Dodaj aplikację</string>
+    <string name="social_app">Aplikacja społecznościowa</string>
+    <string name="remaining_time">Czuwanie:</string>
+    <string name="remaining_time_2">Czas pracy:</string>
+    <plurals name="remaining_time_hour">
+        <item quantity="one">1 godz.</item>
+        <item quantity="other">%d godz.</item>
+    </plurals>
+    <plurals name="remaining_time_minute">
+        <item quantity="one">1 min</item>
+        <item quantity="other">"%d min"</item>
+    </plurals>
+    <string name="no_sim">"Brak karty SIM"</string>
+    <string name="guide_text_1">1. Połącz dane mobilne lub Wi-Fi</string>
+    <string name="guide_text_2">2. \"Wyjście\" jest tutaj</string>
+    <string name="guide_text_6">Funkcje niektórych aplikacji mogą nie działać poprawnie w trybie ekstremalnym</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projects>
+    <project name="">
+        <battery_capacity>2700</battery_capacity>  <!-- 电池容量 -->
+        <ac_charge_current>900</ac_charge_current> <!-- 交流电充电电流值 -->
+        <usb_charge_current>350</usb_charge_current> <!-- USB充电电流值 -->
+        <original_current>185</original_current>  <!-- 出厂状态原始亮屏使用电流 -->
+        <original_brightness>255</original_brightness> <!-- 出厂状态默认屏幕亮度 -->
+        <current_per_brightness>0.7</current_per_brightness> <!-- 每增加或减少单位亮度对电流值增加或减少值 -->
+        
+        <green_background_weight>0.02</green_background_weight>
+        <system_animator_weight>0.005</system_animator_weight>
+        <darktheme_weight>0.07</darktheme_weight>
+        
+        <wifi_weight>0.07</wifi_weight>
+        <bt_weight>0.015</bt_weight>
+        <data_weight>0.07</data_weight>
+        <gps_weight>0.01</gps_weight>
+        <sync_weight>0.017</sync_weight>
+        <push_weight>0</push_weight>
+        <cpufreq_weight>0.05</cpufreq_weight>
+        <screen_save_weight>0.05</screen_save_weight>
+        <gestures_weight>0.01</gestures_weight>
+        <timeout_zero_weight>0.035</timeout_zero_weight>
+        <timeout_one_weight>0.032</timeout_one_weight>
+        <timeout_two_weight>0.03</timeout_two_weight>
+        <timeout_three_weight>0.025</timeout_three_weight>
+        <timeout_four_weight>0.015</timeout_four_weight>
+        <timeout_five_weight>0.01</timeout_five_weight>
+        <timeout_six_weight>0.005</timeout_six_weight>
+        <timeout_seven_weight>0</timeout_seven_weight>
+        
+        <zero_ten_time>99</zero_ten_time>
+        <ten_twenty_time>90</ten_twenty_time>
+        <twenty_thirty_time>99</twenty_thirty_time>
+        <thirty_forty_time>87</thirty_forty_time>
+        <forty_fifty_time>99</forty_fifty_time>
+        <fifty_sixty_time>99</fifty_sixty_time>
+        <sixty_seventy_time>85</sixty_seventy_time>
+        <seventy_eight_time>80</seventy_eight_time>
+        <eight_ninety_time>90</eight_ninety_time>
+        <ninety_hundred_time>99</ninety_hundred_time>
+    </project>
+
+ </projects>

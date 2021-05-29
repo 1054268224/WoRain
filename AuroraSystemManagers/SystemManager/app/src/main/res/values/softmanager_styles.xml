@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTabThemeCustom" parent="@style/SystemManagerThemeCustom">
+        <item name="android:actionBarTabBarStyle">@style/TabActionBarStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/GnActionBarTabStyleTextStyle</item>
+    </style>
+    <!-- just for M2017 -->
+    <style name="AppTabTheme" parent="@style/SystemManagerTheme">
+        <item name="android:actionBarTabBarStyle">@style/TabActionBarStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/GnActionBarTabStyleTextStyle</item>
+    </style>
+
+    <style name="GnActionBarTabStyleTextStyle">
+        <item name="android:textColor">@color/gn_action_bar_tab_text_selector</item>
+        <item name="android:textSize">16sp</item>
+        <!-- Chenyee xionghg 20180110 add for CSW1702A-2332 begin -->
+        <item name="android:gravity">center</item>
+        <!-- Chenyee xionghg 20180110 add for CSW1702A-2332 end -->
+    </style>
+
+    <style name="TabActionBarStyle" parent="@style/Widget.Cyee.ActionBar.TabBar">
+        <item name="cyeebackgroundStacked">@color/common_green_bg</item>
+        <item name="android:background">@color/common_green_bg</item>
+    </style>
+
+    <!-- SoftManager begin -->
+    <!-- <style name="OneCleanLightTheme" parent="@android:style/Theme.Holo.Light"> -->
+    <style name="SystemManagerThemeCustom" parent="@style/Theme.Cyee.Light">
+        <item name="cyeeactionBarStyle">@style/LightActionBarStyle</item>
+        <item name="android:actionBarDivider">@null</item>
+        <item name="android:homeAsUpIndicator">@drawable/cyee_ic_ab_back_light</item>
+    </style>
+    <!-- guoxt 20180412 modify for CSW1705AC-49 begin-->
+    <style name="SystemManagerThemeCustomRtL" parent="@style/Theme.Cyee.Light">
+        <item name="cyeeactionBarStyle">@style/LightActionBarStyle</item>
+        <item name="android:actionBarDivider">@null</item>
+        <item name="android:homeAsUpIndicator">@drawable/cyee_ic_ab_back_light_rtl</item>
+    </style>
+    <!-- guoxt 20180412 modify for CSW1705AC-49 begin-->
+    <!-- just for M2017 -->
+    <style name="SystemManagerTheme" parent="@style/Theme.Cyee.Light">
+        <item name="cyeeactionBarStyle">@style/LightActionBarStyle</item>
+        <item name="android:actionBarDivider">@null</item>
+
+    </style>
+
+    <style name="GNTextAppearance" parent="@android:style/TextAppearance.Inverse">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <!-- <style name="LightActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse"> -->
+    <style name="LightActionBarStyle" parent="@style/Widget.Cyee.Light.ActionBar.Solid.Inverse">
+        <item name="cyeetitleTextStyle">@style/LightActionBarStyleTextStyle</item>
+        <item name="cyeebackground">@drawable/common_blue_bg</item>
+        <item name="cyeebackgroundSplit">@drawable/common_blue_bg</item>
+        <item name="cyeebackgroundStacked">@drawable/common_blue_bg</item>
+    </style>
+
+    <style name="LightActionBarStyleTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextShadowStyle">
+        <item name="android:shadowColor">#26000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <!-- SoftManager end -->
+
+</resources>
