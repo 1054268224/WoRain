@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
-    android:src="@drawable/cyee_switch_track_on"
-    android:tint="@color/cyee_switch_track_color"
-    android:tintMode="src_in" />

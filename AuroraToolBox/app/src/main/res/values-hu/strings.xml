@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="gradienter_app_name">Gradienter</string>
-	<string name="title_handingpaint">"A kép felakasztása"</string>
-	<string name="high_point_angle">High Point Angle</string>
-	<string name="low_point_angel">Low Point Angle</string>
-	<string name="target_distance">Target Distance</string>
-</resources>

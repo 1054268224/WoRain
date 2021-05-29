@@ -1,9 +1,0 @@
-<resources>
-
-    <!-- chenyee liu_shuang 20180612 add for SW17W13OTA-51 begin -->
-    <dimen name="guide1_text1_margin_top">380dp</dimen>
-    <dimen name="guide1_next_text_margin_top">36dp</dimen>
-    <dimen name="guide2_next_text_margin_top">86dp</dimen>
-    <!-- chenyee liu_shuang 20180612 add for SW17W13OTA-51 end -->
-
-</resources>

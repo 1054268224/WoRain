@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Tab页文字颜色 -->
-    <color name="tab_indicator_textcolor">#ffffffff</color>
-    <!-- 第一页字体颜色 -->
-    <!-- 耗电排行按钮字体颜色 -->
-</resources>

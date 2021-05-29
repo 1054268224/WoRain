@@ -1,6 +1,0 @@
-    <selector  xmlns:android="http://schemas.android.com/apk/res/android">  
-<!--         <item android:drawable="@drawable/add_app" android:state_pressed="true"></item>
-        <item android:drawable="@drawable/add_app_press"></item> -->
-        <item android:drawable="@drawable/add_press" android:state_pressed="true"></item>
-        <item android:drawable="@drawable/add"></item>        
-    </selector>  

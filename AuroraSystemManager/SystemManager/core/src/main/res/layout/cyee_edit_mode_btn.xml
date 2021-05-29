@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<cyee.widget.CyeeButton xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/cyee_left_btn"
-    style="@style/CyeeEditModeStyle"
-    android:minWidth="0dp"
-    android:paddingStart="@dimen/cyee_list_item_tailtext_margin_right"
-    android:paddingEnd="@dimen/cyee_list_item_tailtext_margin_right"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
