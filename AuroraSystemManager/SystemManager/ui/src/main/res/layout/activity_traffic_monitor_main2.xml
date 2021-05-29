@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white_wyh_traf"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/nosim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include layout="@layout/traffic_nosim"></include>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/hassim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/doublesim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <include layout="@layout/traffic_viewpager_card_container" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/singlesim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/traffic_simcard_container" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/nosettraffic_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settraffic_text_hint"
+                android:textColor="@color/textcolor_hint3_wyh_traf"></TextView>
+
+            <Button
+                android:id="@+id/settraffic_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="43dp"
+                android:background="@drawable/ripple_btn_prim_wyh"
+                android:text="@string/settext_traffic_text"
+                android:textColor="@color/white"
+                android:textSize="18sp"></Button>
+        </LinearLayout>
+
+        <include layout="@layout/listofbtn_traffic_container"></include>
+
+        <TextView
+            android:id="@+id/usetraffic_text_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="22dp"
+            android:text="@string/usetraffic_text_hint"
+            android:textColor="@color/textcolor_main_wyh_traf"
+            android:textSize="12sp"></TextView>
+
+        <com.example.systemmanageruidemo.view.ChartView
+            android:id="@+id/charview"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="10dp">
+
+        </com.example.systemmanageruidemo.view.ChartView>
+
+        <TextView
+            android:id="@+id/appuse_traffic_text_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="22dp"
+            android:text="@string/appuse_traffic_text_hint_wyh"
+            android:textColor="@color/textcolor_main_wyh_traf"
+            android:textSize="12sp"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/softmanager_listview_height"
     android:descendantFocusability="blocksDescendants"
-    android:background="@drawable/ripple_gray_with_white_mask">
+    android:background="@color/white">
     <!-- Chenyee: guoxt <2018-08-06> add for CSW1705A-2751  end -->
     <LinearLayout
         android:id="@+id/container_icon"

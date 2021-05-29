@@ -101,6 +101,7 @@ public class AutoStartMrgActivity extends BaseListActivity<AutoStartAdapter>
     @Override
     protected void onResume() {
         super.onResume();
+        mAutoBootAppManager.init(this);
     }
 
     @Override

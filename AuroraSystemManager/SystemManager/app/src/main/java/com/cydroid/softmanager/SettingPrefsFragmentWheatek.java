@@ -1,10 +1,13 @@
 package com.cydroid.softmanager;
 
+import android.app.ActivityManager;
+import android.app.ActivityManagerNative;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.RemoteException;
 import android.provider.Settings;
 import android.widget.Toast;
 
@@ -12,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreferenceCompat;
@@ -20,14 +24,18 @@ import com.android.internal.util.MemInfoReader;
 import com.chenyee.featureoption.ServiceUtil;
 import com.cydroid.softmanager.common.Consts;
 import com.cydroid.softmanager.common.Util;
-import com.cydroid.softmanager.monitor.TrafficMonitor;
-import com.cydroid.softmanager.monitor.interfaces.IMonitorJob;
 import com.cydroid.softmanager.monitor.service.CpuRamMonitorService;
 import com.cydroid.softmanager.monitor.service.ScreenOffCleanService;
 import com.cydroid.softmanager.oneclean.WhiteListMrgActivity;
 import com.cydroid.softmanager.powersaver.notification.PowerConsumeService;
 import com.cydroid.softmanager.utils.Log;
 import com.example.systemmanageruidemo.UnitUtil;
+
+import java.lang.annotation.Native;
+
+import cyee.preference.CyeePreference;
+import cyee.preference.CyeePreferenceGroup;
+import cyee.provider.CyeeSettings;
 
 public class SettingPrefsFragmentWheatek extends PreferenceFragmentCompat implements Preference.OnPreferenceChangeListener, PreferenceManager.OnPreferenceTreeClickListener {
     private static final String TAG = "SettingsPrefsFragment";
@@ -178,10 +186,7 @@ public class SettingPrefsFragmentWheatek extends PreferenceFragmentCompat implem
             }
             ServiceUtil.startForegroundService(mContext, startPowerConsumeAlarm);
             return true;
-        } else if (preference.getKey().equals("net_key")){
-            Toast.makeText(getContext(),"xxxx",Toast.LENGTH_SHORT).show();
-        }
-        else if (preference.getKey().equals(SCREENOFF_CLEAN_KEY)) {
+        } else if (preference.getKey().equals(SCREENOFF_CLEAN_KEY)) {
             Intent cleanIntent = new Intent(mContext, ScreenOffCleanService.class);
             cleanIntent.setAction("com.cydroid.screenoffclean");
             Preference toastPref = (Preference) findPreference(SCREENOFF_CLEAN_TOAST_KEY);

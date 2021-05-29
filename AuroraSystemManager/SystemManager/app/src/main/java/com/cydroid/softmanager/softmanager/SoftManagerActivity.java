@@ -41,7 +41,6 @@ import com.cydroid.softmanager.common.Consts;
 import com.cydroid.softmanager.common.Util;
 import com.cydroid.softmanager.model.ItemInfo;
 import com.cydroid.softmanager.softmanager.adapter.FrontPageAdapter;
-import com.cydroid.softmanager.softmanager.autoboot.AutoBootAppInfo;
 import com.cydroid.softmanager.softmanager.autoboot.AutoBootAppManager;
 import com.cydroid.softmanager.softmanager.model.SDCardInfo;
 import com.cydroid.softmanager.utils.Log;
@@ -107,7 +106,6 @@ public class SoftManagerActivity extends BaseWheatekActivity implements OnItemCl
     private String mInternalProgress;
     private String mSdProgress;
     // Add by HZH on 2019/8/2 for  end
-    private AutoBootAppManager mAutoBootAppManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -115,7 +113,6 @@ public class SoftManagerActivity extends BaseWheatekActivity implements OnItemCl
         /*UiUtils.setElevation(getCyeeActionBar(), 0);*/
         ChameleonColorManager.getInstance().onCreate(this);
         setContentView(R.layout.softmanager_main_activity_layout);
-        mAutoBootAppManager = AutoBootAppManager.getInstance(this);
         /*setActionBarCustomView();*/
         initView();
         initData();
@@ -175,6 +172,9 @@ public class SoftManagerActivity extends BaseWheatekActivity implements OnItemCl
         mHelperUtils.setCallback(this);
         updateUSBCapacity();
         updateListView();
+        if (mData != null) {
+            updatatext0(mData.get(0));
+        }
         super.onResume();
         //YouJuAgent.onResume(this);
     }
@@ -224,6 +224,10 @@ public class SoftManagerActivity extends BaseWheatekActivity implements OnItemCl
         }
     }
 
+    /**
+     *
+     * @param visibled
+     */
     private void setVisibled(boolean visibled) {
         mStorageinfoView.removeAllViews();
         if (visibled) {
@@ -238,9 +242,6 @@ public class SoftManagerActivity extends BaseWheatekActivity implements OnItemCl
     }
 
     private void updateListView() {
-        for (int i = 0; i < 2; i++) {
-            setItemSummary(i);
-        }
         mAdapter.notifyDataSetChanged();
     }
 
@@ -522,10 +523,11 @@ public class SoftManagerActivity extends BaseWheatekActivity implements OnItemCl
                 //info.getIcon().setTint(ChameleonColorManager.getContentColorPrimaryOnBackgroud_C1());
                 //guoxt modify for  37563 end
             }
+            if (i == 0) {
+
+                updatatext0(info);
+            }
             mData.add(info);
-        }
-        for (int i = 0; i < 2; i++) {
-            setItemSummary(i);
         }
         mInternalstorage = mRes.getString(R.string.text_total_internal);
         mSdcardstorage = mRes.getString(R.string.text_total_sd);
@@ -533,20 +535,12 @@ public class SoftManagerActivity extends BaseWheatekActivity implements OnItemCl
         mUsedString = mRes.getString(R.string.text_used_space);
     }
 
-    private void setItemSummary(int position) {
-        if (position == 0) {
-            List<AutoBootAppInfo> enableList = mAutoBootAppManager.getEnableAutoBootApps();
-            String headFormat = mRes.getString(R.string.auto_start_head_text);
-            String headStr = String.format(headFormat, enableList.size());
-            mData.get(position).setSummary(headStr);
-        } else if (position == 1) {
-            String headFormat = mRes.getString(R.string.authority_management_head_text);
-            int size = 40;
-            String headStr = String.format(headFormat, size);
-            mData.get(position).setSummary(headStr);
-        }
+    private void updatatext0(ItemInfo info) {
+        int size = AutoBootAppManager.getInstance(this).getEnableAutoBootApps().size();
+        String headFormat = mRes.getString(R.string.auto_start_head_text);
+        String headStr = String.format(headFormat, size);
+        info.setSummary(headStr);
     }
-
 
     private void initIntents() {
         Intent[] names = new Intent[]{new Intent(this, AutoStartMrgActivity.class),

@@ -6,7 +6,7 @@ import com.example.systemmanageruidemo.trafficmonitor.bean.TraRecyBean;
 
 import java.util.List;
 
-public interface TrafficMonitorPresent extends PresentI<TrafficMonitorView> {
+public interface TrafficMonitorPresent<T extends TrafficMonitorView> extends PresentI<T> {
     void onRequestSIM(TraPagerBean object);
 
     void responseSIM(TraPagerBean object);

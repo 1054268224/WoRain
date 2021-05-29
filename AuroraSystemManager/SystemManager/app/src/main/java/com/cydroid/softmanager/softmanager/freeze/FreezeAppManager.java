@@ -130,7 +130,7 @@ public class FreezeAppManager implements PackageChangedCallback, LocalChangedCal
         clearFreezeAppsInfo();
         return FreezeAppUtils.loadFreezeAppsInfoFromXml(mFreezeNormalPackages,
                 mFreezeCautiousPackages, mFreezedPackages, mFreezableNormalPackages,
-                FreezeAppUtils.sFreezeAppsInfoFile);
+                FreezeAppUtils.getsFreezeAppsInfoFile(mContext));
     }
 
     private void clearFreezeAppsInfo() {
@@ -228,7 +228,7 @@ public class FreezeAppManager implements PackageChangedCallback, LocalChangedCal
         unFreezeInNoFreezeApps(freezedAppsFiltered);
         FreezeAppUtils.writeFreezeAppsInfoToXml(mFreezeNormalPackages,
                 mFreezeCautiousPackages, mFreezedPackages, mFreezableNormalPackages,
-                FreezeAppUtils.sFreezeAppsInfoFile);
+                FreezeAppUtils.getsFreezeAppsInfoFile(mContext));
     }
 
     private List<String> filterNoFreezeApps(List<String> packages) {
@@ -280,7 +280,7 @@ public class FreezeAppManager implements PackageChangedCallback, LocalChangedCal
             loadOtherThirdFreezeApps(packageName);
             FreezeAppUtils.writeFreezeAppsInfoToXml(mFreezeNormalPackages,
                     mFreezeCautiousPackages, mFreezedPackages, mFreezableNormalPackages,
-                    FreezeAppUtils.sFreezeAppsInfoFile);
+                    FreezeAppUtils.getsFreezeAppsInfoFile(mContext));
         }
         notifyFreezeAppsChange();
     }
@@ -306,7 +306,7 @@ public class FreezeAppManager implements PackageChangedCallback, LocalChangedCal
             FreezeAppUtils.addToNoContains(mFreezedPackages, packageName);
             FreezeAppUtils.writeFreezeAppsInfoToXml(mFreezeNormalPackages,
                     mFreezeCautiousPackages, mFreezedPackages, mFreezableNormalPackages,
-                    FreezeAppUtils.sFreezeAppsInfoFile);
+                    FreezeAppUtils.getsFreezeAppsInfoFile(mContext));
         } catch (Exception e) {
             Log.e(TAG, "freezeApp e:" + e);
         }
@@ -349,7 +349,7 @@ public class FreezeAppManager implements PackageChangedCallback, LocalChangedCal
             }
             FreezeAppUtils.writeFreezeAppsInfoToXml(mFreezeNormalPackages,
                     mFreezeCautiousPackages, mFreezedPackages, mFreezableNormalPackages,
-                    FreezeAppUtils.sFreezeAppsInfoFile);
+                    FreezeAppUtils.getsFreezeAppsInfoFile(mContext));
         } catch (Exception e) {
             Log.e(TAG, "unFreezeApp e:" + e);
         }
@@ -391,7 +391,7 @@ public class FreezeAppManager implements PackageChangedCallback, LocalChangedCal
         removeFreezeApp(packageName);
         FreezeAppUtils.writeFreezeAppsInfoToXml(mFreezeNormalPackages,
                 mFreezeCautiousPackages, mFreezedPackages, mFreezableNormalPackages,
-                FreezeAppUtils.sFreezeAppsInfoFile);
+                FreezeAppUtils.getsFreezeAppsInfoFile(mContext));
         notifyFreezeAppsChange();
     }
 

@@ -13,7 +13,6 @@ import java.math.BigDecimal;
 
 import android.os.SystemProperties;
 
-
 public class PowerConfigParser {
     private static final String CONFIG_FILE_PATH = "/system/etc/Cyee_SystemManager/config.xml";
     private static final boolean DEBUG = true;

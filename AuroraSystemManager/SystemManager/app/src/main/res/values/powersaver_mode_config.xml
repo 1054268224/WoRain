@@ -5,7 +5,7 @@
     <string-array name="powermode_NONE">
         <!-- guxot moddify to remove this item-->
         <!-- <item>IntelligentScene</item>-->
-         <item>GreenBackground</item>
+        <item>GreenBackground</item>
         <item>DarkTheme</item>
         <item>CpuLimit</item>
         <item>AutoLcmAcl</item>
@@ -49,8 +49,8 @@
         <item>FloatTouch:false</item>
         <item>Gesture:false</item>
         <item>VoiceControl:false</item>
-        <item>HomeKeyValue:0</item><!--//error-->
-<!--        <item>DarkTheme:true</item>-->
+        <!--        <item>HomeKeyValue:0</item>&lt;!&ndash;//error&ndash;&gt;-->
+        <!--        <item>DarkTheme:true</item>-->
         <!-- Pause and wait for result of  DarkTheme -->
         <!--delete bug:TEWBW-543 wushanfei 20200102 start -->
         <!--<item>DarkWallpaper:dark_warpaper</item> -->
@@ -60,7 +60,7 @@
         <item>AutoSync:false</item>
         <!-- <item>GNPush:false</item> -->
         <item>ScreenOffTimeout:15000</item>
-        <item>AutoLcmAcl:true</item>
+        <!--        <item>AutoLcmAcl:true</item>-->
         <item>ScreenBrightness:51</item>
         <item>Nfc:false</item>
         <item>Wifi:false</item>
@@ -68,10 +68,10 @@
         <item>DataConnect:false</item>
         <item>Bluetooth:false</item>
         <item>Gps:false</item>
-        <item>CpuLimit:true</item><!--//error-->
-        <item>GpuLimit:true</item>
+        <!--        <item>CpuLimit:true</item>&lt;!&ndash;//error&ndash;&gt;-->
+        <!--        <item>GpuLimit:true</item>-->
         <item>EnableSuperModeLauncher:true</item><!--//error-->
-<!--        <item>DisableApps:true</item>&lt;!&ndash;//error&ndash;&gt;-->
+        <item>DisableApps:true</item><!--//error-->
         <item>HotKnot:false</item>
         <item>NotificationReceivers:none</item>
     </string-array>

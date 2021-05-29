@@ -53,7 +53,9 @@ import android.util.SparseArray;
 import android.view.View;
 import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
+
 import cyee.widget.CyeeButton;
+
 import android.widget.TextView;
 
 import com.cydroid.framework.FrameworkUtility;
@@ -61,16 +63,17 @@ import com.cydroid.softmanager.R;
 import com.cydroid.softmanager.common.Consts;
 // import com.cydroid.softmanager.strategyupdate.strategy.BlackKillUpdateStrategy;
 import com.cydroid.softmanager.utils.Log;
+
 import android.appwidget.AppWidgetManager;
 //import android.appwidget.AppWidgetProviderInfo;
 import android.content.ComponentName;
+
 import java.lang.reflect.Field;
 import java.util.stream.Collectors;
 
 /**
- * 
  * File Description:
- * 
+ *
  * @author: Gionee-lihq
  * @see: 2013-1-17 Change List:
  */
@@ -82,7 +85,7 @@ public class HelperUtils {
 
     /**
      * To get default input method information.
-     * 
+     *
      * @return InputMethodInfo
      */
     public static InputMethodInfo getDefInputMethod(Context context) {
@@ -100,9 +103,10 @@ public class HelperUtils {
     }
 
     // Gionee <yangxinruo> <2016-1-19> add for CR01625558 begin
+
     /**
      * To get current live wallpaper package name,return null if using static wallpaper
-     * 
+     *
      * @return String
      */
     public static String getLivePaperPkgName(Context context) {
@@ -119,7 +123,7 @@ public class HelperUtils {
 
     /**
      * To get numbers of current system installed third part applications.
-     * 
+     *
      * @param context
      * @return the number of third app
      */
@@ -137,7 +141,7 @@ public class HelperUtils {
 
     /**
      * To get application of current installed application
-     * 
+     *
      * @param context
      * @return
      */
@@ -202,7 +206,7 @@ public class HelperUtils {
 
     /**
      * To convert String {@value src} to "src(num)"
-     * 
+     *
      * @param src
      * @param num
      * @return
@@ -258,15 +262,11 @@ public class HelperUtils {
 
     /**
      * 设置指定button内容显示样式为(如 "一键清理(20)")
-     * 
-     * @param context
-     *            Context
-     * @param buttion
-     *            需要设置的button
-     * @param text
-     *            显示内容
-     * @param num
-     *            显示的数字
+     *
+     * @param context Context
+     * @param buttion 需要设置的button
+     * @param text    显示内容
+     * @param num     显示的数字
      */
     public static void setButtonText(Context context, CyeeButton buttion, String text, int num) {
         if (num > 0) {
@@ -312,7 +312,7 @@ public class HelperUtils {
             Cursor c = null;
             try {
                 c = context.getContentResolver().query(Consts.ROSTER_CONTENT_URI,
-                        new String[] {"packagename"},
+                        new String[]{"packagename"},
                         "usertype='" + BLACK_KILL_TYPE + "' and status='1' ", null, null);
                 if (c != null && c.moveToFirst()) {
                     do {
@@ -349,7 +349,7 @@ public class HelperUtils {
             Cursor c = null;
             try {
                 c = context.getContentResolver().query(Consts.ROSTER_CONTENT_URI,
-                        new String[] {"packagename"}, "usertype='" + SAFED_APP_TYPE + "' ", null, null);
+                        new String[]{"packagename"}, "usertype='" + SAFED_APP_TYPE + "' ", null, null);
                 if (c != null && c.moveToFirst()) {
                     do {
                         safedAppList.add(c.getString(0));
@@ -379,7 +379,7 @@ public class HelperUtils {
         Cursor c = null;
         try {
             c = context.getContentResolver().query(Consts.ROSTER_CONTENT_URI,
-                    new String[] {"packagename", "status"}, "usertype='" + SAFED_LIST_TYPE + "' ", null,
+                    new String[]{"packagename", "status"}, "usertype='" + SAFED_LIST_TYPE + "' ", null,
                     null);
             if (c != null && c.moveToFirst()) {
                 do {
@@ -404,7 +404,7 @@ public class HelperUtils {
         Cursor c = null;
         try {
             c = context.getContentResolver().query(Consts.ROSTER_CONTENT_URI,
-                    new String[] {"packagename", "status"}, "usertype='" + SAFED_LIST_TYPE + "' ", null,
+                    new String[]{"packagename", "status"}, "usertype='" + SAFED_LIST_TYPE + "' ", null,
                     null);
             if (c != null && c.moveToFirst()) {
                 do {
@@ -427,8 +427,8 @@ public class HelperUtils {
     public static boolean isSafedListApp(String pkgname, Context context, int flags) {
         Cursor c = null;
         try {
-            c = context.getContentResolver().query(Consts.ROSTER_CONTENT_URI, new String[] {"status"},
-                    "packagename=? AND usertype=?", new String[] {pkgname, SAFED_LIST_TYPE}, null);
+            c = context.getContentResolver().query(Consts.ROSTER_CONTENT_URI, new String[]{"status"},
+                    "packagename=? AND usertype=?", new String[]{pkgname, SAFED_LIST_TYPE}, null);
             if (c != null && c.moveToFirst()) {
                 do {
                     Log.d(TAG, "isSafedListApp get pkg " + pkgname + " status=" + c.getInt(0));
@@ -470,16 +470,16 @@ public class HelperUtils {
     public static List<String> getPowerSaveMoreWhiteList(Context context) {
         //Chenyee guoxt modify for CSW1703CX-249 begin
         String[] whiteArray;
-        if(Consts.cyCXFlag) {
+        if (Consts.cyCXFlag) {
             whiteArray = context.getResources().getStringArray(R.array.super_power_save_whitelist_xiaolajiao_more);
-        }else{
+        } else {
             whiteArray = context.getResources().getStringArray(R.array.super_power_save_whitelist_more);
         }
         //Chenyee guoxt modify for CSW1703CX-249 end
         return Arrays.asList(whiteArray);
     }
     // Gionee xionghg add for power saving optimization end
-    
+
     // Gionee <yangxinruo> <2015-12-7> add for CR01604665 begin
     public static List<String> getPowerSaveNeedDisable(Context context) {
         String[] whitearray = context.getResources().getStringArray(R.array.super_power_need_disable);
@@ -489,7 +489,7 @@ public class HelperUtils {
     // Gionee <yangxinruo> <2015-12-7> add for CR01604665 end
     // Gionee <yangxinruo> <2016-1-5> add for CR01618272 begin
     public static ArrayList<String> getPackagesNameByPid(PackageManager packageManager,
-            List<RunningAppProcessInfo> runningAppList, int pID) {
+                                                         List<RunningAppProcessInfo> runningAppList, int pID) {
         ArrayList<String> processName = new ArrayList<String>();
         if (runningAppList == null || runningAppList.isEmpty()) {
             Log.d(TAG, "no running app info!");
@@ -519,7 +519,7 @@ public class HelperUtils {
     }
 
     public static ArrayList<String> getActiveCameraApps(PackageManager packageManager,
-            List<RunningAppProcessInfo> runningAppList) {
+                                                        List<RunningAppProcessInfo> runningAppList) {
         String resultStr = executeShellCmd("dumpsys media.camera | grep -A 1 'Device is open'");
 
         ArrayList<String> resArray = new ArrayList<String>();
@@ -569,7 +569,7 @@ public class HelperUtils {
     }
 
     public static ArrayList<String> getActiveAudioTrackApps(PackageManager packageManager,
-            List<RunningAppProcessInfo> runningAppList) {
+                                                            List<RunningAppProcessInfo> runningAppList) {
         String resultStr = executeShellCmd("dumpsys media.audio_flinger");
 
         ArrayList<String> resArray = new ArrayList<String>();
@@ -583,9 +583,9 @@ public class HelperUtils {
         boolean inputTrackOn = false;
         String rexGlobalSessionStr = "(\\d+)\\s+?(\\d+)\\s+?\\d+";
         //guoxt 20180417 modify for CSW1703A-1781 begin
-       // String rexOutputStr = ".+yes\\s+?\\d+\\s+?\\d+\\s+?\\d+\\s+?\\d+\\s+?(\\d+).+";
+        // String rexOutputStr = ".+yes\\s+?\\d+\\s+?\\d+\\s+?\\d+\\s+?\\d+\\s+?(\\d+).+";
         String rexOutputStr = ".+yes\\s+?(\\d+)\\s+?(\\d+)\\s+?[a-zA-Z].+";
-       // String rexInputStr =  ".+yes\\s+?\\d+\\s+?\\d+\\s+?\\d+\\s+?(\\d+).+";
+        // String rexInputStr =  ".+yes\\s+?\\d+\\s+?\\d+\\s+?\\d+\\s+?(\\d+).+";
         String rexInputStr = "\\s+?(\\d+)\\s+?(\\d+).+";
         //guoxt 20180417 modify for CSW1703A-1781 end
         Pattern patternGlobalSession = Pattern.compile(rexGlobalSessionStr);
@@ -678,7 +678,7 @@ public class HelperUtils {
     }
 
     private static void fillPackageNameByProcess(PackageManager packageManager,
-            List<RunningAppProcessInfo> runningAppList, ArrayList<String> resArray, int pid) {
+                                                 List<RunningAppProcessInfo> runningAppList, ArrayList<String> resArray, int pid) {
         ArrayList<String> pkgNamesFromPid = getPackagesNameByPid(packageManager, runningAppList, pid);
         for (String pkgname : pkgNamesFromPid) {
             if (!pkgname.isEmpty() && !resArray.contains(pkgname)) {
@@ -693,7 +693,7 @@ public class HelperUtils {
     }
 
     private static String pkgNameFromProcessName(PackageManager pm,
-            List<RunningAppProcessInfo> runningAppList, int pID) {
+                                                 List<RunningAppProcessInfo> runningAppList, int pID) {
         String processName = "";
         if (runningAppList == null || runningAppList.isEmpty()) {
             Log.d(TAG, "no running app info!");
@@ -720,7 +720,7 @@ public class HelperUtils {
         final Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.addCategory(Intent.CATEGORY_HOME);
         final ResolveInfo res = context.getPackageManager().resolveActivity(intent, 0);
-        if (res.activityInfo == null) {
+        if (res == null || res.activityInfo == null) {
             return null;
         }
         return res.activityInfo.packageName;
@@ -948,7 +948,7 @@ public class HelperUtils {
         Process process = null;
         BufferedReader reader = null;
         try {
-            process = Runtime.getRuntime().exec(new String[] {"sh", "-c", cmd});
+            process = Runtime.getRuntime().exec(new String[]{"sh", "-c", cmd});
             reader = new BufferedReader(new InputStreamReader(process.getInputStream(), StandardCharsets.UTF_8));
 
             while ((read = reader.read(buffer)) > 0) {
@@ -1115,8 +1115,8 @@ public class HelperUtils {
                 return res;
             }
             String appsStr = (String) FrameworkUtility.invokeStaticMethod(encryptionsClass, "getString",
-                    new Class[] {ContentResolver.class, String.class},
-                    new Object[] {contentResolver, "encryptspace_apps"});
+                    new Class[]{ContentResolver.class, String.class},
+                    new Object[]{contentResolver, "encryptspace_apps"});
             if (appsStr == null || appsStr.isEmpty()) {
                 return res;
             }

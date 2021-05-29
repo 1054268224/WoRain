@@ -7,6 +7,12 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
     signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\shuai.hu\\Signed_Apk\\wheatek_lishiyu.jks')
+            keyAlias 'wheatek_lishiyu'
+            storePassword 'wheatek@2021'
+            keyPassword 'wheatek@2021'
+        }
         if (localProperties == null || localProperties.get("filename") == null) {
         } else {
             mysign {
@@ -58,6 +64,7 @@ android {
         debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
             if (localProperties == null || localProperties.get("filename") == null) {
             } else {
                 println("本地签名信息：" + localProperties)
@@ -82,19 +89,9 @@ android {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
+        exclude 'classes.dex'
     }
 }
-
-task doReleaseTask(type: Exec) {
-    workingDir '../signapk/'
-    commandLine '../signapk/install.bat'
-}
-task AAAA(type: Exec) {
-    workingDir '../signapk/'
-    commandLine '../signapk/install.bat'
-}
-doReleaseTask.dependsOn(build)
-
 repositories { flatDir { dirs 'libs' } }
 
 dependencies {

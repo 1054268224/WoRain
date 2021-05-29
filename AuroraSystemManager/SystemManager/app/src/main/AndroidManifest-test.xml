@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cydroid.softmanager"
     android:sharedUserId="android.uid.system">
+    <!--
+    android:sharedUserId="android.uid.system" -->
     <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
     <uses-permission android:name="android.permission.MOVE_PACKAGE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
@@ -166,7 +168,7 @@
             android:label="@string/trafficassistant_app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:theme="@style/MHostTheme">
+            android:theme="@style/MHostThemeMain">
 
         </activity>
         <activity
@@ -227,6 +229,7 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="com.cydroid.uninstallApp" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -460,10 +463,10 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
         </activity>
         <!-- Gionee <yangxinruo> <2016-4-28> modify for CR01678498 end -->
 
@@ -614,8 +617,7 @@
             android:enabled="true"
             android:exported="true"
             android:persistent="true"
-            android:process=":remote"
-            >
+            android:process=":remote">
             <intent-filter>
                 <action android:name="com.cydroid.softmanager.powersaver.service.PowerManagerService" />
             </intent-filter>
@@ -911,7 +913,28 @@
             android:name="com.wheatek.temprd.RosterProvider"
             android:authorities="com.cyee.settings.RosterProvider"
             android:exported="true" />
-
+        <receiver
+            android:name="com.wheatek.widget.OptimizationWidgetProvider"
+            android:label="@string/host_newui_optimise_title">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/optimization_appwidget" />
+        </receiver>
+        <activity
+            android:name="com.wheatek.proxy.ui.NetWorkConTrollerActivity"
+            android:label="@string/network_controller_title"
+            android:launchMode="singleTask"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/MHostThemeMain">
+            <intent-filter>
+                <action android:name="com.wheatek.security.NETWORK_DATA_CONTROLLER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

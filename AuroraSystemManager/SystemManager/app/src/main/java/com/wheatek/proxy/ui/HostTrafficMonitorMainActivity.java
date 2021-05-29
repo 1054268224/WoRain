@@ -3,6 +3,7 @@ package com.wheatek.proxy.ui;
 import android.app.LoaderManager;
 import android.content.Context;
 import android.content.Loader;
+import android.graphics.drawable.ColorDrawable;
 import android.net.INetworkStatsService;
 import android.net.INetworkStatsSession;
 import android.net.NetworkPolicyManager;
@@ -14,7 +15,10 @@ import android.os.Looper;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.util.Log;
+import android.view.View;
 
+import com.cydroid.softmanager.R;
+import com.cydroid.softmanager.common.MainProcessSettingsProviderHelper;
 import com.cydroid.softmanager.trafficassistant.SIMInfoWrapper;
 import com.cydroid.softmanager.trafficassistant.SIMParame;
 import com.cydroid.softmanager.trafficassistant.controler.TrafficCalibrateControler;
@@ -28,9 +32,12 @@ import com.cydroid.softmanager.trafficassistant.utils.Constant;
 import com.cydroid.softmanager.trafficassistant.utils.MobileTemplate;
 import com.cydroid.softmanager.trafficassistant.utils.TimeFormat;
 import com.cydroid.softmanager.trafficassistant.utils.TrafficassistantUtil;
+import com.example.systemmanageruidemo.actionpresent.TrafficMonitorPresent2;
+import com.example.systemmanageruidemo.actionview.TrafficMonitorView2;
 import com.example.systemmanageruidemo.trafficmonitor.TrafficMonitorMainActivity;
-import com.example.systemmanageruidemo.actionpresent.TrafficMonitorPresent;
+
 import com.example.systemmanageruidemo.actionview.TrafficMonitorView;
+import com.example.systemmanageruidemo.trafficmonitor.TrafficMonitorMainActivity2;
 import com.example.systemmanageruidemo.trafficmonitor.bean.TraPagerBean;
 import com.example.systemmanageruidemo.trafficmonitor.bean.TraRecyBean;
 
@@ -42,13 +49,28 @@ import static com.cydroid.softmanager.trafficassistant.AppDetailActivity.isDisab
 import static com.cydroid.softmanager.trafficassistant.AppDetailActivity.isInvalidNetworkControlApp;
 import static com.cydroid.softmanager.trafficassistant.TrafficRankActivity.getAppsUsingMobileData;
 
-public class HostTrafficMonitorMainActivity extends HostProxyActivity<TrafficMonitorView> implements TrafficMonitorPresent {
+public class HostTrafficMonitorMainActivity extends HostProxyActivity<TrafficMonitorView2> implements TrafficMonitorPresent2 {
     {
-        attach(new TrafficMonitorMainActivity());
+        attach(new TrafficMonitorMainActivity2());
+    }
+
+    public static void TrafficPackageSettingNoti(Context context) {
+        if (TrafficassistantUtil.getSimCount(context) == 0) {
+            return;
+        }
+        int simIndex = TrafficassistantUtil.getSimCardNo(context);
+        MainProcessSettingsProviderHelper providerHelper = new MainProcessSettingsProviderHelper(context);
+        if (providerHelper.getBoolean(TrafficassistantUtil.getSimSetting(simIndex), false)) { // setting
+            return;
+        }
+        // Gionee: mengdw <2016-06-29> delete for CR01724694 begin
+        // popNoti(context, simIndex);
+        // Gionee: mengdw <2016-06-29> delete for CR01724694 end
+        providerHelper.putBoolean(TrafficassistantUtil.getSimNotification(simIndex), true);
     }
 
     private static final String TAG = HostTrafficMonitorMainActivity.class.getSimpleName();
-    private TrafficMonitorView viewAvtion;
+    private TrafficMonitorView2 viewAvtion;
     private Context mContext;
     private TrafficCalibrateControler mTrafficCalibrateControler;
     private INetworkStatsService mStatsService;
@@ -62,7 +84,18 @@ public class HostTrafficMonitorMainActivity extends HostProxyActivity<TrafficMon
     protected void onCreate(Bundle savedInstanceState) {
         init();
         super.onCreate(savedInstanceState);
+//        getSupportActionBar().setTitle(R.string.traffic_control_summary);
+
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getColor(R.color.host_bar_bg_white)));
+        getSupportActionBar().setElevation(0.0f);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.svg_icon_back_left);
+        getWindow().getDecorView().setSystemUiVisibility(getWindow().getDecorView().getSystemUiVisibility() | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        getWindow().setStatusBarColor(getColor(R.color.cyee_transparent));
+        getWindow().setBackgroundDrawable(new ColorDrawable(getColor(R.color.host_bar_bg_white)));
     }
+
 
     @Override
     protected void onDestroy() {
@@ -95,18 +128,18 @@ public class HostTrafficMonitorMainActivity extends HostProxyActivity<TrafficMon
     }
 
     @Override
-    public void setViewAction(TrafficMonitorView viewAvtion) {
+    public void setViewAction(TrafficMonitorView2 viewAvtion) {
         this.viewAvtion = viewAvtion;
     }
 
     @Override
-    public TrafficMonitorView getViewAction() {
+    public TrafficMonitorView2 getViewAction() {
         return viewAvtion;
     }
 
     @Override
     public void onRequestSIM(TraPagerBean object) {
-        this.data=object;
+        this.data = object;
         startRequesSIM();
     }
 

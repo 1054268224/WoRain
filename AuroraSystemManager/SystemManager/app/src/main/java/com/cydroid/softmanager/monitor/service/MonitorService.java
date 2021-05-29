@@ -26,7 +26,7 @@ import com.cydroid.softmanager.monitor.utils.CommonUtil;
 //Gionee <xuhz> <2014-03-03> add for CR01090601 begin
 import com.cydroid.softmanager.monitor.PowerUsageMonitor;
 import com.cydroid.softmanager.utils.HelperUtils;
-import com.cydroid.softmanager.trafficassistant.TrafficAssistantMainActivity;
+import com.wheatek.proxy.ui.HostTrafficMonitorMainActivity;
 import com.cydroid.softmanager.utils.Log;
 
 import android.content.SharedPreferences;
@@ -113,7 +113,7 @@ public class MonitorService extends Service {
                 // Gionee <jianghuan> <2014-05-14> add for CR01255397 begin
                 if ("netpackage".equals(jobkey)) {
 
-                    TrafficAssistantMainActivity.TrafficPackageSettingNoti(mContext);
+                    HostTrafficMonitorMainActivity.TrafficPackageSettingNoti(mContext);
 
                 }
                 // Gionee <jianghuan> <2014-05-14> add for CR01255397 end

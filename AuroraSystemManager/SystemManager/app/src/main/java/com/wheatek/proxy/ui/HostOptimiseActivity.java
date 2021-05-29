@@ -113,6 +113,18 @@ public class HostOptimiseActivity extends HostProxyActivity<OptimiseView> implem
         initSystemCheckThread();
     }
 
+    private  void AddShortcut(){
+        Intent shortcutIntent = new Intent("com.android.launcher.action.INSTALL_SHORTCUT");
+        shortcutIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME,getString(R.string.app_name));
+        shortcutIntent.putExtra("duplicate", false);
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.setClass(getApplicationContext(), HostOptimiseActivity.class);
+        shortcutIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, intent);
+        shortcutIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE,
+                Intent.ShortcutIconResource.fromContext(HostOptimiseActivity.this,
+                        R.mipmap.ic_launcher));
+        sendBroadcast(shortcutIntent);
+    }
     @Override
     protected void onResume() {
         super.onResume();

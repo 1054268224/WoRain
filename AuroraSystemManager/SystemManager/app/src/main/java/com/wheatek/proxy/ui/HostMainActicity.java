@@ -5,8 +5,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
@@ -15,6 +17,9 @@ import android.os.storage.StorageManager;
 import android.text.format.Formatter;
 import android.util.Log;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
 
 import com.cydroid.softmanager.R;
 import com.cydroid.softmanager.memoryclean.IMemoryCleanNativeCallback;
@@ -37,6 +42,7 @@ import com.example.systemmanageruidemo.actionpresent.MainActionPresentInterface;
 import com.example.systemmanageruidemo.actionview.MainViewActionInterface;
 import com.example.systemmanageruidemo.actionview.ViewAction;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -78,6 +84,32 @@ public class HostMainActicity extends HostProxyActivity<MainViewActionInterface>
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.host_bar_bg_white)));
         getSupportActionBar().setElevation(0.0f);
         getWindow().getDecorView().setSystemUiVisibility(getWindow().getDecorView().getSystemUiVisibility() | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        ActivityCompat.requestPermissions(this, new String[]{android
+                .Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+    }
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode) {
+            case 1:
+                if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+//                    //创建文件夹
+//                    if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+//                        File file = new File(Environment.getExternalStorageDirectory() + "/aa/bb/");
+//                        if (!file.exists()) {
+//                            Log.d("jim", "path1 create:" + file.mkdirs());
+//                        }
+//                    }
+                    File file = new File("/data/misc/msdata");
+                    if (!file.exists()) {
+                        boolean r = file.mkdirs();
+                        Log.d("jim", "path1 create:" + r);
+                    }
+                    break;
+                }
+        }
     }
 
     private void initParameters() {

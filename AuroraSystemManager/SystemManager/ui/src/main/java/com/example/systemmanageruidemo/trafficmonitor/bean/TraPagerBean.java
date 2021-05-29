@@ -3,13 +3,13 @@ package com.example.systemmanageruidemo.trafficmonitor.bean;
 import android.annotation.Nullable;
 import android.graphics.drawable.Drawable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TraPagerBean {
     int simCardScount;
-
     @Nullable
-    List<SIMBean> list;
+    List<SIMBean> list = new ArrayList<>();
 
     public int getSimCardScount() {
         return simCardScount;
@@ -28,10 +28,8 @@ public class TraPagerBean {
     }
 
     public static class SIMBean {
-
         long id;
         String name;
-
         float surplusFlow;
         float usedFlow;
         long traPack;

@@ -295,7 +295,7 @@ public class PowerManagerMainActivity extends BaseActivity {
         }
 
         if (mAdapter != null) {
-            mAdapter.notifyDataSetChanged();
+//            mAdapter.notifyDataSetChanged();
         }
     }
 

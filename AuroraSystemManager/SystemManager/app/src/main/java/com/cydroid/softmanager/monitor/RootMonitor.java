@@ -15,10 +15,6 @@ import android.content.SharedPreferences;
 import com.cydroid.softmanager.R;
 
 import com.cydroid.softmanager.monitor.interfaces.IMonitorJob;
-import com.cydroid.softmanager.trafficassistant.NotificationController;
-import com.cydroid.softmanager.trafficassistant.TrafficAssistantMainActivity;
-import com.cydroid.softmanager.trafficassistant.TrafficPopWindows;
-import com.cydroid.softmanager.trafficassistant.utils.TrafficPreference;
 import com.cydroid.softmanager.utils.Log;
 
 //Gionee <jianghuan> <2014-04-01> modify for CR01097010 begin

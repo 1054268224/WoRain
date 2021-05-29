@@ -77,7 +77,7 @@ public class PowerManagerModeAdapter extends BaseAdapter {
 
     @Override
     public View getView(final int position2, View convertView, ViewGroup parent) {
-        final  int position=position2+1;
+        final int position = position2 + 1;
         ModeHolder holder;
         if (convertView == null) {
             holder = new ModeHolder();
@@ -115,32 +115,36 @@ public class PowerManagerModeAdapter extends BaseAdapter {
 //        });
         // Gionee <yangxinruo> <2015-09-21> modify for CR01555851 end
 
-//        holder.partOneView.setOnClickListener(new OnClickListener() {
-//            // Gionee <yangxinruo> <2015-08-15> modify for CR01538376 begin
-//            final DebouncedClickAction triggerModeAction = new DebouncedClickAction() {
-//
-//                @Override
-//                public void debouncedAction() {
-//                    triggerModeAction(position);
-//                }
-//            };
-//
-//            @Override
-//            public void onClick(View v) {
-//                Log.d(TAG, "MODE TEST onClick change button at " + position);
-//                /*
-//                 * if (mRepetiveResponed) { Debug.log(DEBUG, TAG,
-//                 * "exec onClick event"); setRepetiveResponed(false); new
-//                 * Handler().postDelayed(new Runnable() {
-//                 *
-//                 * @Override public void run() { Debug.log(DEBUG, TAG,
-//                 * "setRepetiveResponed in thread"); setRepetiveResponed(true);
-//                 * } }, 800); triggerModeAction(position); }
-//                 */
-//                triggerModeAction.onClick();
-//            }
-//            // Gionee <yangxinruo> <2015-08-15> modify for CR01538376 end
-//        });
+        if (position == PowerConsts.SUPER_MODE+1) {
+            holder.partOneView.setOnClickListener(new OnClickListener() {
+                // Gionee <yangxinruo> <2015-08-15> modify for CR01538376 begin
+                final DebouncedClickAction triggerModeAction = new DebouncedClickAction() {
+
+                    @Override
+                    public void debouncedAction() {
+                        triggerModeAction(position);
+                    }
+                };
+
+                @Override
+                public void onClick(View v) {
+                    Log.d(TAG, "MODE TEST onClick change button at " + position);
+                    /*
+                     * if (mRepetiveResponed) { Debug.log(DEBUG, TAG,
+                     * "exec onClick event"); setRepetiveResponed(false); new
+                     * Handler().postDelayed(new Runnable() {
+                     *
+                     * @Override public void run() { Debug.log(DEBUG, TAG,
+                     * "setRepetiveResponed in thread"); setRepetiveResponed(true);
+                     * } }, 800); triggerModeAction(position); }
+                     */
+                    triggerModeAction.onClick();
+                }
+                // Gionee <yangxinruo> <2015-08-15> modify for CR01538376 end
+            });
+        } else {
+            holder.partOneView.setOnClickListener(null);
+        }
 
         holder.partTwoView.setOnClickListener(new OnClickListener() {
             @Override

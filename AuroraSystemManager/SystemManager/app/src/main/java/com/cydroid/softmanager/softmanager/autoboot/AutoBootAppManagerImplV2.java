@@ -30,6 +30,7 @@ import com.cydroid.softmanager.receiver.ThemeChangeReceiver;
 import com.cydroid.softmanager.utils.HelperUtils;
 import com.cydroid.softmanager.utils.Log;
 import com.cydroid.softmanager.utils.NameSorting;
+import com.wheatek.utils.AutoRunManager;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -70,13 +71,12 @@ public class AutoBootAppManagerImplV2 implements AutoBootAppManagerInterface,
             loadUserEnableAndDisableAutoBootApps();
         }
     };
+    AutoRunManager autoRunManager;
 
     @Override
     public synchronized void init(Context context) {
-        if (mFirstTime) {
-            initFirstTime(context);
-            return;
-        }
+        autoRunManager = AutoRunManager.getInstance(context);
+        initFirstTime(context);
         updateAutoBootAppsState();
     }
 
@@ -130,37 +130,47 @@ public class AutoBootAppManagerImplV2 implements AutoBootAppManagerInterface,
         }
     }
 
+
     private void loadUserEnableAndDisableAutoBootApps() {
+//        mAutoBootAppInfos.clear();
+//        List<String> userEnableAutoBootApps = getUserEnableAutoBootApps(mContext);
+//        for (String packageName : mAllAppPackageNames) {
+//            boolean enabled = userEnableAutoBootApps.contains(packageName);
+//            addAutoBootAppInfo(packageName, enabled);
+//        }
         mAutoBootAppInfos.clear();
-        List<String> userEnableAutoBootApps = getUserEnableAutoBootApps(mContext);
         for (String packageName : mAllAppPackageNames) {
-            boolean enabled = userEnableAutoBootApps.contains(packageName);
+            boolean enabled = true;
+            if (autoRunManager != null) {
+                enabled = autoRunManager.isAutoRunPackage(packageName);
+            }
             addAutoBootAppInfo(packageName, enabled);
         }
     }
 
-    private List<String> getUserEnableAutoBootApps(Context context) {
-        List<String> userEnableAutoBootApps = new ArrayList<>();
-        Cursor c = null;
-        try {
-            c = context.getContentResolver().query(Consts.ROSTER_CONTENT_URI,
-                    new String[]{"packagename"},
-                    "usertype='" + ROSTER_AUTO_BOOT_ALLOW_TYPE + "'", null, null);
-            if (c != null && c.moveToFirst()) {
-                do {
-                    Log.d(TAG, "getUserEnableAutoBootApps packageName:" + c.getString(0));
-                    userEnableAutoBootApps.add(c.getString(0));
-                } while (c.moveToNext());
-            }
-        } catch (Exception e) {
-            Log.e(TAG, "userEnableAutoBootApps e:", e);
-        } finally {
-            if (c != null && !c.isClosed()) {
-                c.close();
-            }
-        }
-        return userEnableAutoBootApps;
-    }
+//    @Deprecated
+//    private List<String> getUserEnableAutoBootApps(Context context) {
+//        List<String> userEnableAutoBootApps = new ArrayList<>();
+//        Cursor c = null;
+//        try {
+//            c = context.getContentResolver().query(Consts.ROSTER_CONTENT_URI,
+//                    new String[]{"packagename"},
+//                    "usertype='" + ROSTER_AUTO_BOOT_ALLOW_TYPE + "'", null, null);
+//            if (c != null && c.moveToFirst()) {
+//                do {
+//                    Log.d(TAG, "getUserEnableAutoBootApps packageName:" + c.getString(0));
+//                    userEnableAutoBootApps.add(c.getString(0));
+//                } while (c.moveToNext());
+//            }
+//        } catch (Exception e) {
+//            Log.e(TAG, "userEnableAutoBootApps e:", e);
+//        } finally {
+//            if (c != null && !c.isClosed()) {
+//                c.close();
+//            }
+//        }
+//        return userEnableAutoBootApps;
+//    }
 
     private void addAutoBootAppInfo(String packageName, boolean enabled) {
         AutoBootAppInfo info = new AutoBootAppInfo();
@@ -176,7 +186,7 @@ public class AutoBootAppManagerImplV2 implements AutoBootAppManagerInterface,
 
     /*
     private void registerUserEnableAutoBootAppsObserver() {
-        mContext.getContentResolver().registerContentObserver(Consts.ROSTER_CONTENT_URI, 
+        mContext.getContentResolver().registerContentObserver(Consts.ROSTER_CONTENT_URI,
             true, mUserEnableAutoBootAppsObserver);
     }
     */
@@ -214,23 +224,26 @@ public class AutoBootAppManagerImplV2 implements AutoBootAppManagerInterface,
         AutoBootAppInfo info = mAutoBootAppInfos.get(packageName);
         if (null != info) {
             info.setAutoBootState(true);
-            insertEnableAutoBootAppDB(mContext, packageName);
-            sendUpdateAllowAutoBootAppListBroadcast(mContext);
+//            insertEnableAutoBootAppDB(mContext, packageName);
+//            sendUpdateAllowAutoBootAppListBroadcast(mContext);
+            doAutoRunManager(packageName,true);
         }
     }
 
-    private void insertEnableAutoBootAppDB(Context context, String packageName) {
-        ContentValues values = new ContentValues();
-        values.put("usertype", ROSTER_AUTO_BOOT_ALLOW_TYPE);
-        values.put("packagename", packageName);
-        values.put("status", "1");
-        context.getContentResolver().insert(Consts.ROSTER_CONTENT_URI, values);
-    }
-
-    private void sendUpdateAllowAutoBootAppListBroadcast(Context context) {
-        Intent intent = new Intent(ACTION_UPDATE_ALLOW_BOOT_APP_LIST);
-        context.sendBroadcast(intent);
-    }
+//    @Deprecated
+//    private void insertEnableAutoBootAppDB(Context context, String packageName) {
+//        ContentValues values = new ContentValues();
+//        values.put("usertype", ROSTER_AUTO_BOOT_ALLOW_TYPE);
+//        values.put("packagename", packageName);
+//        values.put("status", "1");
+//        context.getContentResolver().insert(Consts.ROSTER_CONTENT_URI, values);
+//    }
+//
+//    @Deprecated
+//    private void sendUpdateAllowAutoBootAppListBroadcast(Context context) {
+//        Intent intent = new Intent(ACTION_UPDATE_ALLOW_BOOT_APP_LIST);
+//        context.sendBroadcast(intent);
+//    }
 
     @Override
     public synchronized void disableAutoBootApp(String packageName) {
@@ -238,22 +251,24 @@ public class AutoBootAppManagerImplV2 implements AutoBootAppManagerInterface,
         AutoBootAppInfo info = mAutoBootAppInfos.get(packageName);
         if (null != info) {
             info.setAutoBootState(false);
-            deleteEnableAutoBootAppDB(mContext, packageName);
-            sendUpdateAllowAutoBootAppListBroadcast(mContext);
+//            deleteEnableAutoBootAppDB(mContext, packageName);
+//            sendUpdateAllowAutoBootAppListBroadcast(mContext);
+            doAutoRunManager(packageName,false);
         }
     }
 
-    private int deleteEnableAutoBootAppDB(Context context, String packageName) {
-        int count = 0;
-        try {
-            count = context.getContentResolver().delete(Consts.ROSTER_CONTENT_URI,
-                    "usertype='" + ROSTER_AUTO_BOOT_ALLOW_TYPE + "' and packagename='" + packageName + "'",
-                    null);
-        } catch (Exception e) {
-            Log.e(TAG, "deleteEnableAutoBootAppDB e:", e);
-        }
-        return count;
-    }
+//    @Deprecated
+//    private int deleteEnableAutoBootAppDB(Context context, String packageName) {
+//        int count = 0;
+//        try {
+//            count = context.getContentResolver().delete(Consts.ROSTER_CONTENT_URI,
+//                    "usertype='" + ROSTER_AUTO_BOOT_ALLOW_TYPE + "' and packagename='" + packageName + "'",
+//                    null);
+//        } catch (Exception e) {
+//            Log.e(TAG, "deleteEnableAutoBootAppDB e:", e);
+//        }
+//        return count;
+//    }
 
     @Override
     public synchronized void addPackage(String packageName) {
@@ -265,6 +280,7 @@ public class AutoBootAppManagerImplV2 implements AutoBootAppManagerInterface,
             Log.d(DEBUG, TAG, "addPackage add");
             loadAllAutoBootApps(info);
             loadAutoBootApp(packageName);
+            doAutoRunManager(packageName,true);
             notifyAutoBootAppsChange();
         }
     }
@@ -316,6 +332,7 @@ public class AutoBootAppManagerImplV2 implements AutoBootAppManagerInterface,
         removeAutoBootAppInfo(packageName);
         //deleteEnableAutoBootAppDB(mContext, packageName);
         //sendUpdateAllowAutoBootAppListBroadcast(mContext);
+        doAutoRunManager(packageName,false);
         notifyAutoBootAppsChange();
     }
 
@@ -418,8 +435,15 @@ public class AutoBootAppManagerImplV2 implements AutoBootAppManagerInterface,
         if (null != autoBootAppInfo) {
             autoBootAppInfo.setAutoBootState(true);
         }
-        insertEnableAutoBootAppDB(mContext, packageName);
-        sendUpdateAllowAutoBootAppListBroadcast(mContext);
+        doAutoRunManager(packageName, true);
+//        insertEnableAutoBootAppDB(mContext, packageName);
+//        sendUpdateAllowAutoBootAppListBroadcast(mContext);
+    }
+
+    private void doAutoRunManager(String packageName, boolean autorun) {
+        if (autoRunManager != null) {
+            autoRunManager.setAutoRunPackage(packageName, autorun);
+        }
     }
 
     @Override
@@ -435,8 +459,9 @@ public class AutoBootAppManagerImplV2 implements AutoBootAppManagerInterface,
         if (null != autoBootAppInfo) {
             autoBootAppInfo.setAutoBootState(false);
         }
-        deleteEnableAutoBootAppDB(mContext, packageName);
-        sendUpdateAllowAutoBootAppListBroadcast(mContext);
+//        deleteEnableAutoBootAppDB(mContext, packageName);
+//        sendUpdateAllowAutoBootAppListBroadcast(mContext);
+        doAutoRunManager(packageName, false);
     }
 
     @Override

@@ -51,6 +51,18 @@
     <string name="ultimate_save_mode_detail">可待机：约</string>
     <string name="power_detail">耗电详情</string>
     <string name="power_detail_desc">软件和硬件的耗电排行详情</string>
+    <string name="nosim_result_text">没有检测到SIM卡</string>
+    <string name="nosim_re_hint_text">请插卡后重新查看</string>
+    <string name="surplus">剩余</string>
+    <string name="settext_traffic_text">设置流量套餐</string>
+    <string name="settraffic_text_hint">设置流量套餐避免超额费用</string>
+    <string name="title_savetraffic_text_wyh">流量节省程序</string>
+    <string name="title_protectedtraffic_text_wyh">应用网络权限管理</string>
+    <string name="open">开启</string>
+    <string name="closed">关闭</string>
+    <string name="usetraffic_text_hint">使用的数据流量：0MB</string>
+    <string name="appuse_traffic_text_hint_wyh">应用流量消耗排行</string>
+    <string name="more_appusertraffic_container">所有应用用量详情</string>
     <!--############################################################## powermanager ############################################################-->
 
 </resources>

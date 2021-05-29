@@ -30,4 +30,17 @@
     <color name="tab_color">#ffedecec</color>
 
     <color name="tra_line">#ff56a8ff</color>
+
+
+    <!--    wyh-新的的流量管理页面 start-->
+    <color name="textcolor_black_wyh_traf">#000000</color>
+    <color name="textcolor_main_wyh_traf">#333333</color>
+    <color name="textcolor_hint3_wyh_traf">#666666</color>
+    <color name="textcolor_hint_wyh_traf">#888888</color>
+    <color name="colorPrimary_wyh_traf">#03C89F</color>
+    <color name="white_wyh_traf">#ffffff</color>
+    <color name="textcolor_shade_wyh_traf">#F2F2F2</color>
+    <color name="gradient_start_chart">#0003C89F</color>
+    <color name="gradient_end_chart">#4003C89F</color>
+    <!--    wyh-新的的流量管理页面 end-->
 </resources>

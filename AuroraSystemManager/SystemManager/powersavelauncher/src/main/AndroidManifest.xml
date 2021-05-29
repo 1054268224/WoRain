@@ -3,7 +3,7 @@
     package="com.cydroid.powersaver.launcher"
     android:sharedUserId="android.uid.system"
     android:versionCode="90000000"
-    android:versionName="9.0.0.at" >
+    android:versionName="9.0.0.at">
 
     <uses-permission android:name="android.permission.STATUS_BAR" />
     <uses-permission android:name="android.permission.REMOVE_TASKS" />
@@ -13,21 +13,21 @@
     <!-- Gionee xionghg add for power saving optimization 145357 begin -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- Gionee xionghg add for power saving optimization 145357 end -->
     <application
         android:name=".PowersaverLauncherApp"
         android:allowBackup="false"
         android:enabled="false"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Cyee.Light"
-        android:maxAspectRatio="2.1"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
+        android:label="@string/app_name"
+        android:maxAspectRatio="2.1"
+        android:supportsRtl="true"
+        android:theme="@style/PowerLauncherTheme">
 
         <!-- Gionee <yangxinruo> <2015-11-26> <modify> for CR01597494 begin -->
         <!-- Gionee <yangxinruo> <2015-8-18> <modify> for CR01539507 begin -->
-    <!-- Chenyee <guoxt> <2018-03-13> <modify> for CSW1703A-821 begin -->
+        <!-- Chenyee <guoxt> <2018-03-13> <modify> for CSW1703A-821 begin -->
         <activity
             android:name=".Main"
             android:clearTaskOnLaunch="true"
@@ -37,7 +37,7 @@
             android:screenOrientation="nosensor"
             android:stateNotNeeded="true"
             android:theme="@style/PowerLauncherTheme"
-            android:windowSoftInputMode="adjustNothing" >
+            android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -51,26 +51,24 @@
                 <action android:name="com.cydroid.powersaver.launcher" />
             </intent-filter>
         </activity>
-    <!-- Chenyee <guoxt> <2018-03-13> <modify> for CSW1703A-821 end -->
+        <!-- Chenyee <guoxt> <2018-03-13> <modify> for CSW1703A-821 end -->
         <!-- Gionee xionghg add for power saving optimization 145357 begin -->
-       <!-- Chenyee guoxt modify for CSW1703A-1295 begin -->
+        <!-- Chenyee guoxt modify for CSW1703A-1295 begin -->
         <activity
             android:name=".AppPickerActivity"
-            android:screenOrientation="nosensor"
             android:label="@string/activity_title_add_apps"
-            android:theme="@style/PowerLauncherSettingsTheme">
-        </activity>
+            android:screenOrientation="nosensor"
+            android:theme="@style/PowerLauncherSettingsTheme"></activity>
 
         <activity
             android:name=".settings.SettingActivity"
-            android:label="@string/settings_activity_title"
-            android:theme="@style/PowerLauncherSettingsTheme"
             android:excludeFromRecents="true"
-            android:launchMode="singleTask">
-        </activity> 
+            android:label="@string/settings_activity_title"
+            android:launchMode="singleTask"
+            android:theme="@style/PowerLauncherSettingsTheme"></activity>
         <!-- android:noHistory="true" -->
         <!-- Gionee xionghg add for power saving optimization 145357 end -->
-      <!-- Chenyee guoxt modify for CSW1703A-1295 end -->
+        <!-- Chenyee guoxt modify for CSW1703A-1295 end -->
 
         <!-- Gionee <yangxinruo> <2015-8-18> <modify> for CR01539507 end -->
         <!-- Gionee <yangxinruo> <2015-11-26> <modify> for CR01597494 end -->

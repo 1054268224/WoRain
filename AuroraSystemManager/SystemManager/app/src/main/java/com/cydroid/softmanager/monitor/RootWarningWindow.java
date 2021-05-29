@@ -5,8 +5,6 @@ import java.io.File;
 import java.util.ArrayList;
 
 import com.cydroid.softmanager.common.ExecuteAsRoot;
-import com.cydroid.softmanager.trafficassistant.TrafficAssistantMainActivity;
-import com.cydroid.softmanager.trafficassistant.TrafficPopWindows;
 import com.cydroid.softmanager.utils.Log;
 
 import com.cydroid.softmanager.R;

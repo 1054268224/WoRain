@@ -39,23 +39,27 @@ public class PowerModeItemDisableApps extends PowerModeItem {
     }
 
     /*guoxt modify for CSW1702A-2175 begin*/
-    public static String getAppListPath() {
+    public String getAppListPath() {
 
         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.O) {
-            return FROZEN_APPS_LIST_PTAH;
-        }else{
-            return FROZEN_APPS_LIST_PTAH_MSDATA;
+            return mContext.getFilesDir().getAbsolutePath() + FROZEN_APPS_LIST_PTAH;
+        } else {
+            return mContext.getFilesDir().getAbsolutePath() + FROZEN_APPS_LIST_PTAH_MSDATA;
         }
+
     }
     /*guoxt modify for CSW1702A-2175 end*/
 
     private void initAppInfo() {
-        List<ApplicationInfo> applicationInfos;
+        List<ApplicationInfo> applicationInfos = new ArrayList<>();
+        /**
+         *  在白名单出来之前。取消冻结私密应用
+         */
         if (SystemProperties.get("ro.encryptionspace.enabled", "false").equals("true")) {
             // 确保极致省电可以冻结私密应用
-            applicationInfos = HelperUtils.getApplicationInfo2(mContext, HelperUtils.getEncryptAppFlag());
+//            applicationInfos = HelperUtils.getApplicationInfo2(mContext, HelperUtils.getEncryptAppFlag());
         } else {
-            applicationInfos = HelperUtils.getApplicationInfo2(mContext, 0);
+//            applicationInfos = HelperUtils.getApplicationInfo2(mContext, 0);
         }
         List<ApplicationInfo> launcherShowApps = HelperUtils.getApplicationInfos(mContext);
         applicationInfos.addAll(launcherShowApps);
@@ -85,9 +89,11 @@ public class PowerModeItemDisableApps extends PowerModeItem {
         try {
             File objFile = new File(filePath);
             if (objFile.exists()) {
-                boolean res = objFile.delete();
-                Log.d(TAG, "remove old file res = " + res);
+                objFile.delete();
+            } else {
+                objFile.getParentFile().mkdirs();
             }
+            objFile.createNewFile();
             out = new ObjectOutputStream(new FileOutputStream(filePath));
             out.writeObject(appList);
             out.flush();
@@ -120,7 +126,7 @@ public class PowerModeItemDisableApps extends PowerModeItem {
             ArrayList<String> frozenAppList = (ArrayList<String>) in.readObject();
             in.close();
             Log.i(TAG, "getListFromFile list.size() --------> " + frozenAppList.size());
-           return frozenAppList;
+            return frozenAppList;
         } catch (Exception e) {
             Log.e(TAG, "getListFromFile-------->", e);
             return new ArrayList<String>();
@@ -139,15 +145,14 @@ public class PowerModeItemDisableApps extends PowerModeItem {
         for (String appPkg : disabledPackages) {
             // <!-- guoxt 2018-03-31 add for CSW1702A-3063 begin -->
             //if(!appPkg.contains("com.google")) {
-                 if(appPkg.contains("com.google.android.marvin.talkback")){
-                    continue;
-                }
-                SuperModeUtils.unFreezeApp(mContext, appPkg, false);
-           // }
+            if (appPkg.contains("com.google.android.marvin.talkback")) {
+                continue;
+            }
+            SuperModeUtils.unFreezeApp(mContext, appPkg, false);
+            // }
             // <!-- guoxt 2018-03-31 add for CSW1702A-3063 begin -->
         }
     }
-
 
     @Override
     public boolean apply() {
@@ -164,7 +169,7 @@ public class PowerModeItemDisableApps extends PowerModeItem {
     }
 
     private void disableDisruptingComponents(List<String> disabledComponents,
-            ArrayList<String> disabledPackages) {
+                                             ArrayList<String> disabledPackages) {
         Log.d(TAG, "disable processDisableSpecialComponent");
         try {
             for (String component : disabledComponents) {
@@ -212,18 +217,19 @@ public class PowerModeItemDisableApps extends PowerModeItem {
             Log.i(TAG, "disableComponent ------->", e);
         }
     }
-//xuanyutag
+
+    //xuanyutag
     private void freezeApps(ArrayList<String> disabledPackages) {
-       // Log.i(TAG,"cxy trace");
-       // new Throwable().printStackTrace();
+        // Log.i(TAG,"cxy trace");
+        // new Throwable().printStackTrace();
         for (String appPkg : disabledPackages) {
             // <!-- guoxt 2018-03-31 add for CSW1702A-3063 begin -->
-           // if(!appPkg.contains("com.google")) {
-                Log.i(TAG,"cxy freezeApps="+appPkg);
-                if(appPkg.contains("com.google.android.marvin.talkback")){
-                    continue;
-                }
-                SuperModeUtils.freezeApp(mContext, appPkg, false);//xuanyutag
+            // if(!appPkg.contains("com.google")) {
+            Log.i(TAG, "cxy freezeApps=" + appPkg);
+            if (appPkg.contains("com.google.android.marvin.talkback")) {
+                continue;
+            }
+            SuperModeUtils.freezeApp(mContext, appPkg, false);//xuanyutag
             //}
             // <!-- guoxt 2018-03-31 add for CSW1702A-3063 end -->
         }

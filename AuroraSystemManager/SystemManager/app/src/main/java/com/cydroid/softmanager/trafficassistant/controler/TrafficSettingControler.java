@@ -18,7 +18,7 @@ import android.text.Html;
 
 import com.cydroid.softmanager.powersaver.utils.PowerConsts;
 import com.cydroid.softmanager.R;
-import com.cydroid.softmanager.trafficassistant.TrafficAssistantMainActivity;
+import com.wheatek.proxy.ui.HostTrafficMonitorMainActivity;
 import com.cydroid.softmanager.trafficassistant.hotspotremind.controler.TrafficHotspotUsedRemindControler;
 import com.cydroid.softmanager.trafficassistant.model.TrafficSettingUpdateUiData;
 import com.cydroid.softmanager.trafficassistant.SellUtils;
@@ -30,7 +30,9 @@ import com.cydroid.softmanager.trafficassistant.utils.TrafficassistantUtil;
 import com.cydroid.softmanager.trafficassistant.TrafficMonitorBroadcastReceiver;
 import com.cydroid.softmanager.utils.Log;
 import com.cydroid.softmanager.common.Consts;
+
 import android.graphics.Color;
+
 import com.cydroid.softmanager.trafficassistant.TrafficSettingsActivity;
 
 public class TrafficSettingControler {
@@ -39,7 +41,7 @@ public class TrafficSettingControler {
     public static final int NOTIFI_TYPE_EXCEED = 2;
 
     public static final int HOTSPORT_REMIND_CLOSE = 0;
-    
+
     // mengdw <2016-11-29> add for CR01766193 begin
     private static final int DEFAULT_SELECT_INDEX = 1;
     // mengdw <2016-11-29> add for CR01766193 end
@@ -50,11 +52,11 @@ public class TrafficSettingControler {
     // Gionee: mengdw <2017-04-21> add for 120343 begin
     private static final int RESIDENT_TRAFFIC_NOTIFICATION_ID = R.string.trafficassistant_app_name + 100;
     // Gionee: mengdw <2017-04-21> add for 120343 end
-    
+
     private final Context mContext;
     private static final String TAG = "TrafficSettingControler";
     // Gionee: mengdw <2016-05-03> modify for CR01684930 begin
-    private  static final int MESSAGE_UPDATE__UI = 0;
+    private static final int MESSAGE_UPDATE__UI = 0;
     // Gionee: mengdw <2016-07-06> add for CR01728114 begin
     private static final int MESSAGE_COMMIT_NOTINICATION = 1;
     private static final int DELAY_TIME = 60000; //1
@@ -68,9 +70,9 @@ public class TrafficSettingControler {
     // Gionee: mengdw <2017-04-21> add for 120343 begin
     private final NotificationManager mNotificationManager;
     // Gionee: mengdw <2017-04-21> add for 120343 end
-    
+
     public static TrafficSettingControler getInstance(Context context) {
-        Log.d(TAG," TrafficSettingControler getInstance context=" + context);
+        Log.d(TAG, " TrafficSettingControler getInstance context=" + context);
         synchronized (TrafficSettingControler.class) {
             if (sInstance == null) {
                 sInstance = new TrafficSettingControler(context);
@@ -78,24 +80,24 @@ public class TrafficSettingControler {
         }
         return sInstance;
     }
-    
+
     // Gionee: mengdw <2016-12-06> add for CR01775579 begin
     public int getLockScreenRemindDefaultIndex() {
         return LOCK_SCREEN_REMIND_DEFAULT_INDEX;
     }
-    
+
     public void saveLockScreenRemindSetting(int selectedIndex) {
         TrafficPreference.saveLockScreenSettingPreference(mContext, selectedIndex);
     }
-    
+
     public int getLockScreenRemindSetting() {
         return TrafficPreference.getLockScreenSettingPreference(mContext, LOCK_SCREEN_REMIND_DEFAULT_INDEX);
     }
-    
+
     public boolean isLockScreenRemindClose() {
         return LOCK_SCREEN_REMIND_CLOSE == getLockScreenRemindSetting();
     }
-    
+
     public long getLockScreenRemindLimit() {
         long limit = 0;
         int selectIndex = getLockScreenRemindSetting();
@@ -118,109 +120,109 @@ public class TrafficSettingControler {
         return limit;
     }
     // Gionee: mengdw <2016-12-06> add for CR01775579 end
-    
-    
+
+
     public boolean isCalibrateProvinceSetted(int simIndex) {
-        int provinceIndex = TrafficPreference.getSimIntPreference(mContext, simIndex, 
+        int provinceIndex = TrafficPreference.getSimIntPreference(mContext, simIndex,
                 TrafficPreference.KEY_CALIBRATE_PROVINCE_SETTING, TrafficPreference.CALIBRATE_NO_SETTING);
         boolean result = provinceIndex != TrafficPreference.CALIBRATE_NO_SETTING;
         return result;
     }
-    
+
     public boolean isCalibrateBrandSetted(int simIndex) {
-        int brandIndex = TrafficPreference.getSimIntPreference(mContext, simIndex, 
+        int brandIndex = TrafficPreference.getSimIntPreference(mContext, simIndex,
                 TrafficPreference.KEY_CALIBRATE_BRAND_SETTING, TrafficPreference.CALIBRATE_NO_SETTING);
         boolean result = brandIndex != TrafficPreference.CALIBRATE_NO_SETTING;
         return result;
     }
-    
+
     public void setCalibrateProvince(int simIndex, int province) {
-        TrafficPreference.setSimIntPreference(mContext, simIndex, 
+        TrafficPreference.setSimIntPreference(mContext, simIndex,
                 TrafficPreference.KEY_CALIBRATE_PROVINCE_SETTING, province);
     }
-    
-    public int getSettedCalibrateProvince(int  simIndex) {
-        int provinceIndex = TrafficPreference.getSimIntPreference(mContext, simIndex, 
+
+    public int getSettedCalibrateProvince(int simIndex) {
+        int provinceIndex = TrafficPreference.getSimIntPreference(mContext, simIndex,
                 TrafficPreference.KEY_CALIBRATE_PROVINCE_SETTING, TrafficPreference.CALIBRATE_NO_SETTING);
         return provinceIndex;
     }
-    
+
     public void setCalibrateBrand(int simIndex, int brand) {
-        TrafficPreference.setSimIntPreference(mContext, simIndex, 
+        TrafficPreference.setSimIntPreference(mContext, simIndex,
                 TrafficPreference.KEY_CALIBRATE_BRAND_SETTING, brand);
     }
-    
-    public int getSettedCalibrateBrand(int  simIndex) {
-        int brandIndex = TrafficPreference.getSimIntPreference(mContext, simIndex, 
+
+    public int getSettedCalibrateBrand(int simIndex) {
+        int brandIndex = TrafficPreference.getSimIntPreference(mContext, simIndex,
                 TrafficPreference.KEY_CALIBRATE_BRAND_SETTING, TrafficPreference.CALIBRATE_NO_SETTING);
         return brandIndex;
     }
-    
+
     public void setHotSportRemidSettedIndex(Context context, int index) {
-        TrafficPreference.setIntPreference(context, 
+        TrafficPreference.setIntPreference(context,
                 TrafficPreference.KEY_HOTSPORT_REMIND_SETTED_INDEX, index);
     }
-    
+
     public int getHotSportRemidSettedIndex(Context context) {
         /*guoxt 20170214 modify for 67305 begin*/
-         /*guoxt 20170214 modify for  CSW1705AC-5 begin*/
+        /*guoxt 20170214 modify for  CSW1705AC-5 begin*/
         // Chenyee <CY_Oversea_Req> zhaopeng 20180427 add for CSW1703EI-20 begin
         if (Consts.gnVFflag || Consts.cyACflag || Consts.cyEIFlag) {
-            return TrafficPreference.getIntPreference(context, 
-                TrafficPreference.KEY_HOTSPORT_REMIND_SETTED_INDEX, 0);
-            }
+            return TrafficPreference.getIntPreference(context,
+                    TrafficPreference.KEY_HOTSPORT_REMIND_SETTED_INDEX, 0);
+        }
         // Chenyee <CY_Oversea_Req> zhaopeng 20180427 add for CSW1703EI-20 end
         /*guoxt 20170214 modify for 67305 end*/
-         /*guoxt 20170214 modify for  CSW1705AC-5 end*/
-        return TrafficPreference.getIntPreference(context, 
+        /*guoxt 20170214 modify for  CSW1705AC-5 end*/
+        return TrafficPreference.getIntPreference(context,
                 TrafficPreference.KEY_HOTSPORT_REMIND_SETTED_INDEX, DEFAULT_SELECT_INDEX);
     }
-    
+
     public void setHotSportRemindSettedValue(Context context, int value) {
-        TrafficPreference.setIntPreference(context, 
+        TrafficPreference.setIntPreference(context,
                 TrafficPreference.KEY_HOTSPORT_REMIND_SETTED_VALUE, value);
     }
-    
+
     public int getHotSportRemindSettedValue(Context context) {
         /*guoxt 20180326 modify for 67305 begin*/
-		 /*guoxt 20170214 modify for  CSW1705AC-5 begin*/
+        /*guoxt 20170214 modify for  CSW1705AC-5 begin*/
         // Chenyee <CY_Oversea_Req> zhaopeng 20180427 add for CSW1703EI-20 begin
-        if (Consts.gnVFflag || Consts.cyACflag|| Consts.cyEIFlag) {
-            return TrafficPreference.getIntPreference(context, 
-                TrafficPreference.KEY_HOTSPORT_REMIND_SETTED_VALUE, 0);
-            }
+        if (Consts.gnVFflag || Consts.cyACflag || Consts.cyEIFlag) {
+            return TrafficPreference.getIntPreference(context,
+                    TrafficPreference.KEY_HOTSPORT_REMIND_SETTED_VALUE, 0);
+        }
         // Chenyee <CY_Oversea_Req> zhaopeng 20180427 add for CSW1703EI-20 end
         /*guoxt 20170214 modify for 67305 end*/
-         /*guoxt 20170214 modify for  CSW1705AC-5 end*/
-        return TrafficPreference.getIntPreference(context, 
+        /*guoxt 20170214 modify for  CSW1705AC-5 end*/
+        return TrafficPreference.getIntPreference(context,
                 TrafficPreference.KEY_HOTSPORT_REMIND_SETTED_VALUE, 10);
     }
-    
+
     public void setHotSportLastRemindDate(Context context, int simIndex, String date) {
-        TrafficPreference.setSimStringPreference(context, simIndex, 
+        TrafficPreference.setSimStringPreference(context, simIndex,
                 TrafficPreference.KEY_HOTSPORT_LAST_REMIND_DATE, date);
     }
-    
+
     public String getHotSportLastRemindDate(Context context, int simIndex) {
-        return TrafficPreference.getSimStringPreference(context, simIndex, 
+        return TrafficPreference.getSimStringPreference(context, simIndex,
                 TrafficPreference.KEY_HOTSPORT_LAST_REMIND_DATE, TimeFormat.getNowDate());
     }
-    
+
     public void setHotSportLastRemindTraffic(Context context, int simIndex, float traffic) {
-        TrafficPreference.setSimFloatPreference(context, simIndex, 
+        TrafficPreference.setSimFloatPreference(context, simIndex,
                 TrafficPreference.KEY_HOTSPORT_LAST_REMIND_TRAFFIC, traffic);
     }
-    
+
     public float getHotSportLastRemindTraffic(Context context, int simIndex) {
-        return TrafficPreference.getSimFloatPreference(context, simIndex, 
+        return TrafficPreference.getSimFloatPreference(context, simIndex,
                 TrafficPreference.KEY_HOTSPORT_LAST_REMIND_TRAFFIC, 0);
     }
 
     public void setNotificationInfoSwtich(Context context, boolean value) {
-        TrafficPreference.setBooleanPreference(context, 
+        TrafficPreference.setBooleanPreference(context,
                 TrafficPreference.KEY_NOTIFICATION_TRAFFIC_INFO, value);
     }
-    
+
     public boolean isNotificationInfoSwtichOpen(Context context) {
         boolean notificationInfoSwitch = true;
         //Gionee <GN_Oversea_Req> <xionghg> <20170620> modify for 160257 begin
@@ -239,52 +241,52 @@ public class TrafficSettingControler {
         //Gionee <GN_Oversea_Req> <xionghg> <20170620> modify for 160257 end
         return notificationInfoSwitch;
     }
-    
+
     // Gionee: mengdw <2016-07-06> add for CR01728114 begin
     public void startNotiActionMonitor() {
-        if (!Consts.cyBAFlag){
+        if (!Consts.cyBAFlag) {
             mUpdateUiHander.sendEmptyMessageDelayed(MESSAGE_COMMIT_NOTINICATION, DELAY_TIME);
         }
     }
     // Gionee: mengdw <2016-07-06> add for CR01728114 end
-    
+
     // Gionee: mengdw <2016-05-03> modify for CR01684930 begin
     public void commitTrafficNotiAction(Context context) {
         commitNotificationController(isNotificationInfoSwtichOpen(context));
     }
-    
+
     // mengdw <2016-10-09> add for CR01766193 begin
     public boolean isSettingValueLargeCurrentTraffic(Context context, int settingValue) {
         boolean result = false;
         float diffTraffic = mTrafficHotspotUsedRemindControler.getDiffHotspotTraffic();
         float settingTraffic = settingValue * Constant.UNIT * Constant.UNIT;
         Log.d(TAG, "isSettingValueLargeCurrentTraffic curTraffic=" + diffTraffic + " settingTraffic=" + settingTraffic);
-        if(settingTraffic > diffTraffic) {
+        if (settingTraffic > diffTraffic) {
             result = true;
         }
         return result;
     }
-    
+
     public void restartSettingValue(int settingValue) {
         mTrafficHotspotUsedRemindControler.restartSettingValue(settingValue);
     }
-    
+
     public float getCurrentTraffic() {
         float diffTraffic = mTrafficHotspotUsedRemindControler.getDiffHotspotTraffic();
-        float result = diffTraffic /  Constant.UNIT /  Constant.UNIT;
+        float result = diffTraffic / Constant.UNIT / Constant.UNIT;
         Log.d(TAG, " getCurrentTraffic curTraffic=" + diffTraffic + " result=" + result);
         return result;
     }
     // mengdw <2016-10-09> add for CR01766193 end
-    
+
     public void commitNotificationController(final boolean checked) {
-        int activateSindex =getActivateSim();
+        int activateSindex = getActivateSim();
         int powerMode = Global.getInt(mContext.getContentResolver(), PowerConsts.POWER_MODE, 0);
         int notificationType = getNotificationType();
-		//guoxt modify begin 
+        //guoxt modify begin
         String clickBuyString = mContext.getString(R.string.nogi_entry_buy_text);
-		clickBuyString = "";
-		//guoxt modify end
+        clickBuyString = "";
+        //guoxt modify end
         // Gionee: mengdw <2016-05-18> modify for CR01696960 begin
         String notifiFlow = "";
         boolean isStartBuy = false;
@@ -297,15 +299,15 @@ public class TrafficSettingControler {
         Log.d(TAG, "commitNotificationController activateSindex=" + activateSindex +
                 " notificationType=" + notificationType + " checked=" + checked);
         // Gionee: mengdw <2017-04-22> add for 121836 begin
-        sendUpdateTrafficDataMessage(activateSindex, notifiFlow, notificationType, powerMode, 
+        sendUpdateTrafficDataMessage(activateSindex, notifiFlow, notificationType, powerMode,
                 isStartBuy, checked);
         // Gionee: mengdw <2017-04-22> add for 121836 end
     }
     // Gionee: mengdw <2016-05-03> modify for CR01684930 end
-    
+
     // Gionee: mengdw <2017-04-22> add for 121836 begin
     private void sendUpdateTrafficDataMessage(final int activateSindex, final String notifiFlow, final int notificationType,
-            final int powerMode, final boolean isStartBuy, final boolean checked) {
+                                              final int powerMode, final boolean isStartBuy, final boolean checked) {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -330,15 +332,15 @@ public class TrafficSettingControler {
     }
 
     // Gionee: mengdw <2017-04-22> add for 121836 end
-    
+
     // Gionee: mengdw <2016-05-18> modiy for CR01696960 begin
     public int getNotificationType() {
-        int activateSindex =getActivateSim();
+        int activateSindex = getActivateSim();
         // Gionee: mengdw <2016-04-25> modify for CR01684752 begin
         boolean isSetted = TrafficPreference.getSimBooleanPreference(mContext, activateSindex,
                 TrafficPreference.KEY_TRAFFIC_PACKAGE_SETTED_FLAG, false);
         // /Gionee: mengdw <2016-04-25> modify for CR01684752 end
-        Log.d(TAG, "getNotificationType  isSetted=" + isSetted +  " activateSindex=" + activateSindex);
+        Log.d(TAG, "getNotificationType  isSetted=" + isSetted + " activateSindex=" + activateSindex);
         if (isSetted) {
             TrafficCalibrateControler trafficCalibrateControler = TrafficCalibrateControler.getInstance(mContext);
             float left = trafficCalibrateControler.getCommonLeftTraffic(mContext, activateSindex);
@@ -352,13 +354,13 @@ public class TrafficSettingControler {
         }
     }
     // Gionee: mengdw <2016-05-18> modiy for CR01696960 end
-    
+
     public String getNotificationFlow(int simIndex) {
         TrafficCalibrateControler trafficCalibrateControler = TrafficCalibrateControler.getInstance(mContext);
         float flow = trafficCalibrateControler.getCommonLeftTraffic(mContext, simIndex);
         return StringFormat.getUnitStringByValue(Math.abs(flow) * Constant.MB, 1);
     }
-    
+
     private TrafficSettingControler(Context context) {
         mContext = context.getApplicationContext();
         // Gionee: mengdw <2017-04-21> add for 120343 begin
@@ -372,13 +374,13 @@ public class TrafficSettingControler {
         channel.setShowBadge(true); //是否在久按桌面图标时显示此渠道的通知
         channel.setLightColor(Color.parseColor("#00a6ce"));
         mNotificationManager.createNotificationChannel(channel);
-         /*guoxt 2018-03-13 modify for  CSW1705A-2234 end */
+        /*guoxt 2018-03-13 modify for  CSW1705A-2234 end */
 
         // Gionee: mengdw <2017-04-21> add for 120343 end
         mUpdateUiHander = new UpdateUiHander();
         mTrafficHotspotUsedRemindControler = TrafficHotspotUsedRemindControler.getInstance(context);
     }
-    
+
     private boolean isStartBuyActivity(int simIndex) {
         TrafficCalibrateControler trafficCalibrateControler = TrafficCalibrateControler.getInstance(mContext);
         float left = trafficCalibrateControler.getCommonLeftTraffic(mContext, simIndex);
@@ -398,39 +400,39 @@ public class TrafficSettingControler {
 
     // Gionee: mengdw <2016-05-18> add for CR01696960 begin
     private String getTotalFlow(int simIndex) {
-        float total =  TrafficPreference.getSimIntPreference(mContext, simIndex, TrafficPreference.KEY_COMMON_TOTAL, 0);
+        float total = TrafficPreference.getSimIntPreference(mContext, simIndex, TrafficPreference.KEY_COMMON_TOTAL, 0);
         return StringFormat.getUnitStringByValue(Math.abs(total) * Constant.MB, 0);
     }
     // Gionee: mengdw <2016-05-18> add for CR01696960 end
-    
-	// Gionee: mengdw <2016-07-06> add for CR01728114 begin
-	private int getActivateSim() {
-		int simIndex = TrafficassistantUtil.getActivatedSimCardNo(mContext);
-		// Gionee: mengdw <2016-08-27>modify for CR01751383 begin
-		int activateSindex = simIndex > 0 ? simIndex : getDefaultActivateSim();
-		// Gionee: mengdw <2016-08-27>modify for CR01751383 end
-		Log.d(TAG, "getActivateSim simIndex=" + simIndex + " activateSindex="
-				+ activateSindex);
-		return activateSindex;
-	}
-    
-	// Gionee: mengdw <2016-08-27>add for CR01751383 begin
+
+    // Gionee: mengdw <2016-07-06> add for CR01728114 begin
+    private int getActivateSim() {
+        int simIndex = TrafficassistantUtil.getActivatedSimCardNo(mContext);
+        // Gionee: mengdw <2016-08-27>modify for CR01751383 begin
+        int activateSindex = simIndex > 0 ? simIndex : getDefaultActivateSim();
+        // Gionee: mengdw <2016-08-27>modify for CR01751383 end
+        Log.d(TAG, "getActivateSim simIndex=" + simIndex + " activateSindex="
+                + activateSindex);
+        return activateSindex;
+    }
+
+    // Gionee: mengdw <2016-08-27>add for CR01751383 begin
     private int getDefaultActivateSim() {
-    	int simIndex = 0;
-		try {
-			SubscriptionManager subManager = SubscriptionManager.from(mContext);
-			SubscriptionInfo subInfo = subManager.getDefaultDataSubscriptionInfo();
-			if(subInfo!=null) {
+        int simIndex = 0;
+        try {
+            SubscriptionManager subManager = SubscriptionManager.from(mContext);
+            SubscriptionInfo subInfo = subManager.getDefaultDataSubscriptionInfo();
+            if (subInfo != null) {
                 simIndex = subInfo.getSimSlotIndex();
             }
-			Log.d(TAG, "getDefaultActivateSim subInfo= " + subInfo + " simIndex=" + simIndex);
-		} catch (Exception e) {
-			Log.d(TAG, "getDefaultActivateSim Exception e=" + e.toString());
-		}
-    	return simIndex;
+            Log.d(TAG, "getDefaultActivateSim subInfo= " + subInfo + " simIndex=" + simIndex);
+        } catch (Exception e) {
+            Log.d(TAG, "getDefaultActivateSim Exception e=" + e.toString());
+        }
+        return simIndex;
     }
-	// Gionee: mengdw <2016-08-27>add for CR01751383 end
-    
+    // Gionee: mengdw <2016-08-27>add for CR01751383 end
+
     // private Class<?> getJumpClass(int noifiType, boolean isStartBuyActivity) {
     //     Class<?> cls = com.cydroid.softmanager.trafficassistant.TrafficAssistantMainActivity.class;
     //     if (noifiType != NOTIFI_TYPE_NO_SETTED) {
@@ -453,14 +455,14 @@ public class TrafficSettingControler {
         //Chenyee guoxt modify for CSW1705A-2570 end
 
         BigTextStyle bigStyle = new BigTextStyle();
-        String title = String.format("%s %s", mContext.getString(R.string.noti_today), 
+        String title = String.format("%s %s", mContext.getString(R.string.noti_today),
                 uiData.gettTodayFlow());
         bigStyle.setBigContentTitle(title);
         String message = getNotiMessage(uiData.getNotificationType(), uiData.getNotifiFlow());
         Log.d(TAG, "showNotification message=" + message);
         bigStyle.bigText(Html.fromHtml(message));
         /*guoxt 2018-03-13 modify for  CSW1705A-2234 begin */
-        Notification.Builder builder = new Notification.Builder(mContext,"1").setStyle(bigStyle)
+        Notification.Builder builder = new Notification.Builder(mContext, "1").setStyle(bigStyle)
                 .setVisibility(Notification.VISIBILITY_PUBLIC).setSmallIcon(R.drawable.notify)
                 // Gionee: mengjk  modify for notify TitleIcon And TitleText Color Change
                 .setAutoCancel(false).setColor(mContext.getResources().getColor(R.color.notify_icon_text_color))
@@ -476,12 +478,12 @@ public class TrafficSettingControler {
         notification.flags |= Notification.FLAG_NO_CLEAR;
         mNotificationManager.notify(RESIDENT_TRAFFIC_NOTIFICATION_ID, notification);
     }
-    
+
     private PendingIntent getPendingIntent(TrafficSettingUpdateUiData uiData) {
         // Chenyee xionghg 20180103 modify for CSW1702A-742 clean code begin
         // Class<?> cls = getJumpClass(uiData.getNotificationType(), uiData.isStartBuyActivity());
         // Log.d(TAG, "getPendingIntent cls=" + cls);
-        Class<?> cls = TrafficAssistantMainActivity.class;
+        Class<?> cls = HostTrafficMonitorMainActivity.class;
         // Chenyee xionghg 20180103 modify for CSW1702A-742 clean code end
         Intent intent = new Intent(mContext, cls);
         intent.putExtra(SellUtils.KEY_ACTIVITY_FORM, SellUtils.ACTIVITY_FORM_NOTIFICATION);
@@ -491,6 +493,7 @@ public class TrafficSettingControler {
                 PendingIntent.FLAG_UPDATE_CURRENT);
         return pendingIntent;
     }
+
     //Chenyee guoxt modify for CSW1705A-2570 begin
     private PendingIntent getClosePendingIntent() {
         Intent turnOffIntent = new Intent();
@@ -502,7 +505,7 @@ public class TrafficSettingControler {
         return turnOffPendingIntent;
     }
     //Chenyee guoxt modify for CSW1705A-2570 end
-    
+
     private String getNotiMessage(int notiType, String notiFlow) {
         String message = "";
         switch (notiType) {
@@ -510,7 +513,7 @@ public class TrafficSettingControler {
                 message = mContext.getString(R.string.noti_no_settings);
                 break;
             case NOTIFI_TYPE_SURPLUS:
-                message = String.format("<font color='#789440' >%s %s</font>", 
+                message = String.format("<font color='#789440' >%s %s</font>",
                         mContext.getString(R.string.noti_surplus), notiFlow);
                 break;
             case NOTIFI_TYPE_EXCEED:
@@ -533,7 +536,7 @@ public class TrafficSettingControler {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            Log.d(TAG,"UpdateUiHander handleMessage msg=" + msg.what);
+            Log.d(TAG, "UpdateUiHander handleMessage msg=" + msg.what);
             // Gionee: mengdw <2016-07-06> modify for CR01728114 begin
             if (MESSAGE_UPDATE__UI == msg.what) {
                 TrafficSettingUpdateUiData uiData = (TrafficSettingUpdateUiData) msg.obj;

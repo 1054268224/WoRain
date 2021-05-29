@@ -43,14 +43,13 @@ public class FreezeAppUtils {
     private static final String FREEZE_CAUTIOUS_TAG = "freezecautious";
     private static final String FREEZEABLE_TAG = "freezeable";
 
-    static final AtomicFile sFreezeAppsInfoFile =
-            new AtomicFile(new File(getDataFilePath(), "freezeappinfo.xml"));
-
-    /*guoxt modify for CSW1702A-2175 begin*/
-    public static String getDataFilePath() {
-            return "/data/misc/msdata/";
+    static final AtomicFile getsFreezeAppsInfoFile(Context context) {
+        return new AtomicFile(new File(getDataFilePath(context), "freezeappinfo.xml"));
     }
-    /*guoxt modify for CSW1702A-2175 end*/
+
+    public static String getDataFilePath(Context context) {
+        return context.getFilesDir().getAbsolutePath() + "/data/misc/msdata/";
+    }
 
     static boolean loadFreezeAppsInfoFromXml(List<String> freezeNormalPackages,
                                              List<String> freezeCautiousPackages, List<String> freezedPackages,

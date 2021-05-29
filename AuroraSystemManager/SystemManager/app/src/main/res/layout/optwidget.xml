@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/optwidgetlay"
+    android:layout_width="wrap_content"
+    android:drawableTop="@mipmap/ic_launcher"
+    android:drawablePadding="10dp"
+    android:text="@string/host_newui_optimise_title"
+    android:textSize="12dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+</TextView>

@@ -6,7 +6,7 @@ import com.example.systemmanageruidemo.trafficmonitor.bean.TraRecyBean;
 
 import java.util.List;
 
-public interface TrafficMonitorView  extends ViewAction<TrafficMonitorPresent> {
+public interface TrafficMonitorView<T extends  TrafficMonitorPresent>  extends ViewAction<T> {
     void requestSIM(TraPagerBean object);
 
     void onResponseSIM(TraPagerBean object);

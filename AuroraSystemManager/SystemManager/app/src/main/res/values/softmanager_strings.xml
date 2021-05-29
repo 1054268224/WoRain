@@ -288,7 +288,7 @@
     <string name="text_speedup">Boost speed</string>
     <string name="app_lock">App lock</string>
     <string name="btn_speedup">Speedup</string>
-    <string name="authority_management_head_text">Monitoring%1$dapps</string>
+    <string name="authority_management_head_text">Monitoring%1$d apps</string>
     <!--Chenyee guoxt modify for CSW1803A-560 lite  end  -->
 
 

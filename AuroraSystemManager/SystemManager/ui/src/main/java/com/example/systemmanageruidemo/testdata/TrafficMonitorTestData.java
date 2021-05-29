@@ -12,7 +12,7 @@ import com.example.systemmanageruidemo.trafficmonitor.bean.TraRecyBean;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TrafficMonitorTestData implements TrafficMonitorPresent {
+public class TrafficMonitorTestData implements TrafficMonitorPresent<TrafficMonitorView> {
     TrafficMonitorView view;
     private TraPagerBean data;
     private List<TraRecyBean> recyBeans;

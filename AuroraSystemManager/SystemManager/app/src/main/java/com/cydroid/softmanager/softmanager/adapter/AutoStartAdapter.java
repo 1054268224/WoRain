@@ -49,11 +49,9 @@ public class AutoStartAdapter extends CompositeAdapter<AutoBootAppInfo> {
         } else {
             view = (ViewHolder) convertView.getTag();
         }
-
         if (mData.isEmpty()) {
             return convertView;
         }
-
         bindView(position, view, convertView);
         return convertView;
     }
@@ -66,20 +64,17 @@ public class AutoStartAdapter extends CompositeAdapter<AutoBootAppInfo> {
             return;
         }
         setIconImage(view.mIcon, packageName, applicationInfo);
-
         view.mTitle.setText(info.getTitle());
         view.mSummary.setText(info.getSummary(mContext));
-
         view.mSwitch.setTag(position);
         view.mSwitch.setOnCheckedChangeListener(null);
         Log.d("AutoStartAdapter", "bindView pkgName:" + info.getPackageName() + ", isAutoBoot:" + info.isAutoBoot());
         view.mSwitch.setChecked(info.isAutoBoot());
         view.mSwitch.setOnCheckedChangeListener(mSwitchChangeListener);
-
         view.aSwitch.setTag(position);
         view.mSwitch.setOnCheckedChangeListener(null);
         view.aSwitch.setChecked(info.isAutoBoot());
-
+        view.aSwitch.setOnCheckedChangeListener(mSwitchChangeListener);
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,7 +84,6 @@ public class AutoStartAdapter extends CompositeAdapter<AutoBootAppInfo> {
                     info.setAutoBootState(true);
                 }
                 view.aSwitch.setChecked(info.isAutoBoot());
-                view.aSwitch.setOnCheckedChangeListener(mSwitchChangeListener);
             }
         });
     }

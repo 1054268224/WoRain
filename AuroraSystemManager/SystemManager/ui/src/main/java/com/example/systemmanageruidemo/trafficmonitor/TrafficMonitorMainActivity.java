@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class TrafficMonitorMainActivity extends BaseSupportProxyActivity<TrafficMonitorPresent> implements TrafficMonitorView {
+public class TrafficMonitorMainActivity extends BaseSupportProxyActivity<TrafficMonitorPresent> implements TrafficMonitorView<TrafficMonitorPresent> {
     private Context mContext;
     private TraPagerAdater pagerAdater;
     private TraRecyAdapter recyAdapter;
@@ -44,8 +44,8 @@ public class TrafficMonitorMainActivity extends BaseSupportProxyActivity<Traffic
         super.onCreate(savedInstanceState);
         mContext = getRealContext();
 
-        test = new TrafficMonitorTestData(this);
-        setPresenter(test);
+//        test = new TrafficMonitorTestData(this);
+//        setPresenter(test);
 
         setContentView(R.layout.activity_traffic_monitor_main);
         initView();

@@ -29,6 +29,7 @@ import com.cydroid.softmanager.utils.Log;
 import cyee.app.CyeeAlertDialog;
 import cyee.widget.CyeeCheckBox;
 import cyee.widget.CyeeTextView;
+
 import com.chenyee.featureoption.ServiceUtil;
 //import com.gionee.youju.statistics.sdk.YouJuAgent;
 
@@ -79,7 +80,7 @@ public class PowerModeSelectDialog {
         // Gionee <yangxinruo> <2015-10-10> delete for CR01565255 end
         if (isShouldNotShow(context)) {
             onActivateMode(context, mCurrMode);
-            notifyDataSetChange(mCurrMode);
+//            notifyDataSetChange(mCurrMode);
             return;
         }
         // do not pop dialog when locked
@@ -139,7 +140,7 @@ public class PowerModeSelectDialog {
                     @Override
                     public void onClick(DialogInterface arg0, int arg1) {
                         arg0.dismiss();
-                        notifyDataSetChange(mLastMode);
+//                        notifyDataSetChange(mLastMode);
                     }
                 }).create();
         mDialog.show();
@@ -148,6 +149,13 @@ public class PowerModeSelectDialog {
         mDialog.getButton(DialogInterface.BUTTON_NEGATIVE).setBackgroundResource(R.drawable.dialog_ripple);
         mDialog.getButton(DialogInterface.BUTTON_NEUTRAL).setBackgroundResource(R.drawable.dialog_ripple);
         // Add by zhiheng.huang on 2020/1/2 for TEWBW-616 end
+        mDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialog) {
+                if (PowerModeSelectDialog.this != null)
+                    notifyDataSetChange(mLastMode);
+            }
+        });
     }
 
     private String getTitle(Resources res, int mode) {
@@ -214,7 +222,7 @@ public class PowerModeSelectDialog {
 
     private Class<?> getModeDetailClass(int mode) {
         Class<?>[] mClass = {NormalModeDetailsActivity.class, SuperModeDetailsActivity.class};
-        return mClass[mode ];
+        return mClass[mode - 1];
     }
 
     private boolean isShouldNotShow(Context context) {
@@ -313,7 +321,7 @@ public class PowerModeSelectDialog {
         bundle.putInt("from", from);
         bundle.putInt("to", to);
         intent.putExtras(bundle);
-        ServiceUtil.startForegroundService(context,intent);
+        ServiceUtil.startForegroundService(context, intent);
     }
 
     private void intoSuperSaveMode(Context context, int mode) {
@@ -329,7 +337,7 @@ public class PowerModeSelectDialog {
         bundle.putInt("from", from);
         bundle.putInt("to", to);
         intent.putExtras(bundle);
-        ServiceUtil.startForegroundService(context,intent);
+        ServiceUtil.startForegroundService(context, intent);
     }
 
     private void notifyDataSetChange(int mode) {

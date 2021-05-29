@@ -223,6 +223,24 @@ public class Util {
     }
     // Gionee <liuyb> <2014-10-13> add for CR01393511 end
 
+    public static List<String> getLauncherPkg(Context context) {
+        // String pkg = "android";
+        List<String> re = new ArrayList<>();
+        try {
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            PackageManager pm = context.getPackageManager();
+            List<ResolveInfo> lst = pm.queryIntentActivities(intent, 0);
+            for (ResolveInfo resolveInfo : lst) {
+                re.add(resolveInfo.activityInfo.packageName);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return re;
+    }
+
     // Gionee <liuyb> <2014-6-28> add for CR01403879 begin
     public static String getDefaultLauncherPkg(Context context) {
         // String pkg = "android";

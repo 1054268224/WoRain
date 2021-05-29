@@ -137,6 +137,7 @@ public class TrafficAssistantMainActivity extends BaseActivity implements OnClic
        // }
         //guoxt modify for CSW1805A-887 end
         // Gionee: mengdw <2016-07-13> add for CR01770072 end
+
     }
 
     // Gionee: mengdw <2016-10-31> add for CR01770072 begin

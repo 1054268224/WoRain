@@ -19,6 +19,7 @@ import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 import android.os.BatteryStats;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -51,6 +52,7 @@ import static com.cydroid.powersaver.launcher.ConfigUtil.cyBAFlag;
 
 import android.os.SystemProperties;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Main extends AppCompatActivity implements OnLongClickListener, View.OnClickListener {
@@ -160,6 +162,9 @@ public class Main extends AppCompatActivity implements OnLongClickListener, View
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        sethomemenukey(false);
+
+
         getSupportActionBar().hide();
         Log.d(TAG, "onCreate----->");
         // Chenyee xionghg add for black NavigationBar begin
@@ -191,6 +196,16 @@ public class Main extends AppCompatActivity implements OnLongClickListener, View
             mHelper.onCreate();
         }
         // Gionee xionghg add for power saving optimization 145357 end
+    }
+
+    private void sethomemenukey(boolean b) {
+        StatusBarManager statusBarManager = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
+            statusBarManager = (StatusBarManager) getSystemService(STATUS_BAR_SERVICE);
+        }
+        if (statusBarManager != null) {
+            statusBarManager.disable(b ? StatusBarManager.DISABLE_NONE : StatusBarManager.DISABLE_RECENT);
+        }
     }
 
     @Override
@@ -274,7 +289,9 @@ public class Main extends AppCompatActivity implements OnLongClickListener, View
         unregisterReceiver(mNetworkReveiver);
         // Gionee <yangxinruo> <2015-08-28> add for CR01545094 end
         mHandler.removeMessages(MSG_TIMEOUT_RESET_EXIT_FLAG);
+        sethomemenukey(true);
         super.onDestroy();
+
     }
 
     @SuppressLint("NewApi")

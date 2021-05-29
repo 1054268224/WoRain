@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_select_checkbox_wyh" android:state_checked="true"></item>
+
+    <item>
+        <shape android:shape="oval">
+            <corners android:radius="12dip" />
+            <solid android:color="@color/white" />
+            <stroke android:width="1dp" android:color="#f0f0f0"></stroke>
+
+            <size android:width="24dp" android:height="24dp" />
+        </shape>
+    </item>
+
+</selector>

@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.view.ViewGroup.LayoutParams;
-import android.net.WebAddress;
 
 import androidx.appcompat.app.AppCompatActivity;
 

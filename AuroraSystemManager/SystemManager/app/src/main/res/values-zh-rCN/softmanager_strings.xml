@@ -191,7 +191,7 @@
     <string name="green_bg_notifi_content">"绿色后台开启后会清理白名单外的后台应用,建议将常用的应用加入白名单,以免影响使用."</string> 
 
     <string name="auto_start_head_text">已允许%1$d个</string>
-    <string name="authority_management_head_text">正在监控%1$d个应用</string>
+    <string name="authority_management_head_text">正在监控%1$d 个应用</string>
     <string name="removed">已移除</string>
     <string name="title_about">关于</string>
     <string name="app_freeze_prompt_info">应用被冻结后，效果和卸载类似；您可以选择将不常用的应用冻结，在需要使用时将它还原。还原后它会出现在桌面最后的位置，且其小插件要重新设置。</string> 

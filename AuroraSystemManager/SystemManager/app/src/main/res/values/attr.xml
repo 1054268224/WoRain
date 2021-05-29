@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string-array name="permissionresult" tools:ignore="ExtraTranslation">
+        <item>移动数据与WLAN</item>
+        <item>仅WLAN</item>
+        <item>禁用网络</item>
+    </string-array>
+</resources>
